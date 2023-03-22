@@ -1,0 +1,16 @@
+<div id="fish">
+  <ul id="mylist"></ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $('.wlsn-coaches-list-item__cta').on('click', function(){
+    $(this).closest('.wlsn-coaches-list-item__content').toggleClass('active')
+  })
+
+  $.getJSON( "https://jsonplaceholder.typicode.com/todos", function( data ) {
+    const content = data.map(a => `<li>${a.title}li`).join('');
+    // console.log(content)
+    $('#mylist').html(content)
+  });
+</script>

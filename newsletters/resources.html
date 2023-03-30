@@ -7,7 +7,7 @@
   <title>Community</title>
   <style type="text/css">
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200,400;700&family=Libre+Baskerville:wght@400;700&display=swap');
 
   body {margin: 0; padding: 0; min-width: 100%!important;height:auto; color: #202945}
   img {height: auto; max-width: 100%;}
@@ -93,27 +93,6 @@
     background: #f3fafb;
   }
 
-  @media only screen and (max-width: 500px) {
-    .card-table, .table-responsive {
-      width: 100%;
-      margin: 0 auto;
-    }
-
-    .card-table tr, .table-responsive tr {
-      display:block;
-    }
-
-    .card-table tr td, .table-responsive tr td {
-      display:block;
-      width:100% !important;
-      margin-bottom: 5px;
-    }
-
-    .card-table tr td:last-child, .table-responsive tr td:last-child {
-      margin-bottom: 0;
-    }
-  }
-
   a.small-btn {
     padding: 3px 5px;
     border-radius: 5px;
@@ -150,13 +129,6 @@
     display:  table;
   }
 
-  @media only screen and (min-width: 449px) {
-    .list-col {
-      float:left;
-      width:45%;
-    }
-  }
-
   .ul-row {
       width: 100%;
         padding: 0;
@@ -172,7 +144,6 @@
         width: 16px;
         margin-top:3px;
         margin-right: 3px;
-        /*filter: invert(90%) sepia(0%) saturate(90%) hue-rotate(3500deg) brightness(0%) contrast(100%);*/
     }
 
     .ul-row p {
@@ -193,12 +164,12 @@
 
     h1, h2, p, a, ul, li, * {
         margin: 0;
-        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         text-decoration: none;
     }
 
     p, ul {
-        font-size: 13.5px;
+        font-size: 14.5px;
     }
 
   .bodycopy {font-size: 15px;
@@ -236,7 +207,6 @@
     line-height: 1.3;
     margin-top: 14px;
     color: white;
-    /*width: 60%;*/
   }
 
   .primary-btn {
@@ -311,19 +281,7 @@
         width: 20px;
     }
 
-   /* ul li {
-        /*list-style-type: none;
-    }*/
-
-    /*ul li::before {
-      content: "2";
-      color: red;
-      font-weight: bold;
-      display: inline-block; 
-      width: 1em;
-      margin-left: -1em;
-    }*/
-
+   
     .useful-links ul {
       padding: 10px 10px 0;
     }
@@ -370,87 +328,11 @@
   }
 
 
-  @media only screen and (max-width: 550px), screen and (max-device-width: 550px) {
-    .freshIcon {
-      margin-top: 0;
-    }
-  body[yahoo] .hide {display: none!important;}
-  body[yahoo] .buttonwrapper {background-color: transparent!important;}
-  body[yahoo] .button {padding: 0px!important;}
-  body[yahoo] .button a {background-color: #e05443; padding: 15px 15px 13px!important;}
-  body[yahoo] .unsubscribe {display: block; margin-top: 20px; padding: 10px 50px; background: #2f3942; border-radius: 5px; text-decoration: none!important; font-weight: bold;}
-  }
-
+  
   .nodisplay {
     display: none;
   }
 
-  @media only screen and (max-width: 773px) {
-
-        .comm-card {
-            display: block !important;
-            width: 65% !important;
-            margin: 0 auto 2em auto !important;
-        }
-    }
-
-  @media only screen and (max-width: 700px) {
-        h1 {
-            font-size: 30px !important;
-        }
-
-        .responsive-h1 {
-            width: 100% !important;
-            font-size: 30px !important;
-            text-align: left !important;
-        }
-
-        .responsive-p-align {
-            width: 100% !important;
-            text-align: left !important;
-        }
-
-        .header-img-side {
-            display: none;
-        }
-
-        .header-sm-img {
-          width: 80%;
-          height: 200px;
-        }
-
-        .nodisplay {
-          display: block !important;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .header-fix {
-            width: 100% !important;
-            max-width: 100% !important;
-        }
-    }
-
-    @media only screen and (max-width: 650px) {
-        .responsive-full {
-            width: 100% !important;
-        }
-
-        .responsive-fix {
-            display: block;
-            width: 100% !important;
-            max-width: 100% !important;
-            margin: 0 auto;
-            float: none;
-        }
-
-        .responsive-mrg-bottom {
-            margin-bottom: 2em;
-        }
-    }
-    
     .table-col {
        width: 50%;
     }
@@ -459,14 +341,6 @@
     }
     .col-right {
       padding-left: 10px;
-    }
-    @media only screen and (max-width: 550px), screen and (max-device-width: 550px) {
-      .table-col {
-        width: 100% !important;
-        padding: 0 !important;
-        display: block;
-        margin-bottom: 30px;
-      }
     }
 
     .blockquote {
@@ -501,26 +375,13 @@
       width: 32px;
       float: left;
       margin-right: 12px;
-      /*margin-top: 15px;*/
     }
 
     .blockquote span {
       font-weight: 600;
     }
 
-    /*.icon-card {
-      color: #202945;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 1.4;
-      padding: 1.5em;
-      border: 1px solid #dddddd;
-      margin-bottom: 10px;
-      position: relative;
-      margin-top: 20px;
-      margin-left: 20px;
-      border-radius: 0 20px;
-    }*/
+    
 
     .icon-card {
       font-size: 16px;
@@ -539,18 +400,8 @@
       height: 17px;
     }
 
-    /*.icon-card-img-wrap {
-      position: absolute;
-      top: -20px;
-      left: -20px;
-      border: 1px solid #ddd;
-      padding: 10px;
-      border-radius: 50%;
-      background: #fff;
-    }*/
-
+    
     .icon-card-img-wrap {
-      /*border: 1px solid #ddd;*/
       padding: 15px;
       border-radius: 50%;
       width: 17px;
@@ -568,8 +419,6 @@
       font-weight: 300;
       line-height: 1.4;
       padding: 1.5em;
-      /*border-right: 4px solid #a67c00;*/
-      /*background: #F9F9F9;*/
     }
 
     .blockquote-right a {
@@ -614,7 +463,6 @@
   }
 
   .sec-title, .subtitle {
-/*    color: #462b16;*/
     font-weight: bold;
   }
 
@@ -626,7 +474,6 @@
   .rounded { border-radius: 50px; padding-left: 30px; padding-right:30px; }
 
   h3.sec-title {
-/*    color: #fff;*/
     font-weight: normal;
   }
 
@@ -652,35 +499,16 @@
     height: 230px; 
   }
 
-  @media only screen and (min-width: 774px) {
-    .header-full {
-      height: 400px !important;
-    }
-  }
+  
 
   .logo-stack img {
     width: 80px;
   }
 
-  @media only screen and (min-width: 500px) {
-    .logo-stack img {
-      width: 100px !important;
-    }
-  }
-
-  @media only screen and (min-width: 774px) {
-    .logo-stack img {
-      width: 114px !important;
-    }
-  }
 
   .tour-img {
     width: 400px;
     max-width: 100%;
-    /*margin-right: 15px;
-    margin-bottom: 10px;*/
-    /*display: block;*/
-    /*margin: 0 auto;*/
   }
 
   .col-4 { width: 25%; float: left; }
@@ -690,16 +518,16 @@
   .banner-menu a:last-child { margin: 0; }
   .capitalise { text-transform: uppercase;}
   .learnmore { text-decoration: underline; color: black; }
-  .moves { border-collapse: separate; border-spacing: 10px; }
+  .moves { border-collapse: separate; border-spacing: 10px; margin-left: -10px;}
   .moves td {
-    background: #DADEDA;
-    color: #462B16;
-    border-right: 5px solid #4A4F54;
+    background: #353A4C;
+    color: #fff;
+    border-right: 5px solid #CDAD7D;
     width: 50%;
     padding: 10px;
     vertical-align: top;
   }
-  .moves td a { text-decoration: underline; color: #462B16;}
+  .moves td a { text-decoration: underline; color: #fff;}
   .spaced p { margin-bottom: 7px; }
   .spaced p.text-danger { margin-bottom: 0; }
 
@@ -715,17 +543,29 @@
   .text-mustard { color: #CDAD7D; }
   .text-blue { color: #202945; }
   .text-brown { color: #96522D; }
+
+  .mb-20 { margin-bottom: 20px; }
+  .mb-10 { margin-bottom: 10px; }
+  .mt-10 { margin-top: 10px !important; }
+  .mt-5 { margin-top: 10px !important; }
+  .thin { font-weight: 200; }
+
+  .fs-12 { font-size: 12px; }
+  .fs-14 { font-size: 14px; }
+  .fs-16 { font-size: 16px; }
+  .fs-18 { font-size: 18px; }
+  .fs-22 { font-size: 22px; }
+  .fs-24 { font-size: 24px; }
+  .fs-26 { font-size: 26px; }
+  .uppercase { text-transform: uppercase; }
+
   </style>
 </head>
 
 <body bgcolor="#f6f8f1">
 <table width="100%" bgcolor="#dfe2df" border="0" cellpadding="0" cellspacing="0">
 
-  <!-- <tr>
-    <td><img src="http://tbrax.devt/financebg.jpg" style="max-width: 100%;"></td>
-  </tr>
- -->
-
+  
   
 
 
@@ -734,11 +574,6 @@
 
 <tr>
   <td>
-    <!--[if (gte mso 9)|(IE)]>
-      <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td>
-    <![endif]-->
     <table bgcolor="#fff" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
 
       <tr style="background: url('https://res.cloudinary.com/tbra/image/upload/v1680102185/communityBanner_vsussh.jpg'); background-size: cover;">
@@ -750,25 +585,11 @@
                   <tr>
                     <td><a href="https://theboardroomafrica.com"><img src="https://res.cloudinary.com/tbra/image/upload/v1673525492/logos/logo-primary_rozzav.png" style="width: 100px;"></a></td>
                     <td class="text-right banner-menu">
-                      <!-- <p>
-                        <a href="#" class="ml-10">Network</a>
-                        <a href="#" class="ml-10">Access</a>
-                        <a href="#" class="ml-10">Develop</a>
-                      </p> -->
                     </td>
                   </tr>
                 </table>
               </td>
             </tr>
-            <!-- <tr>
-              <td style="color: #fff;">
-                <div style="padding-left: 15px; border-left: 5px solid #fff;">
-                  <h1 style="margin-top: 200px; font-size: 35px;">COMMUNITY DIGEST</h1>
-                  <p style="font-size: 16px; margin-top: 5px; font-weight: 200;">February roundup</p>
-                </div>
-              </td>
-            </tr> -->
-            
           </table>
         </td>
       </tr>
@@ -781,11 +602,6 @@
           <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
             <tr>
               <td class="bodycopy">
-
-                <!-- <p>Dear [[FIRSTNAME]]</p> -->
-
-                <!-- <p class="text-center"><b>Welcome to the February edition of the TBR Africa Community Digest!</b></p> -->
-
                 <br />
                 <h1 class="new-title text-center">Network</h1>
                 <br /><br />
@@ -796,7 +612,6 @@
                 <table class="collapse" width="100%">
                   <tr>
                     <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1677593573/Cairo_agbcvm.jpg'); background-size: cover;">
-                      <!-- <img src="#"> -->
                     </td>
                     <td style="padding: 0 20px">
                       <br />
@@ -817,7 +632,7 @@
       <tr bgcolor="#F3F6F8">
         <td>
           <img src="https://res.cloudinary.com/tbra/image/upload/v1680093251/women2watch2_a4t6yk.jpg">
-          <div class="text-center mt-10"><a href="https://p6obiunn.paperform.co" class="primary-btn bg-blue rounded mt-10">Read the report</a></div>
+          <div class="text-center mt-10"><a href="https://bit.ly/WTW2023ed" class="primary-btn bg-blue rounded mt-10">Read the report</a></div>
           <br/>
         </td>
       </tr>
@@ -832,7 +647,7 @@
                 <br/>
                 <h3 class="sec-title capitalise"><span>Membership Moves</span></h3>
                 <br />
-                <p>We congratulate TBrA members on their recent noteworthy milestones, such as board appointments, new executive positions and awards. To share your accomplishments with us, kindly email us at info@theboardroomafrica.com.</p>
+                <p class="thin fs-16">We congratulate TBrA members on their recent noteworthy milestones, such as board appointments, new executive positions and awards. To share your accomplishments with us, kindly email us at info@theboardroomafrica.com.</p>
 
                 <br/>
 
@@ -887,7 +702,7 @@
         <td>
           <img src="https://res.cloudinary.com/tbra/image/upload/v1680101414/Special_rcmwxp.jpg">
 
-          <div class="text-center mt-10"><a href="https://p6obiunn.paperform.co" class="primary-btn bg-blue rounded mt-10">SEE THE LIST</a></div>
+          <div class="text-center mt-10"><a href="https://www.forbesafrica.com/woman/2023/03/15/50-over-50-success-at-every-age-2/" class="primary-btn bg-blue rounded mt-10">SEE THE LIST</a></div>
           <br/>
         </td>
       </tr>
@@ -916,12 +731,11 @@
                   <br/>
                   <tr>
                     <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1680095277/webinar_replay_xuvqwr.jpg'); background-size: cover;">
-                      <!-- <img src="#"> -->
                     </td>
                     <td style="padding: 0 20px">
                       <br />
                       <p class="mb-10">Despite being one of the most important teams in an organisation, the Board often undergoes the least rigour when it comes to its composition, training and building the right culture. In this webinar, we discover how the membership of organisational boards is a key determinant of how effective they are in governing their organisations.</p>
-                      <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/media_center/folder/b18deaeb-568a-4dab-92fc-5ba86c4ed6f8" class="primary-btn bg-dark rounded mt-10">Watch Replay</a></div>
+                      <div class="text-center"><a href="#" class="primary-btn bg-dark rounded mt-10">Watch Replay</a></div> <!-- pending -->
                       <br />
                     </td>
                   </tr>
@@ -939,7 +753,6 @@
                 <table class="collapse" width="100%" style="background: #fff;">
                   <tr>
                     <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1680095783/productive_jfe9id.jpg'); background-position: center top; background-size: 357px;">
-                      <!-- <img src="#"> -->
                     </td>
                     <td style="padding: 0 20px">
                       <br />
@@ -953,7 +766,6 @@
                 <table class="collapse" width="100%" style="background: #fff;">
                   <tr>
                     <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1680095784/boardroom_hard_part_rxa15y.jpg'); background-position: center top; background-size: 364px;">
-                      <!-- <img src="#"> -->
                     </td>
                     <td style="padding: 0 20px">
                       <br />
@@ -980,12 +792,13 @@
 
       <tr bgcolor="">
         <td>
-          <h3 class="sec-title"><span style="background: #E1DEDC; color: #202945; border-right: 5px solid #CDAD7D; padding: 15px 15px 15px 50px; font-size: 24px;">Board Roles</span></h3>
+          <h3 class="sec-title"><span style="background: #E1DEDC; color: #202945; border-right: 5px solid #CDAD7D; padding: 10px 10px 10px 50px; font-size: 24px;">Board Roles</span></h3>
+          <br/>
         </td>
       </tr>
 
 
-      <tr bgcolor="#fff">
+      <tr bgcolor="#F8F8F8">
         <td class="innerpadding">
           <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
             <tr>
@@ -1006,7 +819,7 @@
                 <div class="text-center">
                   <a href="https://membersforum.theboardroomafrica.com/opportunities" class="premium-btn bg-mustard rounded">Apply</a>
                   <br /><br />
-                  <a class="learnmore" href="https://tbrafrica.paperform.co/">Recommend Someone</a>
+                  <a class="learnmore uppercase" href="https://tbrafrica.paperform.co/">Recommend Someone</a>
                   <br /><br />
                 </div>
               </td>
@@ -1021,16 +834,15 @@
           <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
             <tr>
               <td>
-                <h1 class="new-title text-center mb-20">Board Trends</h1>
+                <h1 class="new-title text-center mb-20" style="color: #a5a7a9;">Board Trends</h1>
                 <table class="collapse" width="100%" style="background: #fff;">
                   <tr>
                     <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1680099374/building_your_board_fn4wno.jpg'); background-position: center top; background-size: 430px;">
-                      <!-- <img src="#"> -->
                     </td>
                     <td style="padding: 0 20px">
                       <br />
                       <p class="mb-10">We have several openings on our board. Who knows someone we could add?” As a recruitment strategy, this is like asking an audience for someone to come on stage. A better approach is to start by doing an analysis of who is on your board, considering the various skills and experiences each of your board members brings to the governing body, and where you might have gaps in knowledge.</p>
-                      <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/page/news-new" class="primary-btn bg-mustard rounded mt-10" style="padding: 10px 30px">Read</a></div>
+                      <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/media_center/folder/eb0f98c1-e1b3-4722-95fc-9784187cf201" class="primary-btn bg-mustard rounded mt-10" style="padding: 10px 30px">Read</a></div>
                       <br />
                     </td>
                   </tr>
@@ -1039,12 +851,11 @@
                 <table class="collapse" width="100%" style="background: #fff;">
                   <tr>
                     <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1680099374/demands_on_corporate_boards_s0rdwf.jpg'); background-position: center bottom; background-size: 410px;">
-                      <!-- <img src="#"> -->
                     </td>
                     <td style="padding: 0 20px">
                       <br />
                       <p class="mb-10">In the popular imagination, a corporate board seat looks like the cushiest position in business. Board members appear to get paid—often handsomely—to attend a few meetings a year and to nod knowingly as the chief executive pontificates on strategy. However, this is far from the case.</p>
-                      <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/page/news-new" class="primary-btn rounded mt-10 bg-mustard" style="padding: 10px 30px">Read</a></div>
+                      <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/media_center/folder/6d2523b8-1eed-4843-8243-b0bb8f413a7c" class="primary-btn rounded mt-10 bg-mustard" style="padding: 10px 30px">Read</a></div>
                       <br />
                     </td>
                   </tr>
@@ -1067,29 +878,44 @@
       </tr>
       <tr bgcolor="#EDE4D6">
         <td>
-          <div class="text-center mt-10"><a href="https://p6obiunn.paperform.co" class="primary-btn bg-mustard rounded mt-10">Sign up</a></div>
+          <div class="text-center mt-10"><a href="https://membersforum.theboardroomafrica.com/events" class="primary-btn bg-mustard rounded mt-10">Sign up</a></div>
           <br/>
         </td>
       </tr>
 
 
       <tr>
-        <td>
-          <table width="100%" style="margin: 50px 0;">
-            <td width="25%"></td>
-            <td width="50%"><hr></td>
-            <td width="25%"></td>
-          </table>
+        <td class="innerpadding">
+          <br/>
+          <p class="text-center" style="font-size: 30px;"><b>Meet Cohort 11</b> — OPEN DOORS </p>
         </td>
       </tr>
 
 
-      <tr>
-        <td class="innerpadding" style="padding-bottom: 0; padding-top: 0;">
+      <tr bgcolor="#EAEAEA">
+        <td class="innerpadding">
           <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
             <tr>
               <td>
-                <h3 class="sec-title"><span class="bg-dark text-white">OPEN DOORS COHORTS</span></h3>
+                <p>Designed and delivered in partnership with the Institute of Directors UK (IoD), Open Doors is a globally recognised and accredited director certificate programme suited to existing and aspiring directors. The programme provides a comprehensive curriculum covering the essential components of leadership, strategy, finance and governance and offers additional insights into board dynamics and ontological leadership through curated workshops. Upon completion of the programme and fulfilment of requirements, participants will attain a degree-level equivalent Certificate in Company Direction, which serves as the first stage in the Chartered Director qualification pathway with the IoD. </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+<!--       <tr>
+        <td><img src="https://res.cloudinary.com/tbra/image/upload/v1680163974/ODCohort_vhfkdu.jpg"></td>
+      </tr>
+ -->
+
+      <tr bgcolor="#DADEDA">
+        <td class="innerpadding" style="padding-top: 0;">
+          <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
+            <tr>
+              <td class="bodycopy">
+                <br/><br/>
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1680163974/ODCohort_vhfkdu.jpg">
               </td>
             </tr>
           </table>
@@ -1097,18 +923,13 @@
       </tr>
 
       <tr>
-        <td><img src="https://res.cloudinary.com/tbra/image/upload/v1680100134/ODDesign_uxn7w1.jpg"></td>
-      </tr>
-
-
-      <tr bgcolor="#DADEDA">
         <td class="innerpadding" style="padding-top: 0;">
           <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
             <tr>
               <td class="bodycopy">
-
-                <br />
-                <h3 class="sec-title"><span style="padding-right: 30px" class="text-white">2023 Cohorts</span></h3>
+                <br/><br/>
+                <h3 class="sec-title"><span style="padding-right: 30px" class="text-white">Upcoming Cohorts</span></h3>
+                <br/>
 
                 <table width="100%" style="border-collapse: collapse;">
                   <tr class="text-white" style="vertical-align: top;">
@@ -1146,72 +967,12 @@
         </td>
       </tr>
 
-      <tr>
-        <td>
-          <table width="100%" style="margin: 50px 0;">
-            <td width="25%"></td>
-            <td width="50%"><hr></td>
-            <td width="25%"></td>
-          </table>
-        </td>
-      </tr>
-
-
-
-      <tr>
-        <td class="innerpadding" style="padding-top: 0;">
-          <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td>
-                <h3 class="sec-title"><span class="bg-mustard text-white">Transformational Leadership Masterclass</span></h3>
-
-                <br/>
-
-                <table class="collapse" width="100%" style="background: #EFE7E7;">
-                  <tr>
-                    <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1680100661/tlming_tfrbxq.jpg'); background-position: bottom right; background-size: 328px;">
-                      <!-- <img src="#"> -->
-                    </td>
-                    <td style="padding: 0 20px">
-                      <br />
-                      <p class="mb-10">Designed with the belief that organisational transformation must be anchored in authentic power, values-based, strengths-based and courageous leadership. The programme merges research and practice from neuroscience, psychology, biomimicry and ontology, offering delegates a unique opportunity to deeply transform themselves first and in turn to transform the teams and systems they lead.</p>
-                      <div class="text-center"><a href="https://theboardroomafrica.com/wp-content/uploads/2023/01/Transformational-Leadership-Masterclass-Brochure-2023.pdf" class="primary-btn bg-mustard rounded mt-10" style="padding: 10px 30px">Learn more</a></div>
-                      <br />
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-
 
       <tr>
         <td>
-          <a href="https://pwearoci.paperform.co"><img src="https://res.cloudinary.com/tbra/image/upload/v1677586026/Birthday_bwvrip.jpg"></a>
+          <a href="https://pwearoci.paperform.co"><img src="https://res.cloudinary.com/tbra/image/upload/v1680165719/community_BD_byakcw.jpg"></a>
         </td>
       </tr>
-
-
-
-
-      <!-- <tr class="bg-tbra-blue">
-        <td class="innerpadding">
-          <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td style="color: #F3ECE2;">
-                <p>With these, we want to share once again, our commitment remains to empowering growth for you and the spaces you represent. 2023 gives us the opportunity to do this and more,  we can't wait to explore, expand and empower  along with you.</p>
-                <br />
-                <p>From TBRA</p>
-                <br />
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1673525492/logos/logo-primary_rozzav.png" style="width: 100px;">
-              </td>
-            </tr>
-          </table> 
-        </td>
-      </tr> -->
 
 
       <tr>
@@ -1245,11 +1006,7 @@
       </tr>
 
     </table>
-    <!--[if (gte mso 9)|(IE)]>
-          </td>
-        </tr>
-    </table>
-    <![endif]-->
+    
     </td>
   </tr>
 </table>

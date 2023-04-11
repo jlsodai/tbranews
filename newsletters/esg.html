@@ -4,12 +4,17 @@
 <head>
   [[trackingImage]]
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>ESG Certificate</title>
+  <title>Community</title>
   <style type="text/css">
 
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200,400;700&family=Libre+Baskerville:wght@400;700&display=swap');
 
-  body {margin: 0; padding: 0; min-width: 100%!important;height:auto;}
+  body {margin: 0; padding: 0; min-width: 100%!important;height:auto; color: #4A4F54}
+  body {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #4A4F54;
+  }
   img {height: auto; max-width: 100%;}
 
   a {
@@ -43,7 +48,6 @@
     background-color: #a67c00;
     color: white;
     margin-top: 22px;
-    cursor: auto;
   }
 
   .premium-btn img {
@@ -63,18 +67,21 @@
   }
 
   .text-primary { color: #0275d8; }
+  .text-white { color: white !important; }
   .text-success { color: #5cb85c; }
   .text-info { color: #5bc0de; }
   .text-warning { color: #f0ad4e; }
-  .text-danger { color: #d9534f; }
+  .text-danger { color: #EA5A4F; }
 
   .bg-primary { background-color: #0275d8; }
   .bg-success { background-color: #5cb85c; }
   .bg-info { background-color: #17a2b8; }
   .bg-warning { background-color: #f0ad4e; }
-  .bg-danger { background-color: #d9534f; }
+  .bg-danger { background-color: #EA5A4F; }
   .bg-gold, .bg-premium { background-color: #a67c00; }
   .bg-tbra-gold { background-color: #b6a999 !important; }
+  .bg-tbra-blue { background-color: #202945 !important; }
+  .bg-dark { background-color: #202945 !important; }
   .bg-black { background-color: #3e3e3e; }
 
   .table-responsive {
@@ -82,38 +89,13 @@
   }
 
   .card-table {
-    border-spacing: 0 15px;
+    border-spacing: 15px;
     border-collapse: separate;
-    /*margin: -15px;*/
+    margin: -15px;
   }
 
   .card-table td {
-    background: #eef0f7;
-    border-left: 5px solid #515b7b;
-  }
-  .card-table.no-bg td { background: unset; }
-
-  .card-table.no-bg tr { background: #eef0f7; }
-
-  @media only screen and (max-width: 500px) {
-    /*.card-table, .table-responsive {
-      width: 100%;
-      margin: 0 auto;
-    }*/
-
-    .card-table tr, .table-responsive tr {
-      display:block;
-    }
-
-    /*.card-table tr td, .table-responsive tr td {
-      display:block;
-      width:100% !important;
-      margin-bottom: 5px;
-    }*/
-
-    .card-table tr td:last-child, .table-responsive tr td:last-child {
-      margin-bottom: 0;
-    }
+    background: #f3fafb;
   }
 
   a.small-btn {
@@ -131,7 +113,8 @@
   }
 
   .mb-20 { margin-bottom: 20px; }
-  .mb-8 { margin-bottom: 8px; }
+  .mb-10 { margin-bottom: 10px; }
+  .mt-10 { margin-top: 10px !important; }
 
   .header {padding: 40px 30px 40px 30px;}
 
@@ -142,20 +125,13 @@
   .subhead {font-size: 15px; color: #ffffff; letter-spacing: 10px;}
 
   h1 {
-    font-size: 40px;
+    font-size: 55px;
     font-weight: 800;
     line-height: 1;
   }
 
   .dtable {
     display:  table;
-  }
-
-  @media only screen and (min-width: 449px) {
-    .list-col {
-      float:left;
-      width:45%;
-    }
   }
 
   .ul-row {
@@ -173,7 +149,6 @@
         width: 16px;
         margin-top:3px;
         margin-right: 3px;
-        /*filter: invert(90%) sepia(0%) saturate(90%) hue-rotate(3500deg) brightness(0%) contrast(100%);*/
     }
 
     .ul-row p {
@@ -192,19 +167,20 @@
         color: white;
     }
 
-    h1, h2, p, a, ul, li, table {
+    h1, h2, p, a, ul, li, * {
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-decoration: none;
+    }
+
+    .libreb, .libreb * {
+      font-family: "Libre Baskerville", serif, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
         text-decoration: none;
     }
 
     p, ul {
-        font-size: 15.5px;
+        font-size: 14.5px;
     }
-
-  .bodycopy {font-size: 15px;
-            line-height: 1.5;
-            color: #4A4F56;}
 
    .bodycopy-white {font-size: 15px;
             line-height: 1.5;
@@ -237,7 +213,6 @@
     line-height: 1.3;
     margin-top: 14px;
     color: white;
-    /*width: 60%;*/
   }
 
   .primary-btn {
@@ -254,6 +229,11 @@
         margin-top: 22px;
     }
 
+    .primary-btn-inverse {
+      background: #fff;
+      color: #EA5A4F;
+    }
+
     .link-btn {
             display: block;
             font-weight: bold;
@@ -262,9 +242,8 @@
             padding-top: 12px;
         }
 
-    .text-center {
-        text-align: center;
-    }
+    .text-center { text-align: center; }
+    .text-right { text-align: right; }
 
     .body-btn-blue {
             display: inline-block;
@@ -308,19 +287,7 @@
         width: 20px;
     }
 
-   /* ul li {
-        /*list-style-type: none;
-    }*/
-
-    /*ul li::before {
-      content: "2";
-      color: red;
-      font-weight: bold;
-      display: inline-block; 
-      width: 1em;
-      margin-left: -1em;
-    }*/
-
+   
     .useful-links ul {
       padding: 10px 10px 0;
     }
@@ -367,87 +334,11 @@
   }
 
 
-  @media only screen and (max-width: 550px), screen and (max-device-width: 550px) {
-    .freshIcon {
-      margin-top: 0;
-    }
-  body[yahoo] .hide {display: none!important;}
-  body[yahoo] .buttonwrapper {background-color: transparent!important;}
-  body[yahoo] .button {padding: 0px!important;}
-  body[yahoo] .button a {background-color: #e05443; padding: 15px 15px 13px!important;}
-  body[yahoo] .unsubscribe {display: block; margin-top: 20px; padding: 10px 50px; background: #2f3942; border-radius: 5px; text-decoration: none!important; font-weight: bold;}
-  }
-
+  
   .nodisplay {
     display: none;
   }
 
-  @media only screen and (max-width: 773px) {
-
-        .comm-card {
-            display: block !important;
-            width: 65% !important;
-            margin: 0 auto 2em auto !important;
-        }
-    }
-
-  @media only screen and (max-width: 700px) {
-        h1 {
-            font-size: 30px !important;
-        }
-
-        .responsive-h1 {
-            width: 100% !important;
-            font-size: 30px !important;
-            text-align: left !important;
-        }
-
-        .responsive-p-align {
-            width: 100% !important;
-            text-align: left !important;
-        }
-
-        .header-img-side {
-            display: none;
-        }
-
-        .header-sm-img {
-          width: 80%;
-          height: 200px;
-        }
-
-        .nodisplay {
-          display: block !important;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .header-fix {
-            width: 100% !important;
-            max-width: 100% !important;
-        }
-    }
-
-    @media only screen and (max-width: 650px) {
-        .responsive-full {
-            width: 100% !important;
-        }
-
-        .responsive-fix {
-            display: block;
-            width: 100% !important;
-            max-width: 100% !important;
-            margin: 0 auto;
-            float: none;
-        }
-
-        .responsive-mrg-bottom {
-            margin-bottom: 2em;
-        }
-    }
-    
     .table-col {
        width: 50%;
     }
@@ -456,14 +347,6 @@
     }
     .col-right {
       padding-left: 10px;
-    }
-    @media only screen and (max-width: 550px), screen and (max-device-width: 550px) {
-      /*.table-col {
-        width: 100% !important;
-        padding: 0 !important;
-        display: block;
-        margin-bottom: 30px;
-      }*/
     }
 
     .blockquote {
@@ -498,23 +381,24 @@
       width: 32px;
       float: left;
       margin-right: 12px;
-      /*margin-top: 15px;*/
     }
 
     .blockquote span {
       font-weight: 600;
     }
 
+    
+
     .icon-card {
-      font-size: 14px;
+      font-size: 16px;
+      font-weight: bold;
       font-weight: 400;
       line-height: 1.4;
-      padding: 1em 1em 0.6em;
-      /*border-left: 5px solid #515b7b;*/
-      /* margin-bottom: 2px; */
-      /* border-radius: 5px; */
+      padding: 1.5em;
+      border: 1px solid #dddddd;
+      margin-bottom: 10px;
+      border-radius: 5px;
       min-height: 42px;
-      /*background: #eef0f7;*/
     }
 
 
@@ -522,26 +406,7 @@
       height: 17px;
     }
 
-    /* option 1 */
-    /*.roundimg {
-      border-radius: 50%;
-      width: 21px;
-      height: 21px;
-      float: left;
-    }*/
-
-    /* Option 2 */
-    .roundimg {
-      background: #fae0de;
-      border-radius: 50%;
-      padding: 9px;
-      width: 21px;
-      height: 21px;
-      float: left;
-      margin-left: 20px;
-      margin-top: -5px;
-    }
-
+    
     .icon-card-img-wrap {
       padding: 15px;
       border-radius: 50%;
@@ -554,24 +419,12 @@
       width: 17px;
     }
 
-    .icon-table img {
-      /*padding: 10px;*/
-      /*border-radius: 50%;*/
-      /*background: #c3cdb6;*/
-      /*margin-right: 10px;*/
-      height: 21px;
-      width: 21px;
-      /*float: left;*/
-    }
-
     .blockquote-right {
       color: #4d5468;
       font-size: 16px;
       font-weight: 300;
       line-height: 1.4;
       padding: 1.5em;
-      /*border-right: 4px solid #a67c00;*/
-      /*background: #F9F9F9;*/
     }
 
     .blockquote-right a {
@@ -592,54 +445,9 @@
     height: auto; width: 18px; position: relative; top: 3px; margin-top: 5px; margin-right: 5px;
      }
 
-  .calendar-wrap {
-    color: #4d5468;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.4;
-    /*padding: 1em;*/
-    border-spacing: 0 15px;
-    /*border: 1px solid #f1f1f1;*/
-    margin-bottom: 10px;
-    width: 100%;
-  }
-
-  .calendar-wrap tr { outline: thin solid #f1f1f1; }
-
-  .calendar-text { width: 100%; }
-
-  .calendar-date {
-    float: left;
-    border: 1px solid #f1f1f1;
-    width: 100px;
-    text-align: center;
-    margin: 15px;
-    padding: 10px 0;
-    background: #eef0f7;;
-  }
-
-  .time {
-    font-size: 13px;
-  }
-
-  .date {
-    font-weight: bold;
-    font-size: 20px;
-  }
-
-  p.cal-date {
-    /*float: left;*/
-    margin-right: 20px;
-  }
-
-  p.cal-time img {
-    margin-left: 15px;
-  }
-
   .calendar img {
+    height: 13px;
     margin-right: 6px;
-    height: 100%;
-    width: 14px;
   }
 
   .calendar p.title {
@@ -661,12 +469,23 @@
   }
 
   .sec-title, .subtitle {
-    /*color: #ea5a50;*/
     font-weight: bold;
   }
 
-  .sec-title {
-    color: #ea5a50;
+  .new-title {
+    color: #d7d6d7;
+    font-weight: 200;
+  }
+
+  .rounded { border-radius: 50px; padding-left: 30px; padding-right:30px; }
+
+  h3.sec-title {
+    font-weight: normal;
+    background-color: #4A4F54;
+    padding: 12px 50px;
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
   }
 
   .subtitle {
@@ -678,143 +497,83 @@
     background-size: cover;
     background-color: #202944;
     background-repeat: no-repeat;
-    background-image: url('https://res.cloudinary.com/dmaestro/image/upload/v1667226608/tbra/ESGNewBanner.jpg');
+    background-image: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1671074179/capetownOD_kdeywx.jpg');
     background-position: top center;
     padding: 10px 10px 0px 30px;
-    height: 300px; 
+    height: 230px; 
   }
 
-  @media only screen and (min-width: 774px) {
-    .header-full {
-      height: 300px !important;
-    }
-  }
+  
 
   .logo-stack img {
     width: 80px;
   }
 
-  @media only screen and (min-width: 500px) {
-    .logo-stack img {
-      width: 100px !important;
-    }
-  }
-
-  @media only screen and (min-width: 774px) {
-    .logo-stack img {
-      width: 114px !important;
-    }
-  }
 
   .tour-img {
     width: 400px;
     max-width: 100%;
-    /*margin-right: 15px;
-    margin-bottom: 10px;*/
-    /*display: block;*/
-    /*margin: 0 auto;*/
   }
 
-  .profile .subtitle {
-    margin-bottom: 10px;
+  .col-4 { width: 25%; float: left; }
+
+  .collapse { border-collapse: collapse; }
+  .banner-menu a { color: #fff; margin-right: 15px; }
+  .banner-menu a:last-child { margin: 0; }
+  .capitalise { text-transform: uppercase;}
+  .learnmore { text-decoration: underline; color: black; }
+  .moves { border-collapse: separate; border-spacing: 10px; margin-left: -10px;}
+  .moves td {
+    background: #353A4C;
+    color: #fff;
+    border-right: 5px solid #CDAD7D;
+    width: 50%;
+    padding: 10px;
+    vertical-align: top;
   }
-
-  .profile p:not(.subtitle) {
-    font-size: 15px;
-    margin-top: -6px;
-  }
-
-  .profile img {
-    float: left;
-    margin-right: 16px;
-    border: 1px solid #cfcfcf;
-    padding: 5px;
-    width: 128px;
-    height: 157px;
-    margin-bottom: 0px;
-    object-fit: cover;
-  }
-
-  .wide-boxheader {
-    background: #1c2132;
-  }
+  .moves td a { text-decoration: underline; color: #fff;}
+  .spaced p { margin-bottom: 7px; }
+  .spaced p.text-danger { margin-bottom: 0; }
 
 
-  .styled-table {
-    border-collapse: collapse;
-    margin: 0;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    width: 100%;
-    background:  #fff;
-  }
+  .bg-dawn { background-color: #CDDAE6; }
+  .bg-tender { background-color: #6E8498; }
+  .bg-dusk { background-color: #4A4F54; }
+  .bg-mustard { background-color: #CDAD7D !important; }
+  .bg-blue { background-color: #202945; }
+  .text-dawn { color: #CDDAE6; }
+  .text-tender { color: #6E8498; }
+  .text-dusk { color: #4A4F54; }
+  .text-mustard { color: #CDAD7D; }
+  .text-blue { color: #202945; }
+  .text-brown { color: #96522D; }
 
-  .styled-table tr:nth-child(even) { background-color: #eef0f7; }
+  .mb-20 { margin-bottom: 20px; }
+  .mb-10 { margin-bottom: 10px; }
+  .mt-10 { margin-top: 10px !important; }
+  .mt-5 { margin-top: 10px !important; }
+  .thin { font-weight: 200; }
 
-  .styled-table thead th {
-    background: #515b7b;
-    color: #ffffff;
-    text-align: left;
-    border: 1px solid #515b7b;
-  }
+  .fs-12 { font-size: 12px; }
+  .fs-14 { font-size: 14px; }
+  .fs-16 { font-size: 16px; }
+  .fs-18 { font-size: 18px; }
+  .fs-22 { font-size: 22px; }
+  .fs-24 { font-size: 24px; }
+  .fs-26 { font-size: 26px; }
+  .fs-32 { font-size: 32px; }
+  .fs-40 { font-size: 40px; }
+  .uppercase { text-transform: uppercase; }
 
-  .styled-table td {
-    padding: 4px 15px;
-  }
-
-
-  .styled-table tbody tr, .styled-table td {
-    border: 1px solid #c6cfe5;
-  }
-
-  .styled-table th { padding: 12px 15px; border: none;}
-
-  .styled-table tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
-  }
-
-
-  .tr-odd { background: #eef0f7 }
-  .tr-even { background: #fff; }
-
-
-  /*body { background: #d2ddc9; }*/
-
-  ul.bullet-img img {
-    height: 20px;
-  }
-
-  ul.bullet-img li {
-    margin-top: 10px;
-  }
-
-  ul.bullet-img {
-    list-style: none;
-    padding-left: 15px;
-    margin-top: 20px;
-  }
-
-  ul.bullet-img p {
-    margin-left: 30px;
-    margin-top: -21px;
-  }
-
-  .bullet-table { border-spacing: 0 15px; margin-top: 10px; }
-  .bullet-table tr { vertical-align: middle; }
-  /*.bullet-table img { margin-top: 7px; }*/
-  .bullet-table td:first-child { padding-right: 15px; }
-
+  .newpadding { padding: 40px 50px; }
 
   </style>
 </head>
 
-<body bgcolor="#f6f8f1">
-<table width="100%" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0">
+<body bgcolor="#eee">
+<table width="100%" bgcolor="#eee" border="0" cellpadding="0" cellspacing="0">
 
-
-
-
+  
   
 
 
@@ -823,134 +582,153 @@
 
 <tr>
   <td>
-    <!--[if (gte mso 9)|(IE)]>
-      <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td>
-    <![endif]-->
-    <a href="https://events.eventzilla.net/e/esg-certificate--2138572816">
-      <table class="full-banner" width="100%">
-         <tr class="header-full">
-          <td bgcolor="transparent" class="secpadding borderbottom">
-          </td>
-        </tr>
-      </table>
-    </a>
     <table bgcolor="#fff" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
 
-
-      <tr>
+      <!-- <tr style="background: url('https://res.cloudinary.com/tbra/image/upload/v1680511486/EsgAnnouncement_uzhrvz.jpg'); background-size: cover; background-position: bottom;">
         <td class="innerpadding">
-          <table width="90%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
+          <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
             <tr>
-              <td class="bodycopy">
-
-                <p>Dear [[FIRSTNAME]],</p>
-                <br />
-
-                <p>With only four seats left, here's a reminder to take advantage of our early bird discount and save $100 to secure your seat for the upcoming Environmental, Social & Governance (ESG) Certificate Programme.</p>
-
-                <a href="https://events.eventzilla.net/e/esg-certificate--2138572816" class="primary-btn" style="text-align: center !important;">Register Now</a>
-
-
-                <br /><br/><br/>
-                <h2 class="sec-title">What to expect</h2>
-
-                <!-- <img src="https://res.cloudinary.com/dmaestro/image/upload/v1667309189/tbra/esgkeylearning.png"> -->
-
-                <table class="bullet-table">
-                  <tr>
-                    <td><div class="roundimg"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:ea5a50,e_colorize:100/v1661163687/tbra/biz_icons/coin.png" alt></div></td>
-                    <td>
-                      <p>Understand the factors and map out the various stakeholders driving ESG momentum globally</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><div class="roundimg"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:ea5a50,e_colorize:100/v1661163685/tbra/biz_icons/balance.png" alt></div></td>
-                    <td>
-                      <p>Explore the role of sustainability regulations and how they drive corporate strategy</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><div class="roundimg"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:ea5a50,e_colorize:100/v1661163684/tbra/biz_icons/target.png" alt></div></td>
-                    <td>
-                      <p>Discover the key components of an ESG action plan and understand ways to create plans centered on key themes that are material to your business</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><div class="roundimg"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:ea5a50,e_colorize:100/v1661163685/tbra/biz_icons/notebook.png" alt></div></td>
-                    <td>
-                      <p>Study the key reporting frameworks needed to develop an effective governance model</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td><div class="roundimg"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:ea5a50,e_colorize:100/v1661163686/tbra/biz_icons/growth.png" alt></div></td>
-                    <td>
-                      <p>Explore the value-creating benefits of ESG that support financial sustainability</p>
+              <td>
+                <table width="100%" height="320px">
+                  <tr style="vertical-align: top;">
+                    <td><a href="https://theboardroomafrica.com"><img src="https://res.cloudinary.com/tbra/image/upload/v1673525492/logos/logo-primary_rozzav.png" style="width: 100px;"></a></td>
+                    <td class="text-right banner-menu">
                     </td>
                   </tr>
                 </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr> -->
 
-                <!-- <table class="card-table no-bg" style="width: 100%; table-layout: fixed; border-collapse: separate; width: calc(100% + 20px); margin-left: -10px; border-spacing: 10px;">
-                  <tr style="vertical-align: baseline;">
-                    <td rowspan="1" class="bodycopy table-col col-left">
-                      <div class="icon-card calendar">
-                        <p>Understand the factors and map out the various stakeholders driving ESG momentum globally</p>
-                      </div>
+      <tr>
+        <td>
+          <img src="https://res.cloudinary.com/tbra/image/upload/v1680795489/BAnnerESG_mgwlnt.jpg">
+        </td>
+      </tr>
+
+
+
+
+      <tr bgcolor="#F8F8F8">
+        <td>
+          <div class="newpadding">
+            <p>The Environmental, Social and Governance (ESG) Certificate programme is back for a second cohort by popular demand, with the new cohort launching in August 2023.</p>
+            <br/>
+            <p>Did you know that 95% of all leadership and investment decisions will be shaped by ESG strategy by 2035? Prepare to lead the future by joining this 5-week certificate programme to understand what it takes to adapt, transform, and authentically lead in our new global context.</p>
+            <br/>
+            <p>Also joining our roster of global experts is Alison Taylor, Clinical Professor at NYU Stern School of Business and one of LinkedIn's 2022 top voices on sustainability.</p>
+            <br/>
+            <p>Learn more and apply today!</p>
+            
+            <br/>
+            <div class="text-center">
+              <a class="learnmore" style="color: #6E8498;" href="https://theboardroomafrica.com/wp-content/uploads/2023/04/ESG-Cohort-2-Brochure.pdf">DOWNLOAD BROCHURE</a>
+              <br/>
+              <a href="https://esgcertificateapplicationform.paperform.co/" class="primary-btn bg-mustard rounded mt-10">Apply</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          <br/>
+          <h3 class="sec-title capitalise">About the programme</h3>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="newpadding" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1680512370/ESGAbout_r7fvnq.jpg') no-repeat; background-size: cover;">
+          <br/>
+          <p class="text-white">TheBoardroom Africa’s ESG Certificate programme targets women directors and executives looking to develop their understanding of ESG issues and concepts, equipping them with the tools required to drive ESG agendas in their organisations. This expert-led curriculum incorporates ESG theoretical frameworks and trends within a global context, with practical inputs intended to support executives as they review their roles in driving the ESG agenda.</p>  
+          <br/>
+        </td>
+      </tr>
+
+      <tr bgcolor="#F8F8F8">
+        <td class="newpadding">
+          <h3 class="text-center fs-32" style="color: #6E8498;">The programme will give you the <br/>
+          tools you need to:</h3>
+          <img src="https://res.cloudinary.com/tbra/image/upload/v1680786290/ESGIcons_cbodj1.png">
+
+          <br/><br/>
+          <div class="text-center">
+            <a class="learnmore" style="color: #6E8498;" href="https://theboardroomafrica.com/wp-content/uploads/2023/04/ESG-Cohort-2-Brochure.pdf">DOWNLOAD BROCHURE</a>
+            <br/>
+            <a href="https://esgcertificateapplicationform.paperform.co/" class="primary-btn bg-mustard rounded mt-10">Apply</a>
+          </div>
+        </td>
+      </tr>
+
+      <tr bgcolor="#DADEDA">
+        <td class="newpadding">
+          <br/>
+          <p class="libreb text-tender fs-16 text-center">"Through TBrA's ESG certification program, I was exposed to practical approaches that organisations like mine have taken to adopt and implement sustainability within their space. I better understand how to focus on what matters to my business while successfully pushing the ESG agenda and monitoring our progress as we grow. I especially loved the depth of the training content, the supporting resources shared and the very experienced facilitators. I would recommend the programme to any woman leader considering it" <br/><br/>
+            <b>- Vivian Akwuaka, Group Head, Quality and Sustainability, Iwosan Investments Limited</b>
+          </p>
+          <br/>
+        </td>
+      </tr>
+
+      <tr>
+        <td><br/><br/></td>
+      </tr>
+
+      <tr bgcolor="#dee3e7">
+        <td>
+          <img src="https://res.cloudinary.com/tbra/image/upload/v1680792996/ESGFaculty_xoub7m.jpg">
+        </td>
+      </tr>
+      <tr bgcolor="#dee3e7">
+        <td>
+          <br/>
+          <img src="https://res.cloudinary.com/tbra/image/upload/v1680798060/InstructorsESG_dtue59.jpg">
+        </td>
+      </tr>
+      <tr bgcolor="#C3C5CC">
+        <td>
+          <a href="mailto:esg@theboardroomafrica.com">
+            <img src="https://res.cloudinary.com/tbra/image/upload/v1680792862/FlexESG_bduhdo.jpg">
+          </a>
+        </td>
+      </tr>
+
+
+      <tr bgcolor="#C3C5CC">
+        <td>
+          <br/>
+            <div class="text-center"><a href="https://esgcertificateapplicationform.paperform.co/" class="primary-btn bg-mustard rounded mt-10">Apply</a></div>
+          <br/>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="footer" bgcolor="#44525f">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="center" class="footercopy">
+                &reg; TheBoardroom Africa
+              </td>
+            </tr>
+            <tr>
+              <td align="center" style="padding: 20px 0 0 0;">
+                <table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
+                      <a href="https://twitter.com/TBRAfrica">
+                        <img src="https://files.constantcontact.com/bdaf4e1c701/f1a51b50-31dc-434f-8655-154ddc047e73.png?ver=1595159408000" width="37" height="37" alt="Facebook" border="0" />
+                      </a>
                     </td>
-
-                    <td rowspan="1" class="bodycopy table-col col-left">
-                      <div class="icon-card calendar">
-                        <p>Explore the role and effectiveness of regulation in sustainability agendas in corporate strategy</p>
-                      </div>
+                    <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
+                      <a href="https://www.linkedin.com/company/theboardroom-africa">
+                        <img src="https://files.constantcontact.com/bdaf4e1c701/5fa121da-baca-4710-a35e-e56567018383.png?ver=1595159408000" width="37" height="37" alt="LinkedIn" border="0" />
+                      </a>
                     </td>
                   </tr>
-                  <tr style="vertical-align: baseline;">
-                    <td rowspan="1" class="bodycopy table-col col-left">
-                      <div class="icon-card calendar">
-                        <p>Study the key reporting frameworks needed to develop an effective governance model</p>
-                      </div>
-                    </td>
-
-                    <td rowspan="1" class="bodycopy table-col col-left">
-                      <div class="icon-card calendar">
-                        <p>Explore the value-creating benefits of ESG that support financial sustainability</p>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr style="vertical-align: baseline;">
-                    <td rowspan="1" class="bodycopy table-col col-left">
-                      <div class="icon-card calendar">
-                        <p>Discover the key component of an ESG action plan and understand ways to create action plans centered on key themes that are material to your business</p>
-                      </div>
-                    </td>
-                  </tr>
-                </table> -->
-
-
-
-
-
-                <!-- <p><b>Take advantage of our early bird discount!</b></p>
-                <p><em>(Valid until 30 November 2022)</em></p> -->
-
-                <a href="https://theboardroomafrica.com/wp-content/uploads/2022/10/ESG-Certificate-Brochure.pdf" class="primary-btn bg-tbra-gold" style="text-align: center !important;">Learn More</a>
-
-                <!-- <a href="https://events.eventzilla.net/e/esg-certificate--2138572816" class="primary-btn" style="text-align: center !important; margin-left: 10px;">Register</a> -->
-
-                <br /><br /><br />
-                <!-- <div class="hr"></div> -->
-                <!-- <br /> -->
-                <h2 class="sec-title">Financial Assistance </h2>
-                <br />
-
-                <p>Take advantage of the early bird discount by signing up now. If you require some payment flexibility, we offer a range of payment plans. Please send an email to <a href="mailto:esg@theboardroomafrica.com">esg@theboardroomafrica.com</a> for more information.</p>
-                <br /> 
-
-                <p>Join us and champion the ESG agenda within your organisation!</p>
-                
-                <a href="https://events.eventzilla.net/e/esg-certificate--2138572816" class="primary-btn" style="text-align: center !important;">Register Now</a>
-
+                </table>
               </td>
             </tr>
           </table>
@@ -958,43 +736,9 @@
       </tr>
 
     </table>
-    <!--[if (gte mso 9)|(IE)]>
-          </td>
-        </tr>
-    </table>
-    <![endif]-->
+    
     </td>
   </tr>
-
-  <tr>
-      <td class="footer" bgcolor="#44525f">
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td align="center" class="footercopy">
-              &reg; TheBoardroom Africa
-            </td>
-          </tr>
-          <tr>
-            <td align="center" style="padding: 20px 0 0 0;">
-              <table border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
-                    <a href="https://twitter.com/TBRAfrica">
-                      <img src="https://files.constantcontact.com/bdaf4e1c701/f1a51b50-31dc-434f-8655-154ddc047e73.png?ver=1595159408000" width="37" height="37" alt="Facebook" border="0" />
-                    </a>
-                  </td>
-                  <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
-                    <a href="https://www.linkedin.com/company/theboardroom-africa">
-                      <img src="https://files.constantcontact.com/bdaf4e1c701/5fa121da-baca-4710-a35e-e56567018383.png?ver=1595159408000" width="37" height="37" alt="LinkedIn" border="0" />
-                    </a>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
 </table>
 </body>
 </html>

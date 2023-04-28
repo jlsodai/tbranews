@@ -67,6 +67,7 @@
   .text-info { color: #5bc0de; }
   .text-warning { color: #f0ad4e; }
   .text-danger { color: #EA5A4F; }
+  
 
   .bg-primary { background-color: #0275d8; }
   .bg-success { background-color: #5cb85c; }
@@ -165,6 +166,11 @@
     h1, h2, p, a, ul, li, * {
         margin: 0;
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-decoration: none;
+    }
+
+    .libreb, .libreb * {
+      font-family: "Libre Baskerville", serif, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
         text-decoration: none;
     }
 
@@ -478,10 +484,10 @@
   }
 
   .sec-title span {
-    background-color: #4A4F54;
-    padding: 8px 120px 8px 20px;
+    background-color: #EBE5DC;
+    padding: 12px 80px;
     font-size: 16px;
-    color: #fff;
+    font-weight: bold;
   }
 
   .subtitle {
@@ -532,7 +538,7 @@
   .spaced p.text-danger { margin-bottom: 0; }
 
 
-  .bg-dawn { background-color: #CDDAE6; }
+  .bg-dawn { background-color: #DADEDA; }
   .bg-tender { background-color: #6E8498; }
   .bg-dusk { background-color: #4A4F54; }
   .bg-mustard { background-color: #CDAD7D !important; }
@@ -543,6 +549,7 @@
   .text-mustard { color: #CDAD7D; }
   .text-blue { color: #202945; }
   .text-brown { color: #96522D; }
+  .text-green { color: #0D3928; }
 
   .mb-20 { margin-bottom: 20px; }
   .mb-10 { margin-bottom: 10px; }
@@ -557,7 +564,21 @@
   .fs-22 { font-size: 22px; }
   .fs-24 { font-size: 24px; }
   .fs-26 { font-size: 26px; }
+  .fs-30 { font-size: 30px; }
+  .fs-34 { font-size: 34px; }
+  .fs-40 { font-size: 40px; }
   .uppercase { text-transform: uppercase; }
+  .newpadding { padding: 40px 50px; }
+
+  .inline-block { display: inline-block; }
+
+  hr {
+     border: 1px solid #CDAD7D;
+     margin: 30px auto;
+     width: 50%;
+  }
+
+  .border-collapse { border-collapse: collapse; }
 
   </style>
 </head>
@@ -576,151 +597,94 @@
   <td>
     <table bgcolor="#fff" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
 
-      <tr style="background: url('https://res.cloudinary.com/tbra/image/upload/v1680102185/communityBanner_vsussh.jpg'); background-size: cover;">
-        <td class="innerpadding">
-          <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td>
-                <table width="100%" height="320px">
-                  <tr style="vertical-align: top;">
-                    <td><a href="https://theboardroomafrica.com"><img src="https://res.cloudinary.com/tbra/image/upload/v1673525492/logos/logo-primary_rozzav.png" style="width: 100px;"></a></td>
-                    <td class="text-right banner-menu">
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
+      <tr style="background: url('https://res.cloudinary.com/tbra/image/upload/v1680102185/communityBanner_vsussh.jpg'); background-size: cover; vertical-align: top;">
+        <td class="newpadding" height="320px">
+          <a href="https://theboardroomafrica.com"><img src="https://res.cloudinary.com/tbra/image/upload/v1673525492/logos/logo-primary_rozzav.png" style="width: 100px;"></a>
         </td>
       </tr>
-
-
-
 
       <tr>
-        <td class="innerpadding">
-          <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td class="bodycopy">
-                <br />
-                <h1 class="new-title text-center">Network</h1>
-                <br /><br />
-
-                <h3 class="sec-title capitalise"><span>Annual gathering in Egypt!</span></h3>
-                <br />
-
-                <table class="collapse" width="100%">
-                  <tr>
-                    <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1680167451/Egypt_muhqxz.jpg'); background-size: cover;">
-                    </td>
-                    <td style="padding: 0 20px">
-                      <br />
-                      <p class="mb-10">The cornerstone of our community is connection and collaboration, so it's fitting that our inaugural Annual Gathering is anchored on the theme of "<strong>Uniting to Build New Frontiers</strong>." We recognise that each leader is on their own journey, and the power of sharing resources, networks and opportunities is what will allow us all to accelerate our impact in and beyond the boardroom. Uniting our journeys to build new frontiers is a call to action for all of us to achieve more, and build strong legacies by working together. Save the date and register your interest to learn more.</p>
-                      <div class="text-center"><a href="https://p6obiunn.paperform.co" class="primary-btn bg-mustard rounded mt-10">Register interest</a></div>
-                      <br />
-                    </td>
-                  </tr>
-                </table>
-
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-
-      <tr bgcolor="#F3F6F8">
         <td>
-          <img src="https://res.cloudinary.com/tbra/image/upload/v1680170712/W2W_umrlry.jpg">
-          <div class="text-center mt-10"><a href="https://bit.ly/WTW2023ed" class="primary-btn bg-blue rounded mt-10">Read the report</a></div>
-          <br/>
+          <br/><br/>
+          <h1 class="new-title text-center">Network</h1>
+          <br/><br/>
         </td>
       </tr>
 
 
-
-      <tr>
-        <td class="innerpadding">
-          <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
+      <tr bgcolor="#EAEAF8">
+        <td>
+          <table style="border-collapse: collapse;">
             <tr>
-              <td>
-                <br/>
-                <h3 class="sec-title capitalise"><span>Membership Moves</span></h3>
-                <br /><br/>
-                <p class="thin fs-16">Congratulations to the following members on their recent achievements; from board appointments and executive moves to book launches and awards.</p>
-                <br/>
-                <p class="thin fs-16">Email us at <b><a style="color: black;" href="mailto:info@theboardroomafrica.com">info@theboardroomafrica.com</a></b> to be featured in our next edition of Membership Moves.</p>
-
-                <br/>
-
-                <table class="moves">
-                  <tr>
-                    <td>
-                      <p><a href="https://www.linkedin.com/in/nassima-sadar-2302123?originalSubdomain=mu">Nassima Sadar</a> was named a 2023 Obama Foundation Leader.</p>
-                    </td>
-                    <td>
-                      <p><a href="https://www.linkedin.com/in/naominjeri/?originalSubdomain=ci">Naomi Wanjiru Njeri</a> was appointed the Treasurer and Chair of the Community Health Impact Coalition Finance Committee.</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p><a href="https://www.linkedin.com/in/dr-anino-emuwa/?originalSubdomain=fr">Dr Anino Emuwa</a> was named a LinkedIn Top Voice for Gender Equity.</p>
-                    </td>
-                    <td>
-                      <p><a href="https://www.linkedin.com/in/theehime/">Ehime Eigbe</a> secured a $250,000 investment from Robert Herjavec for her company Sweetkiwi on Shark Tank.</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p><a href="https://www.linkedin.com/in/wanjiku-mathenge-04399432/?originalSubdomain=rw">Dr Ciku Mathenge</a> was appointed President of the African Ophthalmology Council.</p>
-                    </td>
-                    <td>
-                      <p><a href="https://www.linkedin.com/in/yawahansen-quao/">Yawa Hansen-Quao</a> published her latest book, The Leading Lady Way.</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p><a href="https://www.linkedin.com/in/phuthi-m-9b08b38/?trk=organization_guest_main-feed-card_reshare-text&amp;originalSubdomain=za">Phuthi Mahanyele-Dabengwa</a> was appointed to the board of the African Philanthropy Forum.</p>
-                    </td>
-                    <td>
-                      <p><a href="https://www.linkedin.com/in/vanessamoungar/">Vanessa Moungar</a> was appointed to the board of the African Philanthropy Forum.</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p><a href="https://www.linkedin.com/in/tokunbohishmael/?originalSubdomain=ng">'Tokunboh Ishmael</a> obtained The Institute of Directors (IoD)'s Chartered Director qualification.</p>
-                    </td>
-                    <td>
-                      <p><a href="https://www.linkedin.com/in/tunbosun-afolayan/">Tunbosun Afolayan</a> obtained Nigeria&rsquo;s first Strategic Communication Management Professional (SCMP) Certification.</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p><a href="https://www.linkedin.com/in/latanyamappfrett/">Latanya Mapp Frett</a> published her latest book, The Everyday Feminist.</p>
-                    </td>
-                    <td>
-                      <p>
-                        <a href="https://www.linkedin.com/in/ndidi-okonkwo-nwuneli-840696a/">Ndidi Nwuneli</a> was appointed as an Independent Non-Executive Director at Stanbic IBTC Holdings Plc.
-                      </p>
-                    </td>
-                  </tr>
-                </table>
+              <td height="40px">
+                <h3 class="sec-title inline-block"><span>NEW REPORT</span></h3>
               </td>
+              <td width="32%" rowspan="3">
+                <a href="https://bit.ly/40gjfaB"><img src="https://res.cloudinary.com/tbra/image/upload/v1682586802/EgyptBDI_p7wabs.jpg" style="height: 457px; object-fit: cover; width: 100%; object-position: bottom;"></a>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-left: 40px;">
+                <p class="fs-18 thin" style="padding-right: 20px; line-height: 1.7;">The Board Diversity Index (BDI) report is an annual country-level report on the gender diversity makeup of listed boards across the continent. This month, TBrA, in partnership with the Egyptian Stock Exchange (EGX), released new data for Egypt, which reveals sustained growth in the prioritisation of gender diversity in Egypt.</p>
+              </td>
+            </tr>
+            <tr>
+              <td height="70px" style="padding: 0 20px 0 40px;"><img src="https://res.cloudinary.com/tbra/image/upload/v1682586802/communityLogos_t4aanl.png"></td>
+            </tr>
+            <tr>
+              <td colspan="2"><img src="https://res.cloudinary.com/tbra/image/upload/v1682589874/BDIBorder_f5ytvx.jpg"></td>
             </tr>
           </table>
         </td>
       </tr>
-
 
 
       <tr>
         <td>
-          <img src="https://res.cloudinary.com/tbra/image/upload/v1680166974/SpealFeat_tin4jm.jpg">
+          <br/><br/><br/><br/>
+          <h3 class="sec-title capitalise"><span style="background: #403E3A; color: #fff; font-weight: 200;">Membership Moves</span></h3>
+          <!-- <br /> -->
+          <div class="newpadding">
+            <p class="thin fs-16">Congratulations to the following members on their recent achievements, from board appointments and executive moves to book launches and awards. Email <b><a style="color: black;" href="mailto:info@theboardroomafrica.com">info@theboardroomafrica.com</a></b> to be featured in our next edition of Membership Moves.</p>
+            
+            <br/>
+            
+            <table class="moves">
+              <tr>
+                <td>
+                  <p><a href="https://www.linkedin.com/in/toniakariuki/">Tonia Kariuki</a> was appointed to the board of the Communications Authority of Kenya.</p>
+                </td>
+                <td>
+                  <p><a href="https://www.linkedin.com/in/chioma-sideso-68020b8/">Chioma Sideso</a> obtained The Institute of Directors (IoD)'s Chartered Director Award.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><a href="https://www.linkedin.com/in/olive-lumonya-352908a7/">Olive Lumonya</a> was appointed as an Independent Non-Executive Director at UAP Old Mutual and received the Africa Women's Leaders Award from the World Women Leadership Congress & Awards in Mauritius.</p>
+                </td>
+                <td>
+                  <p><a href="https://www.linkedin.com/in/audrey-abakah-4b925915/">Audrey Abakah,</a> <a href="https://www.linkedin.com/in/sheila-wristberg-b10a3515/">Sheila Wristberg</a>, <a href="https://www.linkedin.com/in/pattykaruaihemartin/">Patty Karuaihe-Martin</a> and <a href="https://www.linkedin.com/in/gladness-deogratias-02790084/">Gladness Deogratias </a>were named among 2023 Top 10 Women to Watch in Banking, Finance and Investment by Angaza Awards</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><a href="https://www.linkedin.com/in/carol-koech/">Carol Koech</a> was appointed to the board of the French Chamber of Commerce Kenya.</p>
+                </td>
+                <td>
+                  <p><a href="https://www.linkedin.com/in/ranya-a-halim-reda-ph-d-b82247b9/">Ranya Halim</a> served as Volunteer Lecturer at Accord University.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><a href="https://www.linkedin.com/in/isis-nyong-o-madison-b8a203/">Isis Nyongo'o </a>was appointed to the board of LGT Venture Philanthropy.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
 
-          <div class="text-center mt-10"><a href="https://www.forbesafrica.com/woman/2023/03/15/50-over-50-success-at-every-age-2/" class="primary-btn bg-blue rounded mt-10">SEE THE LIST</a></div>
-          <br/>
         </td>
       </tr>
+
 
       <tr>
         <td>
@@ -729,73 +693,67 @@
         </td>
       </tr>
 
+
+
+
       <tr>
         <td>
-          <br /><br/>
+          <br/><br/><br/>
+          <h3 class="sec-title capitalise"><span style="background: #403E3A; color: #fff; font-weight: 200; padding-left: 50px;">Annual gathering in Egypt!</span></h3>
+          <br />
+
+          <div class="newpadding" style="padding-top: 0;">
+            <table class="collapse" width="100%">
+              <tr>
+                <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1680167451/Egypt_muhqxz.jpg'); background-size: cover;">
+                </td>
+                <td style="padding: 0 20px">
+                  <br />
+                  <p class="mb-10">The cornerstone of our community is connection and collaboration, so it's fitting that our inaugural Annual Gathering is anchored on the theme of "<strong>Uniting to Build New Frontiers</strong>." We recognise that each leader is on their own journey, and the power of sharing resources, networks and opportunities is what will allow us all to accelerate our impact in and beyond the boardroom. Uniting our journeys to build new frontiers is a call to action for all of us to achieve more, and build strong legacies by working together. Save the date and register your interest to learn more.</p>
+                  <div class="text-center"><a href="https://p6obiunn.paperform.co" class="primary-btn bg-mustard rounded mt-10">Register interest</a></div>
+                  <br />
+                </td>
+              </tr>
+            </table>
+          </div>
+
         </td>
       </tr>
 
-    
+
       <tr>
-        <td class="innerpadding">
-          <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
+        <td class="newpadding">
+          <table class="collapse" width="100%" style="">
+            <h1 class="new-title text-center">Insights</h1>
+            <br/>
             <tr>
-              <td>
-                <table class="collapse" width="100%" style="">
-                  <h1 class="new-title text-center">Insights</h1>
-                  <br/>
-                  <tr>
-                    <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1680095277/webinar_replay_xuvqwr.jpg'); background-size: cover;">
-                    </td>
-                    <td style="padding: 0 20px">
-                      <br /><br/>
-                      <p class="mb-10">Despite being one of the most important teams in an organisation, the Board often undergoes the least rigour when it comes to its composition, training and building the right culture. In this webinar, we discover how the membership of organisational boards is a key determinant of how effective they are in governing their organisations.</p>
-                      <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/media_center/folder/b18deaeb-568a-4dab-92fc-5ba86c4ed6f8" class="primary-btn bg-dark rounded mt-10">Watch Replay</a></div> <!-- pending -->
-                      <br/>
-                      <br />
-                    </td>
-                  </tr>
-                </table>
+              <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1682591564/DiversityBoost_mqlnab.jpg'); background-size: 327px;">
+              </td>
+              <td style="padding: 0 20px">
+                <br/>
+                <p class="mb-10">Creating a diverse and inclusive culture is as important for organisations today as anticipating disruptive issues like cyber risk and the future of talent and transformative issues such as environmental, social, and governance. An effective diverse board is critical to providing oversight on these evolving topics and guiding the organisation to act on inclusion.</p>
+                <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/page/news-new" class="primary-btn bg-mustard rounded mt-10" style="padding: 10px 30px">Read</a></div>
+                <br/>
               </td>
             </tr>
           </table>
-        </td>
-      </tr>
-      <tr bgcolor="#EEEFEF">
-        <td class="innerpadding">
-          <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
+          <br />
+          <table class="collapse" width="100%" style="background: #fff;">
             <tr>
-              <td>
-                <table class="collapse" width="100%" style="background: #fff;">
-                  <tr>
-                    <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1680095783/productive_jfe9id.jpg'); background-position: center top; background-size: 357px;">
-                    </td>
-                    <td style="padding: 0 20px">
-                      <br />
-                      <p class="mb-10">For business leaders looking to unlock performance, there’s something to be learned by observing the companies at the top of the productivity heap. These frontier firms are usually larger than others and present across most sectors and geographies. What they have in common is a playbook with the following four elements.</p>
-                      <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/page/news-new" class="primary-btn bg-mustard rounded mt-10" style="padding: 10px 30px">Read</a></div>
-                      <br />
-                    </td>
-                  </tr>
-                </table>
+              <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1682591564/FailureLessons_yuxemm.jpg'); background-size: 305px;">
+              </td>
+              <td style="padding: 0 20px">
                 <br />
-                <table class="collapse" width="100%" style="background: #fff;">
-                  <tr>
-                    <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1680180463/womenRacedBoard_kmwk6i.jpg'); background-position: center top; background-size: 355px;">
-                    </td>
-                    <td style="padding: 0 20px">
-                      <br />
-                      <p class="mb-10">Women who become company chairs disproportionately get there after being a senior independent director, according to the Global Institute for Women’s Leadership at King’s College London. We have to ask if that is because men are judged on their potential and women on their experience, says Gillard. The answer is almost certainly yes.</p>
-                      <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/page/news-new" class="primary-btn rounded mt-10 bg-mustard" style="padding: 10px 30px">Read</a></div>
-                      <br />
-                    </td>
-                  </tr>
-                </table>
+                <p class="mb-10">Being a member of the leadership team is one of the most challenging, demanding roles because these people carry the weight of a workplace on their shoulders every day. From ensuring the company's financial health to managing employees, they must be strategic thinkers, problem-solvers and visionary leaders.</p>
+                <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/page/news-new" class="primary-btn rounded mt-10 bg-mustard" style="padding: 10px 30px">Read</a></div>
+                <br />
               </td>
             </tr>
           </table>
         </td>
       </tr>
+
+
 
       <tr>
         <td>
@@ -808,175 +766,134 @@
 
       <tr bgcolor="">
         <td>
-          <h3 class="sec-title"><span style="background: #E1DEDC; color: #202945; border-right: 5px solid #CDAD7D; padding: 10px 10px 10px 50px; font-size: 24px;">Board Roles</span></h3>
+          <h3 class="sec-title"><span style="background: #E1DEDC; color: #202945; border-right: 5px solid #CDAD7D; padding: 10px 10px 10px 50px; font-weight: 200; font-size: 24px;">Board Roles</span></h3>
           <br/>
         </td>
       </tr>
 
 
       <tr bgcolor="#F8F8F8">
-        <td class="innerpadding">
-          <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td>
-                
-                <ul>
-                  <li>Taeillo - ongoing</li>
-                  <li>AgroEknor - ongoing</li>
-                  <li>Ubongo International, -  Applications closed, Reviewing</li>
-                  <li>Prudential Zenith Life Insurance - Applications closed, Reviewing</li>
-                  <li>MTN Ghana - Mobile Money Limited - Applications closed, Reviewing</li>
-                  <li>Webcor Group - Applications closed, Interviewing</li>
-                  <li>Advans Group - Applications Closed</li>
-                </ul>
+        <td class="newpadding">
+          <ul>
+            <li>Prudential Zenith Life Insurance - Applications closed, Reviewing</li>
+            <li>MTN Ghana - Mobile Money Limited - Applications closed, Reviewing</li>
+            <li>Webcor Group - Applications closed, Reviewing</li>
+            <li>African Risk Capacity - Applications closed, Reviewing</li>
+          </ul>
 
-                <br/>
+          <br/>
 
-                <div class="text-center">
-                  <a href="https://membersforum.theboardroomafrica.com/opportunities" class="premium-btn bg-mustard rounded">Apply</a>
-                  <br /><br />
-                  <a class="learnmore uppercase" href="https://tbrafrica.paperform.co/">Recommend Someone</a>
-                  <br /><br />
-                </div>
-              </td>
-            </tr>
-          </table>
+          <div class="text-center">
+            <a href="https://membersforum.theboardroomafrica.com/opportunities" class="premium-btn bg-mustard rounded">Apply</a>
+            <br /><br />
+            <a class="learnmore uppercase" href="https://tbrafrica.paperform.co/">Recommend Someone</a>
+            <br /><br />
+          </div>
         </td>
       </tr>
+
 
 
       <tr bgcolor="#EEEFEF">
-        <td class="innerpadding">
-          <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
+        <td class="newpadding">
+          <h1 class="new-title text-center mb-20" style="color: #a5a7a9;">Board Trends</h1>
+          <table class="collapse" width="100%" style="background: #fff;">
             <tr>
-              <td>
-                <h1 class="new-title text-center mb-20" style="color: #a5a7a9;">Board Trends</h1>
-                <table class="collapse" width="100%" style="background: #fff;">
-                  <tr>
-                    <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1680168148/BuildBoard_bgpeys.jpg'); background-position: center top; background-size: 430px;">
-                    </td>
-                    <td style="padding: 0 20px">
-                      <br />
-                      <p class="mb-10">"We have several openings on our board. Who knows someone we could add?" As a recruitment strategy, this is like asking an audience for someone to come on stage. A better approach is to start by doing an analysis of who is on your board, considering the various skills and experiences each of your board members brings to the governing body, and where you might have gaps in knowledge.</p>
-                      <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/media_center/folder/eb0f98c1-e1b3-4722-95fc-9784187cf201" class="primary-btn bg-mustard rounded mt-10" style="padding: 10px 30px">Read</a></div>
-                      <br />
-                    </td>
-                  </tr>
-                </table>
+              <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1682593186/BecomingNED_obokdj.jpg'); background-position: center top; background-size: 302px;">
+              </td>
+              <td style="padding: 0 20px">
                 <br />
-                <table class="collapse" width="100%" style="background: #fff;">
-                  <tr>
-                    <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1680099374/demands_on_corporate_boards_s0rdwf.jpg'); background-position: center bottom; background-size: 410px;">
-                    </td>
-                    <td style="padding: 0 20px">
-                      <br />
-                      <p class="mb-10">In the popular imagination, a corporate board seat looks like the cushiest position in business. Board members appear to get paid—often handsomely—to attend a few meetings a year and to nod knowingly as the chief executive pontificates on strategy. However, this is far from the case.</p>
-                      <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/media_center/folder/6d2523b8-1eed-4843-8243-b0bb8f413a7c" class="primary-btn rounded mt-10 bg-mustard" style="padding: 10px 30px">Read</a></div>
-                      <br />
-                    </td>
-                  </tr>
-                </table>
+                <p class="mb-10">Board composition is the subject of much debate throughout the world, while the role of the non-executive or independent director is becoming more onerous. Boards are seeking greater diversity among directors and are considering a broader pool of candidates.</p>
+                <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/media_center/folder/eb0f98c1-e1b3-4722-95fc-9784187cf201" class="primary-btn bg-mustard rounded mt-10" style="padding: 10px 30px">Read</a></div>
+                <br />
               </td>
             </tr>
           </table>
-        </td>
-      </tr>
-
-
-
-      <tr>
-        <td>
-          <br /><br/>
-          <h1 class="new-title text-center">Develop</h1>
           <br />
-          <a href="https://theboardroomafrica.com/wp-content/uploads/2023/02/TBR-Africa-2023-Group-Coaching-Catalogue.pdf"><img src="https://res.cloudinary.com/tbra/image/upload/v1680167286/GCBackground_r74w9t.jpg" /></a>
+          <table class="collapse" width="100%" style="background: #fff;">
+            <tr>
+              <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1682593186/BoardChairs_erqsbx.jpg'); background-position: center bottom; background-size: 295px;">
+              </td>
+              <td style="padding: 0 20px">
+                <br />
+                <p class="mb-10">Comparing the backgrounds and role structures of current chairs suggests that most boards—even those with strong DE&I or ESG performance—could benefit from significantly broadening their expectations about the role and who can fill it.</p>
+                <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/media_center/folder/6d2523b8-1eed-4843-8243-b0bb8f413a7c" class="primary-btn rounded mt-10 bg-mustard" style="padding: 10px 30px">Read</a></div>
+                <br />
+              </td>
+            </tr>
+          </table>
         </td>
       </tr>
-      <tr bgcolor="#EDE4D6">
+
+      <tr>
         <td>
-          <div class="text-center mt-10"><a href="https://membersforum.theboardroomafrica.com/events" class="primary-btn bg-mustard rounded mt-10">Sign up</a></div>
+          <br/><br/>
+          <h1 class="new-title text-center mb-20" style="color: #a5a7a9;">Board Trends</h1>
+        </td>
+      </tr>
+
+      <tr style="background: url('https://res.cloudinary.com/tbra/image/upload/v1682607453/GCBackG_rmnwiu.jpg'); background-size: cover;">
+        <td class="newpadding">
+          <div style="width: 400px;">
+            <h1 class="fs-34">Unpacking <br/> Microaggressions</h1>
+            <br/>
+            <p class="thin bg-dawn inline-block" style="padding: 5px 15px;">12 PM GMT- Wednesday, May 31</p>
+            <br/><br/>
+            <p>Of all the Diversity, Equity & Inclusion conversations, <b>Microaggressions</b> is probably the most contentious. This is because microaggressions are often unintentional and invisible to the perpetrator while being absolutely evident and negatively impactful for the victim. The psychological quagmire the subject creates for the accused, for allies, for observers and most importantly, for victims is all too real. Join us next month while we create a safe and open space to explore this.</p>
+            <br/>
+            <a href="https://theboardroomafrica.com/wp-content/uploads/2023/02/TBR-Africa-2023-Group-Coaching-Catalogue.pdf" class="learnmore">Download Catalogue</a>
+            <br/><br/>
+            <a href="https://membersforum.theboardroomafrica.com/networks/events/106185" class="primary-btn bg-mustard rounded mt-10" style="padding: 10px 30px">Sign Up</a>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <hr>
+        </td>
+      </tr>
+
+      <tr style="background: url('https://res.cloudinary.com/tbra/image/upload/v1682609515/OntologicalBg_w2bgax.jpg'); background-size: cover;">
+        <td class="newpadding text-white">
+          <br/>
+          <h1 class="fs-34 libreb text-mustard">Ontological Growth Experience</h1>
+          <div style="width: 400px;">
+            <br/><br/>
+            <p>Designed with the belief that organisational transformation must be anchored in authentic power, values-based, strengths-based and courageous leadership. This experience merges research and practice from neuroscience, psychology, biomimicry and ontology, offering delegates a unique opportunity to deeply transform themselves first and in turn to transform the teams and systems they lead.</p>
+            <br/><br/>
+            <a href="https://web.theboardroomafrica.com/wp-content/uploads/2023/04/Ontological-Growth-Experience-Brochure.pdf" class="learnmore text-white">Learn more</a>
+            <br/>
+            <p class="thin bg-dusk inline-block" style="padding: 8px 15px;">27 June - 2 August</p>
+            <a href="https://theboardroomafrica.com/onthological-growth-application" class="primary-btn bg-mustard" style="padding: 10px 30px">Apply</a>
+          </div>
           <br/>
         </td>
       </tr>
 
 
-      <tr>
-        <td class="innerpadding">
-          <br/>
-          <p class="text-center" style="font-size: 30px;"><b>Meet Cohort 11</b> — OPEN DOORS </p>
-        </td>
-      </tr>
 
-
-      <tr bgcolor="#EAEAEA">
-        <td class="innerpadding">
-          <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
+      <tr bgcolor="#d9deda">
+        <td>
+          <table class="border-collapse">
             <tr>
-              <td>
-                <p>Designed and delivered in partnership with the Institute of Directors UK (IoD), Open Doors is a globally recognised and accredited director certificate programme suited to existing and aspiring directors. The programme provides a comprehensive curriculum covering the essential components of leadership, strategy, finance and governance and offers additional insights into board dynamics and ontological leadership through curated workshops. Upon completion of the programme and fulfilment of requirements, participants will attain a degree-level equivalent Certificate in Company Direction, which serves as the first stage in the Chartered Director qualification pathway with the IoD. </p>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-<!--       <tr>
-        <td><img src="https://res.cloudinary.com/tbra/image/upload/v1680163974/ODCohort_vhfkdu.jpg"></td>
-      </tr>
- -->
-
-      <tr bgcolor="#DADEDA">
-        <td class="innerpadding" style="padding-top: 0;">
-          <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td class="bodycopy">
-                <br/><br/>
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1680163974/ODCohort_vhfkdu.jpg">
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <tr>
-        <td class="innerpadding" style="padding-top: 0;">
-          <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td class="bodycopy">
-                <br/><br/>
-                <h3 class="sec-title"><span style="padding-right: 30px" class="text-white">Upcoming Cohorts</span></h3>
+              <td class="newpadding text-green">
                 <br/>
-
-                <table width="100%" style="border-collapse: collapse;">
-                  <tr class="text-white" style="vertical-align: top;">
-                    <td class="spaced bg-tbra-blue" style="padding: 30px;" width="50%">
-                      <p><b>OPEN DOORS COHORT 12</b></p>
-                      <p>Date: 27 July - 9 October</p>
-                      <p>Delivery Method:</p>
-                      <p class="text-mustard">Virtual</p>
-                      <br />
-                      <a href="https://theboardroomafrica.com/wp-content/uploads/2022/12/Open-Doors-Cohort-12-Brochure.pdf" class="learnmore text-white">Learn More</a>
-                    </td>
-                    <td class="bg-dusk" style="padding: 30px; color: #fff;" width="50%">
-                      <p><b>OPEN DOORS COHORT 13</b></p>
-                      <p>Date: 20 November - 25 November</p>
-                      <p>Location: Cape Town, South Africa</p>
-                      <p>Delivery Method:</p>
-                      <p class="text-mustard pb-10">In-person</p>
-                      <br />
-                      <a href="https://theboardroomafrica.com/wp-content/uploads/2022/12/Open-Doors-Cohort-13-Brochure.pdf" class="learnmore text-white">Learn More</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text-center">
-                      <a href="https://events.eventzilla.net/e/open-doors--cohort-12-2138602412" class="premium-btn rounded" style="border: 2px solid #462B16; color: #462B16; border: 2px solid #462B16; background: unset;"><i>Register</i></a>
-                    </td>
-                    <td class="text-center">
-                      <a href="https://events.eventzilla.net/e/open-doors--cohort-13-2138601489" class="premium-btn rounded" style="border: 2px solid #462B16; color: #462B16; border: 2px solid #462B16; background: unset;"><i>Register</i></a>
-                    </td>
-                  </tr>
-                </table>
-
+                <h1 class="fs-34 libreb">ESG Certificate back for another cohort</h1>
+                <div>
+                  <br/><br/>
+                  <p>The next cohort of our Environmental, Social and Governance (ESG) Certificate programme starts in August 2023.</p>
+                  <br/>
+                  <p>Join the ESG Certificate programme to learn how to adapt, transform, and lead in a global context.</p>
+                  <br/><br/>
+                  <a href="https://theboardroomafrica.com/wp-content/uploads/2023/04/ESG-Cohort-2-Brochure.pdf" class="learnmore">Download brochure</a>
+                  <br/>
+                  <a href="https://esgcertificateapplicationform.paperform.co/" class="primary-btn bg-mustard text-green" style="padding: 10px 30px">Apply</a>
+                </div>
+                <br/>
+              </td>
+              <td width="250px">
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1682610320/ESGBg_dvi0ud.jpg">
               </td>
             </tr>
           </table>
@@ -986,7 +903,77 @@
 
       <tr>
         <td>
-          <a href="https://pwearoci.paperform.co"><img src="https://res.cloudinary.com/tbra/image/upload/v1680176582/MarchBD_chm1fk.jpg"></a>
+          <hr>
+        </td>
+      </tr>
+
+
+
+      <tr bgcolor="#D3D9DE">
+        <td>
+          <table class="border-collapse">
+            <tr>
+              <td height="40px" bgcolor="#D5D6D7" style="padding: 20px 50px; border-bottom: 1px solid #aaa;">
+                <h1 class="fs-26">Become a Certified Director with Open Doors.</h1>
+              </td>
+              <td width="350px" rowspan="2">
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1682611085/ODBg_mg7djp.jpg" style="height: 450px; width: 100%; object-fit: cover; object-position: top;">
+              </td>
+            </tr>
+            <tr>
+              <td class="newpadding">
+                <p>Designed and delivered in partnership with the Institute of Directors UK (IoD), Open Doors is a globally recognised and accredited director certificate programme suited to existing and aspiring directors. The programme provides a comprehensive curriculum covering the essential components of leadership, strategy, finance and governance and offers additional insights into board dynamics and ontological leadership through curated workshops. Upon completion of the programme and fulfilment of requirements, participants will attain a degree-level equivalent Certificate in Company Direction, which serves as the first stage in the Chartered Director qualification pathway with the IoD.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          <table class="border-collapse text-white" width="100%">
+            <tr>
+              <td width="50%" class="bg-tbra-blue newpadding">
+                <p><b>OPEN DOORS COHORT 12</b></p>
+                <p>Date: 27 July - 9 October</p>
+                <p>Delivery Method:</p>
+                <br/>
+                <p class="text-mustard">Virtual</p>
+                <a href="https://theboardroomafrica.com/open-doors-application" class="premium-btn rounded" style="border: 2px solid #CDAD7D; color: #CDAD7D; border: 2px solid #CDAD7D; background: unset;"><i>Register</i></a>
+              </td>
+              <td width="50%" class="bg-dusk newpadding">
+                <p><b>OPEN DOORS COHORT 13</b></p>
+                <p>Date: 20 November - 25 November</p>
+                <p>Location: Cape Town, South Africa</p>
+                <p>Delivery Method:</p>
+                <br/>
+                <p class="text-mustard pb-10">In-person</p>
+                <a href="https://theboardroomafrica.com/open-doors-application" class="premium-btn rounded" style="border: 2px solid #CDAD7D; color: #CDAD7D; border: 2px solid #CDAD7D; background: unset;"><i>Register</i></a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <tr>
+        <td>
+          <a href="https://pwearoci.paperform.co"><img src="https://res.cloudinary.com/tbra/image/upload/v1682667969/AprilBD_crkkso.jpg"></a>
           <br/><br/>
         </td>
       </tr>

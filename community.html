@@ -7,9 +7,9 @@
   <title>Community</title>
   <style type="text/css">
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200,400;700&family=Libre+Baskerville:wght@400;700&display=swap');
 
-  body {margin: 0; padding: 0; min-width: 100%!important;height:auto; color: #202945}
+  body {margin: 0; padding: 0; min-width: 100%!important;height:auto; color: #202945; font-size: 14.5px;}
   img {height: auto; max-width: 100%;}
 
   a {
@@ -37,13 +37,12 @@
     width: max-content;
     position: relative;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 12px !important;
     padding: 10px 15px;
     letter-spacing: 1px;
     background-color: #a67c00;
     color: white;
     margin-top: 22px;
-    cursor: auto;
   }
 
   .premium-btn img {
@@ -63,10 +62,12 @@
   }
 
   .text-primary { color: #0275d8; }
+  .text-white { color: white !important; }
   .text-success { color: #5cb85c; }
   .text-info { color: #5bc0de; }
   .text-warning { color: #f0ad4e; }
   .text-danger { color: #EA5A4F; }
+  
 
   .bg-primary { background-color: #0275d8; }
   .bg-success { background-color: #5cb85c; }
@@ -93,27 +94,6 @@
     background: #f3fafb;
   }
 
-  @media only screen and (max-width: 500px) {
-    .card-table, .table-responsive {
-      width: 100%;
-      margin: 0 auto;
-    }
-
-    .card-table tr, .table-responsive tr {
-      display:block;
-    }
-
-    .card-table tr td, .table-responsive tr td {
-      display:block;
-      width:100% !important;
-      margin-bottom: 5px;
-    }
-
-    .card-table tr td:last-child, .table-responsive tr td:last-child {
-      margin-bottom: 0;
-    }
-  }
-
   a.small-btn {
     padding: 3px 5px;
     border-radius: 5px;
@@ -131,6 +111,9 @@
   .mb-20 { margin-bottom: 20px; }
   .mb-10 { margin-bottom: 10px; }
   .mt-10 { margin-top: 10px !important; }
+  .pt-0 { padding-top: 0 !important; }
+  .py-0 { padding-top: 0 !important; padding-bottom: 0 !important;}
+  .p-10 { padding: 10px; }
 
   .header {padding: 40px 30px 40px 30px;}
 
@@ -141,20 +124,13 @@
   .subhead {font-size: 15px; color: #ffffff; letter-spacing: 10px;}
 
   h1 {
-    font-size: 40px;
+    font-size: 55px;
     font-weight: 800;
     line-height: 1;
   }
 
   .dtable {
     display:  table;
-  }
-
-  @media only screen and (min-width: 449px) {
-    .list-col {
-      float:left;
-      width:45%;
-    }
   }
 
   .ul-row {
@@ -172,7 +148,6 @@
         width: 16px;
         margin-top:3px;
         margin-right: 3px;
-        /*filter: invert(90%) sepia(0%) saturate(90%) hue-rotate(3500deg) brightness(0%) contrast(100%);*/
     }
 
     .ul-row p {
@@ -193,12 +168,13 @@
 
     h1, h2, p, a, ul, li, * {
         margin: 0;
-        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         text-decoration: none;
     }
 
-    p, ul {
-        font-size: 13.5px;
+    .libreb, .libreb * {
+      font-family: "Libre Baskerville", serif, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+        text-decoration: none;
     }
 
   .bodycopy {font-size: 15px;
@@ -236,7 +212,6 @@
     line-height: 1.3;
     margin-top: 14px;
     color: white;
-    /*width: 60%;*/
   }
 
   .primary-btn {
@@ -311,19 +286,7 @@
         width: 20px;
     }
 
-   /* ul li {
-        /*list-style-type: none;
-    }*/
-
-    /*ul li::before {
-      content: "2";
-      color: red;
-      font-weight: bold;
-      display: inline-block; 
-      width: 1em;
-      margin-left: -1em;
-    }*/
-
+   
     .useful-links ul {
       padding: 10px 10px 0;
     }
@@ -370,87 +333,11 @@
   }
 
 
-  @media only screen and (max-width: 550px), screen and (max-device-width: 550px) {
-    .freshIcon {
-      margin-top: 0;
-    }
-  body[yahoo] .hide {display: none!important;}
-  body[yahoo] .buttonwrapper {background-color: transparent!important;}
-  body[yahoo] .button {padding: 0px!important;}
-  body[yahoo] .button a {background-color: #e05443; padding: 15px 15px 13px!important;}
-  body[yahoo] .unsubscribe {display: block; margin-top: 20px; padding: 10px 50px; background: #2f3942; border-radius: 5px; text-decoration: none!important; font-weight: bold;}
-  }
-
+  
   .nodisplay {
     display: none;
   }
 
-  @media only screen and (max-width: 773px) {
-
-        .comm-card {
-            display: block !important;
-            width: 65% !important;
-            margin: 0 auto 2em auto !important;
-        }
-    }
-
-  @media only screen and (max-width: 700px) {
-        h1 {
-            font-size: 30px !important;
-        }
-
-        .responsive-h1 {
-            width: 100% !important;
-            font-size: 30px !important;
-            text-align: left !important;
-        }
-
-        .responsive-p-align {
-            width: 100% !important;
-            text-align: left !important;
-        }
-
-        .header-img-side {
-            display: none;
-        }
-
-        .header-sm-img {
-          width: 80%;
-          height: 200px;
-        }
-
-        .nodisplay {
-          display: block !important;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .header-fix {
-            width: 100% !important;
-            max-width: 100% !important;
-        }
-    }
-
-    @media only screen and (max-width: 650px) {
-        .responsive-full {
-            width: 100% !important;
-        }
-
-        .responsive-fix {
-            display: block;
-            width: 100% !important;
-            max-width: 100% !important;
-            margin: 0 auto;
-            float: none;
-        }
-
-        .responsive-mrg-bottom {
-            margin-bottom: 2em;
-        }
-    }
-    
     .table-col {
        width: 50%;
     }
@@ -459,14 +346,6 @@
     }
     .col-right {
       padding-left: 10px;
-    }
-    @media only screen and (max-width: 550px), screen and (max-device-width: 550px) {
-      .table-col {
-        width: 100% !important;
-        padding: 0 !important;
-        display: block;
-        margin-bottom: 30px;
-      }
     }
 
     .blockquote {
@@ -501,26 +380,13 @@
       width: 32px;
       float: left;
       margin-right: 12px;
-      /*margin-top: 15px;*/
     }
 
     .blockquote span {
       font-weight: 600;
     }
 
-    /*.icon-card {
-      color: #202945;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 1.4;
-      padding: 1.5em;
-      border: 1px solid #dddddd;
-      margin-bottom: 10px;
-      position: relative;
-      margin-top: 20px;
-      margin-left: 20px;
-      border-radius: 0 20px;
-    }*/
+    
 
     .icon-card {
       font-size: 16px;
@@ -539,18 +405,8 @@
       height: 17px;
     }
 
-    /*.icon-card-img-wrap {
-      position: absolute;
-      top: -20px;
-      left: -20px;
-      border: 1px solid #ddd;
-      padding: 10px;
-      border-radius: 50%;
-      background: #fff;
-    }*/
-
+    
     .icon-card-img-wrap {
-      /*border: 1px solid #ddd;*/
       padding: 15px;
       border-radius: 50%;
       width: 17px;
@@ -568,8 +424,6 @@
       font-weight: 300;
       line-height: 1.4;
       padding: 1.5em;
-      /*border-right: 4px solid #a67c00;*/
-      /*background: #F9F9F9;*/
     }
 
     .blockquote-right a {
@@ -614,7 +468,6 @@
   }
 
   .sec-title, .subtitle {
-/*    color: #462b16;*/
     font-weight: bold;
   }
 
@@ -623,17 +476,17 @@
     font-weight: 200;
   }
 
-  .rounded { border-radius: 50px; }
+  .rounded { border-radius: 50px; padding-left: 30px; padding-right:30px; }
 
   h3.sec-title {
-/*    color: #fff;*/
     font-weight: normal;
   }
 
   .sec-title span {
-    background-color: #b6a999;
-    padding: 8px 120px 8px 20px;
+    background-color: #EBE5DC;
+    padding: 12px 80px;
     font-size: 16px;
+    font-weight: bold;
   }
 
   .subtitle {
@@ -651,35 +504,16 @@
     height: 230px; 
   }
 
-  @media only screen and (min-width: 774px) {
-    .header-full {
-      height: 400px !important;
-    }
-  }
+  
 
   .logo-stack img {
     width: 80px;
   }
 
-  @media only screen and (min-width: 500px) {
-    .logo-stack img {
-      width: 100px !important;
-    }
-  }
-
-  @media only screen and (min-width: 774px) {
-    .logo-stack img {
-      width: 114px !important;
-    }
-  }
 
   .tour-img {
     width: 400px;
     max-width: 100%;
-    /*margin-right: 15px;
-    margin-bottom: 10px;*/
-    /*display: block;*/
-    /*margin: 0 auto;*/
   }
 
   .col-4 { width: 25%; float: left; }
@@ -688,18 +522,83 @@
   .banner-menu a { color: #fff; margin-right: 15px; }
   .banner-menu a:last-child { margin: 0; }
   .capitalise { text-transform: uppercase;}
-  .learnmore { text-decoration: underline; color: black; }
+  .learnmore { text-decoration: underline; color: black; font-size: 16px; }
+  .moves { border-collapse: separate; border-spacing: 10px; margin-left: -10px;}
+  .moves td {
+    background: #353A4C;
+    color: #fff;
+    border-right: 5px solid #CDAD7D;
+    width: 50%;
+    padding: 10px;
+    vertical-align: top;
+  }
+  .moves td a { text-decoration: underline; color: #fff;}
+  .spaced p { margin-bottom: 7px; }
+  .spaced p.text-danger { margin-bottom: 0; }
+
+
+  .bg-dawn { background-color: #DADEDA; }
+  .bg-tender { background-color: #6E8498; }
+  .bg-dusk { background-color: #4A4F54; }
+  .bg-mustard { background-color: #CDAD7D !important; }
+  .bg-blue { background-color: #202945; }
+  .text-dawn { color: #CDDAE6; }
+  .text-tender { color: #6E8498; }
+  .text-dusk { color: #4A4F54; }
+  .text-mustard { color: #CDAD7D; }
+  .text-blue { color: #202945; }
+  .text-brown { color: #96522D; }
+  .text-green { color: #0D3928; }
+  .text-black { color: black }
+
+  .mb-20 { margin-bottom: 20px; }
+  .mb-10 { margin-bottom: 10px; }
+  .mt-10 { margin-top: 10px !important; }
+  .mt-5 { margin-top: 10px !important; }
+  .thin { font-weight: 200; }
+  .bold { font-weight: bold; }
+
+  .fs-12 { font-size: 12px; }
+  .fs-14 { font-size: 14px; }
+  .fs-16 { font-size: 16px; }
+  .fs-18 { font-size: 18px; }
+  .fs-22 { font-size: 22px; }
+  .fs-24 { font-size: 24px; }
+  .fs-26 { font-size: 26px; }
+  .fs-30 { font-size: 30px; }
+  .fs-34 { font-size: 34px; }
+  .fs-40 { font-size: 40px; }
+  .uppercase { text-transform: uppercase; }
+  .newpadding { padding: 40px 50px; }
+
+  .inline-block { display: inline-block; }
+
+  hr {
+     border: 1px solid #CDAD7D;
+     margin: 30px auto;
+     width: 50%;
+  }
+
+  .border-collapse { border-collapse: collapse; }
+
+  .tbra-members { color: #F8F8F8; }
+  .tbra-members a { color: #fff; text-decoration: underline; }
+  .tbra-members p { margin-top: 10px }
+
+  .tbra-members img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin-top: 20px;
+  }
+
   </style>
 </head>
 
-<body bgcolor="#f6f8f1">
-<table width="100%" bgcolor="#dfe2df" border="0" cellpadding="0" cellspacing="0">
+<body bgcolor="#eee">
+<table width="100%" bgcolor="#eee" border="0" cellpadding="0" cellspacing="0">
 
-  <!-- <tr>
-    <td><img src="http://tbrax.devt/financebg.jpg" style="max-width: 100%;"></td>
-  </tr>
- -->
-
+  
   
 
 
@@ -708,168 +607,171 @@
 
 <tr>
   <td>
-    <!--[if (gte mso 9)|(IE)]>
-      <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td>
-    <![endif]-->
     <table bgcolor="#fff" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
 
-      <tr style="background: url('https://res.cloudinary.com/tbra/image/upload/v1673606226/newyearbg_xdkayf.jpg'); background-size: cover;">
-        <td class="innerpadding">
-          <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td>
-                <table width="100%">
-                  <tr>
-                    <td><a href="https://theboardroomafrica.com"><img src="https://res.cloudinary.com/tbra/image/upload/v1673525492/logos/logo-primary_rozzav.png" style="width: 100px;"></a></td>
-                    <td class="text-right banner-menu">
-                      <!-- <p>
-                        <a href="#" class="ml-10">Network</a>
-                        <a href="#" class="ml-10">Access</a>
-                        <a href="#" class="ml-10">Develop</a>
-                      </p> -->
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-            <tr>
-              <td style="color: #fff;">
-                <div style="padding-left: 15px; border-left: 5px solid #fff;">
-                  <h1 style="margin-top: 200px;">COMMUNITY DIGEST</h1>
-                  <p style="font-size: 16px; margin-top: 5px; font-weight: 200;">February roundup</p>
-                </div>
-              </td>
-            </tr>
+      <tr style="background: url('https://res.cloudinary.com/tbra/image/upload/v1682672607/CommunityDigestBanner_n5bvmo.jpg'); background-size: cover; vertical-align: top;">
+        <td class="newpadding" height="320px">
+          <!-- <a href="https://theboardroomafrica.com"><img src="https://res.cloudinary.com/tbra/image/upload/v1673525492/logos/logo-primary_rozzav.png" style="width: 100px;"></a> -->
+          <h2 class="thin text-center capitalise" style="margin-top: 270px;">
+            <span style="color: #cfdeed; letter-spacing: 3px;">Community Digest - May Roundup</span>
+          </h2>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <br/><br/><br/>
+          <h1 class="new-title text-center">Network</h1>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="newpadding">
+          <img src="https://res.cloudinary.com/tbra/image/upload/v1685094585/EgyptCTA_mq9owf.jpg">
+          <br/><br/>
+          <p class="thin">The cornerstone of our community is connection and collaboration, so it's fitting that our inaugural Annual Gathering is anchored on the theme of "Uniting to Build New Frontiers". We recognise that each leader is on their own journey, and the power of sharing resources, networks and opportunities is what will allow us all to accelerate our impact in and beyond the boardroom. Uniting our journeys to build new frontiers is a call to action for all of us to achieve more, and build strong legacies by working together.</p>
+          <br/>
+
+          <a href="https://tbraannualgathering.com/" class="primary-btn bg-mustard mt-10">Get your early bird ticket</a>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="newpadding pt-0">
+          <img src="https://res.cloudinary.com/tbra/image/upload/v1685094828/PrimeCTA_gezcfp.jpg">
+          <br/><br/>
+          <p class="thin">TBrA Prime is an enhanced membership experience designed to enable you to get the absolute best from your membership. Prime members enjoy a wide range of perks and discounts on all member services, programmes and events.</p>
+          <br/>
+
+          <a href="https://theboardroomafrica.com/tbraprime" class="primary-btn bg-mustard mt-10">Discover Prime</a>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          <br/>
+          <h3 class="sec-title capitalise"><span style="background: #403E3A; color: #fff; font-weight: 200;">Membership Moves</span></h3>
+          <!-- <br /> -->
+          <div class="newpadding">
+            <p class="thin fs-16">Congratulations to the following members on their recent achievements, from board appointments and executive moves to book launches and awards. Email <b><a style="color: black;" href="mailto:info@theboardroomafrica.com">info@theboardroomafrica.com</a></b> to be featured in our next edition of Membership Moves.</p>
             
-          </table>
+            <br/>
+            
+            <table class="moves">
+              <tr>
+                <td>
+                  <p><a href="https://www.linkedin.com/in/manon-coulibaly-727aba/">Manon Coulibaly</a> was appointed as an Independent Director and Board Chair at Farmerline.</p>
+                </td>
+                <td>
+                  <p><a href="https://www.linkedin.com/in/abena-amoah-7875473b/">Abena Amoah</a> was appointed as a Chair of the International Capital Market Association's (ICMA) West African Committee and Co-Chair of the ICMA Pan-African Committee.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><a href="https://www.linkedin.com/in/adesuwa-okunbo-rhodes/">Adesuwa Okunbo Rhodes</a> was appointed as an Independent Director at Coronation Asset Management.</p>
+                </td>
+                <td>
+                  <p><a href="https://www.linkedin.com/in/maya-horgan-famodu-b57bb346/">Maya Horgan Famodu</a> was recognised for her outstanding achievements in technology and innovation as an AFROTECH Future 50 honoree.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><a href="https://www.linkedin.com/in/ebineyamissah2004/">Elizabeth Biney-Amissah</a> was appointed as an Independent Director at Beacon Power Services.</p>
+                </td>
+                <td>
+                  <p><a href="https://www.linkedin.com/in/nancy-ajima-mba-ba-50617814/">Nancy Ajima</a> was appointed Global Head of the Project Coordination Unit at the Consultative Group on International Agricultural Research (CGIAR).</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><a href="https://www.linkedin.com/in/mirandanaiman/">Miranda Naiman </a>was re-elected to the board of CRDB Bank Plc.</p>
+                </td>
+                <td>
+                  <p><a href="https://www.linkedin.com/in/yawahansen-quao/">Yawa Hansen-Quao </a>was appointed to the board of Futurelect.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+
         </td>
       </tr>
 
-
-
-
       <tr>
-        <td class="innerpadding">
-          <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td class="bodycopy">
+        <td>
+          <img src="https://res.cloudinary.com/tbra/image/upload/v1685349218/Special_esiphr.jpg" style="display: block;">
+        </td>
+      </tr>
 
-                <!-- <p>Dear [[FIRSTNAME]]</p> -->
+      <tr bgcolor="#f0f2ef">
+        <td class="newpadding">
+          <h2 class="libreb thin newpadding py-0 text-center fs-30 text-blue">Congratulations to these TBrA members recognised in the third annual Africa.com Definitive List of Women CEOs</h2>
+          <br/>
+        </td>
+      </tr>
 
-                <p class="text-center"><b>Welcome to the February edition of the TBR Africa Community Digest!</b></p>
-
-                <br /><br/>
-                <h1 class="new-title text-center">Network</h1>
-                <br/><br/>
-
-                <h3 class="sec-title capitalise"><span>Annual gathering in Egypt!</span></h3>
-                <br/>
-
-                <table class="collapse" width="100%" style="background: #EFE7E7;">
-                  <tr>
-                    <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1677575525/cairoDesign_payppa.jpg'); background-size: cover;">
-                      <!-- <img src=""> -->
-                    </td>
-                    <td style="padding: 0 20px">
-                      <br/>
-                      <p class="mb-10">The cornerstone of our community is connection and collaboration, so its fitting that our inaugural Annual Gathering is anchored on the theme of "Uniting to Build New Frontiers." We recognise that each leader is on their own journey, and the power of sharing resources, networks and opportunities is what will allow us all to accelerate our impact in and beyond the boardroom. Uniting our journeys to build new frontiers is a call to action for all of us to achieve more, and build strong legacies by working together. Save the date and resgiter your interest to learn more.</p>
-                      <div class="text-center"><a href="#" class="primary-btn bg-dark rounded mt-10">Learn More</a></div>
-                      <br/>
-                    </td>
-                  </tr>
-                </table>
-
-                <br/>
+      <tr bgcolor="#202945">
+        <td class="newpadding">
+          <table cellspacing="0" cellpadding="10" class="tbra-members thin">
+            <tr valign="top">
+              <td width="20%">
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355086/mizinga_titdhm.jpg">
+                <p><a href="https://www.linkedin.com/in/mizinga-melu-54391750/">Mizinga Melu</a>, CEO and Managing Director, Zambia, Absa Group Ltd</p>
+              </td>
+              <td width="20%">
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355087/brenda_wfeji9.jpg">
+                <p><a href="https://www.linkedin.com/in/brenda-mbathi-46a487108/">Brenda Mbathi</a>, President & CEO, East Africa, General Electric Company</p>
+              </td>
+              <td width="20%">
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355369/aminata_dekebb.jpg">
+                <p><a href="https://www.linkedin.com/in/aminata-kane-6a70551b/?originalSubdomain=sn">Aminata Kane Ndiaye</a>, VP, Mobile Financial Services, Orange Middle East and Africa, Orange Group</p>
+              </td>
+              <td width="20%">
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355124/catherine_ghend8.jpg">
+                <p>Catherine Lesetedi, Group CEO, Botswana Insurance Holdings Ltd</p>
+              </td>
+              <td width="20%">
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355085/anne_qp8jwe.jpg">
+                <p><a href="https://www.linkedin.com/in/anne-juuko-523886a5/">Anne Juuko</a>, CEO, Stanbic Bank Uganda</p>
               </td>
             </tr>
-          </table>
-        </td>
-      </tr>
-
-      <tr>
-        <td><a href="https://theboardroomafrica.com/wp-content/uploads/2022/12/Open-Doors-Cohort-13-Brochure.pdf" target="_blank"><img src="https://res.cloudinary.com/tbra/image/upload/v1673606526/od_inperson_mia2fx.jpg" style="max-width: 100%;"></a></td>
-      </tr>
-
-      <tr>
-        <td class="innerpadding">
-          <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
+            <tr valign="top">
               <td>
-
-                <br />
-                <h3 class="sec-title"><span>Annual gathering in Egypt!</span></h3>
-                <br/><br/>
-
-                <table class="collapse" width="100%" style="background: #EFE7E7;">
-                  <tr>
-                    <td width="200px">
-                      <img src="https://res.cloudinary.com/tbra/image/upload/v1673620178/cairo_date_iw1tgu.jpg">
-                    </td>
-                    <td style="padding: 0 20px">
-                      <br/>
-                      <p style="margin-bottom: 10px;">This October, we will be launching our first annual membership gathering in the historic city of Cairo! It will be a week-long trip filled with activities, networking, and exploring the dazzling ancient city, its surroundings, and its food. There will be limited spots available, so save the date and stay tuned for more information.</p>
-                      <a href="mailto:events@theboardroomafrica.com" class="primary-btn bg-dark" style="margin: 0 20px 20px 0;">Learn more</a>
-                    </td>
-                  </tr>
-                </table>
-
-                <br/>
-                <br />
-                <h3 class="sec-title"><span>ESG Certificate Programme</span></h3>
-                <br/><br/>
-
-                <table class="collapse" width="100%" style="background: #EFE7E7;">
-                  <tr>
-                    <td width="200px">
-                      <img src="https://res.cloudinary.com/tbra/image/upload/v1673607706/esg_vcn53p.jpg">
-                    </td>
-                    <td style="padding: 0 20px">
-                      <br/>
-                      <p style="margin-bottom: 10px;">Steer your organisation towards a sustainable future with our ESG Certificate programme! This 5-week intensive learning experience is tailored for senior leaders looking to expand their knowledge of ESG frameworks and acquire the practical tools to embed ESG best practices into business operations. Don't miss out on this opportunity to future-proof your organisation and drive its ESG strategy.</p>
-                      
-                      <!-- <a href="https://theboardroomafrica.com/wp-content/uploads/2022/10/ESG-Certificate-Brochure.pdf" class="primary-btn bg-dark" style="margin: 0 20px 20px 0;">Learn More</a> -->
-                      <a href="https://theboardroomafrica.com/wp-content/uploads/2022/10/ESG-Certificate-Brochure.pdf" class="primary-btn bg-dark" style="margin: 0 20px 20px 0;">Learn More</a>
-                    </td>
-                  </tr>
-                </table>
-                
-                <br/><br/><br/>
-
-                <h1 class="sec-title text-center">Upcoming Programmes</h1>
-<!-- 
-                <table class="collapse" width="100%" style="background: #EFE7E7;">
-                  <tr>
-                    <td style="padding: 0 20px">
-                      <br/>
-                      <p>Resignation, Resentment, Acceptance, and Ambition:  Explore how these 4 leadership moods impact your efficiency in your varied professional and personal roles. Join Dr. Rachel Adams for this important Group Coaching Session this January</p>
-                      <p style="margin: 10px 0;"><strong>Time: 12:00 pm - 1:30 pm GMT.</strong></p>
-                      <a href="#" class="primary-btn bg-dark" style="margin: 0 20px 20px 0;">Learn more</a>
-                    </td>
-                    <td width="200px">
-                      <img src="https://via.placeholder.com/200x220">
-                    </td>
-                  </tr>
-                </table>
-
-                <br/><br/>
-
-                <table class="collapse" width="100%" style="background: #EFE7E7;">
-                  <tr>
-                    <td width="200px">
-                      <img src="https://via.placeholder.com/200x220">
-                    </td>
-                    <td style="padding: 0 20px">
-                      <br/>
-                      <p>Resignation, Resentment, Acceptance, and Ambition:  Explore how these 4 leadership moods impact your efficiency in your varied professional and personal roles. Join Dr. Rachel Adams for this important Group Coaching Session this January</p>
-                      <p style="margin: 10px 0;"><strong>Time: 12:00 pm - 1:30 pm GMT.</strong></p>
-                      <a href="#" class="primary-btn bg-dark" style="margin: 0 20px 20px 0;">Learn more</a>
-                    </td>
-                  </tr>
-                </table> -->
-
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355121/mukwandi_ysbvba.jpg">
+                <p><a href="https://www.linkedin.com/in/mukwandi-chibesakunda-b34869226/">Mukwandi Chibesakunda</a>, CEO, Zanaco Plc</p>
               </td>
+              <td>
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355120/mapula_iodyej.jpg">
+                <p><a href="https://www.linkedin.com/in/mapula-bodibe-cm-sa-078a4029/">Mapula Bodibe</a>, CEO, MTN Rwandacell Plc</p>
+              </td>
+              <td>
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355120/mitwa_qumoic.jpg">
+                <p><a href="https://www.linkedin.com/in/mitwa/">Mitwa Kaemba Ng'ambi </a>,  CEO, Cameroon, MTN Group Ltd</p>
+              </td>
+              <td>
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355085/pearl_mayjsf.jpg">
+                <p><a href="https://www.linkedin.com/in/pearlnkrumah/">Pearl Nkrumah</a>, Executive Director, Retail and Digital Banking, Access Bank Ghana</p>
+              </td>
+              <td>
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355271/faith_zy9pzc.jpg">
+                <p><a href="https://www.linkedin.com/in/faith-mukutu-ab942097/">Faith Mukutu</a>, CEO, Zambeef Products Plc</p>
+              </td>
+            </tr>
+            <tr valign="top">
+              <td>
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355086/aida_v7puqa.jpg">
+                <p><a href="https://www.linkedin.com/in/aida-diarra-0bb694/">Aida Diarra</a>, Senior Vice President and Head of Sub Saharan Africa, VISA Inc)</p>
+              </td>
+              <td>
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355087/diane_aqphes.jpg">
+                <p><a href="https://www.linkedin.com/in/diane-karusisi-3830a510a/">Diane Karusisi</a>, CEO, BK Group Plc</p>
+              </td>
+              <td>
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355121/mansa_pc6jyt.jpg">
+                <p><a href="https://www.linkedin.com/in/mansa-nettey-8860a1a/">Mansa Nettey</a>, CEO, Standard Chartered Ghana</p>
+              </td>
+              <td></td>
+              <td></td>
             </tr>
           </table>
         </td>
@@ -877,100 +779,277 @@
 
 
       <tr>
-        <td><a href="https://us02web.zoom.us/webinar/register/WN_ule11Tf9Sq-6xmCbIJfzjA"><img src="https://res.cloudinary.com/tbra/image/upload/v1673606704/koenig_webinar_fwuffq.jpg" style="max-width: 100%;"></a></td>
+        <td>
+          <br/><br/><br><br/>
+          <h3 class="sec-title capitalise"><span style="background: #403E3A; color: #fff; font-weight: 200;">Webinar Replay</span></h3>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="newpadding">
+          <table width="100%" cellpadding="0" style="border: 10px solid #E1DEDC;">
+            <tr>
+              <td width="40%"><img src="https://res.cloudinary.com/tbra/image/upload/v1681471471/KieranPoster_b82uzr.jpg"></td>
+              <td style="padding: 0 20px;">
+                <p>Today, the role of a Non-Executive Director (NED) is gradually transitioning from an “end-of-career” option to an active career choice. This webinar provides practical insights and strategies for business leaders, looking to secure their first appointment and/or develop a portfolio of NED roles. </p>
+                <br/>
+                <div class="text-center"><a href="https://youtu.be/3nDQz9yBZFA" class="primary-btn bg-blue rounded mt-10">WATCH REPLAY</a></div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
+
+      <tr bgcolor="#F8F8F8">
+        <td class="newpadding">
+          <table class="collapse trends" width="100%">
+            <tr>
+              <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1685101691/blackWomen_a44n0b.jpg'); background-size: 327px;">
+              </td>
+              <td style="padding: 0 20px" height="200px">
+                <p class="mb-10">History has shown us that without intervention, corporations fail to appoint qualified members to their boards that represent the diversity of our communities.</p>
+                <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/page/news-new" class="primary-btn bg-mustard rounded mt-10" style="padding: 10px 30px">Read</a></div>
+              </td>
+            </tr>
+          </table>
+          <br />
+          <table class="collapse" width="100%">
+            <tr>
+              <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1685101913/whyTalent_eyapcg.jpg'); background-size: 305px;">
+              </td>
+              <td style="padding: 0 20px" height="200px">
+                <p class="mb-10">How many times have you landed a job because someone in your network made a warm introduction or a referral? In fact, 85% of positions are filled through networking, which presents a challenge for many talented, hard-working people from diverse and low-income communities.</p>
+                <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/page/news-new" class="primary-btn rounded mt-10 bg-mustard" style="padding: 10px 30px">Read</a></div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
+
+      <tr>
+        <td>
+          <br /><br />
+          <img src="https://res.cloudinary.com/tbra/image/upload/v1680093920/virtualConn_stwa3z.jpg">
+        </td>
+      </tr>
+
+
+
+
+      <tr bgcolor="#EEEFEF">
+        <td class="newpadding">
+          <table class="collapse" width="100%" style="background: #fff;">
+            <tr>
+              <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1685102751/strategicApproach_xkkdjo.jpg'); background-position: center top; background-size: 302px;">
+              </td>
+              <td style="padding: 0 20px" height="200px">
+                <p class="mb-10">A good board of directors can be one of the most strategic—and most undervalued—levers a CEO has to address the challenges of operating at scale. Building your board forward from product-market fit—instead of backwards from an IPO date—helps you clarify the most critical challenges facing your company and find the right people to advise you.</p>
+                <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/media_center/folder/eb0f98c1-e1b3-4722-95fc-9784187cf201" class="primary-btn bg-mustard rounded mt-10" style="padding: 10px 30px">Read</a></div>
+              </td>
+            </tr>
+          </table>
+          <br />
+          <table class="collapse" width="100%" style="background: #fff;">
+            <tr>
+              <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1685101984/inclusion_fewclg.jpg'); background-position: center bottom; background-size: 295px;">
+              </td>
+              <td style="padding: 0 20px" height="200px">
+                <br />
+                <p class="mb-10">Corporate and nonprofit board members have an important role in building an inclusive environment that drives performance and financial results.</p>
+                <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/media_center/folder/6d2523b8-1eed-4843-8243-b0bb8f413a7c" class="primary-btn rounded mt-10 bg-mustard" style="padding: 10px 30px">Read</a></div>
+                <br />
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
+
+
+
+
+      <tr>
+        <td>
+          <br /><br />
+          <h1 class="new-title text-center">Access</h1>
+          <br /><br />
+        </td>
+      </tr>
+
+
+      <tr bgcolor="">
+        <td>
+          <h3 class="sec-title"><span style="background: #E1DEDC; color: #202945; border-right: 5px solid #CDAD7D; padding: 10px 10px 10px 50px; font-weight: 200; font-size: 24px;">Board Roles</span></h3>
+          <br/>
+        </td>
+      </tr>
+
+
+      <tr bgcolor="#F8F8F8">
+        <td class="newpadding">
+          <ul>
+            <li>Lifestores Healthcare - Ongoing</li>
+            <li>African Risk Capacity Insurance Company - Applications closed, Reviewing</li>
+            <li>MTN Ghana - Mobile Money Limited - Applications closed, Reviewing</li>
+            <li>Ubongo International - Applications closed, Reviewing</li>
+            <li>International Finance Corporation - Applications closed</li>
+            <li>Canon Collins Trust - Applications closed</li>
+            <li>Lulalend - Applications closed</li>
+            <li>Trōcaire - Applications closed</li>
+          </ul>
+
+          <br/>
+
+          <div class="text-center">
+            <a href="https://membersforum.theboardroomafrica.com/opportunities" class="premium-btn bg-mustard rounded">Apply</a>
+            <br /><br />
+            <a class="learnmore uppercase" href="https://tbrafrica.paperform.co/">Recommend Someone</a>
+            <br /><br />
+          </div>
+        </td>
+      </tr>
+
+
+
+      
+
+      <tr>
+        <td>
+          <br/><br/>
+          <h1 class="new-title text-center mb-20" style="color: #a5a7a9;">Develop</h1>
+        </td>
+      </tr>
+
+      <tr style="background: url('https://res.cloudinary.com/tbra/image/upload/v1685113274/SelfBelief_ug97ys.jpg') no-repeat center left / cover;">
+        <td>
+          <p class="thin capitalise bg-dusk text-white inline-block p-10" style="margin-left: 100px;">Group Coaching Session </p>
+          <div style="width: 300px;" class="newpadding">
+            <h1 class="fs-34">Masterclass <br/> in Self-Belief</h1>
+            <br/>
+            <p class="thin bg-dawn inline-block" style="padding: 5px 15px;">12:00 PM Friday, June 30, 2023</p>
+            <br/><br/>
+            <p class="thin bg-dawn p-10">We have within ourselves the ability to change everything about us that is not working for us. Our brains’ ability to form and reorganise neural connections means we can use our experiences to change and re-wire our brains. In this Self-Belief masterclass, you will identify areas of your life where you wish to create shifts and start practising ways of actually doing so.</p>
+            <br/>
+            <a href="https://membersforum.theboardroomafrica.com/networks/events/106185" class="primary-btn bg-mustard rounded mt-10" style="padding: 10px 30px">Sign Up</a>
+          </div>
+        </td>
       </tr>
 
       <tr>
-        <td class="innerpadding">
-          <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
+        <td>
+          <br/><br/>
+          <a href="https://tbraworkshops2023.paperform.co?utm_source=digest"><img src="https://res.cloudinary.com/tbra/image/upload/v1685112863/Programme_social_share_flfnsh.jpg"></a>
+          <br/><br/><br/>
+        </td>
+      </tr>
+
+      <tr style="background: url('https://res.cloudinary.com/tbra/image/upload/v1682609515/OntologicalBg_w2bgax.jpg'); background-size: cover;">
+        <td class="newpadding text-white">
+          <br/>
+          <h1 class="fs-34 libreb text-mustard">Ontological Growth Experience</h1>
+          <div style="width: 400px;">
+            <br/><br/>
+            <p>Designed with the belief that organisational transformation must be anchored in authentic power, values-based, strengths-based and courageous leadership. This experience merges research and practice from neuroscience, psychology, biomimicry and ontology, offering delegates a unique opportunity to deeply transform themselves first and in turn to transform the teams and systems they lead.</p>
+            <br/><br/>
+            <a href="https://web.theboardroomafrica.com/wp-content/uploads/2023/04/Ontological-Growth-Experience-Brochure.pdf" class="learnmore text-white">Learn more</a>
+            <br/>
+            <p class="thin bg-dusk inline-block" style="padding: 8.5px 15px;">27 June - 2 August</p>
+            <a href="https://theboardroomafrica.com/onthological-growth-application?utm_source=digest" class="primary-btn bg-mustard text-black" style="padding: 10px 30px">Apply</a>
+          </div>
+          <br/>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+
+
+
+      <tr bgcolor="#d9deda">
+        <td>
+          <table class="border-collapse" style="border-bottom: 7px solid #6E8498;">
             <tr>
-              <td class="bodycopy">
-
+              <td class="newpadding text-green">
                 <br/>
-                <h3 class="sec-title"><span style="padding-right: 30px">Open Doors - Virtual Programmes</span></h3>
-
-                <br/>
-                <br/>
-
-                <table class="collapse" width="100%" style="background: #EFE7E7;">
-                  <tr>
-                    <td width="200px">
-                      <img src="https://res.cloudinary.com/tbra/image/upload/v1673607706/open_doors_ngxtgv.jpg">
-                    </td>
-                    <td style="padding: 0 20px">
-                      <br/>
-                      <p>Enhance your effectiveness as a board director with Open Doors, a world-class accredited director programme delivered in partnership with the Institute of Directors, UK. A first of its kind offered to women leaders across Africa and the diaspora. Take a journey into the boardroom and explores the breadth of director duties covering governance, finance, strategy and leadership, coupled with immersive workshops and a board simulation. The certificate is also a degree qualification in its own right.</p>
-                      <br/>
-                      <p class="mb-10"><strong>Dates</strong></p>
-                      <p><strong><a href="https://events.eventzilla.net/e/open-doors--cohort-11-2138574270" class="learnmore">Cohort 11</a>:</strong> 30th March - 29th June</p>
-                      <p><strong><a href="https://events.eventzilla.net/e/open-doors--cohort-12-2138602412" class="learnmore">Cohort 12</a>:</strong> 27th July - 19th October</p>
-                      <!-- <p class="mt-10"><strong>Fees:</strong> Standard members - $5,000 |  Premium members - $4,500</p> -->
-                      <br/>
-                      <a href="https://theboardroomafrica.com/wp-content/uploads/2022/10/Open-Doors-Cohort-11-Brochure.pdf" target="_blank" class="primary-btn bg-dark" style="margin: 0 20px 20px 0;">Learn More</a>
-                    </td>
-                  </tr>
-                </table>
-
-                <br/>
-                <br/>
-                <h3 class="sec-title"><span style="padding-right: 30px">Transformational Leadership Masterclass</span></h3>
-
-                <br/>
-                <br/>
-
-                <table class="collapse" width="100%" style="background: #EFE7E7;">
-                  <tr>
-                    <td width="200px">
-                      <img src="https://res.cloudinary.com/tbra/image/upload/v1673618122/tlm_date_shg3ah.jpg">
-                    </td>
-                    <td style="padding: 0 20px">
-                      <br/>
-                      <p>Gain extra tools for success in authentic self-leadership and leading others by joining Ontological Leadership Coach Rachel Adams on this immersive masterclass.</p>
-                      <!-- <p class="mt-10"><strong>Fees:</strong> $750 for standard members, $637.50 for premium members</p> -->
-                      <a href="https://theboardroomafrica.com/wp-content/uploads/2023/01/Transformational-Leadership-Masterclass-Brochure-2023.pdf" target="_blank" class="primary-btn bg-dark">Learn More</a>
-                      <br/><br/>
-                    </td>
-                  </tr>
-                </table>
-
-                <br/>
-                <br/>
-                <h3 class="sec-title"><span style="padding-right: 30px">Later this month</span></h3>
-
-                <br/>
-                <br/>
-
-                <table class="collapse" width="100%" style="background: #EFE7E7;">
-                  <tr>
-                    <td width="200px">
-                      <img src="https://res.cloudinary.com/tbra/image/upload/v1673608628/group_coaching_xhmfir.jpg">
-                    </td>
-                    <td style="padding: 0 20px">
-                      <p class="mb-10">Resignation, Resentment, Acceptance, and Ambition:  Explore how these 4 leadership moods impact your efficiency in your varied professional and personal roles. Join  Rachel Adams for this important Group Coaching Session this January.</p>
-                      <p><strong>Time: 12:00pm - 1:30pm GMT.</strong></p>
-                      <a href="https://events.eventzilla.net/e/group-coaching-january-2023-session--organisational-moods-2138602078?preview=1673609714193" class="primary-btn mt-10">Register Now</a>
-                    </td>
-                  </tr>
-                </table>
-
-                <!-- <br/><br/> -->
-
-                <!-- <a href="#"><img src="https://res.cloudinary.com/tbra/image/upload/v1673525142/davidKoenig_webinar_s0oeli.jpg"></a>
-
-                <br/><br/>
-                <br/><br/>
-
-                <h3 class="sec-title"><span>Join Us in June</span></h3>
-
-                <div class="text-center" style="padding: 30px; background-color: #FFF9F5;">
-                  <br/>
-                  <p style="font-size: 18px;">Transformational Leadership Masterclass 2023</p>
-                  <h2 style="font-size: 28px;">6th June - 4th July 2023</h2>
-
-                  <a class="primary-btn" href="#">Book a Seat</a>
+                <h1 class="fs-34 libreb">ESG Certificate back for another cohort</h1>
+                <div>
                   <br/><br/>
-                </div> -->
+                  <p>The next cohort of our Environmental, Social and Governance (ESG) Certificate programme starts in August 2023.</p>
+                  <br/>
+                  <p>Join the ESG Certificate programme to learn how to adapt, transform, and lead in this new global context.</p>
+                  <br/><br/>
+                  <a href="https://theboardroomafrica.com/wp-content/uploads/2023/04/ESG-Cohort-2-Brochure.pdf" class="learnmore">Download brochure</a>
+                  <br/>
+                  <a href="https://theboardroomafrica.com/esg-certificate-application?utm_source=digest" class="primary-btn bg-mustard text-black" style="padding: 10px 30px">Apply</a>
+                </div>
+                <br/>
+              </td>
+              <td width="250px">
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1682610320/ESGBg_dvi0ud.jpg">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
 
+
+      <tr>
+        <td>
+          <hr>
+        </td>
+      </tr>
+
+
+
+      <tr bgcolor="#D3D9DE">
+        <td>
+          <table class="border-collapse">
+            <tr>
+              <td height="40px" bgcolor="#D5D6D7" style="padding: 20px 50px; border-bottom: 1px solid #aaa;">
+                <h1 class="fs-26">Become a Certified Director with Open Doors.</h1>
+              </td>
+              <td width="350px" rowspan="2">
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1682611085/ODBg_mg7djp.jpg" style="height: 450px; width: 100%; object-fit: cover; object-position: top;">
+              </td>
+            </tr>
+            <tr>
+              <td class="newpadding">
+                <p>Designed and delivered in partnership with the Institute of Directors UK (IoD), Open Doors is a globally recognised and accredited director certificate programme suited to existing and aspiring directors. The programme provides a comprehensive curriculum covering the essential components of leadership, strategy, finance and governance and offers additional insights into board dynamics and ontological leadership through curated workshops. Upon completion of the programme and fulfilment of requirements, participants will attain a degree-level equivalent Certificate in Company Direction, which serves as the first stage in the Chartered Director qualification pathway with the IoD.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          <table class="border-collapse text-white" width="100%">
+            <tr>
+              <td width="50%" class="bg-tbra-blue newpadding">
+                <p><b>OPEN DOORS COHORT 12</b></p>
+                <p>Date: 27 July - 9 October</p>
+                <p>Delivery Method:</p>
+                <br/>
+                <p class="text-mustard">Virtual</p>
+                <a href="https://theboardroomafrica.com/open-doors-application" class="premium-btn rounded" style="border: 2px solid #CDAD7D; color: #CDAD7D; border: 2px solid #CDAD7D; background: unset;"><i>Register</i></a>
+              </td>
+              <td width="50%" class="bg-dusk newpadding">
+                <p><b>OPEN DOORS COHORT 13</b></p>
+                <p>Date: 20 November - 25 November</p>
+                <p>Location: Cape Town, South Africa</p>
+                <p>Delivery Method:</p>
+                <br/>
+                <p class="text-mustard pb-10">In-person</p>
+                <a href="https://theboardroomafrica.com/open-doors-application" class="premium-btn rounded" style="border: 2px solid #CDAD7D; color: #CDAD7D; border: 2px solid #CDAD7D; background: unset;"><i>Register</i></a>
               </td>
             </tr>
           </table>
@@ -979,22 +1058,34 @@
 
 
 
-
-      <!-- <tr class="bg-tbra-blue">
-        <td class="innerpadding">
-          <table width="95%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td style="color: #F3ECE2;">
-                <p>With these, we want to share once again, our commitment remains to empowering growth for you and the spaces you represent. 2023 gives us the opportunity to do this and more,  we can't wait to explore, expand and empower  along with you.</p>
-                <br/>
-                <p>From TBRA</p>
-                <br/>
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1673525492/logos/logo-primary_rozzav.png" style="width: 100px;">
-              </td>
-            </tr>
-          </table> 
+      <tr>
+        <td>
+          <br/><br/>
+          <h1 class="new-title text-center mb-20" style="color: #a5a7a9;">May Birthdays</h1>
         </td>
-      </tr> -->
+      </tr>
+
+
+
+      <tr style="background: url('https://res.cloudinary.com/tbra/image/upload/v1685353042/BirthDayBg_g1j2i6.jpg') no-repeat center left / cover;">
+        <td class="newpadding">
+          <ul class="libreb fs-26 newpadding" style="margin-left: 230px;">
+            <li>Uchenna Ogwo</li>
+            <li>Mwansa Chokolo</li>
+            <li>Mary Gicharu</li>
+            <li>Seyi Olulade</li>
+            <li>Harriet Wandira</li>
+            <li>Anitha Ingabe</li>
+            <li>Molade Elodimuor</li>
+            <li>Gloria Njiu</li>
+            <li>Aisha Mohamed</li>
+            <li>Mirriam Chiyaba</li>
+            <li>Bella Ikeme</li>
+          </ul>
+          <p class="text-center fs-18"><b>TBrA member? Help us celebrate you.</b></p>
+          <div class="text-center"><a href="https://pwearoci.paperform.co" class="primary-btn bg-blue rounded mt-10">Share</a></div>
+        </td>
+      </tr>
 
 
       <tr>
@@ -1028,11 +1119,7 @@
       </tr>
 
     </table>
-    <!--[if (gte mso 9)|(IE)]>
-          </td>
-        </tr>
-    </table>
-    <![endif]-->
+    
     </td>
   </tr>
 </table>

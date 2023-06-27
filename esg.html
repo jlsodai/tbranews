@@ -11,7 +11,7 @@
 
   body {margin: 0; padding: 0; min-width: 100%!important;height:auto; color: #4A4F54}
   body {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.5;
     color: #4A4F54;
   }
@@ -68,6 +68,7 @@
 
   .text-primary { color: #0275d8; }
   .text-white { color: white !important; }
+  .text-light { color: #F8F8F8; }
   .text-success { color: #5cb85c; }
   .text-info { color: #5bc0de; }
   .text-warning { color: #f0ad4e; }
@@ -111,10 +112,6 @@
   .img-shadow {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
-
-  .mb-20 { margin-bottom: 20px; }
-  .mb-10 { margin-bottom: 10px; }
-  .mt-10 { margin-top: 10px !important; }
 
   .header {padding: 40px 30px 40px 30px;}
 
@@ -178,13 +175,11 @@
         text-decoration: none;
     }
 
-    p, ul {
-        font-size: 14.5px;
-    }
 
-   .bodycopy-white {font-size: 15px;
-            line-height: 1.5;
-            color: white;}
+    .bodycopy-white {
+      line-height: 1.5;
+      color: white;
+    }
 
   .button a {color: #ffffff; text-decoration: none;}
 
@@ -465,7 +460,16 @@
   }
 
   .hr {
-     border-top: 1.5px solid #d7d7d7;
+     border-top: 1.5px solid #000000;
+  }
+
+  hr {
+     border: none;
+     height: 1px;
+     background: #000;
+     color: #000;
+     margin: 0px auto;
+     width: 30%;
   }
 
   .sec-title, .subtitle {
@@ -477,7 +481,7 @@
     font-weight: 200;
   }
 
-  .rounded { border-radius: 50px; padding-left: 30px; padding-right:30px; }
+  .rounded { border-radius: 50px; padding: 5px 30px; margin: 0 20px; font-weight: bold; }
 
   h3.sec-title {
     font-weight: normal;
@@ -541,7 +545,7 @@
   .bg-dusk { background-color: #4A4F54; }
   .bg-mustard { background-color: #CDAD7D !important; }
   .bg-blue { background-color: #202945; }
-  .text-dawn { color: #CDDAE6; }
+  .text-dawn { color: #DADEDA; }
   .text-tender { color: #6E8498; }
   .text-dusk { color: #4A4F54; }
   .text-mustard { color: #CDAD7D; }
@@ -569,7 +573,7 @@
   .fs-100 { font-size: 100px; }
   .uppercase { text-transform: uppercase; }
 
-  .newpadding { padding: 40px 50px; }
+  .newpadding { padding: 40px 70px; }
   .narrowpadding { padding: 20px 50px; }
 
   .curriculum {
@@ -586,6 +590,37 @@
   .curriculum:nth-child(odd) p {
     color: #F8F8F8;
   }
+
+  .block { display: block; }
+  .inline-block { display: inline-block; }
+
+  .mb-20 { margin-bottom: 20px; }
+  .mb-10 { margin-bottom: 10px; }
+  .mt-10 { margin-top: 10px !important; }
+  .p-10 { padding: 10px; }
+  .pt-10 { padding-top: 10px;}
+  .pt-20 { padding-top: 20px;}
+  .pt-30 { padding-top: 30px;}
+  .pt-40 { padding-top: 40px;}
+  .pb-10 { padding-bottom: 10px;}
+  .pb-20 { padding-bottom: 20px;}
+  .pb-30 { padding-bottom: 30px;}
+  .pb-40 { padding-bottom: 40px;}
+  .py-0 { padding-top: 0px; padding-bottom: 0px; }
+  .pt-0 { padding-top: 0px; }
+  .pb-0 { padding-bottom: 0px; }
+  .py-0 { padding-top: 0px; padding-bottom: 0px; }
+  .py-10 { padding-top: 10px; padding-bottom: 10px; }
+  .px-10 { padding-left: 10px; padding-right: 10px; }
+  .py-20 { padding-top: 20px; padding-bottom: 20px; }
+  .py-20 { padding-top: 20px; padding-bottom: 20px; }
+  .px-30 { padding-left: 30px; padding-right: 30px; }
+  .px-30 { padding-left: 30px; padding-right: 30px; }
+  .px-40 { padding-left: 40px; padding-right: 40px; }
+  .px-40 { padding-left: 40px; padding-right: 40px; }
+
+  h3, h2 { line-height: 1; font-weight: 200; }
+  h3 { font-size: 45px; }
 
   </style>
 </head>
@@ -606,135 +641,137 @@
 
       <tr bgcolor="#DADEDA">
         <td>
-          <img src="https://res.cloudinary.com/tbra/image/upload/v1683808346/ESG_Banner_vjgn9z.jpg">
+          <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1687881948/tbra/BannerESG_xa1miy.jpg">
           <br/><br/>
         </td>
       </tr>
 
-      <tr bgcolor="#F8F8F8">
-        <td>
-          <br/>
-          <table cellspacing="0" cellpadding="0" width="300px" style="margin: 0 auto;">
-            <td class="text-white text-center bg-tender" width="45%" style="padding: 15px;">
-              <h3 class="libreb fs-60" style="line-height: 1;">4</h3>
-              <p>Days left</p>
-            </td>
-            <td style="padding-left: 20px;">Take advantage of the early bird offer and save $250, apply before 15 May.</td>
-          </table>
-          <br>
-        </td>
-      </tr>
-
-      <tr>
-        <td height="600px" class="newpadding" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1683801990/ESGCurriculumBanner_vn1j09.jpg') no-repeat center center / contain;">
-          <table cellspacing="0" cellpadding="0" class="curriculum">
-            <tr>
-              <td width="110px">
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1683800380/icons_1_l9rtex.png">
-              </td>
-              <td class="bg-tender text-white" width="270px;">
-                <p style="margin-left: 10px">14 live expert-led sessions with a global faculty</p>
-              </td>
-              <td width="41.3px;">
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1683800380/corner_4_m2tihb.png">
-              </td>
-            </tr>
-          </table>
-
-          <table cellspacing="0" cellpadding="0" class="curriculum">
-            <tr>
-              <td width="110px">
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1683800380/icons_4_updthf.png">
-              </td>
-              <td class="bg-dawn text-white" width="270px;">
-                <p style="margin-left: 10px">Curated for immediate professional application</p>
-              </td>
-              <td width="41.3px;">
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1683800380/corner_3_sbseng.png">
-              </td>
-            </tr>
-          </table>
-
-          <table cellspacing="0" cellpadding="0" class="curriculum">
-            <tr>
-              <td width="110px">
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1683800381/icons_3_blcqcu.png">
-              </td>
-              <td class="bg-tender text-white" width="270px;">
-                <p style="margin-left: 10px">Analysis of global regulations, insights and trends</p>
-              </td>
-              <td width="41.3px;">
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1683800380/corner_4_m2tihb.png">
-              </td>
-            </tr>
-          </table>
-
-          <table cellspacing="0" cellpadding="0" class="curriculum">
-            <tr>
-              <td width="110px">
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1683800380/icons_2_qipomu.png">
-              </td>
-              <td class="bg-dawn text-white" width="270px;">
-                <p style="margin-left: 10px">Gain to tools to develop an ESG action plan</p>
-              </td>
-              <td width="41.3px;">
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1683800380/corner_3_sbseng.png">
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-
-
-
-      <tr bgcolor="#F8F8F8">
-        <td class="narrowpadding">
-          <div class="text-center">
-            <a class="learnmore fs-18" style="color: #6E8498; margin-right: 30px;" href="https://theboardroomafrica.com/executive-programmes/esg-certificate">LEARN MORE</a>
-            <a href="https://esgcertificateapplicationform.paperform.co/" class="primary-btn bg-mustard rounded mt-10 fs-18">Apply</a>
-          </div>
-            <br/>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <br/><br/>
-        </td>
-      </tr>
 
       <tr bgcolor="#f8f8f8">
         <td class="newpadding">
-          <br/>
-          <p class="text-tender fs-16 text-center">The ESG certificate programme was fantastic — the quality of facilitators, depth of information and contribution from participants have greatly enriched me. I have been doing work in this area (at times unknowingly), and the training provided a structured framework to engage and interrogate issues. <br/><br/>
-            <b>Allen Sophia Asiimwe, Chief Of Programmes TradeMark East Africa</b>
-          </p>
-          <br/>
+          <p>As businesses and leaders around the world find their place as stewards of the people and communities they serve, the environment, and good governance, they’re also increasingly dealing with the complex and constantly evolving nature of ESG leadership. Whether it’s understanding the evolving role of sustainability leadership, getting buy-in from employees and other key stakeholders, understanding the regional complexities, or regulatory positioning of ESG across the globe, TBrA's ESG Certificate Programme lecturers collectively bring their own expertise and thoughtful insights for leaders and businesses globally.</p>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          <br/><br/><br/>
+          <hr>
         </td>
       </tr>
 
       <tr>
-        <td><br/><br/></td>
-      </tr>
+        <td style="padding: 40px 120px;">
+          <h3 class="libreb">The Evolving Role of Chief Sustainability Officers</h3>
+          <br/>
+          <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1687872176/LionBg_tes9fs.jpg" class="block">
+          <p class="bg-tender p-10 text-light">Co-authored by Alison Taylor (TBrA ESG Certificate Programme Lecturer)</p>
+          <br/>
+          <p>The role of the CSO is undergoing a rapid and dramatic transformation. Historically CSOs have acted like stealth PR executives—their primary task was to tell an appealing story about corporate sustainability initiatives to the company’s many stakeholders. Now, however, some CSOs have moved away from a role centered on messaging and instead are spearheading the true integration of material ESG issues into corporate strategy.</p>
+          <br/>
 
-      <tr bgcolor="#dee3e7">
-        <td>
-          <img src="https://res.cloudinary.com/tbra/image/upload/v1683794633/ESGTrustedBy_jedpcz.jpg">
+          <a href="https://hbr.org/2023/07/the-evolving-role-of-chief-sustainability-officers" class="py-10 px-30 bg-dusk text-white">Read article</a>
+
+          <br/><br/><br/><br/>
+
+          <h3 class="libreb" style="padding-right: 50px;">A message to SME Leaders: “Walk the Pathway to Carbon Reduction with your Employees”</h3>
+          <br/>
+
+          <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1687878307/tbra/ESGWalk_dcwgnu.jpg" class="block">
+          <p class="bg-tender p-10 text-light">Rosalind Kainyah MBE  (TBrA ESG Certificate Programme Lecturer)</p>
+          <br/>
+          <p>The key to creating a thriving and sustainable company is to get all employees – from the C-Suite through to the factory floor and reception desk – engaged in everyday Sustainability efforts. Companies sometimes struggle to connect Sustainability initiatives with the daily work of employees. You need to answer the ‘WIIFM’ question for employees - “What’s in it for me?”</p>
+          <br/>
+
+          <a href="https://www.linkedin.com/pulse/message-sme-leaders-walk-pathway-carbon-reduction-your-kainyah-mbe" class="py-10 px-30 bg-dusk text-white">Read article</a>
         </td>
       </tr>
-      <tr bgcolor="#dee3e7">
-        <td>
-          <br/>
-          <img src="https://res.cloudinary.com/tbra/image/upload/v1680798060/InstructorsESG_dtue59.jpg">
+
+      <tr>
+        <td class="newpadding">
+          <table width="100%">
+            <tr valign="top">
+              <td width="48%">
+                <h2 class="libreb mb-10">Africa’s financial sector must tackle climate change</h2>
+                <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1687878248/tbra/climateChange_tkydmy.jpg" style="height: 235px; width: 100%; object-fit: cover;" class="block">
+                <p class="bg-tender p-10 text-light">Jacqueline Musiitwa  (TBrA ESG Certificate Programme Lecturer)</p>
+                <br/>
+                <p>Africa’s financial sector decision-makers need to take a permanent seat at the continent’s <a class="text-mustard" style="text-decoration: underline;" href="https://african.business/2021/04/trade-investment/africa-needs-to-take-bold-transformative-action-on-climate-change/">climate change</a> negotiating table to take advantage of the renewed global focus on climate finance and chart a path that results in relevant climate solutions for the continent.</p>
+                <br/>
+                <a href="https://african.business/2021/04/finance-services/africas-financial-sector-needs-to-tackle-climate-change" class="py-10 px-30 bg-dusk text-white">Read article</a>
+              </td>
+              <td width="4%">&nbsp;</td>
+              <td width="48%">
+                <h2 class="libreb mb-10">Sustainability & ESG - An Investor's Perspective</h2>
+                <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1687878306/tbra/ESGinvestor_gooolp.jpg" class="block" style="height: 235px; width: 100%; object-fit: cover;">
+                <p class="bg-tender p-10 text-light">Co-authored by  Harald Walkate (TBrA ESG Certificate Programme Lecturer)</p>
+                <br/>
+                <p>Deep decarbonization in industry won’t happen through magical thinking about offsets. Instead, deep decarbonization will follow an old-fashioned model: it must be earned through industrial policy, investment, experimentation, learning, and scaling. Along the way, many firms and some industries will be lost. Many more will be created. And through all that the planet, in time, will heal.</p>
+                <br/>
+                <a href="https://www.linkedin.com/pulse/sustainability-esg-investors-perspective-harald-walkate" class="py-10 px-30 bg-dusk text-white">Read article</a>
+              </td>
+            </tr>
+          </table>
         </td>
       </tr>
 
-      <tr bgcolor="#202945">
-        <td>
+      <tr>
+        <td class="newpadding pb-0">
+          <h2 class="pt-10 px-30 fs-32 bg-dawn inline-block libreb" style="width: 280px;">
+            Learn more from our
+          </h2>
+        </td>
+      </tr>
+
+      <tr class="bg-dark">
+        <td class="newpadding py-0">
+          <h2 class="pb-10 px-30 fs-32 bg-dawn inline-block libreb" style="width: 280px;">
+            global faculty
+          </h2>
+
+          <br/><br/>
+
+          <p class="text-center text-dawn">"I was exposed to practical approaches that organisations like mine can take to adopt and implement sustainability within their space. I better understand how to focus on what matters to my business while successfully pushing the ESG agenda and monitoring our progress as we grow. I especially loved the depth of the training content, the supporting resources shared and the very experienced facilitators. I would recommend the programme to any woman leader considering it."</p>
           <br/>
-            <div class="text-center"><a href="https://esgcertificateapplicationform.paperform.co/" class="primary-btn bg-mustard rounded mt-10">Apply</a></div>
-          <br/>
+          <div class="text-center text-dawn">
+            <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1687879766/tbra/5Stars_awbavb.png" width="180px" alt="">
+
+            <br/><br/>
+
+            <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1687880055/tbra/Vivian_lwsktl.jpg" width="130px" alt="">
+            
+            <br/><br/>
+            
+            <p>
+              Vivian Akwuaka, <br/>
+              <b>Group Head, Quality and Sustainability,</b><br/>
+              <b>Iwosan Investments Limited</b>
+            </p>
+
+            <br/>
+            <p class="thin mt">Sign up today</p>
+            <br/>
+          </div>
+        </td>
+      </tr>
+
+      <tr bgcolor="#F0F2F0">
+        <td class="newpadding text-center">
+          <p class="px-40">Ready to drive sustainable change within your organisation and be guided by these expert lecturers? Secure your seat on the ESG Certificate Programme today!</p>
+        </td>
+      </tr>
+
+      <tr class="bg-dark">
+        <td class="newpadding py-20 text-center">
+          <h4 class="text-white">ONLY 7 TICKETS LEFT</h4>
+        </td>
+      </tr>
+
+      <tr bgcolor="#F0F2F0">
+        <td class="newpadding text-center">
+          <a href="#" class="rounded bg-tender text-white inline-block">SPEAK TO AN ADVISOR</a>
+          <a href="#" class="rounded bg-dawn text-dusk inline-block">REGISTER NOW</a>
         </td>
       </tr>
 

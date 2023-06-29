@@ -9,8 +9,8 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200,400;700&family=Libre+Baskerville:wght@400;700&display=swap');
 
-  body {margin: 0; padding: 0; min-width: 100%!important;height:auto; color: #202945; font-size: 14.5px;}
-  img {height: auto; max-width: 100%;}
+  body {margin: 0; padding: 0; min-width: 100%!important;height:auto; color: #403E3A; font-size: 16px;}
+  img {height: auto; max-width: 100%; display: block;}
 
   a {
     color: #1565c0;
@@ -48,13 +48,9 @@
   .pt-0 { padding-top: 0 !important; }
   .py-0 { padding-top: 0 !important; padding-bottom: 0 !important;}
   .p-10 { padding: 10px; }
+  .p-20 { padding: 20px; }
+  .p-30 { padding: 30px; }
 
-
-  h1 {
-    font-size: 55px;
-    font-weight: 800;
-    line-height: 1;
-  }
 
   h1, h2, p, a, ul, li, * {
     margin: 0;
@@ -65,6 +61,14 @@
   .libreb, .libreb * {
     font-family: "Libre Baskerville", serif, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     text-decoration: none;
+  }
+
+
+  h1 {
+    font-size: 55px;
+    font-weight: 200;
+    line-height: 1;
+    margin-bottom: 30px;
   }
 
   .button a {color: #ffffff; text-decoration: none;}
@@ -80,12 +84,14 @@
         position: relative;
         text-decoration: none;
         text-transform: uppercase;
-        font-size: 12px;
-        padding: 10px 15px;
+        padding: 8px 25px;
         letter-spacing: 1px;
-        background-color: #EA5A4F;
+        background-color: #CDAD7D;
         color: white;
-        margin-top: 22px;
+        font-size: 15px;
+        margin-top: 18px;
+        min-width: 80px;
+        text-align: center;
     }
 
     .text-center { text-align: center; }
@@ -142,6 +148,7 @@
   .bg-dusk { background-color: #4A4F54; }
   .bg-mustard { background-color: #CDAD7D !important; }
   .bg-blue { background-color: #202945; }
+  .bg-white { background-color: #fff; }
   .text-dawn { color: #CDDAE6; }
   .text-tender { color: #6E8498; }
   .text-dusk { color: #4A4F54; }
@@ -150,12 +157,34 @@
   .text-brown { color: #96522D; }
   .text-green { color: #0D3928; }
   .text-black { color: black }
+  .text-green { color: #0D3928; }
 
   .mb-20 { margin-bottom: 20px; }
   .mb-10 { margin-bottom: 10px; }
   .mb-5 { margin-bottom: 5px; }
   .mt-10 { margin-top: 10px !important; }
   .mt-5 { margin-top: 10px !important; }
+  .p-10 { padding: 10px; }
+  .pt-10 { padding-top: 10px;}
+  .pt-20 { padding-top: 20px;}
+  .pt-30 { padding-top: 30px;}
+  .pt-40 { padding-top: 40px;}
+  .pb-10 { padding-bottom: 10px;}
+  .pb-20 { padding-bottom: 20px;}
+  .pb-30 { padding-bottom: 30px;}
+  .pb-40 { padding-bottom: 40px;}
+  .py-0 { padding-top: 0px; padding-bottom: 0px; }
+  .pt-0 { padding-top: 0px; }
+  .pb-0 { padding-bottom: 0px; }
+  .py-0 { padding-top: 0px; padding-bottom: 0px; }
+  .py-10 { padding-top: 10px; padding-bottom: 10px; }
+  .px-10 { padding-left: 10px; padding-right: 10px; }
+  .py-20 { padding-top: 20px; padding-bottom: 20px; }
+  .py-20 { padding-top: 20px; padding-bottom: 20px; }
+  .px-30 { padding-left: 30px; padding-right: 30px; }
+  .px-30 { padding-left: 30px; padding-right: 30px; }
+  .px-40 { padding-left: 40px; padding-right: 40px; }
+  .px-40 { padding-left: 40px; padding-right: 40px; }
   .thin { font-weight: 200; }
   .bold { font-weight: bold; }
 
@@ -169,6 +198,12 @@
   .fs-30 { font-size: 30px; }
   .fs-34 { font-size: 34px; }
   .fs-40 { font-size: 40px; }
+  .fs-50 { font-size: 50px; }
+  .fs-60 { font-size: 60px; }
+  .fs-70 { font-size: 70px; }
+  .fs-80 { font-size: 80px; }
+
+  h1 { color: #C7C9C9; font-weight: 200;  }
   .uppercase { text-transform: uppercase; }
   .newpadding { padding: 40px 50px; }
 
@@ -193,6 +228,23 @@
     margin-top: 20px;
   }
 
+  .whos-coming { color: #DADEDA; border-spacing: 3px 0 !important;}
+  .whos-coming tr { vertical-align: top; }
+  .whos-coming p {
+    font-size: 13px;
+  }
+
+  .whos-coming td {
+    padding: 14px;
+  }
+  .whos-coming h2 {
+    font-size: 17px;
+    margin-bottom: 14px;
+  }
+
+  table { width: 100%; }
+  .underline { color: unset; text-decoration: underline !important; }
+
   </style>
 </head>
 
@@ -208,43 +260,126 @@
 
 <tr>
   <td>
-    <table bgcolor="#fff" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
+    <table bgcolor="#F8F8F8" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
 
       <tr style="background: url('https://res.cloudinary.com/tbra/image/upload/v1685367467/DigestBG_p9ilqh.jpg') no-repeat center right / cover; vertical-align: top;">
         <td class="newpadding" height="320px">
           <h2 class="thin text-center capitalise" style="margin-top: 265px;">
-            <span style="color: #cfdeed; letter-spacing: 3px;">Community Digest - May Roundup</span>
+            <span style="color: #cfdeed; letter-spacing: 3px;">Community Digest - June Roundup</span>
           </h2>
         </td>
       </tr>
 
+
       <tr>
         <td>
-          <br/><br/><br/>
-          <h1 class="new-title text-center">Network</h1>
+          <br/><br/>
+          <h1 class="text-center">Network</h1>
+          <img class="" src="https://res.cloudinary.com/dqngxqaha/image/upload/v1688039567/Mixers_e8gfim.jpg">
+          <div class="newpadding">
+            <p>At TBrA, we value the transformative power of connections and shared experiences. That's why this month, we launched our City Mixers starting in Accra. Join us as we create inclusive spaces for women leaders to meet, share, collaborate, and learn. Stay tuned for Lagos, Nairobi, and Johannesburg.</p>
+            <br/>
+            <p>Want to host a mixer in your city? </p>
+
+            <a href="#" class="primary-btn bg-dusk">GET IN TOUCH</a>
+          </div>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="newpadding">
+          <h2 class="libreb thin p-30" style="background: #EAECEA;">Travelling soon? Use <a href="#">Check-in</a> and <a href="#">Trip</a> to connect with other members on your next trip</h2>
+          <br/>
+          <table>
+            <tr>
+              <td width="50%">
+                <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1688054964/Browser_jnesk8.jpg">
+              </td>
+              <td width="50%" style="padding-left: 20px;">
+                <p>Use the 'Check-In' and 'Trip' features on the <a href="#" class="underline">Member’s Forum</a> Live Feed to connect with other members across the globe.</p>
+                <br/>
+                <p>When you’re ready to travel, simply enter your trip details using Trip or Check-in to the City when you arrive. A notification will be shared with members in the City to facilitate in-person connections.</p>
+                <br/>
+                <p>Use these powerful community activation tools to expand your network and make the most of your journeys!</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          <br/><br/>
+          <h1 class="fs-50 text-center">Annual Gathering</h1>
+
+          <p class="newpadding py-0">Don't miss out on our network's inaugural annual gathering in October! Join other extraordinary industry experts and influential women leaders from around the globe to connect, learn and have fun all while being surrounded by the rich historic and cultural experiences of Cairo and Sharm-El-Sheikh.</p>
+          
+          <br/><br/>
+
+          <table width="100%" class="whos-coming" style="background: linear-gradient(to bottom, #202945 0%, #202945 80%, transparent 80%, transparent 100%);">
+            <tr>
+              <td colspan="6" style="padding: 0;">
+                <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1688054148/WhoComing_paohqz.jpg" style="display: block;">
+              </td>
+            </tr>
+            <tr>
+              <td width="16.66%" class="bg-tender">
+                <h2>Dr. Thema Bryant</h2>
+                <p>Professor, Pepperdine University Graduate School of Education and Psychology</p>
+              </td>
+              <td width="16.66%" class="bg-tender">
+                <h2>Zimbini Hill</h2>
+                <p>Chair, Independent Development Trust and Founder, Hluma Media</p>
+              </td>
+              <td width="16.66%" class="bg-tender">
+                <h2>Bola Tinubu, CDir</h2>
+                <p>Partner, Olajide Oyewole LLP, and Chair, TheBoardroom Africa</p>
+              </td>
+              <td width="16.66%" class="bg-tender">
+                <h2>Rosalind Kainyah, MBE</h2>
+                <p>MD, Kina Advisory, and Sustainability Advisor</p>
+              </td>
+              <td width="16.66%" class="bg-tender">
+                <h2>Annabel Tagoe-Bannerman</h2>
+                <p>Group General Counsel, Bakkavor</p>
+              </td>
+              <td width="16.7%" class="bg-tender">
+                <h2>Ayesha Bedwei Ibe</h2>
+                <p>Global People Leader-Tax and Legal Services, PwC</p>
+              </td>
+            </tr>
+          </table>
+
+          <br/>
+          <div class="text-center"><a href="https://tbraannualgathering.com/" class="capitalise bg-mustard primary-btn">Register to attend</a></div>
+          <br/><br/>
         </td>
       </tr>
 
       <tr>
         <td class="newpadding">
-          <img src="https://res.cloudinary.com/tbra/image/upload/v1685094585/EgyptCTA_mq9owf.jpg">
-          <br/><br/>
-          <p class="thin">The cornerstone of our community is connection and collaboration, so it's fitting that our inaugural Annual Gathering is anchored on the theme of "Uniting to Build New Frontiers". We recognise that each leader is on their own journey, and the power of sharing resources, networks and opportunities is what will allow us all to accelerate our impact in and beyond the boardroom. Uniting our journeys to build new frontiers is a call to action for all of us to achieve more, and build strong legacies by working together.</p>
-          <br/>
+          <h1 class="text-center">Member’s Story</h1>
 
-          <a href="https://tbraannualgathering.com/" class="primary-btn bg-mustard mt-10">Get your early bird ticket</a>
+          <table cellspacing="0" cellpadding="0">
+            <tr class="bg-dawn">
+              <td width="40%">
+                <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1688052742/Violet_repx9d.jpg">
+              </td>
+              <td width="60%" style="padding-left: 30px;">
+                <p>Learn more about Violet Mordichai’s Board Apprentice experience over the past year with MedAccess.</p>
+                <br/>
+                <p>In this video, Violet shares about her time at MedAccess and encourages others to sign up for first-hand experience in the workings of boardrooms of leading companies and organisations.</p>
+                <a href="#" class="primary-btn">Watch Video</a>
+              </td>
+            </tr>
+          </table>
         </td>
       </tr>
 
       <tr>
-        <td class="newpadding pt-0">
-          <img src="https://res.cloudinary.com/tbra/image/upload/v1685094828/PrimeCTA_gezcfp.jpg">
-          <br/><br/>
-          <p class="thin">TBrA Prime is an enhanced membership experience designed to enable you to get the absolute best from your membership. Prime members enjoy a wide range of perks and discounts on all member services, programmes and events.</p>
-          <br/>
-
-          <a href="https://theboardroomafrica.com/tbraprime" class="primary-btn bg-mustard mt-10">Discover Prime</a>
-        </td>
+        <td></td>
       </tr>
 
 
@@ -254,41 +389,38 @@
           <h3 class="sec-title capitalise"><span style="background: #403E3A; color: #fff; font-weight: 200;">Membership Moves</span></h3>
           <!-- <br /> -->
           <div class="newpadding">
-            <p class="thin fs-16">Congratulations to the following members on their recent achievements, from board appointments and executive moves to book launches and awards. <br/><br/>Email&nbsp;<b><a style="color: black;" href="mailto:community@theboardroomafrica.com">community@theboardroomafrica.com</a></b>&nbsp;to be featured in our next edition of Membership Moves.</p>
+            <p>We congratulate the following members on their recent noteworthy milestones from board appointments to executive moves and more. To share your accomplishments with us, kindly email us at <a class="bold" style="color: black;" href="mailto:community@theboardroomafrica.com">info@theboardroomafrica.com.</a></p>
             
             <br/>
             
             <table class="moves">
               <tr>
                 <td>
-                  <p><a href="https://www.linkedin.com/in/manon-coulibaly-727aba/">Manon Coulibaly</a>&nbsp;was appointed as Independent Board Chair at Farmerline.</p>
+                  <p><a href="https://www.linkedin.com/in/estherndeti/" >Esther Ndeti</a> was appointed to the board of World Bicycle Relief.</p>
                 </td>
                 <td>
-                  <p><a href="https://www.linkedin.com/in/abena-amoah-7875473b/">Abena Amoah</a>&nbsp;was appointed Chair of the International Capital Market Association's (ICMA), West African Committee and Co-Chair of the ICMA's Pan-African Committee.</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p><a href="https://www.linkedin.com/in/adesuwa-okunbo-rhodes/">Adesuwa Okunbo Rhodes</a>&nbsp;was appointed as Independent Director at Coronation Asset Management.</p>
-                </td>
-                <td>
-                  <p><a href="https://www.linkedin.com/in/maya-horgan-famodu-b57bb346/">Maya Horgan Famodu</a>&nbsp;was recognised for her outstanding achievements in technology and innovation as an AFROTECH Future 50 honoree.</p>
+                  <p><a href="https://www.linkedin.com/in/adeoluadewumi/" >Adeolu Adewumi-Zer</a> was appointed to the board of the Global Center of Cooperative Security.</p>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <p><a href="https://www.linkedin.com/in/ebineyamissah2004/">Elizabeth Biney-Amissah</a>&nbsp;was appointed as Independent Director at Beacon Power Services.</p>
+                  <p><a href="https://www.linkedin.com/in/ndidi-okonkwo-nwuneli-840696a/" >Ndidi Okonkwo-Nwuneli</a> was appointed to the lead group of the United Nations Scaling Up Nutrition (SUN) Movement.</p>
                 </td>
                 <td>
-                  <p><a href="https://www.linkedin.com/in/nancy-ajima-mba-ba-50617814/">Nancy Ajima</a>&nbsp;was appointed as Global Head of the Project Coordination Unit at the Consultative Group on International Agricultural Research (CGIAR)</p>
+                  <p>Dr<a href="https://www.linkedin.com/in/ACoAAAEURpoBXDFCQHCa1qFJG5das1SvsTz4w6A" > Wanjiru Kamau-Rutenberg</a> was appointed as an Independent Non-Executive Director at <a href="https://www.linkedin.com/company/autodesk_foundation/" >Autodesk Foundation</a>.</p>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <p><a href="https://www.linkedin.com/in/mirandanaiman/">Miranda Naiman</a>&nbsp;was re-elected to the board of CRDB Bank Plc.</p>
+                  <p><a href="https://www.linkedin.com/in/delphine-traor%C3%A9-5a58a65/" >Delphine Traor&eacute; </a>was awarded 2023 CEO of the Year by The Africa CEO Forum.</p>
                 </td>
                 <td>
-                  <p><a href="https://www.linkedin.com/in/yawahansen-quao/">Yawa Hansen-Quao</a>&nbsp;was appointed to the board of Futurelect.</p>
+                  <p><a href="https://www.linkedin.com/in/lina-higiro-82380a71/" >Lina Higiro</a> was appointed Executive Committee Member at Rwanda Bankers&rsquo; Association.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><a href="https://www.linkedin.com/in/sharmilabhatt36543a63/" >Sharmila Bhatt</a> was appointed as an Advisory member at Daraja Impact Fund.&nbsp;</p>
                 </td>
               </tr>
             </table>
@@ -297,132 +429,42 @@
         </td>
       </tr>
 
-      <tr>
-        <td>
-          <img src="https://res.cloudinary.com/tbra/image/upload/v1685349218/Special_esiphr.jpg" style="display: block;">
-        </td>
-      </tr>
-
-      <tr bgcolor="#f0f2ef">
-        <td class="newpadding">
-          <h2 class="libreb thin newpadding py-0 text-center fs-30 text-blue">Congratulations to these TBrA members recognised in the third annual Africa.com Definitive List of Women CEOs</h2>
-          <br/>
-        </td>
-      </tr>
-
-      <tr bgcolor="#202945">
-        <td class="newpadding">
-          <table cellspacing="0" cellpadding="10" class="tbra-members thin">
-            <tr valign="top">
-              <td width="20%">
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355086/mizinga_titdhm.jpg">
-                <p><a href="https://www.linkedin.com/in/mizinga-melu-54391750/">Mizinga Melu</a>, CEO and Managing Director, Zambia, Absa Group Ltd</p>
-              </td>
-              <td width="20%">
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355087/brenda_wfeji9.jpg">
-                <p><a href="https://www.linkedin.com/in/brenda-mbathi-46a487108/">Brenda Mbathi</a>, President & CEO, East Africa, General Electric Company</p>
-              </td>
-              <td width="20%">
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355369/aminata_dekebb.jpg">
-                <p><a href="https://www.linkedin.com/in/aminata-kane-6a70551b/?originalSubdomain=sn">Aminata Kane Ndiaye</a>, VP, Mobile Financial Services, Middle East and Africa, Orange Group</p>
-              </td>
-              <td width="20%">
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355124/catherine_ghend8.jpg">
-                <p><a href="https://sheleadsafrica.org/catherine-lesetedi-botswana-boss-woman/">Catherine Lesetedi</a>, Group CEO, Botswana Insurance Holdings Ltd</p>
-              </td>
-              <td width="20%">
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355085/anne_qp8jwe.jpg">
-                <p><a href="https://www.linkedin.com/in/anne-juuko-523886a5/">Anne Juuko</a>, CEO, Stanbic Bank Uganda</p>
-              </td>
-            </tr>
-            <tr valign="top">
-              <td>
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355121/mukwandi_ysbvba.jpg">
-                <p><a href="https://www.linkedin.com/in/mukwandi-chibesakunda-b34869226/">Mukwandi Chibesakunda</a>, CEO, Zanaco Plc</p>
-              </td>
-              <td>
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355120/mapula_iodyej.jpg">
-                <p><a href="https://www.linkedin.com/in/mapula-bodibe-cm-sa-078a4029/">Mapula Bodibe</a>, CEO, MTN Rwanda</p>
-              </td>
-              <td>
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355120/mitwa_qumoic.jpg">
-                <p><a href="https://www.linkedin.com/in/mitwa/">Mitwa Kaemba Ng'ambi </a>,  CEO, Cameroon, MTN Group Ltd</p>
-              </td>
-              <td>
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355085/pearl_mayjsf.jpg">
-                <p><a href="https://www.linkedin.com/in/pearlnkrumah/">Pearl Nkrumah</a>, Executive Director, Retail and Digital Banking, Access Bank Ghana</p>
-              </td>
-              <td>
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355271/faith_zy9pzc.jpg">
-                <p><a href="https://www.linkedin.com/in/faith-mukutu-ab942097/">Faith Mukutu</a>, CEO, Zambeef Products Plc</p>
-              </td>
-            </tr>
-            <tr valign="top">
-              <td>
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355086/aida_v7puqa.jpg">
-                <p><a href="https://www.linkedin.com/in/aida-diarra-0bb694/">Aida Diarra</a>, Senior Vice President and Head of Sub Saharan Africa, VISA Inc)</p>
-              </td>
-              <td>
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355087/diane_aqphes.jpg">
-                <p><a href="https://www.linkedin.com/in/diane-karusisi-3830a510a/">Diane Karusisi</a>, CEO, BK Group Plc</p>
-              </td>
-              <td>
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1685355121/mansa_pc6jyt.jpg">
-                <p><a href="https://www.linkedin.com/in/mansa-nettey-8860a1a/">Mansa Nettey</a>, CEO, Standard Chartered Ghana</p>
-              </td>
-              <td></td>
-              <td></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
 
       <tr>
         <td>
-          <br/><br/><br><br/>
-          <h3 class="sec-title capitalise"><span style="background: #403E3A; color: #fff; font-weight: 200;">Webinar Replay</span></h3>
+          <div class="px-40" style="background: #ced4dc;"><img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1688052471/HBRLogos_gtyuvt.jpg" alt=""></div>
+
+          <div class="bg-dawn newpadding text-center">
+            <h2 class="text-tender">Take advantage of these Partner offers</h2>
+            <p class="newpadding">In collaboration with Harvard Business Review (HBR), members are invited to share article concepts to be considered for Ascend, HBR's publication targeting the next generation of business leaders. Additionally, the Institute of Directors in London offers a 25% discount on its full membership as an exclusive benefit for TBrA members. Enjoy this and many more as a TBrA member.</p>
+            <a href="#" class="primary-btn">SEE THE OFFERS</a>
+          </div>
         </td>
       </tr>
 
 
       <tr>
         <td class="newpadding">
-          <table width="100%" cellpadding="0" style="border: 10px solid #E1DEDC;">
-            <tr>
-              <td width="40%"><img src="https://res.cloudinary.com/tbra/image/upload/v1685371067/KieranPoster_hq2lii.jpg"></td>
-              <td style="padding: 0 20px;">
-                <p>Today, the role of a Non-Executive Director (NED) is gradually transitioning from an “end-of-career” option to an active career choice. This webinar provides practical insights and strategies for business leaders, looking to secure their first appointment and/or develop a portfolio of NED roles. </p>
-                <br/>
-                <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/media_center/folder/b18deaeb-568a-4dab-92fc-5ba86c4ed6f8" class="primary-btn bg-blue rounded mt-10">WATCH REPLAY</a></div>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
+          <h1 class="text-center">Latest Articles</h1>
 
-
-
-      <tr bgcolor="#F8F8F8">
-        <td class="newpadding">
           <table class="collapse trends" width="100%">
             <tr>
-              <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1685101691/blackWomen_a44n0b.jpg'); background-size: 327px;">
+              <td width="300px" style="background: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1688051369/FoodBanks_zmwvv3.jpg'); background-size: 302px;">
               </td>
-              <td style="padding: 0 20px" height="200px">
-                <p class="mb-10">History has shown us that without intervention, corporations fail to appoint qualified members to their boards that represent the diversity of our communities.</p>
-                <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/page/news-new" class="primary-btn bg-mustard rounded mt-10" style="padding: 10px 30px">Read</a></div>
+              <td style="padding-left: 40px;" height="200px">
+                <p class="mb-10">Food recovery helps the region’s small-scale farmers, whose livelihoods have been disrupted by the drought. Food banks are based in communities and are locally led, which means that food bankers understand where the needs are greatest and how to get food to people.</p>
+                <a href="#" class="primary-btn">Read</a>
               </td>
             </tr>
           </table>
           <br />
           <table class="collapse" width="100%">
             <tr>
-              <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1685101913/whyTalent_eyapcg.jpg'); background-size: 305px;">
+              <td width="300px" style="background: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1688051482/Ageism_iclvyx.jpg'); background-size: 305px;">
               </td>
-              <td style="padding: 0 20px" height="200px">
-                <p class="mb-10">How many times have you landed a job because someone in your network made a warm introduction or a referral? In fact, 85% of positions are filled through networking, which presents a challenge for many talented, hard-working people from diverse and low-income communities.</p>
-                <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/page/news-new" class="primary-btn rounded mt-10 bg-mustard" style="padding: 10px 30px">Read</a></div>
+              <td style="padding-left: 40px;" height="200px">
+                <p class="mb-10">Originally, ageism was understood to be prejudice, stereotypes, and discriminatory behaviour targeted at older employees. But with an increasingly diverse and multigenerational workforce, age bias now occurs across the career life cycle — especially for women.</p>
+                <a href="#" class="primary-btn">Read</a>
               </td>
             </tr>
           </table>
@@ -434,7 +476,7 @@
       <tr>
         <td>
           <br /><br />
-          <img src="https://res.cloudinary.com/tbra/image/upload/v1680093920/virtualConn_stwa3z.jpg">
+          <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1688051249/VConnections_zzjxls.jpg">
         </td>
       </tr>
 
@@ -443,25 +485,26 @@
 
       <tr bgcolor="#EEEFEF">
         <td class="newpadding">
-          <table class="collapse" width="100%" style="background: #fff;">
+
+          <h1 class="text-center">Board Trends</h1>
+          <table class="collapse" width="100%">
             <tr>
-              <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1685102751/strategicApproach_xkkdjo.jpg'); background-position: center top; background-size: 302px;">
+              <td width="300px" style="background: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1688051247/BoardEffectiveness_nogmd8.jpg'); background-position: center top; background-size: 302px;">
               </td>
-              <td style="padding: 0 20px" height="200px">
-                <p class="mb-5">A good board of directors can be one of the most strategic—and most undervalued—levers a CEO has to address the challenges of operating at scale. Building your board forward from product-market fit—instead of backwards from an IPO date—helps you clarify the most critical challenges facing your company and find the right people to advise you.</p>
-                <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/media_center/folder/eb0f98c1-e1b3-4722-95fc-9784187cf201" class="primary-btn bg-mustard rounded mt-10" style="padding: 10px 30px">Read</a></div>
+              <td style="padding-left: 40px;" height="200px">
+                <p class="mb-5">This resource includes a framework to help boards achieve effective governance that positions their companies for strategic success and drives long‑term value.</p>
+                <a href="#" class="primary-btn">Read</a>
               </td>
             </tr>
           </table>
           <br />
-          <table class="collapse" width="100%" style="background: #fff;">
+          <table class="collapse" width="100%">
             <tr>
-              <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1685101984/inclusion_fewclg.jpg'); background-position: center bottom; background-size: 295px;">
+              <td width="300px" style="background: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1688051247/BoardCulture_xultgq.jpg'); background-position: center bottom; background-size: 295px;">
               </td>
-              <td style="padding: 0 20px" height="200px">
-                <br />
-                <p class="mb-5">Corporate and nonprofit board members have an important role in building an inclusive environment that drives performance and financial results.</p>
-                <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/media_center/folder/6b0a65ae-2611-4dd8-8792-e075a9619efc" class="primary-btn rounded mt-10 bg-mustard" style="padding: 10px 30px">Read</a></div>
+              <td style="padding-left: 40px;" height="200px">
+                <p class="mb-5">Two core responsibilities of boards are performance and risk. A strong, positive organisational culture helps both. But too many boards don’t make the links. As expectations rise—for corporations and their boards—that has to change.</p>
+                <a href="#" class="primary-btn">Read</a>
                 <br />
               </td>
             </tr>
@@ -494,53 +537,53 @@
       <tr bgcolor="#F8F8F8">
         <td class="newpadding">
           <ul>
-            <li>Lifestores Healthcare - Ongoing</li>
-            <li>African Risk Capacity Insurance Company - Applications closed, Reviewing</li>
-            <li>MTN Ghana - Mobile Money Limited - Applications closed, Reviewing</li>
-            <li>Ubongo International - Applications closed, Reviewing</li>
-            <li>International Finance Corporation - Applications closed</li>
-            <li>Canon Collins Trust - Applications closed</li>
-            <li>Lulalend - Applications closed</li>
-            <li>Trōcaire - Applications closed</li>
+            <li>Friendship Bench - <b>ongoing</b></li>
+            <li>Financing Alliance for Health - <b>ongoing</b></li>
+            <li>International Finance Corporation - <b>ongoing</b></li>
+            <li>Fastizers Food and Confectionery Limited - <b>ongoing</b></li>
+            <li>International Finance Corporation - <b>ongoing</b></li>
+            <li>Lifestores Healthcare - <b>Applications closed</b></li>
+            <li>MTN Ghana - <b>Mobile Money Limited - Applications closed, Interviewing</b></li>
+            <li>Ubongo International - <b>Applications closed, Reviewing</b></li>
           </ul>
 
           <br/>
 
           <div class="text-center">
-            <a href="https://membersforum.theboardroomafrica.com/opportunities" class="premium-btn bg-mustard rounded">Apply</a>
+            <a href="https://membersforum.theboardroomafrica.com/opportunities" class="primary-btn">Apply</a>
             <br /><br />
             <a class="learnmore uppercase" href="https://tbrafrica.paperform.co/">Recommend Someone</a>
-            <br /><br />
           </div>
         </td>
       </tr>
-
-
-
       
 
       <tr>
         <td>
-          <br/><br/>
-          <h1 class="new-title text-center mb-20" style="color: #a5a7a9;">Develop</h1>
+          <h1 class="text-center" style="color: #a5a7a9; margin-top: 50px;">Upcoming this July</h1>
         </td>
       </tr>
       
 
       
 
-      <tr style="background: url('https://res.cloudinary.com/tbra/image/upload/v1685113274/SelfBelief_ug97ys.jpg') no-repeat center left / cover;">
+      <tr style="background: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1688051781/GCNew_ldojgh.jpg') #d9deda no-repeat center bottom / contain;">
         <td>
-          <p class="thin capitalise bg-dusk text-white inline-block p-10" style="margin-left: 100px;">Group Coaching Session </p>
-          <div style="width: 300px;" class="newpadding">
-            <h1 class="fs-34">Masterclass <br/> in Self-Belief</h1>
+          <p class="thin capitalise bg-dusk text-white inline-block p-10" style="margin-left: 45px;">Group Coaching Session </p>
+          <div class="newpadding">
+          <h3 class="fs-34">Developing<br/> Executive Presence</h3>
             <br/>
-            <p class="thin bg-dawn inline-block" style="padding: 5px 15px;">12:00 PM Friday, June 30, 2023</p>
+            <p class="thin bg-tender inline-block text-white" style="padding: 5px 15px;">12:00 PM Friday, July 21, 2023 </p>
             <br/><br/>
-            <p class="thin bg-dawn p-10">We have within ourselves the ability to change everything about us that is not working for us. Our brains’ ability to form and reorganise neural connections means we can use our experiences to change and re-wire our brains. In this Self-Belief masterclass, you will identify areas of your life where you wish to create shifts and start practising ways of actually doing so.</p>
-            <br/>
-            <a href="https://membersforum.theboardroomafrica.com/networks/events/106187" class="primary-btn bg-mustard rounded mt-10" style="padding: 10px 30px">Sign Up</a>
+            <p class="thin p-20 fs-14" style="width: 300px; background: rgba(248, 248, 248, 0.9);">To influence effectively, leaders develop presence. While some people have a natural capability for gravitas, many of us have to be intentional about building up this muscle so that we can signal the right message to our followers and audiences. There is also always the tension between what is authentic and what is conformity and the question of what gets us to where we need and deserve to be in our organisation. Join us next month to strengthen your executive presence and become more influential in your organisation.</p>
           </div>
+        </td>
+      </tr>
+
+      <tr bgcolor="#EDE4D6">
+        <td class="text-center">
+          <a href="#" class="primary-btn">Sign up</a>
+          <br/><br/>
         </td>
       </tr>
 
@@ -548,26 +591,38 @@
 
       <tr>
         <td>
-          <h1 class="new-title text-center mb-20" style="color: #a5a7a9; margin-top: 50px;">Upcoming this June</h1>
+          <br/><br/><br/>
           <a href="https://tbraworkshops2023.paperform.co?utm_source=digest"><img src="https://res.cloudinary.com/tbra/image/upload/v1685112863/Programme_social_share_flfnsh.jpg"></a>
           <br/><br/><br/>
         </td>
       </tr>
 
-      <tr style="background: url('https://res.cloudinary.com/tbra/image/upload/v1682609515/OntologicalBg_w2bgax.jpg'); background-size: cover;">
-        <td class="newpadding text-white">
-          <br/>
-          <h1 class="fs-34 libreb text-mustard">Ontological Growth Experience</h1>
-          <div style="width: 400px;">
-            <br/><br/>
-            <p>Designed with the belief that organisational transformation must be anchored in authentic power, values-based, strengths-based and courageous leadership. This experience merges research and practice from neuroscience, psychology, biomimicry and ontology, offering delegates a unique opportunity to deeply transform themselves first and in turn to transform the teams and systems they lead.</p>
-            <br/><br/>
-            <a href="https://web.theboardroomafrica.com/wp-content/uploads/2023/04/Ontological-Growth-Experience-Brochure.pdf" class="learnmore text-white">Learn more</a>
-            <br/>
-            <p class="thin bg-dusk inline-block" style="padding: 8.5px 15px;">27 June - 2 August</p>
-            <a href="https://theboardroomafrica.com/onthological-growth-application?utm_source=digest" class="primary-btn bg-mustard text-black" style="padding: 10px 30px">Apply</a>
-          </div>
-          <br/>
+
+
+      <tr bgcolor="#d9deda">
+        <td>
+          <table class="border-collapse">
+            <tr>
+              <td class="newpadding text-green">
+                <br/>
+                <h1 class="fs-34 libreb text-green">ESG Certificate back for another cohort</h1>
+                <div>
+                  <br/><br/>
+                  <p>The next cohort of our Environmental, Social and Governance (ESG) Certificate programme starts in August 2023.</p>
+                  <br/>
+                  <p>Join the ESG Certificate programme to learn how to adapt, transform, and lead in this new global context.</p>
+                  <br/><br/>
+                  <a href="https://theboardroomafrica.com/wp-content/uploads/2023/04/ESG-Cohort-2-Brochure.pdf" class="learnmore">Download brochure</a>
+                  <br/>
+                  <a href="https://esgcertificateapplicationform.paperform.co/" class="primary-btn bg-mustard text-black" style="padding: 10px 30px">Apply</a>
+                </div>
+                <br/>
+              </td>
+              <td width="250px">
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1682610320/ESGBg_dvi0ud.jpg">
+              </td>
+            </tr>
+          </table>
         </td>
       </tr>
 
@@ -576,26 +631,30 @@
       <tr>
         <td>
           <br/><br/>
-          <h1 class="new-title text-center mb-20" style="color: #a5a7a9;">May Birthdays</h1>
+          <h1 class="new-title text-center mb-20" style="color: #a5a7a9;">June Birthdays</h1>
         </td>
       </tr>
 
 
 
-      <tr style="background: url('https://res.cloudinary.com/tbra/image/upload/v1685353042/BirthDayBg_g1j2i6.jpg') no-repeat center left / cover;">
+      <tr style="background: url('https://res.cloudinary.com/tbra/image/upload/v1685353042/BirthDayBg_g1j2i6.jpg') no-repeat center center / cover;">
         <td class="newpadding">
-          <ul class="libreb fs-26 newpadding" style="margin-left: 230px;">
-            <li>Uchenna Ogwo</li>
-            <li>Mwansa Chokolo</li>
-            <li>Mary Gicharu</li>
-            <li>Seyi Olulade</li>
-            <li>Harriet Wandira</li>
-            <li>Anitha Ingabe</li>
-            <li>Molade Elodimuor</li>
-            <li>Gloria Njiu</li>
-            <li>Aisha Mohamed</li>
-            <li>Mirriam Chiyaba</li>
-            <li>Bella Ikeme</li>
+
+          <p class="text-center newpadding fs-22 thin py-0">Sending our best wishes to TBrA members who have celebrated their birthdays this month. Wishing you all many more happy returns.</p>
+          <ul class="libreb fs-22 newpadding" style="margin-left: 180px;">
+            <li>Gisele Bondo</li>
+            <li>Barbara Akinbuwa</li>
+            <li>Haleema Akyirem, FCILG, ACIB, CA</li>
+            <li>Fawzia Ali</li>
+            <li>Felista Mubyeyi Kimanuka</li>
+            <li>Phyllis Kemide Senah</li>
+            <li>Anne-Marie Hesmondhalgh</li>
+            <li>Léontine Mabika</li>
+            <li>Rhoda Mshana</li>
+            <li>Adaorie Felicia Osademey-Udechukwu</li>
+            <li>Hildah Ngondoki</li>
+            <li>Roslyn Artis</li>
+            <li>Juliette Kavaruganda</li>
           </ul>
           <p class="text-center fs-18"><b>TBrA member? Help us celebrate you.</b></p>
           <div class="text-center"><a href="https://pwearoci.paperform.co" class="primary-btn bg-blue rounded mt-10">Share</a></div>

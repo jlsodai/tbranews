@@ -9,7 +9,8 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200,400;700&family=Libre+Baskerville:wght@400;700&display=swap');
 
-  body {margin: 0; padding: 0; min-width: 100%!important;height:auto; color: #403E3A; font-size: 16px;}
+  body { margin: 0; padding: 0; min-width: 100%!important; height:auto; color: #4A4F54; font-size: 16px; line-height: 1.3; font-weight: 300;
+  }
   img {height: auto; max-width: 100%; display: block;}
 
   a {
@@ -163,7 +164,7 @@
   .mb-10 { margin-bottom: 10px; }
   .mb-5 { margin-bottom: 5px; }
   .mt-10 { margin-top: 10px !important; }
-  .mt-5 { margin-top: 10px !important; }
+  .mt-5 { margin-top: 5px !important; }
   .p-10 { padding: 10px; }
   .pt-10 { padding-top: 10px;}
   .pt-20 { padding-top: 20px;}
@@ -245,6 +246,21 @@
   table { width: 100%; }
   .underline { color: unset; text-decoration: underline !important; }
 
+  .itinerary td {
+      background-color: #f8f8f8;
+      width: 33.333%;
+    }
+
+    .itinerary h2 {
+      line-height: 1;
+      color: #6E8498;
+      margin-bottom: 10px;
+    }
+
+    td.va-bottom { vertical-align: bottom; }
+    td.va-top { vertical-align: top; }
+    td.va-center { vertical-align: center; }
+
   </style>
 </head>
 
@@ -265,28 +281,54 @@
       <tr style="background: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1688113806/BannerDigest_uiijbd.jpg') no-repeat center right / cover; vertical-align: top;">
         <td class="newpadding" height="320px">
           <h2 class="text-center capitalise text-dawn" style="margin-top: 255px; letter-spacing: 3px">
-            Community Digest <span class="thin">June Roundup</span>
+            Community Digest <span class="thin">July Roundup</span>
           </h2>
         </td>
       </tr>
 
 
       <tr>
-        <td>
-          <br/><br/>
+        <td class="newpadding">
           <h1 class="text-center">Network</h1>
-          <img class="" src="https://res.cloudinary.com/dqngxqaha/image/upload/v1688127879/cityMix_od5vax.jpg">
-          <div class="newpadding">
-            <p>We value the transformative power of connections and shared experiences. That's why we launched our City Mixers starting in Accra this month. Join us as we create inclusive spaces for women leaders to meet, share, collaborate, and learn. Stay tuned for Lagos, Nairobi, and Johannesburg.</p>
-            <br/>
-            <p>Want to host a mixer in your city? </p>
 
-            <a href="https://theboardroomafrica.com/get-in-touch" class="primary-btn bg-dusk">GET IN TOUCH</a>
+          <p class="bg-dusk text-white libreb fs-22 py-10 px-40">Introducing our newest board member: Rosalind Kainyah</p>
+          <br/><br/>
+
+          <table width="100%" border="0" cellspacing="0" cellpadding="30" class="mb-20">
+            <tr>
+              <td width="50%" style="background: url('https://via.placeholder.com/500') no-repeat center center / cover;">
+                &nbsp;
+              </td>
+              <td width="50%">
+                <p>We are delighted to announce that Rosalind Kainyah has joined our esteemed board of directors. With over 30 years of combined international, senior management, executive and board-level experience, Rosalind brings a wealth of expertise to our board. She is also a trusted advisor to Boards and Senior Executives and a renowned authority on Sustainability and responsible business. We firmly believe that her invaluable insights will play a pivotal role in shaping the future of TheBoardroom Africa. Welcome, Rosalind!</p>
+              </td>
+            </tr>
+          </table>
+
+          <br/>
+
+
+          <h3 class="libreb text-mustard fs-34 thin">TBrA City Mixers</h3>
+          <br/>
+
+          <p>A heartfelt appreciation to all the members who joined us at the Membership Mixer in Accra. Special thanks go to Christie Brown for their valuable collaboration, which contributed to making this event an outstanding success. The inspiring atmosphere, filled with shared experiences and laughter, reaffirmed our belief in the power of women coming together. </p>
+          <br/>
+          <p>Next up is Lagos, Join us! </p>
+          <br/>
+
+          <div class="text-center bg-dawn">
+            <img src="https://res.cloudinary.com/tbra/image/upload/v1690557040/CityMixers_cqkyah.jpg" >
+            <a href="#" class="capitalise bg-blue primary-btn mt-5">RSVP FOR THE LAGOS MIXER</a>
+            <a href="#" class="capitalise bg-mustard primary-btn mt-5">HOST A MIXER</a>
+            <br/><br/>
           </div>
         </td>
       </tr>
 
 
+      
+
+<!-- 
       <tr>
         <td class="newpadding">
           <h2 class="libreb thin p-30" style="background: #EAECEA;">Travelling soon? Use <span class="underline">Check-in</span> and <span class="underline">Trip</span> to connect with other members on your next trip</h2>
@@ -298,71 +340,56 @@
           <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1688127584/digestBrowser_h4upe3.jpg">
         </td>
       </tr>
-
+ -->
 
       <tr>
         <td>
           <br/><br/>
           <h1 class="fs-50 text-center">Annual Gathering</h1>
 
-          <p class="newpadding py-0">Don't miss out on our network's inaugural annual gathering in October! Join other extraordinary industry experts and influential women leaders from around the globe to connect, learn and have fun all while being surrounded by the rich historic and cultural experiences of Cairo and Sharm-El-Sheikh.</p>
-          
-          <br/><br/>
+          <p class="newpadding pt-0">Prepare for an unforgettable adventure in Egypt at our Annual Gathering! Experience the awe of Cairo's pyramids and temples, the allure of Sharm-el-Sheikh's marine wonders, and the power of networking with industry leaders. Join us for an extraordinary journey filled with inspiration, culture, and meaningful connections. Don't miss out on this unparalleled experience! See you in Egypt.</p>
 
-          <table width="100%" class="whos-coming" style="background: linear-gradient(to bottom, #202945 0%, #202945 80%, transparent 80%, transparent 100%);">
+          <table bgcolor="#ECE4D7" width="100%" border="0" cellspacing="10" cellpadding="20" class="itinerary fs-16">
             <tr>
-              <td colspan="6" style="padding: 0;">
-                <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1688127584/EgyComing_nfrbtt.jpg" style="display: block;">
+              <td rowspan="2" height="320" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1689941340/EgyptConnections_yzz19s.jpg') no-repeat center center / cover;">&nbsp;</td>
+              <td>
+                <h2>Experience more of Egypt</h2>
+                <p>Immerse yourself in the rich history and vibrant culture of Cairo & Sharm el-Sheikh with curated tours led by expert guides. Explore the majestic Pyramids of Giza, the Sphinx, the Grand Egyptian Museum, the iconic St. Catherine Monastery and so much more.</p>
               </td>
+              <td rowspan="2" height="320" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1690187727/St._Catherine_Monastery_hhmoh8.jpg') no-repeat center center / cover;">&nbsp;</td>
             </tr>
             <tr>
-              <td width="16.66%" class="bg-tender">
-                <h2>Dr. Thema Bryant</h2>
-                <p>Professor, Pepperdine University Graduate School of Education and Psychology</p>
+              <td rowspan="2" height="320" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1689941340/EgyptMore_tumcwa.jpg') no-repeat center center / cover;">&nbsp;</td>
+            </tr>
+            <tr>
+              <td>
+                <h2>Build lasting connections</h2>
+                <p>Build your network and connect with key players, thought leaders, and industry experts from the continent and beyond.</p>
               </td>
-              <td width="16.66%" class="bg-tender">
-                <h2>Zimbini Hill</h2>
-                <p>Chair, Independent Development Trust and Founder, Hluma Media</p>
-              </td>
-              <td width="16.66%" class="bg-tender">
-                <h2>Christal Jackson</h2>
-                <p>Founder, Mosaic Genius and Impact & Equity Architect</p>
-              </td>
-              <td width="16.66%" class="bg-tender">
-                <h2>Rachel Moré Oshodi</h2>
-                <p>Deputy VP Commercial Sales, Africa, TotalEnergies and Founder, Ruwah</p>
-              </td>
-              <td width="16.66%" class="bg-tender">
-                <h2>Annabel Tagoe-Bannerman</h2>
-                <p>Group General Counsel, Bakkavor</p>
-              </td>
-              <td width="16.7%" class="bg-tender">
-                <h2>Ayesha Bedwei Ibe</h2>
-                <p>Global People Leader-Tax and Legal Services, PwC</p>
+              <td>
+                <h2>Position yourself for global influence</h2>
+                <p>Work with our two renowned executive coaches to learn what it takes to assume your space and take ownership of your positioning.</p>
               </td>
             </tr>
           </table>
 
           <br/>
-          <div class="text-center"><a href="https://tbraannualgathering.com/" class="capitalise bg-mustard primary-btn">Register Now</a></div>
+          <div class="text-center"><a href="https://tbraannualgathering.com/" class="capitalise bg-dusk primary-btn">Browse Itinerary</a></div>
           <br/><br/>
         </td>
       </tr>
 
       <tr>
         <td class="newpadding">
-          <h1 class="text-center">Member’s Story</h1>
+          <h1 class="text-center">In Memory</h1>
 
           <table cellspacing="0" cellpadding="0">
             <tr class="bg-dawn">
               <td width="40%">
-                <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1688052742/Violet_repx9d.jpg">
+                <img src="https://via.placeholder.com/300x300">
               </td>
               <td width="60%" style="padding-left: 30px;">
-                <p>Learn more about Violet Mordichai’s Board Apprentice experience over the past year with MedAccess.</p>
-                <br/>
-                <p>In this video, Violet shares about her time at MedAccess and encourages others to sign up for first-hand experience in the workings of boardrooms of leading companies and organisations.</p>
-                <a href="https://youtu.be/2CVmTudkHYQ" class="primary-btn">Watch Video</a>
+                <p>We were deeply saddened about the loss of <span class="underline">Cynthia Quarcoo</span>, a distinguished Legal Practitioner and valued member of the TBrA community. Her legal prowess was matched only by her compassion, as she tirelessly advocated for those who needed a voice. Cynthia’s legacy lives through her successes, including the establishment of Ghana's first Entertainment, Sports & Media practice. Our deepest condolences go out to her family, friends, and colleagues during this challenging period.</p>
               </td>
             </tr>
           </table>
@@ -380,38 +407,25 @@
           <h3 class="sec-title capitalise"><span style="background: #403E3A; color: #fff; font-weight: 200;">Membership Moves</span></h3>
           <!-- <br /> -->
           <div class="newpadding">
-            <p>Congratulations to the following members on their recent milestones, from board appointments to executive moves and more. To share your recent career move/achievement, email us at <a class="bold underline" style="color: black;" href="mailto:community@theboardroomafrica.com">info@theboardroomafrica.com.</a></p>
+            <p>We congratulate the following members on their recent noteworthy milestones from board appointments to executive moves and more. To share your accomplishments with us, kindly email us at <a class="bold underline" style="color: black;" href="mailto:community@theboardroomafrica.com">info@theboardroomafrica.com.</a></p>
             
             <br/>
             
             <table class="moves">
               <tr>
                 <td>
-                  <p><a href="https://www.linkedin.com/in/estherndeti/" >Esther Ndeti</a> was appointed to the board of World Bicycle Relief.</p>
+                  <p><a href="https://www.linkedin.com/in/ruth-doreen-mutebe-921b3838/">Ruth Doreen Mutebe</a> was appointed Chairperson of the African Institutes of Internal Auditors.</p>
                 </td>
                 <td>
-                  <p><a href="https://www.linkedin.com/in/adeoluadewumi/" >Adeolu Adewumi-Zer</a> was appointed to the board of the Global Center of Cooperative Security.</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p><a href="https://www.linkedin.com/in/ndidi-okonkwo-nwuneli-840696a/" >Ndidi Okonkwo-Nwuneli</a> was appointed to the lead group of the United Nations Scaling Up Nutrition (SUN) Movement.</p>
-                </td>
-                <td>
-                  <p>Dr<a href="https://www.linkedin.com/in/ACoAAAEURpoBXDFCQHCa1qFJG5das1SvsTz4w6A" > Wanjiru Kamau-Rutenberg</a> was appointed as an Independent Non-Executive Director at <a href="https://www.linkedin.com/company/autodesk_foundation/" >Autodesk Foundation</a>.</p>
+                  <p><a href="https://www.linkedin.com/in/carla-delaney-3b865670/">Carla Delaney</a> was appointed Interim Managing Director of Khula Sizwe Property Holdings.</p>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <p><a href="https://www.linkedin.com/in/delphine-traor%C3%A9-5a58a65/" >Delphine Traor&eacute; </a>was awarded 2023 CEO of the Year by The Africa CEO Forum.</p>
+                  <p><a href="https://www.linkedin.com/in/olive-lumonya-352908a7/">Olive Lumonya</a> was appointed Country Director at SOS Children's Villages Uganda.</p>
                 </td>
                 <td>
-                  <p><a href="https://www.linkedin.com/in/lina-higiro-82380a71/" >Lina Higiro</a> was appointed Executive Committee Member at Rwanda Bankers&rsquo; Association.</p>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <p><a href="https://www.linkedin.com/in/sharmilabhatt36543a63/" >Sharmila Bhatt</a> was appointed as an Advisory member at Daraja Impact Fund.&nbsp;</p>
+                  <p><a href="https://www.linkedin.com/in/foluso/">Foluso Gbadamosi</a> was invited to join the Forbes Coaches Council, an exclusive, invitation-only organisation for senior-level executives in the coaching industry.</p>
                 </td>
               </tr>
             </table>
@@ -420,7 +434,7 @@
         </td>
       </tr>
 
-
+<!-- 
       <tr>
         <td>
           <div class="px-40" style="background: #ced4dc;"><img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1688128919/HBRLogos_wothx3.jpg" alt=""></div>
@@ -433,7 +447,16 @@
           </div>
         </td>
       </tr>
+ -->
 
+      <tr>
+        <td class="newpadding">
+          <img src="https://res.cloudinary.com/tbra/image/upload/v1690556298/Prime_njmx3t.jpg">
+
+          <div class="text-center"><a href="#" class="capitalise bg-blue primary-btn">DISCOVER PRIME</a></div>
+          <br/><br/>
+        </td>
+      </tr>
 
       <tr>
         <td class="newpadding">
@@ -441,10 +464,10 @@
 
           <table class="collapse trends" width="100%">
             <tr>
-              <td width="300px" style="background: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1688129399/FoodBank_u998zz.jpg') no-repeat right bottom / cover;">
+              <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1690556021/learningLeadership_burj3a.jpg') no-repeat right top / cover;">
               </td>
               <td style="padding-left: 40px;" height="200px">
-                <p class="mb-10">Food recovery helps the region’s small-scale farmers, whose livelihoods have been disrupted by the drought. Food banks are based in communities and are locally led, which means that food bankers understand where the needs are greatest and how to get food to people.</p>
+                <p class="mb-10">Leadership needs a serious overhaul. The collapses of SVB and Credit Suisse, Boris Johnson's government implosion, Facebook's struggles, and Elon Musk's Twitter stumbles all highlight how even seemingly confident and experienced executives can struggle to steer their organisations during complex times.</p>
                 <a href="https://membersforum.theboardroomafrica.com/page/news-new" class="primary-btn">Read</a>
               </td>
             </tr>
@@ -452,26 +475,16 @@
           <br />
           <table class="collapse" width="100%">
             <tr>
-              <td width="300px" style="background: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1688051482/Ageism_iclvyx.jpg'); background-size: 305px;">
+              <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1690555901/RemoteMine_iocmbu.jpg') no-repeat center bottom / cover;">
               </td>
               <td style="padding-left: 40px;" height="200px">
-                <p class="mb-10">Originally, ageism was understood to be prejudice, stereotypes, and discriminatory behaviour targeted at older employees. But with an increasingly diverse and multigenerational workforce, age bias now occurs across the career life cycle — especially for women.</p>
+                <p class="mb-10">While many industries have struggled to reach—and sustain—gender equality, progress has been particularly slow in mining and other traditionally male-dominated industries. While women comprise only 10% of workers at other large mines globally, South Flank, an iron ore mine in Western Australia operated by BHP, has created a workforce where 40% of the 869 frontline employees are women, and four out of six senior managers are women.</p>
                 <a href="https://membersforum.theboardroomafrica.com/page/news-new" class="primary-btn">Read</a>
               </td>
             </tr>
           </table>
         </td>
       </tr>
-
-
-
-      <tr>
-        <td>
-          <br /><br />
-          <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1688051249/VConnections_zzjxls.jpg">
-        </td>
-      </tr>
-
 
 
 
@@ -481,21 +494,21 @@
           <h1 class="text-center">Board Trends</h1>
           <table class="collapse" width="100%">
             <tr>
-              <td width="300px" style="background: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1688051247/BoardEffectiveness_nogmd8.jpg'); background-position: center top; background-size: 302px;">
+              <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1690541943/BoostDiversity_znd7ti.jpg'); background-position: center top; background-size: 312px;">
               </td>
               <td style="padding-left: 40px;" height="200px">
-                <p class="mb-5">This resource includes a framework to help boards achieve effective governance that positions their companies for strategic success and drives long‑term value.</p>
-                <a href="https://membersforum.theboardroomafrica.com/media_center/folder/eb0f98c1-e1b3-4722-95fc-9784187cf201" class="primary-btn">Read</a>
+                <p class="mb-5">The CARE (Composition, Activation, Review & Report, Ecosystem) model can help boards not only recruit diverse members but benefit from their perspectives and input.</p>
+                <a href="https://membersforum.theboardroomafrica.com/media_center/folder/6b0a65ae-2611-4dd8-8792-e075a9619efc" class="primary-btn">Read</a>
               </td>
             </tr>
           </table>
           <br />
           <table class="collapse" width="100%">
             <tr>
-              <td width="300px" style="background: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1688051247/BoardCulture_xultgq.jpg'); background-position: center bottom; background-size: 295px;">
+              <td width="300px" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1690541472/SustainbilityResource_fwmtod.jpg'); background-position: center bottom; background-size: 295px;">
               </td>
               <td style="padding-left: 40px;" height="200px">
-                <p class="mb-5">Two core responsibilities of boards are performance and risk. A strong, positive organisational culture helps both. But too many boards don’t make the links. As expectations rise—for corporations and their boards—that has to change.</p>
+                <p class="mb-5">Sustainability across ESG issues is transforming companies, supply chains, and economies. Meanwhile, generative AI, trade risks, geopolitical uncertainty, and regulatory changes disrupt businesses, leading to profound board transformation.</p>
                 <a href="https://membersforum.theboardroomafrica.com/media_center/folder/eb0f98c1-e1b3-4722-95fc-9784187cf201" class="primary-btn">Read</a>
                 <br />
               </td>
@@ -529,12 +542,13 @@
       <tr bgcolor="#F8F8F8">
         <td class="newpadding">
           <ul>
-            <li>Friendship Bench - <b>ongoing</b></li>
-            <li>Financing Alliance for Health - <b>ongoing</b></li>
-            <li>International Finance Corporation - <b>ongoing</b></li>
-            <li>Fastizers Food and Confectionery Limited - <b>ongoing</b></li>
-            <li>International Finance Corporation - <b>ongoing</b></li>
-            <li>Lifestores Healthcare - <b>Applications closed</b></li>
+            <li>Norsad Capital - <b>ongoing</b></li>
+            <li>The Fred Hollows Foundation - <b>ongoing</b></li>
+            <li>Friendship Bench - <b>Applications closed, Reviewing</b></li>
+            <li>Financing Alliance for Health - <b>Applications closed</b></li>
+            <li>IFC Agribusiness Investee - <b>Applications closed</b></li>
+            <li>IFC Insurance Investee - <b>Applications closed</b></li>
+            <li>Fastizers Food and Confectionery Limited - <b>Applications closed</b></li>
             <li>MTN Ghana - <b>Mobile Money Limited - Applications closed, Interviewing</b></li>
             <li>Ubongo International - <b>Applications closed, Reviewing</b></li>
           </ul>
@@ -555,19 +569,32 @@
           <h1 class="text-center" style="color: #a5a7a9; margin-top: 50px;">Upcoming</h1>
         </td>
       </tr>
+
+
+      <tr>
+        <td class="newpadding">
+          <img src="https://res.cloudinary.com/tbra/image/upload/v1690543851/webinarBE_sgcu3u.jpg">
+          <br/>
+
+          <p>Board Review (Board Evaluation) is gaining prominence as a crucial activity for boards. Regulators in sectors like Financial Services mandate it, and investors and stakeholders expect it from publicly listed companies. Despite its importance, board reviews are not yet widespread in annual agendas. Join Adjunct Professor of Corporate Governance & Leadership, Dr. Franklin Vrede as he explores the reasons behind this and helps board members grasp the benefits of conducting a thorough board review.</p>
+
+          <div class="text-center"><a href="#" class="primary-btn">Sign up</a></div>
+        </td>
+      </tr>
       
 
       
 
-      <tr style="background: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1688051781/GCNew_ldojgh.jpg') #d9deda no-repeat center bottom / contain;">
-        <td>
-          <p class="thin capitalise bg-dusk text-white inline-block p-10" style="margin-left: 45px;">Group Coaching Session </p>
-          <div class="newpadding">
-          <h3 class="fs-34">Developing<br/> Executive Presence</h3>
+      <tr style="background: url('https://via.placeholder.com/500') no-repeat center center / cover;">
+        <td style="background: linear-gradient(to right, rgba(74, 79, 84, .69) 50%, transparent 50%);">
+          <p class="thin capitalise bg-blue text-white inline-block px-40 py-10">Group Coaching Session </p>
+          <div class="p-30 pt-0">
             <br/>
-            <p class="thin bg-tender inline-block text-white" style="padding: 5px 15px;">12:00 PM Friday, July 21, 2023 </p>
+            <h3 class="fs-34 text-white">Your Personal <br/>Vision and Legacy</h3>
+            <br/>
+            <p class="thin bg-dawn inline-block" style="padding: 5px 15px;">12:00 PM THURSDAY, AUGUST 24, 2023 </p>
             <br/><br/>
-            <p class="thin p-20 fs-14" style="width: 300px; background: rgba(248, 248, 248, 0.9);">To influence effectively, leaders develop presence. While some people have a natural capability for gravitas, many of us have to be intentional about building up this muscle so that we can signal the right message to our followers and audiences. There is also always the tension between what is authentic and what is conformity and the question of what gets us to where we need and deserve to be in our organisation. Join us next month to strengthen your executive presence and become more influential in your organisation.</p>
+            <p class="thin text-white fs-14" style="width: 300px;">Many of us are living almost on autopilot, acting out the lives we believe we should be responsibly living and yet not doing the things we ought to be doing. Join us and embark on a journey of self-discovery and fulfilment in a transformative session that will help you create a custom-made life aligned with your interests, strengths, and aspirations. Explore the bigger picture of your life and the legacy you want to leave behind and craft a personal compass to guide you towards your true life's purpose. </p>
           </div>
         </td>
       </tr>
@@ -582,9 +609,11 @@
 
 
       <tr>
-        <td>
+        <td class="text-center">
           <br/><br/><br/>
-          <a href="https://tbraworkshops2023.paperform.co?utm_source=digest"><img src="https://res.cloudinary.com/tbra/image/upload/v1685112863/Programme_social_share_flfnsh.jpg"></a>
+          <img src="https://res.cloudinary.com/tbra/image/upload/v1690544201/BoardConflicts_oiquh4.jpg">
+
+          <a href="#" class="primary-btn">Register</a>
           <br/><br/><br/>
         </td>
       </tr>
@@ -619,11 +648,45 @@
       </tr>
 
 
+      <tr>
+        <td>
+          <br/><br/><br/>
+        </td>
+      </tr>
+
+
+
+      <tr bgcolor="#D8DEE3">
+        <td>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="60%" class="newpadding text-blue">
+                <h2 class="text-blue">Become a Certified Director with Open Doors. </h2>
+                <br/>
+                <p>Designed and delivered in partnership with the <span class="underline">Institute of Directors UK (IoD)</span>, Open Doors is a globally recognised and accredited director certificate programme suited to existing and aspiring directors. The programme provides a comprehensive curriculum covering the essential components of leadership, strategy, finance and governance and offers additional insights into board dynamics and ontological leadership through curated workshops.</p>
+
+                <br/>
+
+
+                <p><b>OPEN DOORS COHORT 13 (In person)</b></p>
+                <p>Date: 20 November -25 November</p>
+                <p>Location: Cape Town, South Africa</p>
+              </td>
+              <td style="background: url('https://via.placeholder.com/500') no-repeat center center / cover;"></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
 
       <tr>
         <td>
-          <br/><br/>
-          <h1 class="new-title text-center mb-20" style="color: #a5a7a9;">June Birthdays</h1>
+          <div class="text-center">
+            <a href="#" class="primary-btn text-blue">Apply</a>
+          </div>
+          <br/><br/><br/>
+          <h1 class="new-title text-center mb-20" style="color: #a5a7a9;">July Birthdays</h1>
         </td>
       </tr>
 
@@ -634,19 +697,16 @@
 
           <p class="text-center newpadding fs-22 thin py-0">Sending our best wishes to TBrA members who have celebrated their birthdays this month. Wishing you all many more happy returns.</p>
           <ul class="libreb fs-22 newpadding" style="margin-left: 180px;">
-            <li>Gisele Bondo</li>
-            <li>Barbara Akinbuwa</li>
-            <li>Haleema Akyirem, FCILG, ACIB, CA</li>
-            <li>Fawzia Ali</li>
-            <li>Felista Mubyeyi Kimanuka</li>
-            <li>Phyllis Kemide Senah</li>
-            <li>Anne-Marie Hesmondhalgh</li>
-            <li>Léontine Mabika</li>
-            <li>Rhoda Mshana</li>
-            <li>Adaorie Felicia Osademey-Udechukwu</li>
-            <li>Hildah Ngondoki</li>
-            <li>Roslyn Artis</li>
-            <li>Juliette Kavaruganda</li>
+            <li>Michaella Rugwizangoga</li>
+            <li>Tracy S Harris</li>
+            <li>Margaret Kositany</li>
+            <li>Alice Mumbi</li>
+            <li>Charlotte Kemp</li>
+            <li>Robina Omosa</li>
+            <li>Temitope Fehintola</li>
+            <li>Charity Jane Murandu</li>
+            <li>Aziza Albou</li>
+            <li>Fatoumata Sy Ba</li>
           </ul>
           <p class="text-center fs-18"><b>TBrA member? Help us celebrate you.</b></p>
           <div class="text-center"><a href="https://pwearoci.paperform.co" class="primary-btn bg-blue rounded mt-10">Share</a></div>

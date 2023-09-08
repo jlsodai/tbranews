@@ -1,972 +1,777 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-  [[trackingImage]]
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>OD Banner</title>
-  <style type="text/css">
-
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100,400;700&family=Libre+Baskerville:wght@400;700&display=swap');
-
-  h1, h2, p, a, ul, li, * {
-    margin: 0;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration: none;
-  }
-
-  body {margin: 0; padding: 0; min-width: 100%!important;height:auto;}
-  img {height: auto; max-width: 100%;}
-
-  a {
-    color: #1565c0;
-  }
-
-  .content {
-    min-width: 800px !important;
-    width: 800px !important;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
-  .box-outline, .box-outline-2 {
-    border: 3px solid #fff;
-    padding: 36px;
-    margin: 21px 0;
-  }
-  div.box-outline-2 {
-    border-color: #202944;
-  }
-
-  .big-button {
-    padding: 5px 20px;
-    border-radius: 10px;
-    color: #4A4F54;
-    background: #CDAD7D;
-    display: inline-block;
-  }
-
-  .premium-btn {
-    display:  inline-block;
-    width: max-content;
-    position: relative;
-    text-decoration: none;
-    font-size: 12px;
-    padding: 10px 15px;
-    letter-spacing: 1px;
-    background-color: #a67c00;
-    color: white;
-    margin-top: 22px;
-    cursor: auto;
-  }
-
-  .premium-btn img {
-    width: 17px;
-    margin-bottom: -4px;
-    margin-right: 5px;
-  }
-
-  .label {
-    background-color: #17a2b8;
-    padding: 3px 5px;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 12px;
-    margin-bottom: 4px;
-    display: inline-block;
-  }
-
-  .text-primary { color: #0275d8; }
-  .text-success { color: #5cb85c; }
-  .text-info { color: #5bc0de; }
-  .text-warning { color: #f0ad4e; }
-  .text-danger { color: #EA5A4F; }
-  .text-white { color: #fff; }
-
-  .bg-primary { background-color: #0275d8; }
-  .bg-success { background-color: #5cb85c; }
-  .bg-info { background-color: #17a2b8; }
-  .bg-warning { background-color: #f0ad4e; }
-  .bg-danger { background-color: #EA5A4F; }
-  .bg-gold, .bg-premium { background-color: #a67c00; }
-  .bg-tbra-gold { background-color: #b6a999 !important; }
-  .bg-tbra-blue { background-color: #202945 !important; }
-  .bg-dark { background-color: #4A4F54 !important; }
-  .bg-black { background-color: #3e3e3e; }
-  .bg-brown { background-color: #B6A999; }
-
-  .table-responsive {
-    table-layout: fixed;
-  }
-
-  .card-table {
-    border-spacing: 15px;
-    border-collapse: separate;
-    margin: -15px;
-  }
-
-  .card-table td {
-    background: #f3fafb;
-  }
-
-  @media only screen and (max-width: 500px) {
-    .card-table, .table-responsive {
-      width: 100%;
-      margin: 0 auto;
-    }
-
-    .card-table tr, .table-responsive tr {
-      display:block;
-    }
-
-    .card-table tr td, .table-responsive tr td {
-      display:block;
-      width:100% !important;
-      margin-bottom: 5px;
-    }
-
-    .card-table tr td:last-child, .table-responsive tr td:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  a.small-btn {
-    padding: 3px 5px;
-    border-radius: 5px;
-    letter-spacing: unset;
-  }
-
-  a.small-btn img {
-    margin-right: 0px;
-  }
-
-  .img-shadow {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
-
-  .mb-20 { margin-bottom: 20px; }
-  .mb-10 { margin-bottom: 10px; }
-  .mt-10 { margin-top: 10px !important; }
-
-  .header {padding: 40px 30px 40px 30px;}
-
-  .innerpadding { padding: 40px 65px 40px 65px; }
-
-  .borderbottom {border-bottom: 1px solid #f2eeed;}
-
-  .subhead {font-size: 15px; color: #ffffff; letter-spacing: 10px;}
-
-  h1 {
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 1;
-  }
-
-  .dtable {
-    display:  table;
-  }
-
-  @media only screen and (min-width: 449px) {
-    .list-col {
-      float:left;
-      width:45%;
-    }
-  }
-
-  .ul-row {
-      width: 100%;
-        padding: 0;
-    }
-
-    .ul-row div {
-        width: max-content;
-        display: inline-block;
-        margin-bottom: 20px;
-    }
-
-    .ul-row div img {
-        width: 16px;
-        margin-top:3px;
-        margin-right: 3px;
-        /*filter: invert(90%) sepia(0%) saturate(90%) hue-rotate(3500deg) brightness(0%) contrast(100%);*/
-    }
-
-    .ul-row p {
-      font-size: 14px;
-        vertical-align: top;
-        display: inline-block;
-        width: 85%;
-        color: #212843;
-    }
-
-  .darkBlue {
-        color: #202944;
-    }
-
-    .strongWhite {
-        color: white;
-    }
-
-    p, ul {
-        font-size: 15.5px;
-    }
-
-  .bodycopy {font-size: 15px;
-            line-height: 1.5;
-            color: #4A4F56;}
-
-   .bodycopy-white {font-size: 15px;
-            line-height: 1.5;
-            color: white;}
-
-  .button a {color: #ffffff; text-decoration: none;}
-
-  .footer {padding: 20px 30px 15px 30px;}
-  .footercopy {font-size: 14px; color: #ffffff;}
-  .footercopy a {color: #ffffff; text-decoration: underline;}
-
-  .header-fix {
-    margin: 2em 0 2em 2em;
-  }
-    
-  .header-img img {
-      max-width: 270px;
-      margin-bottom: 10px;
-  }
-
-  .header-img-side img {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-  }
-
-  .main-header {
-    font-size: 35px;
-    font-weight: 800;
-    line-height: 1.3;
-    margin-top: 14px;
-    color: white;
-    /*width: 60%;*/
-  }
-
-  .primary-btn {
-        display: inline-block;
-        width: max-content;
-        position: relative;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 12px;
-        padding: 10px 15px;
-        letter-spacing: 1px;
-        background-color: #EA5A4F;
-        color: white;
-        margin-top: 22px;
-    }
-
-    .primary-btn-inverse {
-      background: #fff;
-      color: #EA5A4F;
-    }
-
-    .link-btn {
-            display: block;
-            font-weight: bold;
-            color: #EA5A4F;
-            font-size: 15px;
-            padding-top: 12px;
-        }
-
-    .text-center { text-align: center; }
-    .text-right { text-align: right; }
-
-    .body-btn-blue {
-            display: inline-block;
-            width: max-content;
-            height: auto;
-            position: relative;
-            text-transform: uppercase;
-            font-size: 12px;
-            padding: 10px 15px;
-            letter-spacing: 1px;
-            background-color: transparent;
-            color: #2D3752;
-            border: 1px solid #2D3752;
-            margin-top: 22px;
-    }
-
-    .body-btn-white {
-            display: block;
-            width: max-content;
-            height: auto;
-            position: relative;
-            text-transform: uppercase;
-            font-size: 12px;
-            padding: 10px 15px;
-            letter-spacing: 1px;
-            background-color: transparent;
-            color: #ffffff;
-            border: 1px solid #ffffff;
-            margin-top: 22px;
-    }
-
-    .list-case {
-        display: flex;
-    }
-
-    .tick {
-        margin-right: 8px;
-    }
-
-    .tick img {
-        width: 20px;
-    }
-
-   /* ul li {
-        /*list-style-type: none;
-    }*/
-
-    /*ul li::before {
-      content: "2";
-      color: red;
-      font-weight: bold;
-      display: inline-block; 
-      width: 1em;
-      margin-left: -1em;
-    }*/
-
-    .useful-links ul {
-      padding: 10px 10px 0;
-    }
-    .useful-links li, .useful-links li a {
-      color: #EA5A4F;
-    }
-
-    .comm-card {
-        display: inline-block;
-        width: 30.5%;
-        height: auto;
-        background-color: white;
-        padding: 7px;
-    }
-
-    .card-contain {
-        width: 85%;
-        margin: 0 auto;
-        padding: 0 0 0 0;
-    }
-
-    .card-contain-bc {
-        width: 85%;
-        margin: 0 auto;
-        padding: 3.2em 0 0 0;
-    }
-
-    .card-contain img {
-        display: table;
-        margin: 0 auto 18px auto;
-        max-width: 100%;
-    }
-
-    .card-contain-bc img {
-        display: table;
-        width: 60px;
-        margin: 0 auto 18px auto;
-    }
-
-  .freshIcon {
-    width: 65px !important;
-    margin: -5px 18px 0 0;
-    float: left;
-  }
-
-
-  @media only screen and (max-width: 550px), screen and (max-device-width: 550px) {
-    .freshIcon {
-      margin-top: 0;
-    }
-  body[yahoo] .hide {display: none!important;}
-  body[yahoo] .buttonwrapper {background-color: transparent!important;}
-  body[yahoo] .button {padding: 0px!important;}
-  body[yahoo] .button a {background-color: #e05443; padding: 15px 15px 13px!important;}
-  body[yahoo] .unsubscribe {display: block; margin-top: 20px; padding: 10px 50px; background: #2f3942; border-radius: 5px; text-decoration: none!important; font-weight: bold;}
-  }
-
-  .nodisplay {
-    display: none;
-  }
-
-  @media only screen and (max-width: 773px) {
-
-        .comm-card {
-            display: block !important;
-            width: 65% !important;
-            margin: 0 auto 2em auto !important;
-        }
-    }
-
-  @media only screen and (max-width: 700px) {
-        h1 {
-            font-size: 30px !important;
-        }
-
-        .responsive-h1 {
-            width: 100% !important;
-            font-size: 30px !important;
-            text-align: left !important;
-        }
-
-        .responsive-p-align {
-            width: 100% !important;
-            text-align: left !important;
-        }
-
-        .header-img-side {
-            display: none;
-        }
-
-        .header-sm-img {
-          width: 80%;
-          height: 200px;
-        }
-
-        .nodisplay {
-          display: block !important;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .header-fix {
-            width: 100% !important;
-            max-width: 100% !important;
-        }
-    }
-
-    @media only screen and (max-width: 650px) {
-        .responsive-full {
-            width: 100% !important;
-        }
-
-        .responsive-fix {
-            display: block;
-            width: 100% !important;
-            max-width: 100% !important;
-            margin: 0 auto;
-            float: none;
-        }
-
-        .responsive-mrg-bottom {
-            margin-bottom: 2em;
-        }
-    }
-    
-    .table-col {
-       width: 50%;
-    }
-    .col-left {
-       padding-right: 10px;
-    }
-    .col-right {
-      padding-left: 10px;
-    }
-    @media only screen and (max-width: 550px), screen and (max-device-width: 550px) {
-      .table-col {
-        width: 100% !important;
-        padding: 0 !important;
-        display: block;
-        margin-bottom: 30px;
-      }
-    }
-
-    .blockquote {
-      color: #989FB6;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 1.4;
-      padding: 1.5em;
-      border-left: 4px solid #EA5A4F;
-      background: #F9F9F9;
-    }
-
-    .blockquote img {
-      width: 70px;
-      float: left;
-      margin-right: 12px;
-    }
-
-    .blockquote p {
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    [[trackingImage]]
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Open Doors</title>
+    <style type="text/css">
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200,400;700&family=Libre+Baskerville:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      min-width: 100%!important;
+      eight:auto;
+      color: #4A4F54;
       font-size: 20px;
+      line-height: 1.3;
+      font-weight: 300;
     }
 
-    .quote-author {
-      margin-top: 10px;
+    img {height: auto; max-width: 100%;}
+
+    a {
+      color: #1565c0;
     }
 
-    .quote-author td{
-      vertical-align: top;
+    .content {
+      min-width: 800px !important;
+      width: 800px !important;
+      margin: 0 auto;
+      overflow: hidden;
     }
 
-    .quote-author img {
-      width: 32px;
+    .box-outline, .box-outline-2 {
+      border: 3px solid #fff;
+      padding: 36px;
+      margin: 21px 0;
+    }
+    div.box-outline-2 {
+      border-color: #202944;
+    }
+
+    .premium-btn {
+      display:  inline-block;
+      width: max-content;
+      position: relative;
+      text-decoration: none;
+      font-size: 12px !important;
+      padding: 10px 15px;
+      letter-spacing: 1px;
+      background-color: #a67c00;
+      color: white;
+      margin-top: 22px;
+    }
+
+    .premium-btn img {
+      width: 17px;
+      margin-bottom: -4px;
+      margin-right: 5px;
+    }
+
+    .label {
+      background-color: #17a2b8;
+      padding: 3px 5px;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 12px;
+      margin-bottom: 4px;
+      display: inline-block;
+    }
+
+    .text-primary { color: #0275d8; }
+    .text-white { color: white !important; }
+    .text-success { color: #5cb85c; }
+    .text-info { color: #5bc0de; }
+    .text-warning { color: #f0ad4e; }
+    .text-danger { color: #EA5A4F; }
+    
+
+    .bg-primary { background-color: #0275d8; }
+    .bg-success { background-color: #5cb85c; }
+    .bg-info { background-color: #17a2b8; }
+    .bg-warning { background-color: #f0ad4e; }
+    .bg-danger { background-color: #EA5A4F; }
+    .bg-gold, .bg-premium { background-color: #a67c00; }
+    .bg-tbra-gold { background-color: #b6a999 !important; }
+    .bg-tbra-blue { background-color: #202945 !important; }
+    .bg-dark { background-color: #202945 !important; }
+    .bg-black { background-color: #3e3e3e; }
+
+    .table-responsive {
+      table-layout: fixed;
+    }
+
+    .card-table {
+      border-spacing: 15px;
+      border-collapse: separate;
+      margin: -15px;
+    }
+
+    .card-table td {
+      background: #f3fafb;
+    }
+
+    a.small-btn {
+      padding: 3px 5px;
+      border-radius: 5px;
+      letter-spacing: unset;
+    }
+
+    a.small-btn img {
+      margin-right: 0px;
+    }
+
+    .img-shadow {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .mb-20 { margin-bottom: 20px; }
+    .mr-20 { margin-right: 20px; }
+    .mt-20 { margin-top: 20px; }
+    .mb-10 { margin-bottom: 10px; }
+    .mt-10 { margin-top: 10px !important; }
+    .pt-0 { padding-top: 0 !important; }
+    .pb-0 { padding-bottom: 0 !important; }
+
+    .header {padding: 40px 30px 40px 30px;}
+
+    .innerpadding {padding: 40px 30px 40px 30px;}
+
+    .borderbottom {border-bottom: 1px solid #f2eeed;}
+
+    .subhead {font-size: 15px; color: #ffffff; letter-spacing: 10px;}
+
+    h1 {
+      font-size: 55px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .dtable {
+      display:  table;
+    }
+
+    .ul-row {
+        width: 100%;
+          padding: 0;
+      }
+
+      .ul-row div {
+          width: max-content;
+          display: inline-block;
+          margin-bottom: 20px;
+      }
+
+      .ul-row div img {
+          width: 16px;
+          margin-top:3px;
+          margin-right: 3px;
+      }
+
+      .ul-row p {
+        font-size: 14px;
+          vertical-align: top;
+          display: inline-block;
+          width: 85%;
+          color: #212843;
+      }
+
+    .darkBlue {
+          color: #202944;
+      }
+
+      .strongWhite {
+          color: white;
+      }
+
+      h1, h2, p, a, ul, li, * {
+          margin: 0;
+          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          text-decoration: none;
+      }
+
+      .libreb, .libreb * {
+        font-family: "Libre Baskerville", serif, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+          text-decoration: none;
+      }
+
+    .bodycopy {font-size: 15px;
+              line-height: 1.5;
+              color: #202945;}
+
+     .bodycopy-white {font-size: 15px;
+              line-height: 1.5;
+              color: white;}
+
+    .button a {color: #ffffff; text-decoration: none;}
+
+    .footer {padding: 20px 30px 15px 30px;}
+    .footercopy {font-size: 14px; color: #ffffff;}
+    .footercopy a {color: #ffffff; text-decoration: underline;}
+
+    .header-fix {
+      margin: 2em 0 2em 2em;
+    }
+      
+    .header-img img {
+        max-width: 270px;
+        margin-bottom: 10px;
+    }
+
+    .header-img-side img {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .main-header {
+      font-size: 35px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-top: 14px;
+      color: white;
+    }
+
+    .primary-btn {
+          display: inline-block;
+          width: max-content;
+          position: relative;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 12px;
+          padding: 10px 15px;
+          letter-spacing: 1px;
+          background-color: #EA5A4F;
+          color: white;
+          margin-top: 22px;
+      }
+
+      .primary-btn-inverse {
+        background: #fff;
+        color: #EA5A4F;
+      }
+
+      .link-btn {
+              display: block;
+              font-weight: bold;
+              color: #EA5A4F;
+              font-size: 15px;
+              padding-top: 12px;
+          }
+
+      .text-center { text-align: center; }
+      .text-right { text-align: right; }
+
+      .body-btn-blue {
+              display: inline-block;
+              width: max-content;
+              height: auto;
+              position: relative;
+              text-transform: uppercase;
+              font-size: 12px;
+              padding: 10px 15px;
+              letter-spacing: 1px;
+              background-color: transparent;
+              color: #2D3752;
+              border: 1px solid #2D3752;
+              margin-top: 22px;
+      }
+
+      .body-btn-white {
+              display: block;
+              width: max-content;
+              height: auto;
+              position: relative;
+              text-transform: uppercase;
+              font-size: 12px;
+              padding: 10px 15px;
+              letter-spacing: 1px;
+              background-color: transparent;
+              color: #ffffff;
+              border: 1px solid #ffffff;
+              margin-top: 22px;
+      }
+
+      .list-case {
+          display: flex;
+      }
+
+      .tick {
+          margin-right: 8px;
+      }
+
+      .tick img {
+          width: 20px;
+      }
+
+     
+      .useful-links ul {
+        padding: 10px 10px 0;
+      }
+      .useful-links li, .useful-links li a {
+        color: #EA5A4F;
+      }
+
+      .comm-card {
+          display: inline-block;
+          width: 30.5%;
+          height: auto;
+          background-color: white;
+          padding: 7px;
+      }
+
+      .card-contain {
+          width: 85%;
+          margin: 0 auto;
+          padding: 0 0 0 0;
+      }
+
+      .card-contain-bc {
+          width: 85%;
+          margin: 0 auto;
+          padding: 3.2em 0 0 0;
+      }
+
+      .card-contain img {
+          display: table;
+          margin: 0 auto 18px auto;
+          max-width: 100%;
+      }
+
+      .card-contain-bc img {
+          display: table;
+          width: 60px;
+          margin: 0 auto 18px auto;
+      }
+
+    .freshIcon {
+      width: 65px !important;
+      margin: -5px 18px 0 0;
       float: left;
-      margin-right: 12px;
-      /*margin-top: 15px;*/
     }
 
-    .blockquote span {
+
+    
+    .nodisplay {
+      display: none;
+    }
+
+      .table-col {
+         width: 50%;
+      }
+      .col-left {
+         padding-right: 10px;
+      }
+      .col-right {
+        padding-left: 10px;
+      }
+
+      .blockquote {
+        color: #989FB6;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.4;
+        padding: 1.5em;
+        border-left: 4px solid #EA5A4F;
+        background: #F9F9F9;
+      }
+
+      .blockquote img {
+        width: 70px;
+        float: left;
+        margin-right: 12px;
+      }
+
+      .blockquote p {
+        font-size: 20px;
+      }
+
+      .quote-author {
+        margin-top: 10px;
+      }
+
+      .quote-author td{
+        vertical-align: top;
+      }
+
+      .quote-author img {
+        width: 32px;
+        float: left;
+        margin-right: 12px;
+      }
+
+      .blockquote span {
+        font-weight: 600;
+      }
+
+      
+
+      .icon-card {
+        font-size: 16px;
+        font-weight: bold;
+        font-weight: 400;
+        line-height: 1.4;
+        padding: 1.5em;
+        border: 1px solid #dddddd;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        min-height: 42px;
+      }
+
+
+      .icon-card img {
+        height: 17px;
+      }
+
+      
+      .icon-card-img-wrap {
+        padding: 15px;
+        border-radius: 50%;
+        width: 17px;
+        background: #f4f4f6;
+        float: left;
+        margin-right: 10px;
+        margin-left: -6px;
+        height: 17px;
+        width: 17px;
+      }
+
+      .blockquote-right {
+        color: #4d5468;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.4;
+        padding: 1.5em;
+      }
+
+      .blockquote-right a {
+        color: #a67c00;
+        font-weight: bold;
+      }
+
+      .blockquote strong {
+        display:  block;
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-weight:  bold;
+      }
+      .left-calendar img {
+      float: left; width: 50px; margin-right: 10px;
+      }
+      .img-icon {
+      height: auto; width: 18px; position: relative; top: 3px; margin-top: 5px; margin-right: 5px;
+       }
+
+    .calendar img {
+      height: 13px;
+      margin-right: 6px;
+    }
+
+    .calendar p.title {
+      font-weight: bold;
+      font-size: 18px;
+      color:#515b7b;
+    }
+
+    .calendar p span {
       font-weight: 600;
     }
 
-    /*.icon-card {
-      color: #202945;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 1.4;
-      padding: 1.5em;
-      border: 1px solid #dddddd;
-      margin-bottom: 10px;
-      position: relative;
-      margin-top: 20px;
-      margin-left: 20px;
-      border-radius: 0 20px;
-    }*/
-
-    .icon-card {
-      font-size: 16px;
-      font-weight: bold;
-      font-weight: 400;
-      line-height: 1.4;
-      padding: 1.5em;
-      border: 1px solid #dddddd;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      min-height: 42px;
+    .calendar p {
+      margin-bottom: 5px;
     }
 
-
-    .icon-card img {
-      height: 17px;
+    .hr {
+       border-top: 1.5px solid #d7d7d7;
     }
 
-    /*.icon-card-img-wrap {
-      position: absolute;
-      top: -20px;
-      left: -20px;
-      border: 1px solid #ddd;
-      padding: 10px;
-      border-radius: 50%;
-      background: #fff;
-    }*/
-
-    .icon-card-img-wrap {
-      /*border: 1px solid #ddd;*/
-      padding: 15px;
-      border-radius: 50%;
-      width: 17px;
-      background: #f4f4f6;
-      float: left;
-      margin-right: 10px;
-      margin-left: -6px;
-      height: 17px;
-      width: 17px;
+    .new-title {
+      color: #d7d6d7;
+      font-weight: 200;
     }
 
-    .blockquote-right {
-      color: #4d5468;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 1.4;
-      padding: 1.5em;
-      /*border-right: 4px solid #a67c00;*/
-      /*background: #F9F9F9;*/
+    .rounded { border-radius: 50px; padding-left: 30px; padding-right:30px; }
+
+
+    .sec-title span {
+      padding: 12px 80px;
+      font-size: 45px;
+      display: inline-block;
     }
 
-    .blockquote-right a {
-      color: #a67c00;
-      font-weight: bold;
+    .sec-title a:not(.big-btn) {
+      color: unset;
+      text-decoration: underline;
     }
 
-    .blockquote strong {
-      display:  block;
-      font-size: 18px;
-      margin-bottom: 10px;
-      font-weight:  bold;
+    .sec-title p { margin: 30px 100px 30px 120px; }
+    .ml-120 { margin-left: 120px; }
+
+    .subtitle {
+      font-weight: 500;
+      font-size: 17px;
     }
-    .left-calendar img {
-    float: left; width: 50px; margin-right: 10px;
-    }
-    .img-icon {
-    height: auto; width: 18px; position: relative; top: 3px; margin-top: 5px; margin-right: 5px;
-     }
 
-  .calendar img {
-    height: 13px;
-    margin-right: 6px;
-  }
-
-  .calendar p.title {
-    font-weight: bold;
-    font-size: 18px;
-    color:#515b7b;
-  }
-
-  .calendar p span {
-    font-weight: 600;
-  }
-
-  .calendar p {
-    margin-bottom: 5px;
-  }
-
-  .hr {
-     border-top: 1.5px solid #d7d7d7;
-  }
-
-  .sec-title, .subtitle {
-    color: #462b16;
-    font-weight: bold;
-  }
-
-  h3.sec-title {
-/*    color: #fff;*/
-    font-weight: normal;
-  }
-
-  .sec-title span {
-    background-color: #202945;
-    padding: 8px 40px 8px 40px;
-    font-size: 16px;
-    color: #fff;
-  }
-
-  .subtitle {
-    font-weight: 500;
-    font-size: 17px;
-  }
-
-  .header-full {
-    background-size: cover;
-    background-color: #202944;
-    background-repeat: no-repeat;
-    background-image: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1671074179/capetownOD_kdeywx.jpg');
-    background-position: top center;
-    padding: 10px 10px 0px 30px;
-    height: 230px; 
-  }
-
-  @media only screen and (min-width: 774px) {
     .header-full {
-      height: 400px !important;
+      background-size: cover;
+      background-color: #202944;
+      background-repeat: no-repeat;
+      background-image: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1671074179/capetownOD_kdeywx.jpg');
+      background-position: top center;
+      padding: 10px 10px 0px 30px;
+      height: 230px; 
     }
-  }
 
-  .logo-stack img {
-    width: 80px;
-  }
+    
 
-  @media only screen and (min-width: 500px) {
     .logo-stack img {
-      width: 100px !important;
+      width: 80px;
     }
-  }
 
-  @media only screen and (min-width: 774px) {
-    .logo-stack img {
-      width: 114px !important;
+
+    .tour-img {
+      width: 400px;
+      max-width: 100%;
     }
-  }
 
-  .tour-img {
-    width: 400px;
-    max-width: 100%;
-    /*margin-right: 15px;
-    margin-bottom: 10px;*/
-    /*display: block;*/
-    /*margin: 0 auto;*/
-  }
+    .col-4 { width: 25%; float: left; }
 
-  .col-4 { width: 25%; float: left; }
-
-  .collapse { border-collapse: collapse; }
-  .banner-menu a { color: #fff; margin-right: 15px; }
-  .banner-menu a:last-child { margin: 0; }
-  .capitalise { text-transform: uppercase;}
-  .learnmore { text-decoration: underline; color: black; }
-
-  .thin { font-weight: 100; }
-  </style>
-</head>
-
-<body bgcolor="#f9f0f0">
-<table width="100%" bgcolor="#f9f0f0" border="0" cellpadding="0" cellspacing="0">
-
-  <!-- <tr>
-    <td><img src="http://tbrax.devt/financebg.jpg" style="max-width: 100%;"></td>
-  </tr>
- -->
-
-  
+    .collapse { border-collapse: collapse; }
+    .banner-menu a { color: #fff; margin-right: 15px; }
+    .banner-menu a:last-child { margin: 0; }
+    .capitalise { text-transform: uppercase;}
+    .learnmore { text-decoration: underline; color: black; font-size: 16px; }
+    .moves { border-collapse: separate; border-spacing: 10px; margin-left: -10px;}
+    .moves td {
+      background: #353A4C;
+      color: #fff;
+      border-right: 5px solid #CDAD7D;
+      width: 50%;
+      padding: 10px;
+      vertical-align: top;
+    }
+    .moves td a { text-decoration: underline; color: #fff;}
+    .spaced p { margin-bottom: 7px; }
+    .spaced p.text-danger { margin-bottom: 0; }
 
 
+    .bg-dawn { background-color: #DADEDA; }
+    .bg-tender { background-color: #6E8498; }
+    .bg-dusk { background-color: #4A4F54; }
+    .bg-mustard { background-color: #CDAD7D !important; }
+    .bg-blue { background-color: #202945; }
+    .text-dawn { color: #CDDAE6; }
+    .text-tender { color: #6E8498; }
+    .text-dusk { color: #4A4F54; }
+    .text-mustard { color: #CDAD7D; }
+    .text-blue { color: #202945; }
+    .text-brown { color: #96522D; }
+    .text-green { color: #0D3928; }
+    .text-black { color: black }
+
+    .mb-20 { margin-bottom: 20px; }
+    .mb-10 { margin-bottom: 10px; }
+    .mt-10 { margin-top: 10px !important; }
+    .mt-5 { margin-top: 10px !important; }
+    .thin { font-weight: 200; }
+    .bold { font-weight: bold; }
+
+    .uppercase { text-transform: uppercase; }
+    .newpadding { padding: 50px 80px 30px;  }
+
+    .inline-block { display: inline-block; }
+
+
+    hr {
+      width: 45%;
+      margin: 50px auto;
+      border-top: 1px solid #CDAD7D;
+    }
+
+    .midsection {
+      margin-top: 80px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .midsection {
+        margin-top: 52px;
+      }
+    }
+
+    .border-collapse { border-collapse: collapse; }
+    .connect ul { margin-bottom: 10px; }
+
+    .egypt-bg {
+      background: rgba(34,35,68, 0.4);
+      padding: 0 15px;
+      width: 150px;
+      display: inline-block;
+    }
+
+    .big-btn { padding: 10px 20px; border-radius: 50px; }
+    .whos-coming { color: #DADEDA; border-spacing: 3px 0 !important;}
+    .whos-coming tr { vertical-align: top; }
+    .whos-coming p {
+      font-size: 13px;
+    }
+
+    .whos-coming td {
+      padding: 19px;
+    }
+    .whos-coming h2 {
+      font-size: 17px;
+      margin-bottom: 14px;
+    }
+
+    b { font-weight: 500; }
+
+    .itinerary td {
+      background-color: #f8f8f8;
+      width: 33.333%;
+    }
+
+    .itinerary h2 {
+      line-height: 1;
+      color: #6E8498;
+      margin-bottom: 10px;
+    }
+
+    .itinerary h2, .itinerary h3 { color: #6E8498; }
+
+    .lh1 { line-height: 1; }
+
+    .fs-12 { font-size: 12px !important; }
+    .fs-14 { font-size: 14px !important; }
+    .fs-16 { font-size: 16px !important; }
+    .fs-18 { font-size: 18px !important; }
+    .fs-22 { font-size: 22px !important; }
+    .fs-24 { font-size: 24px !important; }
+    .fs-26 { font-size: 26px !important; }
+    .fs-30 { font-size: 30px !important; }
+    .fs-34 { font-size: 34px !important; }
+    .fs-40 { font-size: 40px !important; }
+    .fs-50 { font-size: 50px !important; }
+    .fs-60 { font-size: 60px !important; }
+    .fs-70 { font-size: 70px !important; }
+    .fs-80 { font-size: 80px !important; }
+    .fs-90 { font-size: 90px !important; }
+
+    .spaced p + p { margin-top: 20px; }
+
+    .highlights h3 { margin: 15px 0; font-size: 20px; }
+    .highlights p { font-size: 16px; }
+
+    .half-bg {
+      background: linear-gradient(to top, #f7f8f7 0%, #f7f8f7 50%, #fff 50%, #fff 100%);
+      padding-bottom: 15px;
+/*      background: linear-gradient(0deg, #f7f8f7 50%, #fff 50%);*/
+    }
+
+    </style>
+  </head>
+
+  <body bgcolor="#eee">
+  <table width="100%" bgcolor="#eee" border="0" cellpadding="0" cellspacing="0">
+
+    
+    
 
 
 
-<tr>
-  <td>
-    <!--[if (gte mso 9)|(IE)]>
-      <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-        <tr>
+
+
+  <tr>
+    <td>
+      <table bgcolor="#fdfdfd" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
+
+        <tr bgcolor="#DADEDA">
           <td>
-    <![endif]-->
-    <table bgcolor="#fff" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
-
-      <tr style="background: url('https://res.cloudinary.com/tbra/image/upload/v1679325368/ODWorkshop_qehlhx.jpg'); background-size: cover;">
-        <td class="innerpadding">
-          <table width="100%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td style="color: #fff;">
-                <div style="margin-top: 300px;">&nbsp;</div>
-              </td>
-            </tr>
-            
-          </table>
-        </td>
-      </tr>
-
-
-
-
-      <tr bgcolor="#F8F8F8">
-        <td class="innerpadding">
-          <table width="100%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td class="bodycopy">
-                <br/>
-                <p>Constructive challenges and productive debates are indicative of excellent board dynamics and good governance. Directors are crucial in creating an environment where all perspectives and inputs are welcome. Now that you’ve mastered the fundamentals of effective directorship, let’s explore your place in managing board dynamics. </p>
-
-                <!-- <br /><br/> -->
-
-                <!-- <div class="text-center"><a href="https://events.eventzilla.net/e/open-doors--cohort-12-2138602412" class="big-button">Secure your seat</a></div> -->
-
-                <br/>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <tr bgcolor="#fff">
-        <td>
-          <br/><br/><br/>
-          <table width="100%">
-            <tr>
-              <td width="20%"></td>
-              <td style="border-bottom: 1px solid #CDAD7D;"></td>
-              <td width="20%"></td>
-            </tr>
-          </table>
-          <br/>
-        </td>
-      </tr>
-
-
-      <tr>
-        <td><h2 class="text-center thin" style="font-size: 34px; margin-bottom: -15px;">Session Details</h2></td>
-      </tr>
-
-
-      <tr bgcolor="#EFF1F4">
-        <td class="innerpadding">
-          <table width="100%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td class="bodycopy">
-
-                <table width="100%">
-                  <tr>
-                    <td class="text-center text-white" width="100px" bgcolor="#6E8498" style="padding: 10px 5px;">
-                      <div style="margin-right: 10px;">
-                        <p class="capitalise">Tuesday</p>
-                        <h1>25</h1>
-                        <p>APRIL</p>
-                      </div>
-                    </td>
-                    <td></td>
-                    <td style="border-left: 1px solid #000;"></td>
-                    <td>
-                      <h2>RESOLVING BOARD CONFLICTS</h2>
-                      <p><b>12:00 PM - 2:00 PM GMT</b></p>
-
-                      <a href="https://events.eventzilla.net/e/resolving-board-conflict--open-doors-workshop-2138596324" class="big-button" style="margin-top: 10px;">SECURE YOUR SEAT</a>
-                    </td>
-                  </tr>
-                </table>
-                <br/>
-                <p>In this workshop, we will delve into the effects of conflict on the operations of a board of directors. You'll gain insights into fostering strong relationships among board members and understanding the ripple effect of disputes throughout the organisation. Using real-world case studies, we will analyse common conflict scenarios and develop effective management strategies.</p>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-
-      <tr bgcolor="#EFF1F4">
-        <td>
-          <table width="100%">
-            <tr>
-              <td width="20%"></td>
-              <td style="border-bottom: 1px solid #CDAD7D;"></td>
-              <td width="20%"></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <tr bgcolor="#EFF1F4">
-        <td class="innerpadding">
-          <table width="100%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td class="bodycopy">
-                <table width="100%">
-                  <tr>
-                    <td class="text-center text-white" width="100px" bgcolor="#6E8498" style="padding: 10px 5px;">
-                      <div style="margin-right: 10px;">
-                        <p class="capitalise">Thursday</p>
-                        <h1>25</h1>
-                        <p>APRIL</p>
-                      </div>
-                    </td>
-                    <td></td>
-                    <td style="border-left: 1px solid #000;"></td>
-                    <td>
-                      <h2>DEMYSTIFYING BOARD COMMITTEES</h2>
-                      <p><b>12:00 PM - 2:00 PM GMT</b></p>
-
-                      <a href="https://events.eventzilla.net/e/demystifying-board-committees--open-doors-workshop-2138596337" class="big-button" style="margin-top: 10px;">SECURE YOUR SEAT</a>
-                    </td>
-                  </tr>
-                </table>
-                <br/>
-                <p>This session will explore the importance of board committees in corporate governance and their crucial role in enhancing board effectiveness. You will delve into best practices for governing committees and effective committee chairing through lectures, case studies, and discussions.</p>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-
-      <tr bgcolor="#fff">
-        <td>
-          <br/><br/><br/>
-          <table width="100%">
-            <tr>
-              <td width="20%"></td>
-              <td style="border-bottom: 1px solid #CDAD7D;"></td>
-              <td width="20%"></td>
-            </tr>
-          </table>
-          <br/>
-        </td>
-      </tr>
-
-
-      <tr>
-        <td><h2 class="text-center thin" style="font-size: 34px; margin-bottom: -15px;">Workshop Lecturers</h2></td>
-      </tr>
-
-
-      <tr bgcolor="#EFF1F4">
-        <td class="innerpadding">
-          <table width="100%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-
-            <tr bgcolor="#6E8498">
-              <td class="bodycopy">
-                <p class="text-center text-white" style="margin: 10px 0 10px 0; font-size: 18px;">
-                  Kieran Moynihan <span style="font-weight: 100;">Managing Partner of Board Excellence</span>
-                </p>
-              </td>
-            </tr>
-
-            <tr bgcolor="#fff">
-              <td class="bodycopy" style="padding: 20px;">
-
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1679326092/kieran_j4juuv.jpg" style="float: left; margin: 0px 20px 10px 0; width: 145px; height: 145px; object-fit: cover; object-position: top;">
-                <p>Kieran is the founder and Managing Partner of Board Excellence, a leading internal board consulting practice. He is an internationally-recognised thought leader in the area of board dynamics, effectiveness, performance and corporate governance. He is a regular contributor to leading international board publications and has developed ground-breaking new approaches to board dynamics and optimising the partnership between executive and non-executive board members, enabling the board to excel as a high-performing team. He has over 23 year’s experience serving on boards and is the Board Chair of a number of companies.</p>
-              </td>
-            </tr>
-
-
-            <tr>
-              <td>
-                <br/><br/>
-              </td>
-            </tr>
-
-
-            <tr bgcolor="#6E8498">
-              <td class="bodycopy">
-                <p class="text-center text-white" style="margin: 10px 0 10px 0; font-size: 18px;">
-                  Marjore Ngwenya <span style="font-weight: 100;">Leadership Coach and Non-executive Director</span>
-                </p>
-              </td>
-            </tr>
-
-            <tr bgcolor="#fff">
-              <td class="bodycopy" style="padding: 20px;">
-                <img src="https://res.cloudinary.com/dmaestro/image/upload/v1662996055/tbra/marjorie.jpg" style="float: left; margin: 0px 20px 10px 0; width: 145px; height: 145px; object-fit: cover;">
-                <p>Marjorie serves as an independent non-executive director in the financial services sector. She is also a trustee of two social justice non-profit organisations active in Southern Africa; the Legal Resources Centre and the Canon Collins Trust (as chairperson). She is appointed as an external member of the Prudential Regulation Committee of the Bank of England.</p>
-                <br/>
-                <p>Through her work as a leadership and life coach, she demonstrates her passion for personal growth. She is also an advocate for diversity, equity and inclusion. She is a Past President of the Institute and Faculty of Actuaries, UK and was the first person of colour to hold office in the organisation’s 160 years and its youngest.</p>
-                <br/>
-                <p>Her prior roles include being a member of the Group Executive Committee of Liberty Group in South Africa, as Chief Strategist and Chief Risk Officer of OldMutual’s African Operations.</p>
-                <br/>
-                <p>Marjorie trained as an actuary and holds a Sloan Masters of Leadership and Strategy from the London Business School.</p>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-
-
-      <tr>
-        <td class="footer" bgcolor="#44525f">
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td align="center" class="footercopy">
-                &reg; TheBoardroom Africa
-              </td>
-            </tr>
-            <tr>
-              <td align="center" style="padding: 20px 0 0 0;">
-                <table border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
-                      <a href="https://twitter.com/TBRAfrica">
-                        <img src="https://files.constantcontact.com/bdaf4e1c701/f1a51b50-31dc-434f-8655-154ddc047e73.png?ver=1595159408000" width="37" height="37" alt="Facebook" border="0" />
-                      </a>
-                    </td>
-                    <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
-                      <a href="https://www.linkedin.com/company/theboardroom-africa">
-                        <img src="https://files.constantcontact.com/bdaf4e1c701/5fa121da-baca-4710-a35e-e56567018383.png?ver=1595159408000" width="37" height="37" alt="LinkedIn" border="0" />
-                      </a>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-    </table>
-    <!--[if (gte mso 9)|(IE)]>
+            <img src="https://res.cloudinary.com/tbra/image/upload/v1694165433/odBannerExec_x7ar81.jpg" class="mb-10">
           </td>
         </tr>
-    </table>
-    <![endif]-->
-    </td>
-  </tr>
-</table>
-</body>
-</html>
+
+
+        <tr bgcolor="#f8f8f8">
+          <td class="newpadding spaced">
+            <p>All roads lead to Cape Town from 20-25 November for our final Open Doors cohort of the year. It's not too late to transform your boardroom presence and join over 200 women leaders across Africa and the diaspora who have participated in the Open Doors programme.</p>
+            <p>Join us for six days of immersive learning and networking at the serene Arabella Golf &amp; Spa hotel located in the Kogelberg Biosphere, one of the world's richest floral reserves, just 90 minutes from the heart of Cape Town.</p>
+            <p>Learn more and secure your seat below.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <br/><br/>
+            <h3 class="sec-title">
+              <span class="thin text-white bg-dark fs-24 uppercase">About Open Doors</span>
+            </h3>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="newpadding">
+            <div class="text-center">
+              <a href="#">
+                <img width="80%" src="https://res.cloudinary.com/tbra/image/upload/v1694165436/odvideo_dy5tqo.jpg">
+              </a>
+            </div>
+            <br>
+            <p>The Open Doors programme, curated in partnership with the Institute of Directors (IoD UK), is an intensive learning journey delivered by world-class instructors and subject-matter experts! From delving into the fundamentals of governance, finance, strategy, and leadership to exploring board dynamics through additional workshops and a board simulation, the curriculum equips aspiring and existing directors with the skills required to effectively lead their organisations and boards.</p>
+            <br/>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td>
+            <img src="https://res.cloudinary.com/tbra/image/upload/v1694164281/GloballyRecognised_vjz4em.jpg" alt="">
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="newpadding">
+            <br/><br/>
+            <h3 class="thin text-center"><span class="bg-dark text-white" style="padding: 10px 80px;">ONLY 3 SLOTS LEFT</span></h3>
+            <br/>
+            <p>There are only three seats left on the programme! Email us at <strong><a href="mailto:opendoors@theboardroomafrica.com" class="text-dusk">opendoors@theboardroomafrica.com</a></strong> for more details or register below whilst tickets remain.</p>
+          
+            <div class="text-center"><a href="https://tbraannualgathering.com/" class="primary-btn bg-mustard fs-22 big-btn uppercase" style="padding: 10px 30px;">Secure your seat</a></div>
+            <br><br/>
+          </td>
+        </tr>
+
+
+
+
+        <tr>
+          <td class="footer" bgcolor="#44525f">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="center" class="footercopy">
+                  &reg; TheBoardroom Africa
+                </td>
+              </tr>
+              <tr>
+                <td align="center" style="padding: 20px 0 0 0;">
+                  <table border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
+                        <a href="https://twitter.com/TBRAfrica">
+                          <img src="https://files.constantcontact.com/bdaf4e1c701/f1a51b50-31dc-434f-8655-154ddc047e73.png?ver=1595159408000" width="37" height="37" alt="Facebook" border="0" />
+                        </a>
+                      </td>
+                      <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
+                        <a href="https://www.linkedin.com/company/theboardroom-africa">
+                          <img src="https://files.constantcontact.com/bdaf4e1c701/5fa121da-baca-4710-a35e-e56567018383.png?ver=1595159408000" width="37" height="37" alt="LinkedIn" border="0" />
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+      </table>
+      
+      </td>
+    </tr>
+  </table>
+  </body>
+  </html>

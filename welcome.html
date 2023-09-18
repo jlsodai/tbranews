@@ -1,816 +1,100 @@
-  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-  <html xmlns="http://www.w3.org/1999/xhtml">
-
-  <head>
-    [[trackingImage]]
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Community</title>
-    <style type="text/css">
-
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200,400;700&family=Libre+Baskerville:wght@400;700&display=swap');
-
-    body {
-      margin: 0;
-      padding: 0;
-      min-width: 100%!important;
-      eight:auto;
-      color: #4A4F54;
-      font-size: 16px;
-      line-height: 1.3;
-      font-weight: normal;
+  <style>
+    .tbra-grid {
+      display: grid;
+      text-align: center;
+      column-gap: 25px;
+      row-gap: 16px;
+      font-size: 14px;
     }
 
-    img {height: auto; max-width: 100%;}
-
-    a {
-      color: #1565c0;
+    @media only screen and (min-width: 600px) {
+      .tbra-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
     }
 
-    .content {
-      min-width: 800px !important;
-      width: 800px !important;
-      margin: 0 auto;
-      overflow: hidden;
+    .tbra-grid div {
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px 30px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px;
     }
 
-    .box-outline, .box-outline-2 {
-      border: 3px solid #fff;
-      padding: 36px;
-      margin: 21px 0;
-    }
-    div.box-outline-2 {
-      border-color: #202944;
+    .mt-4 {
+      margin-top: 16px;
     }
 
-    .premium-btn {
-      display:  inline-block;
-      width: max-content;
-      position: relative;
-      text-decoration: none;
-      font-size: 12px !important;
-      padding: 10px 15px;
-      letter-spacing: 1px;
-      background-color: #a67c00;
-      color: white;
-      margin-top: 22px;
-    }
-
-    .premium-btn img {
-      width: 17px;
-      margin-bottom: -4px;
-      margin-right: 5px;
-    }
-
-    .label {
-      background-color: #17a2b8;
-      padding: 3px 5px;
-      border-radius: 5px;
-      color: #fff;
-      font-size: 12px;
-      margin-bottom: 4px;
-      display: inline-block;
-    }
-
-    .text-primary { color: #0275d8; }
-    .text-white { color: white !important; }
-    .text-success { color: #5cb85c; }
-    .text-info { color: #5bc0de; }
-    .text-warning { color: #f0ad4e; }
-    .text-danger { color: #EA5A4F; }
-    
-
-    .bg-primary { background-color: #0275d8; }
-    .bg-success { background-color: #5cb85c; }
-    .bg-info { background-color: #17a2b8; }
-    .bg-warning { background-color: #f0ad4e; }
-    .bg-danger { background-color: #EA5A4F; }
-    .bg-gold, .bg-premium { background-color: #a67c00; }
-    .bg-tbra-gold { background-color: #b6a999 !important; }
-    .bg-tbra-blue { background-color: #202945 !important; }
-    .bg-dark { background-color: #202945 !important; }
-    .bg-black { background-color: #3e3e3e; }
-
-    .table-responsive {
-      table-layout: fixed;
-    }
-
-    .card-table {
-      border-spacing: 15px;
-      border-collapse: separate;
-      margin: -15px;
-    }
-
-    .card-table td {
-      background: #f3fafb;
-    }
-
-    a.small-btn {
-      padding: 3px 5px;
-      border-radius: 5px;
-      letter-spacing: unset;
-    }
-
-    a.small-btn img {
-      margin-right: 0px;
-    }
-
-    .img-shadow {
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    }
-
-    .mb-20 { margin-bottom: 20px; }
-    .mr-20 { margin-right: 20px; }
-    .mt-20 { margin-top: 20px; }
     .mb-10 { margin-bottom: 10px; }
-    .mt-10 { margin-top: 10px !important; }
-    .pt-0 { padding-top: 0 !important; }
-    .pb-0 { padding-bottom: 0 !important; }
 
-    .header {padding: 40px 30px 40px 30px;}
-
-    .innerpadding {padding: 40px 30px 40px 30px;}
-
-    .borderbottom {border-bottom: 1px solid #f2eeed;}
-
-    .subhead {font-size: 15px; color: #ffffff; letter-spacing: 10px;}
-
-    h1 {
-      font-size: 55px;
-      font-weight: 800;
-      line-height: 1;
+    .tbra-grid img {
+      display: block;
+      margin: 0 auto;
+      height: 40px;
     }
 
-    .dtable {
-      display:  table;
-    }
-
-    .ul-row {
-        width: 100%;
-          padding: 0;
-      }
-
-      .ul-row div {
-          width: max-content;
-          display: inline-block;
-          margin-bottom: 20px;
-      }
-
-      .ul-row div img {
-          width: 16px;
-          margin-top:3px;
-          margin-right: 3px;
-      }
-
-      .ul-row p {
-        font-size: 14px;
-          vertical-align: top;
-          display: inline-block;
-          width: 85%;
-          color: #212843;
-      }
-
-    .darkBlue {
-          color: #202944;
-      }
-
-      .strongWhite {
-          color: white;
-      }
-
-      h1, h2, p, a, ul, li, * {
-          margin: 0;
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-          text-decoration: none;
-      }
-
-    .bodycopy {font-size: 15px;
-              line-height: 1.5;
-              color: #202945;}
-
-     .bodycopy-white {font-size: 15px;
-              line-height: 1.5;
-              color: white;}
-
-    .button a {color: #ffffff; text-decoration: none;}
-
-    .footer {padding: 20px 30px 15px 30px;}
-    .footercopy {font-size: 14px; color: #ffffff;}
-    .footercopy a {color: #ffffff; text-decoration: underline;}
-
-    .header-fix {
-      margin: 2em 0 2em 2em;
-    }
-      
-    .header-img img {
-        max-width: 270px;
-        margin-bottom: 10px;
-    }
-
-    .header-img-side img {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    .main-header {
-      font-size: 35px;
-      font-weight: 800;
-      line-height: 1.3;
-      margin-top: 14px;
-      color: white;
-    }
-
-    .primary-btn {
-          display: inline-block;
-          width: max-content;
-          position: relative;
-          text-decoration: none;
-          text-transform: uppercase;
-          font-size: 12px;
-          padding: 10px 15px;
-          letter-spacing: 1px;
-          background-color: #EA5A4F;
-          color: white;
-          margin-top: 22px;
-      }
-
-      .primary-btn-inverse {
-        background: #fff;
-        color: #EA5A4F;
-      }
-
-      .link-btn {
-              display: block;
-              font-weight: bold;
-              color: #EA5A4F;
-              font-size: 15px;
-              padding-top: 12px;
-          }
-
-      .text-center { text-align: center; }
-      .text-right { text-align: right; }
-
-      .body-btn-blue {
-              display: inline-block;
-              width: max-content;
-              height: auto;
-              position: relative;
-              text-transform: uppercase;
-              font-size: 12px;
-              padding: 10px 15px;
-              letter-spacing: 1px;
-              background-color: transparent;
-              color: #2D3752;
-              border: 1px solid #2D3752;
-              margin-top: 22px;
-      }
-
-      .body-btn-white {
-              display: block;
-              width: max-content;
-              height: auto;
-              position: relative;
-              text-transform: uppercase;
-              font-size: 12px;
-              padding: 10px 15px;
-              letter-spacing: 1px;
-              background-color: transparent;
-              color: #ffffff;
-              border: 1px solid #ffffff;
-              margin-top: 22px;
-      }
-
-      .list-case {
-          display: flex;
-      }
-
-      .tick {
-          margin-right: 8px;
-      }
-
-      .tick img {
-          width: 20px;
-      }
-
-     
-      .useful-links ul {
-        padding: 10px 10px 0;
-      }
-      .useful-links li, .useful-links li a {
-        color: #EA5A4F;
-      }
-
-      .comm-card {
-          display: inline-block;
-          width: 30.5%;
-          height: auto;
-          background-color: white;
-          padding: 7px;
-      }
-
-      .card-contain {
-          width: 85%;
-          margin: 0 auto;
-          padding: 0 0 0 0;
-      }
-
-      .card-contain-bc {
-          width: 85%;
-          margin: 0 auto;
-          padding: 3.2em 0 0 0;
-      }
-
-      .card-contain img {
-          display: table;
-          margin: 0 auto 18px auto;
-          max-width: 100%;
-      }
-
-      .card-contain-bc img {
-          display: table;
-          width: 60px;
-          margin: 0 auto 18px auto;
-      }
-
-    .freshIcon {
-      width: 65px !important;
-      margin: -5px 18px 0 0;
-      float: left;
-    }
-
-
-    
-    .nodisplay {
-      display: none;
-    }
-
-      .table-col {
-         width: 50%;
-      }
-      .col-left {
-         padding-right: 10px;
-      }
-      .col-right {
-        padding-left: 10px;
-      }
-
-      .blockquote {
-        color: #989FB6;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 1.4;
-        padding: 1.5em;
-        border-left: 4px solid #EA5A4F;
-        background: #F9F9F9;
-      }
-
-      .blockquote img {
-        width: 70px;
-        float: left;
-        margin-right: 12px;
-      }
-
-      .blockquote p {
-        font-size: 20px;
-      }
-
-      .quote-author {
-        margin-top: 10px;
-      }
-
-      .quote-author td{
-        vertical-align: top;
-      }
-
-      .quote-author img {
-        width: 32px;
-        float: left;
-        margin-right: 12px;
-      }
-
-      .blockquote span {
-        font-weight: 600;
-      }
-
-      
-
-      .icon-card {
-        font-size: 16px;
-        font-weight: bold;
-        font-weight: 400;
-        line-height: 1.4;
-        padding: 1.5em;
-        border: 1px solid #dddddd;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        min-height: 42px;
-      }
-
-
-      .icon-card img {
-        height: 17px;
-      }
-
-      
-      .icon-card-img-wrap {
-        padding: 15px;
-        border-radius: 50%;
-        width: 17px;
-        background: #f4f4f6;
-        float: left;
-        margin-right: 10px;
-        margin-left: -6px;
-        height: 17px;
-        width: 17px;
-      }
-
-      .blockquote-right {
-        color: #4d5468;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 1.4;
-        padding: 1.5em;
-      }
-
-      .blockquote-right a {
-        color: #a67c00;
-        font-weight: bold;
-      }
-
-      .blockquote strong {
-        display:  block;
-        font-size: 18px;
-        margin-bottom: 10px;
-        font-weight:  bold;
-      }
-      .left-calendar img {
-      float: left; width: 50px; margin-right: 10px;
-      }
-      .img-icon {
-      height: auto; width: 18px; position: relative; top: 3px; margin-top: 5px; margin-right: 5px;
-       }
-
-    .calendar img {
-      height: 13px;
-      margin-right: 6px;
-    }
-
-    .calendar p.title {
+    .tbra-grid a {
       font-weight: bold;
       font-size: 18px;
-      color:#515b7b;
+      display: block;
+      color: #2b2b2b;
+      text-decoration: none;
     }
 
-    .calendar p span {
-      font-weight: 600;
+    .tbra-grid a:hover {
+      color: #ea5a4f;
+      text-decoration: underline;
     }
 
-    .calendar p {
-      margin-bottom: 5px;
-    }
+  </style>
 
-    .hr {
-       border-top: 1.5px solid #d7d7d7;
-    }
-
-    .sec-title, .subtitle {
-      font-weight: bold;
-    }
-
-    .new-title {
-      color: #d7d6d7;
-      font-weight: 200;
-    }
-
-    .rounded { border-radius: 50px; padding: 15px 30px;}
-
-    h3.sec-title {
-      font-weight: normal;
-    }
-
-    .sec-title span {
-      background-color: #EBE5DC;
-      padding: 12px 80px;
-      font-size: 16px;
-      font-weight: bold;
-    }
-
-    .subtitle {
-      font-weight: 500;
-      font-size: 17px;
-    }
-
-    .header-full {
-      background-size: cover;
-      background-color: #202944;
-      background-repeat: no-repeat;
-      background-image: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1671074179/capetownOD_kdeywx.jpg');
-      background-position: top center;
-      padding: 10px 10px 0px 30px;
-      height: 230px; 
-    }
-
+  <div class="tbra-grid mt-4">
+    <div>
+      <img src="https://res.cloudinary.com/tbra/image/upload/v1692356033/profile_mm4zgq.png" height="30px">
+      <a href="https://membersforum.theboardroomafrica.com/users/%{User_ID}">Access & Update Your Profile</a><p>Review  your profile submission and update to set yourself up for success. </p>
+    </div>
+   
+    <div>
+      <img src="https://res.cloudinary.com/tbra/image/upload/v1692356033/briefcase_paihov.png" height="30px">
+      <a href="https://membersforum.theboardroomafrica.com/opportunities">Access Board Roles</a><p>Browse and apply for available board opportunities</p>
+    </div>
+   
+    <div>
+      <img src="https://res.cloudinary.com/tbra/image/upload/v1692356033/resources_bij9ju.png" height="30px">
+      <a href="https://membersforum.theboardroomafrica.com/media_center">Rich Resource Library</a><p>Access our rich library of board and leadership resource</p>
+    </div>
+  </div>
+  <div class="tbra-grid mt-4 mb-10">
+    <div>
+      <img src="https://res.cloudinary.com/tbra/image/upload/v1692356033/unlock_p4pby3.png" height="30px">
+      <a href="https://theboardroomafrica.com/member-offers">Unlock Exclusive Benefits</a><p>Check out member-only services. </p>
+    </div>
     
+    <div>
+      <img src="https://res.cloudinary.com/tbra/image/upload/v1692356033/success_a98cmg.png" height="40px">
+      <a href="https://membersforum.theboardroomafrica.com/events">Register & Attend Our Events</a><p>Get up-to-date information on our events from webinar, masterclasses, Open Doors and more</p>
+    </div>
+    
+    <div>
+      <img src="https://res.cloudinary.com/tbra/image/upload/v1692356033/influence_k8tr9k.png" height="30px">
+      <a href="https://membersforum.theboardroomafrica.com/page/news-new">News & Articles</a><p>Browse our latest news, articles, podcasts and Thought Leadership contents and more.</p>
+    </div>
+  </div>
 
-    .logo-stack img {
-      width: 80px;
+  <style type="text/css">
+    .text-center {
+      text-align: center;
     }
-
-
-    .tour-img {
-      width: 400px;
-      max-width: 100%;
+    .mb-4 {
+      margin-bottom: 16px;
     }
-
-    .col-4 { width: 25%; float: left; }
-
-    .collapse { border-collapse: collapse; }
-    .banner-menu a { color: #fff; margin-right: 15px; }
-    .banner-menu a:last-child { margin: 0; }
-    .capitalise { text-transform: uppercase;}
-    .learnmore { text-decoration: underline; color: black; font-size: 16px; }
-    .moves { border-collapse: separate; border-spacing: 10px; margin-left: -10px;}
-    .moves td {
-      background: #353A4C;
-      color: #fff;
-      border-right: 5px solid #CDAD7D;
-      width: 50%;
-      padding: 10px;
-      vertical-align: top;
-    }
-    .moves td a { text-decoration: underline; color: #fff;}
-    .spaced p { margin-bottom: 7px; }
-    .spaced p.text-danger { margin-bottom: 0; }
-
-
-    .bg-dawn { background-color: #DADEDA; }
-    .bg-tender { background-color: #6E8498; }
-    .bg-dusk { background-color: #4A4F54; }
-    .bg-mustard { background-color: #CDAD7D !important; }
-    .bg-blue { background-color: #202945; }
-    .text-dawn { color: #CDDAE6; }
-    .text-tender { color: #6E8498; }
-    .text-dusk { color: #4A4F54; }
-    .text-mustard { color: #CDAD7D; }
-    .text-blue { color: #202945; }
-    .text-brown { color: #96522D; }
-    .text-green { color: #0D3928; }
-    .text-black { color: black }
-
-    .mb-20 { margin-bottom: 20px; }
-    .mb-10 { margin-bottom: 10px; }
-    .mt-10 { margin-top: 10px !important; }
-    .mt-5 { margin-top: 10px !important; }
-    .thin { font-weight: 200; }
-    .bold { font-weight: bold; }
-
-    .fs-12 { font-size: 12px; }
-    .fs-14 { font-size: 14px; }
-    .fs-16 { font-size: 16px; }
-    .fs-18 { font-size: 18px; }
-    .fs-22 { font-size: 22px; }
-    .fs-24 { font-size: 24px; }
-    .fs-26 { font-size: 26px; }
-    .fs-30 { font-size: 30px; }
-    .fs-34 { font-size: 34px; }
-    .fs-40 { font-size: 40px; }
-    .fs-50 { font-size: 50px; }
-    .fs-60 { font-size: 60px; }
-    .fs-70 { font-size: 70px; }
-    .fs-80 { font-size: 80px; }
-    .fs-90 { font-size: 90px; }
-    .uppercase { text-transform: uppercase; }
-    .newpadding { padding: 40px 50px; }
-
-    .inline-block { display: inline-block; }
-
-    hr {
-       border: none;
-       height: 1px;
-       background: #fff;
-       color: #fff;
-       margin: 0px auto;
-       width: 40%;
-    }
-
-    .midsection {
-      margin-top: 80px;
-    }
-
-    @media only screen and (max-width: 600px) {
-      .midsection {
-        margin-top: 52px;
-      }
-    }
-
-    .border-collapse { border-collapse: collapse; }
-    .connect ul { margin-bottom: 10px; }
-
-    .egypt-bg {
-      background: rgba(34,35,68, 0.4);
-      padding: 0 15px;
-      width: 150px;
-      display: inline-block;
-    }
-
-    .big-btn { padding: 15px; font-size: 35px; display: block; text-align: center;}
-    .whos-coming { color: #DADEDA; border-spacing: 3px 0 !important;}
-    .whos-coming tr { vertical-align: top; }
-    .whos-coming p {
-      font-size: 13px;
-    }
-
-    .whos-coming td {
-      padding: 19px;
-    }
-    .whos-coming h2 {
-      font-size: 17px;
-      margin-bottom: 14px;
-    }
-
-    b { font-weight: 500; }
-
-    .itinerary td {
-      background-color: #f8f8f8;
-      width: 33.333%;
-    }
-
-    .itinerary h2 {
-      line-height: 1;
-      color: #6E8498;
+    .mb-10 {
       margin-bottom: 10px;
     }
+  </style>
 
-    .itinerary h2, .itinerary h3 { color: #6E8498; }
+  <div class="text-center mb-4">
 
-    .lh1 { line-height: 1; }
-
-    b, a { font-weight: bold; }
-
-    .article-links a {
-      font-weight: normal;
-    }
-
-    .libreb, .libreb * {
-      font-family: "Libre Baskerville", serif, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-        text-decoration: none;
-    }
-
-    .options h2 { font-size: 17px; font-weight: 600; margin-left: 10px;}
-    .options p { font-weight: 300; }
-    .options tr:nth-child(even):not(:last-child) td { padding-bottom: 30px; }
-
-    .options img { height: 40px; }
-    .options { margin: 40px 0; }
-
-    </style>
-  </head>
-
-  <body bgcolor="#e7e7e7">
-  <table width="100%" bgcolor="#e7e7e7" border="0" cellpadding="0" cellspacing="0">
-
-    
-    
-
-
-
-
-
-  <tr>
-    <td>
-      <table bgcolor="#F8F8F8" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
-
-        <tr bgcolor="#DADEDA">
-          <td style="background: url('https://res.cloudinary.com/tbra/image/upload/v1692351937/welcomeBanner_d8thbo.png') no-repeat center right / cover; padding: 80px 50px;">
-            <p class="fs-50 libreb">Welcome to TheBoardroom Africa</p>
-          </td>
-        </tr>
-        <tr bgcolor="#CDAD7D">
-          <td height="5px"></td>
-        </tr>
-
-
-
-        <tr bgcolor="#F8F8F8">
-          <td class="newpadding">
-            <br/>
-            <p>Dear %{First_Name},</p>
-            <br/>
-            <p>Congratulations! We are excited to have you join our community of seasoned women executives!</p>
-            <br/>
-            <p>Start your TBrA journey now and explore board opportunities, access member-only events and resources, situate yourself as a global leader with our thought leadership support, and more.</p>
-            <br/>
-            <table width="100%" class="options">
-              <tr>
-                <td width="8%">
-                  <img src="https://res.cloudinary.com/tbra/image/upload/v1692356033/profile_mm4zgq.png">
-                </td>
-                <td width="42%">
-                  <h2>Update Your Profile</h2>
-                </td>
-                <td width="8%">
-                  <img src="https://res.cloudinary.com/tbra/image/upload/v1692356033/briefcase_paihov.png">
-                </td>
-                <td width="42%">
-                  <h2>Access Board Roles</h2>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2"><p>Access your membership profile</p></td>
-                <td colspan="2"><p>Browse available board opportunities</p></td>
-              </tr>
-              <tr>
-                <td width="8%">
-                  <img style="height: 50px;" src="https://res.cloudinary.com/tbra/image/upload/v1692356033/success_a98cmg.png">
-                </td>
-                <td width="42%">
-                  <h2>Transform the way you lead</h2>
-                </td>
-                <td width="8%">
-                  <img src="https://res.cloudinary.com/tbra/image/upload/v1692356033/unlock_p4pby3.png">
-                </td>
-                <td width="42%">
-                  <h2>Unlock Exclusive Benefits</h2>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2"><p>Join monthly leadership coaching sessions</p></td>
-                <td colspan="2"><p>Check out member-only services</p></td>
-              </tr>
-              <tr>
-                <td width="8%">
-                  <img src="https://res.cloudinary.com/tbra/image/upload/v1692356033/influence_k8tr9k.png">
-                </td>
-                <td width="42%">
-                  <h2>Enhance Your Influence</h2>
-                </td>
-                <td width="8%">
-                  <img src="https://res.cloudinary.com/tbra/image/upload/v1692356033/resources_bij9ju.png">
-                </td>
-                <td width="42%">
-                  <h2>Rich Resource Library</h2>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <p>Position yourself with thought leadership support</p>
-                </td>
-                <td colspan="2">
-                  <p>Access our rich library of board and leadership resource</p>
-                </td>
-              </tr>
-            </table>
-          
-            <div class="text-center">
-              <a href="#" class="rounded primary-btn bg-dawn text-dusk">ACTIVATE NOW</a>
-              <br/><br/><br/>
-              <p>Download <b>TheBoardroom Africa</b> mobile app to stay connected while on the go.</p>
-              <br/>
-              <div>
-                <a href="https://play.google.com/store/apps/details?id=hivebrite.theboardroom_africa.app&hl=en_ZA"><img src="https://res.cloudinary.com/tbra/image/upload/v1692355217/android_eknih3.png" style="height: 50px;"></a>
-                <a href="https://apps.apple.com/us/app/id1520014847"><img src="https://res.cloudinary.com/tbra/image/upload/v1692355217/apple_eih3ls.png" style="height: 50px;"></a>
-              </div>
-            </div>
-          </td>
-        </tr>
-
-
-
-        <tr>
-          <td class="footer" bgcolor="#44525f">
-            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td align="center" class="footercopy">
-                  &reg; TheBoardroom Africa
-                </td>
-              </tr>
-              <tr>
-                <td align="center" style="padding: 20px 0 0 0;">
-                  <table border="0" cellspacing="0" cellpadding="0">
-                    <tr>
-                      <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
-                        <a href="https://twitter.com/TBRAfrica">
-                          <img src="https://files.constantcontact.com/bdaf4e1c701/f1a51b50-31dc-434f-8655-154ddc047e73.png?ver=1595159408000" width="37" height="37" alt="Facebook" border="0" />
-                        </a>
-                      </td>
-                      <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
-                        <a href="https://www.linkedin.com/company/theboardroom-africa">
-                          <img src="https://files.constantcontact.com/bdaf4e1c701/5fa121da-baca-4710-a35e-e56567018383.png?ver=1595159408000" width="37" height="37" alt="LinkedIn" border="0" />
-                        </a>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-
-      </table>
-      
-      </td>
-    </tr>
-  </table>
-  </body>
-  </html>
+    <p class="mb-4">Connect on the go. Download <b>TheBoardroom Africa</b> mobile app</p>
+    <a href="https://play.google.com/store/apps/details?id=hivebrite.theboardroom_africa.app&hl=en_ZA"><img src="https://res.cloudinary.com/tbra/image/upload/v1692355217/android_eknih3.png" style="height: 50px;"></a>
+    <a href="https://apps.apple.com/us/app/id1520014847"><img src="https://res.cloudinary.com/tbra/image/upload/v1692355217/apple_eih3ls.png" style="height: 50px;"></a>
+  </div>

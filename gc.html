@@ -1,928 +1,739 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
   [[trackingImage]]
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Group Coaching</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Community</title>
   <style type="text/css">
 
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100,400;700&family=Libre+Baskerville:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200,400;700&family=Libre+Baskerville:wght@400;700&display=swap');
 
-  h1, h2, p, a, ul, li, * {
-    margin: 0;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration: none;
-  }
+    body {
+      margin: 0;
+      padding: 0;
+      min-width: 100%!important;
+      eight:auto;
+      color: #4A4F54;
+      font-size: 18px;
+      font-weight: 300;
+    }
 
-  /*h1, h2, h3 {
-    font-family: "Libre Baskerville", serif;
-    font-weight: 400;
-  }*/
+    img {height: auto; max-width: 100%;}
 
-  .libre { font-family: "Libre Baskerville", serif; }
-  .inline-block { display: inline-block; }
+    a {
+      color: #1565c0;
+    }
 
-  body {margin: 0; padding: 0; min-width: 100%!important;height:auto; color: #4A4F54;}
-  img {height: auto; max-width: 100%;}
-
-  a {
-    color: #1565c0;
-  }
-
-  .content {
-    min-width: 800px !important;
-    width: 800px !important;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
-  .box-outline, .box-outline-2 {
-    border: 3px solid #fff;
-    padding: 36px;
-    margin: 21px 0;
-  }
-  div.box-outline-2 {
-    border-color: #202944;
-  }
-
-  .premium-btn {
-    display:  inline-block;
-    width: max-content;
-    position: relative;
-    text-decoration: none;
-    font-size: 12px;
-    padding: 10px 15px;
-    letter-spacing: 1px;
-    background-color: #a67c00;
-    color: white;
-    margin-top: 22px;
-  }
-
-  .premium-btn img {
-    width: 17px;
-    margin-bottom: -4px;
-    margin-right: 5px;
-  }
-
-  .label {
-    background-color: #17a2b8;
-    padding: 3px 5px;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 12px;
-    margin-bottom: 4px;
-    display: inline-block;
-  }
-
-  .text-primary { color: #0275d8; }
-  .text-success { color: #5cb85c; }
-  .text-info { color: #5bc0de; }
-  .text-warning { color: #f0ad4e; }
-  .text-danger { color: #EA5A4F; }
-  .text-white { color: #fff; }
-
-  .bg-primary { background-color: #0275d8; }
-  .bg-success { background-color: #5cb85c; }
-  .bg-info { background-color: #17a2b8; }
-  .bg-warning { background-color: #f0ad4e; }
-  .bg-danger { background-color: #EA5A4F; }
-  .bg-gold, .bg-premium { background-color: #a67c00; }
-  .bg-tbra-gold { background-color: #b6a999 !important; }
-  .bg-tbra-blue { background-color: #202945 !important; }
-  .bg-dark { background-color: #4A4F54 !important; }
-  .bg-black { background-color: #3e3e3e; }
-  .bg-white { background-color: #fff; }
-
-  .table-responsive {
-    table-layout: fixed;
-  }
-
-  .card-table {
-    border-spacing: 15px;
-    border-collapse: separate;
-    margin: -15px;
-  }
-
-  .card-table td {
-    background: #f3fafb;
-  }
-
-  @media only screen and (max-width: 500px) {
-    .card-table, .table-responsive {
-      width: 100%;
+    .content {
+      min-width: 800px !important;
+      width: 800px !important;
       margin: 0 auto;
+      overflow: hidden;
     }
 
-    .card-table tr, .table-responsive tr {
-      display:block;
+    .box-outline, .box-outline-2 {
+      border: 3px solid #fff;
+      padding: 36px;
+      margin: 21px 0;
+    }
+    div.box-outline-2 {
+      border-color: #202944;
     }
 
-    .card-table tr td, .table-responsive tr td {
-      display:block;
-      width:100% !important;
-      margin-bottom: 5px;
+    .premium-btn {
+      display:  inline-block;
+      width: max-content;
+      position: relative;
+      text-decoration: none;
+      padding: 10px 15px;
+      letter-spacing: 1px;
+      background-color: #a67c00;
+      color: white;
+      margin-top: 22px;
     }
 
-    .card-table tr td:last-child, .table-responsive tr td:last-child {
-      margin-bottom: 0;
+    .premium-btn img {
+      width: 17px;
+      margin-bottom: -4px;
+      margin-right: 5px;
     }
-  }
 
-  a.small-btn {
-    padding: 3px 5px;
-    border-radius: 5px;
-    letter-spacing: unset;
-  }
-
-  a.small-btn img {
-    margin-right: 0px;
-  }
-
-  .img-shadow {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
-
-  .mb-20 { margin-bottom: 20px; }
-  .mb-10 { margin-bottom: 10px; }
-  .mt-10 { margin-top: 10px !important; }
-
-  .header {padding: 40px 30px 40px 30px;}
-
-  .innerpadding {padding: 40px 30px 40px 30px;}
-
-  .borderbottom {border-bottom: 1px solid #f2eeed;}
-
-  .subhead {font-size: 15px; color: #ffffff; letter-spacing: 10px;}
-
-  h1 {
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 1;
-  }
-
-  .dtable {
-    display:  table;
-  }
-
-  @media only screen and (min-width: 449px) {
-    .list-col {
-      float:left;
-      width:45%;
+    .label {
+      background-color: #17a2b8;
+      padding: 3px 5px;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 12px;
+      margin-bottom: 4px;
+      display: inline-block;
     }
-  }
 
-  .ul-row {
+    .text-primary { color: #0275d8; }
+    .text-light { color: #f8f8f8; }
+    .text-white { color: white !important; }
+    .text-success { color: #5cb85c; }
+    .text-info { color: #5bc0de; }
+    .text-warning { color: #f0ad4e; }
+    .text-danger { color: #EA5A4F; }
+
+
+    .bg-primary { background-color: #0275d8; }
+    .bg-success { background-color: #5cb85c; }
+    .bg-info { background-color: #17a2b8; }
+    .bg-warning { background-color: #f0ad4e; }
+    .bg-danger { background-color: #EA5A4F; }
+    .bg-gold, .bg-premium { background-color: #a67c00; }
+    .bg-tbra-gold { background-color: #b6a999 !important; }
+    .bg-tbra-blue { background-color: #202945 !important; }
+    .bg-dark { background-color: #202945 !important; }
+    .bg-black { background-color: #3e3e3e; }
+    .bg-light { background-color: #f8f8f8; }
+
+    .table-responsive {
+      table-layout: fixed;
+    }
+
+    .card-table {
+      border-spacing: 15px;
+      border-collapse: separate;
+      margin: -15px;
+    }
+
+    .card-table td {
+      background: #f3fafb;
+    }
+
+    a.small-btn {
+      padding: 3px 5px;
+      border-radius: 5px;
+      letter-spacing: unset;
+    }
+
+    a.small-btn img {
+      margin-right: 0px;
+    }
+
+    .img-shadow {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .mb-20 { margin-bottom: 20px; }
+    .mr-20 { margin-right: 20px; }
+    .mr-10 { margin-right: 10px; }
+    .mt-20 { margin-top: 20px; }
+    .mb-10 { margin-bottom: 10px; }
+    .mt-10 { margin-top: 10px !important; }
+
+    .header {padding: 40px 30px 40px 30px;}
+
+    .innerpadding {padding: 40px 30px 40px 30px;}
+
+    .borderbottom {border-bottom: 1px solid #f2eeed;}
+
+    .subhead {font-size: 15px; color: #ffffff; letter-spacing: 10px;}
+
+    h1 {
+      font-size: 55px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .dtable {
+      display:  table;
+    }
+
+    .ul-row {
       width: 100%;
-        padding: 0;
+      padding: 0;
     }
 
     .ul-row div {
-        width: max-content;
-        display: inline-block;
-        margin-bottom: 20px;
+      width: max-content;
+      display: inline-block;
+      margin-bottom: 20px;
     }
 
     .ul-row div img {
-        width: 16px;
-        margin-top:3px;
-        margin-right: 3px;
-        /*filter: invert(90%) sepia(0%) saturate(90%) hue-rotate(3500deg) brightness(0%) contrast(100%);*/
+      width: 16px;
+      margin-top:3px;
+      margin-right: 3px;
     }
 
     .ul-row p {
       font-size: 14px;
-        vertical-align: top;
-        display: inline-block;
-        width: 85%;
-        color: #212843;
+      vertical-align: top;
+      display: inline-block;
+      width: 85%;
+      color: #212843;
     }
 
-  .darkBlue {
-        color: #202944;
+    .darkBlue {
+      color: #202944;
     }
 
     .strongWhite {
-        color: white;
+      color: white;
     }
 
     h1, h2, p, a, ul, li, * {
-        margin: 0;
-        text-decoration: none;
+      margin: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      text-decoration: none;
     }
 
-    p, ul {
-        font-size: 15.5px;
+    .libreb, .libreb * {
+      font-family: "Libre Baskerville", serif, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+      text-decoration: none;
     }
 
-  .bodycopy {font-size: 15px;
-            line-height: 1.5;
-            }
+    .bodycopy {font-size: 15px;
+      line-height: 1.5;
+      color: #202945;}
 
-   .bodycopy-white {font-size: 15px;
-            line-height: 1.5;
-            color: white;}
+      .bodycopy-white {font-size: 15px;
+        line-height: 1.5;
+        color: white;}
 
-  .button a {color: #ffffff; text-decoration: none;}
+        .button a {color: #ffffff; text-decoration: none;}
 
-  .footer {padding: 20px 30px 15px 30px;}
-  .footercopy {font-size: 14px; color: #ffffff;}
-  .footercopy a {color: #ffffff; text-decoration: underline;}
-
-  .header-fix {
-    margin: 2em 0 2em 2em;
-  }
-    
-  .header-img img {
-      max-width: 270px;
-      margin-bottom: 10px;
-  }
-
-  .header-img-side img {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-  }
-
-  .main-header {
-    font-size: 35px;
-    font-weight: 800;
-    line-height: 1.3;
-    margin-top: 14px;
-    color: white;
-    /*width: 60%;*/
-  }
-
-  .primary-btn {
-        display: inline-block;
-        width: max-content;
-        position: relative;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 12px;
-        padding: 10px 15px;
-        letter-spacing: 1px;
-        background-color: #EA5A4F;
-        color: white;
-        margin-top: 22px;
-    }
-
-    .primary-btn-inverse {
-      background: #fff;
-      color: #EA5A4F;
-    }
-
-    .link-btn {
-            display: block;
-            font-weight: bold;
-            color: #EA5A4F;
-            font-size: 15px;
-            padding-top: 12px;
-        }
-
-    .text-center { text-align: center; }
-    .text-right { text-align: right; }
-
-    .body-btn-blue {
-            display: inline-block;
-            width: max-content;
-            height: auto;
-            position: relative;
-            text-transform: uppercase;
-            font-size: 12px;
-            padding: 10px 15px;
-            letter-spacing: 1px;
-            background-color: transparent;
-            color: #2D3752;
-            border: 1px solid #2D3752;
-            margin-top: 22px;
-    }
-
-    .body-btn-white {
-            display: block;
-            width: max-content;
-            height: auto;
-            position: relative;
-            text-transform: uppercase;
-            font-size: 12px;
-            padding: 10px 15px;
-            letter-spacing: 1px;
-            background-color: transparent;
-            color: #ffffff;
-            border: 1px solid #ffffff;
-            margin-top: 22px;
-    }
-
-    .list-case {
-        display: flex;
-    }
-
-    .tick {
-        margin-right: 8px;
-    }
-
-    .tick img {
-        width: 20px;
-    }
-
-   /* ul li {
-        /*list-style-type: none;
-    }*/
-
-    /*ul li::before {
-      content: "2";
-      color: red;
-      font-weight: bold;
-      display: inline-block; 
-      width: 1em;
-      margin-left: -1em;
-    }*/
-
-    .useful-links ul {
-      padding: 10px 10px 0;
-    }
-    .useful-links li, .useful-links li a {
-      color: #EA5A4F;
-    }
-
-    .comm-card {
-        display: inline-block;
-        width: 30.5%;
-        height: auto;
-        background-color: white;
-        padding: 7px;
-    }
-
-    .card-contain {
-        width: 85%;
-        margin: 0 auto;
-        padding: 0 0 0 0;
-    }
-
-    .card-contain-bc {
-        width: 85%;
-        margin: 0 auto;
-        padding: 3.2em 0 0 0;
-    }
-
-    .card-contain img {
-        display: table;
-        margin: 0 auto 18px auto;
-        max-width: 100%;
-    }
-
-    .card-contain-bc img {
-        display: table;
-        width: 60px;
-        margin: 0 auto 18px auto;
-    }
-
-  .freshIcon {
-    width: 65px !important;
-    margin: -5px 18px 0 0;
-    float: left;
-  }
-
-
-  @media only screen and (max-width: 550px), screen and (max-device-width: 550px) {
-    .freshIcon {
-      margin-top: 0;
-    }
-  body[yahoo] .hide {display: none!important;}
-  body[yahoo] .buttonwrapper {background-color: transparent!important;}
-  body[yahoo] .button {padding: 0px!important;}
-  body[yahoo] .button a {background-color: #e05443; padding: 15px 15px 13px!important;}
-  body[yahoo] .unsubscribe {display: block; margin-top: 20px; padding: 10px 50px; background: #2f3942; border-radius: 5px; text-decoration: none!important; font-weight: bold;}
-  }
-
-  .nodisplay {
-    display: none;
-  }
-
-  @media only screen and (max-width: 773px) {
-
-        .comm-card {
-            display: block !important;
-            width: 65% !important;
-            margin: 0 auto 2em auto !important;
-        }
-    }
-
-  @media only screen and (max-width: 700px) {
-        h1 {
-            font-size: 30px !important;
-        }
-
-        .responsive-h1 {
-            width: 100% !important;
-            font-size: 30px !important;
-            text-align: left !important;
-        }
-
-        .responsive-p-align {
-            width: 100% !important;
-            text-align: left !important;
-        }
-
-        .header-img-side {
-            display: none;
-        }
-
-        .header-sm-img {
-          width: 80%;
-          height: 200px;
-        }
-
-        .nodisplay {
-          display: block !important;
-        }
-
-        .hidden {
-            display: none;
-        }
+        .footer {padding: 20px 30px 15px 30px;}
+        .footercopy {font-size: 14px; color: #ffffff;}
+        .footercopy a {color: #ffffff; text-decoration: underline;}
 
         .header-fix {
-            width: 100% !important;
-            max-width: 100% !important;
-        }
-    }
-
-    @media only screen and (max-width: 650px) {
-        .responsive-full {
-            width: 100% !important;
+          margin: 2em 0 2em 2em;
         }
 
-        .responsive-fix {
-            display: block;
-            width: 100% !important;
-            max-width: 100% !important;
-            margin: 0 auto;
-            float: none;
+        .header-img img {
+          max-width: 270px;
+          margin-bottom: 10px;
         }
 
-        .responsive-mrg-bottom {
-            margin-bottom: 2em;
+        .header-img-side img {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
         }
-    }
-    
-    .table-col {
-       width: 50%;
-    }
-    .col-left {
-       padding-right: 10px;
-    }
-    .col-right {
-      padding-left: 10px;
-    }
-    @media only screen and (max-width: 550px), screen and (max-device-width: 550px) {
-      .table-col {
-        width: 100% !important;
-        padding: 0 !important;
-        display: block;
-        margin-bottom: 30px;
-      }
-    }
 
-    .blockquote {
-      color: #989FB6;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 1.4;
-      padding: 1.5em;
-      border-left: 4px solid #EA5A4F;
-      background: #F9F9F9;
-    }
+        .main-header {
+          font-size: 35px;
+          font-weight: 800;
+          line-height: 1.3;
+          margin-top: 14px;
+          color: white;
+        }
 
-    .blockquote img {
-      width: 70px;
-      float: left;
-      margin-right: 12px;
-    }
+        .primary-btn {
+          display: inline-block;
+          width: max-content;
+          position: relative;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 12px;
+          padding: 10px 15px;
+          letter-spacing: 1px;
+          background-color: #EA5A4F;
+          color: #4A4F54;
+          font-weight: 600;
+          margin-top: 22px;
+        }
 
-    .blockquote p {
-      font-size: 20px;
-    }
+        .primary-btn-inverse {
+          background: #fff;
+/*      color: #EA5A4F;*/
+}
 
-    .quote-author {
-      margin-top: 10px;
-    }
+.link-btn {
+  display: block;
+  font-weight: bold;
+  color: #EA5A4F;
+  font-size: 15px;
+  padding-top: 12px;
+}
 
-    .quote-author td{
-      vertical-align: top;
-    }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
 
-    .quote-author img {
-      width: 32px;
-      float: left;
-      margin-right: 12px;
-      /*margin-top: 15px;*/
-    }
+.body-btn-blue {
+  display: inline-block;
+  width: max-content;
+  height: auto;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px 15px;
+  letter-spacing: 1px;
+  background-color: transparent;
+  color: #2D3752;
+  border: 1px solid #2D3752;
+  margin-top: 22px;
+}
 
-    .blockquote span {
-      font-weight: 600;
-    }
+.body-btn-white {
+  display: block;
+  width: max-content;
+  height: auto;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px 15px;
+  letter-spacing: 1px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  margin-top: 22px;
+}
 
-    /*.icon-card {
-      color: #202945;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 1.4;
-      padding: 1.5em;
-      border: 1px solid #dddddd;
-      margin-bottom: 10px;
-      position: relative;
-      margin-top: 20px;
-      margin-left: 20px;
-      border-radius: 0 20px;
-    }*/
+.list-case {
+  display: flex;
+}
 
-    .icon-card {
-      font-size: 16px;
-      font-weight: bold;
-      font-weight: 400;
-      line-height: 1.4;
-      padding: 1.5em;
-      border: 1px solid #dddddd;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      min-height: 42px;
-    }
+.tick {
+  margin-right: 8px;
+}
+
+.tick img {
+  width: 20px;
+}
 
 
-    .icon-card img {
-      height: 17px;
-    }
+.useful-links ul {
+  padding: 10px 10px 0;
+}
+.useful-links li, .useful-links li a {
+  color: #EA5A4F;
+}
 
-    /*.icon-card-img-wrap {
-      position: absolute;
-      top: -20px;
-      left: -20px;
-      border: 1px solid #ddd;
-      padding: 10px;
-      border-radius: 50%;
-      background: #fff;
-    }*/
+.comm-card {
+  display: inline-block;
+  width: 30.5%;
+  height: auto;
+  background-color: white;
+  padding: 7px;
+}
 
-    .icon-card-img-wrap {
-      /*border: 1px solid #ddd;*/
-      padding: 15px;
-      border-radius: 50%;
-      width: 17px;
-      background: #f4f4f6;
-      float: left;
-      margin-right: 10px;
-      margin-left: -6px;
-      height: 17px;
-      width: 17px;
-    }
+.card-contain {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0 0 0 0;
+}
 
-    .blockquote-right {
-      color: #4d5468;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 1.4;
-      padding: 1.5em;
-      /*border-right: 4px solid #a67c00;*/
-      /*background: #F9F9F9;*/
-    }
+.card-contain-bc {
+  width: 85%;
+  margin: 0 auto;
+  padding: 3.2em 0 0 0;
+}
 
-    .blockquote-right a {
-      color: #a67c00;
-      font-weight: bold;
-    }
+.card-contain img {
+  display: table;
+  margin: 0 auto 18px auto;
+  max-width: 100%;
+}
 
-    .blockquote strong {
-      display:  block;
-      font-size: 18px;
-      margin-bottom: 10px;
-      font-weight:  bold;
-    }
-    .left-calendar img {
-    float: left; width: 50px; margin-right: 10px;
-    }
-    .img-icon {
-    height: auto; width: 18px; position: relative; top: 3px; margin-top: 5px; margin-right: 5px;
-     }
+.card-contain-bc img {
+  display: table;
+  width: 60px;
+  margin: 0 auto 18px auto;
+}
 
-  .calendar img {
-    height: 13px;
-    margin-right: 6px;
+.freshIcon {
+  width: 65px !important;
+  margin: -5px 18px 0 0;
+  float: left;
+}
+
+
+
+.nodisplay {
+  display: none;
+}
+
+.table-col {
+ width: 50%;
+}
+.col-left {
+ padding-right: 10px;
+}
+.col-right {
+  padding-left: 10px;
+}
+
+.blockquote {
+  color: #989FB6;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+  padding: 1.5em;
+  border-left: 4px solid #EA5A4F;
+  background: #F9F9F9;
+}
+
+.blockquote img {
+  width: 70px;
+  float: left;
+  margin-right: 12px;
+}
+
+.blockquote p {
+  font-size: 20px;
+}
+
+.quote-author {
+  margin-top: 10px;
+}
+
+.quote-author td{
+  vertical-align: top;
+}
+
+.quote-author img {
+  width: 32px;
+  float: left;
+  margin-right: 12px;
+}
+
+.blockquote span {
+  font-weight: 600;
+}
+
+
+
+.icon-card {
+  font-size: 16px;
+  font-weight: bold;
+  font-weight: 400;
+  line-height: 1.4;
+  padding: 1.5em;
+  border: 1px solid #dddddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  min-height: 42px;
+}
+
+
+.icon-card img {
+  height: 17px;
+}
+
+
+.icon-card-img-wrap {
+  padding: 15px;
+  border-radius: 50%;
+  width: 17px;
+  background: #f4f4f6;
+  float: left;
+  margin-right: 10px;
+  margin-left: -6px;
+  height: 17px;
+  width: 17px;
+}
+
+.blockquote-right {
+  color: #4d5468;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+  padding: 1.5em;
+}
+
+.blockquote-right a {
+  color: #a67c00;
+  font-weight: bold;
+}
+
+.blockquote strong {
+  display:  block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight:  bold;
+}
+.left-calendar img {
+  float: left; width: 50px; margin-right: 10px;
+}
+.img-icon {
+  height: auto; width: 18px; position: relative; top: 3px; margin-top: 5px; margin-right: 5px;
+}
+
+.calendar img {
+  height: 13px;
+  margin-right: 6px;
+}
+
+.calendar p.title {
+  font-weight: bold;
+  font-size: 18px;
+  color:#515b7b;
+}
+
+.calendar p span {
+  font-weight: 600;
+}
+
+.calendar p {
+  margin-bottom: 5px;
+}
+
+.hr {
+ border-top: 1.5px solid #d7d7d7;
+ width: 50%;
+ margin: 50px auto;
+}
+
+.sec-title, .subtitle {
+  font-weight: bold;
+}
+
+.new-title {
+  color: #d7d6d7;
+  font-weight: 200;
+}
+
+.rounded { border-radius: 50px; padding-left: 30px; padding-right:30px; }
+
+h3.sec-title {
+  font-weight: normal;
+}
+
+.sec-title span {
+  background-color: #EBE5DC;
+  padding: 12px 80px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.header-full {
+  background-size: cover;
+  background-color: #202944;
+  background-repeat: no-repeat;
+  background-image: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1671074179/capetownOD_kdeywx.jpg');
+  background-position: top center;
+  padding: 10px 10px 0px 30px;
+  height: 230px; 
+}
+
+
+
+.logo-stack img {
+  width: 80px;
+}
+
+
+.tour-img {
+  width: 400px;
+  max-width: 100%;
+}
+
+.col-4 { width: 25%; float: left; }
+
+.collapse { border-collapse: collapse; }
+.banner-menu a { color: #fff; margin-right: 15px; }
+.banner-menu a:last-child { margin: 0; }
+.capitalise { text-transform: uppercase;}
+.learnmore { text-decoration: underline; color: black; font-size: 16px; }
+.moves { border-collapse: separate; border-spacing: 10px; margin-left: -10px;}
+.moves td {
+  background: #353A4C;
+  color: #fff;
+  border-right: 5px solid #CDAD7D;
+  width: 50%;
+  padding: 10px;
+  vertical-align: top;
+}
+.moves td a { text-decoration: underline; color: #fff;}
+.spaced p { margin-bottom: 7px; }
+.spaced p.text-danger { margin-bottom: 0; }
+
+
+.bg-dawn { background-color: #DADEDA; }
+.bg-tender { background-color: #6E8498; }
+.bg-dusk { background-color: #4A4F54; }
+.bg-mustard { background-color: #CDAD7D !important; }
+.bg-blue { background-color: #202945; }
+.text-dawn { color: #CDDAE6; }
+.text-tender { color: #6E8498; }
+.text-dusk { color: #4A4F54; }
+.text-mustard { color: #CDAD7D; }
+.text-blue { color: #202945; }
+.text-brown { color: #96522D; }
+.text-green { color: #0D3928; }
+.text-black { color: black }
+
+.mb-20 { margin-bottom: 20px; }
+.mb-10 { margin-bottom: 10px; }
+.mt-10 { margin-top: 10px !important; }
+.mt-5 { margin-top: 10px !important; }
+.thin { font-weight: 300; }
+.bold { font-weight: bold; }
+
+.fs-12 { font-size: 12px; }
+.fs-14 { font-size: 14px; }
+.fs-16 { font-size: 16px; }
+.fs-18 { font-size: 18px; }
+.fs-22 { font-size: 22px; }
+.fs-24 { font-size: 24px; }
+.fs-26 { font-size: 26px; }
+.fs-30 { font-size: 30px; }
+.fs-34 { font-size: 34px; }
+.fs-40 { font-size: 40px; }
+.uppercase { text-transform: uppercase; }
+.newpadding { padding: 40px 50px; }
+.smallpadding { padding: 20px 25px; }
+
+.inline-block { display: inline-block; }
+
+hr {
+ border: 1px solid #CDAD7D;
+ margin: 30px auto;
+ width: 50%;
+}
+
+.midsection {
+  margin-top: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+  .midsection {
+    margin-top: 52px;
   }
+}
 
-  .calendar p.title {
-    font-weight: bold;
-    font-size: 18px;
-    color:#515b7b;
-  }
+.border-collapse { border-collapse: collapse; }
+.underline { text-decoration: underline; }
 
-  .calendar p span {
-    font-weight: 600;
-  }
+.spaced p + p { margin-top: 20px; }
+.spaced.lh p { line-height: 1.5 }
 
-  .calendar p {
-    margin-bottom: 5px;
-  }
+.center-link {
+  text-align: center;
+}
 
-  .hr {
-     border-top: 1.5px solid #d7d7d7;
-  }
-
-  .sec-title, .subtitle {
-    color: #462b16;
-    font-weight: bold;
-  }
-
-  h3.sec-title {
-/*    color: #fff;*/
-/*    font-weight: normal;*/
-  }
-
-  .sec-title span {
-    background-color: #b6a999;
-    padding: 8px 120px 8px 20px;
-    font-size: 16px;
-  }
-
-  .subtitle {
-    font-weight: 500;
-    font-size: 17px;
-  }
-
-  .header-full {
-    background-size: cover;
-    background-color: #202944;
-    background-repeat: no-repeat;
-    background-image: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1671074179/capetownOD_kdeywx.jpg');
-    background-position: top center;
-    padding: 10px 10px 0px 30px;
-    height: 230px; 
-  }
-
-  @media only screen and (min-width: 774px) {
-    .header-full {
-      height: 400px !important;
-    }
-  }
-
-  .logo-stack img {
-    width: 80px;
-  }
-
-  @media only screen and (min-width: 500px) {
-    .logo-stack img {
-      width: 100px !important;
-    }
-  }
-
-  @media only screen and (min-width: 774px) {
-    .logo-stack img {
-      width: 114px !important;
-    }
-  }
-
-  .tour-img {
-    width: 400px;
-    max-width: 100%;
-    /*margin-right: 15px;
-    margin-bottom: 10px;*/
-    /*display: block;*/
-    /*margin: 0 auto;*/
-  }
-
-  .col-4 { width: 25%; float: left; }
-
-  .collapse { border-collapse: collapse; }
-  .banner-menu a { color: #fff; margin-right: 15px; }
-  .banner-menu a:last-child { margin: 0; }
-  .capitalise { text-transform: uppercase;}
-  .learnmore { text-decoration: underline; color: black; }
-
-  .btn-round { border-radius: 50px; padding: 15px 40px; }
-
-  .bg-dawn { background-color: #CDDAE6; }
-  .bg-tender { background-color: #6E8498; }
-  .bg-dusk { background-color: #4A4F54; }
-  .bg-mustard { background-color: #CDAD7D; }
-  .bg-blue { background-color: #202945; }
-
-  .text-black { color: #000; }
-  .text-dawn { color: #CDDAE6; }
-  .text-tender { color: #6E8498; }
-  .text-dusk { color: #4A4F54; }
-  .text-mustard { color: #CDAD7D; }
-  .text-blue { color: #202945; }
-  .text-brown { color: #96522D; }
-
-  </style>
+</style>
 </head>
 
-<body bgcolor="#fafafa">
-<table width="100%" bgcolor="#fafafa" border="0" cellpadding="0" cellspacing="0">
-
-  <!-- <tr>
-    <td><img src="http://tbrax.devt/financebg.jpg" style="max-width: 100%;"></td>
-  </tr>
- -->
-
-  
+<body bgcolor="#eee">
+  <table width="100%" bgcolor="#eee" border="0" cellpadding="0" cellspacing="0">
 
 
 
 
 
-<tr>
-  <td>
-    <!--[if (gte mso 9)|(IE)]>
-      <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td>
-    <![endif]-->
-    <table bgcolor="#fff" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
-
-
-      <tr>
-        <td><img src="https://res.cloudinary.com/tbra/image/upload/v1687166842/MarjorieGCBanner_nawie7.jpg" style="max-width: 100%; display: block;" /></td>
-        <!-- <td><img src="https://res.cloudinary.com/tbra/image/upload/v1683197324/GCBannerRachel_o21kne.jpg" style="max-width: 100%; display: block;" /></td> -->
-      </tr>
 
 
 
+    <tr>
+      <td>
+        <table bgcolor="#fff" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
 
-      <tr bgcolor="#EFECEC">
-        <td class="innerpadding">
-          <table width="90%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td class="bodycopy">
-
-                <!-- <p>Dear [[FIRSTNAME]]</p> -->
-
-                <br />
-
-                <p>We often find ourselves on autopilot, going through the motions of life, following the path we think we should be on, and fulfilling the responsibilities we believe we ought to fulfil. This session will stimulate your thinking to design a way of life that is authentically yours and custom-made for your interests, strengths and aspirations. It will get you exploring the bigger picture of your life and the legacy you want to leave behind.</p>
-
-                <br />
-
-                <p>Join us in this session to design your personal compass for guiding your life and staying true to your purpose.</p>
-
-                <br />
-                
-                <!-- <br /><br /> -->
-                <!-- <p><b>Register now for 'The Neuroscience of Bias'</b></p> -->
-                <br />
-                <p><strong>Title</strong>: Your Personal Vision and Legacy</p>
-                <p><strong>Date</strong>: Thursday, 24 August 2023</p>
-                <p><strong>Time</strong>: 12:00 - 1:30 pm GMT</p>
-                <p><strong>Coach</strong>: Marjorie Ngwenya</p>
-                <br />
-                <!-- <a href="#" class="learnmore">Read more</a> -->
-
-                <!-- <br /><br /> -->
-                <p><b>Limited seats available</b></p>
-
-                <br />
-
-                <div class="text-center">
-                  <a href="https://theboardroomafrica.com/wp-content/uploads/2023/02/TBR-Africa-2023-Group-Coaching-Catalogue.pdf" target="_blank" class="learnmore" style="margin: 0 20px 20px 0;">2023 Coaching Catalogue</a>
-                  
-                  <br />
-                  <br />
-                  
-                  <a href="https://membersforum.theboardroomafrica.com/networks/events/106198" target="_blank" class="primary-btn btn-round bg-mustard text-black" style="margin: 0 20px 20px 0;">Register Now</a>
-                </div>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <br /><br /><br />
-          <h1 class="text-center capitalise" style="font-weight: 100; color: #202945;">Me<span style="border-bottom: 1px solid;">et your coa</span>ch</h1>
-          <br /><br />
-        </td>
-      </tr>
-
-      <tr bgcolor="#202945">
-        <td>
-          <p class="text-center text-white" style="margin: 20px 0 20px 0; font-size: 18px;">
-            Marjorie Ngwenya &nbsp;&nbsp;<span style="font-weight: 100;">Leadership Coach and Non-executive Director</span>
-          </p>
-        </td>
-      </tr>
-
-      <tr bgcolor="#E8EDF1">
-        <td class="innerpadding">
-          <table width="90%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td class="bodycopy">
-                <br />
-                <!-- <h1 class="text-center" style="font-weight: 100; margin-top: -88px;">Meet your coach</h1> -->
-
-
-                <div class="bg-gray p-20">
-                  <img class="coach-img" src="https://res.cloudinary.com/tbra/image/upload/v1681213198/Marjorie_azs9xw.jpg" style="float: left; margin: 0px 20px 10px 0; max-width: 205px;">
-
-                  <!-- <p style="margin-bottom: 10px;"><i>Leadership Coach and Non-executive Director</i></p> -->
-                  <p style="margin-top: -20px;">Marjorie is an experienced coach who works with clients to navigate their personal and professional lives authentically and overcome their barriers to success. She is an Independent non-executive director of Tangerine Financial and an External member, Prudential Regulation Committee of the Bank of England.</p>
-                  <br />
-                  <p>She is also the Chairperson of the Canon Collins Trust and a Trustee of the Legal Resources Centre. She is a Past President of the Institute and Faculty of Actuaries (IFoA) and was the first person of colour to hold office in the organisation’s 160 years and also its youngest. Her prior roles include being a member of the Group Executive Committee of Liberty Group in South Africa, as Chief Strategist. Prior to that, she was Chief Risk Officer of Old Mutual’s African Operations. Marjorie trained as an actuary and holds a Sloan Masters in Leadership and Strategy from the London Business School.</p>
-                </div>
-
-                <br />
-
-
-
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-
-      <tr>
-        <td>
-          <br /><br /><br />
-          <h1 class="text-center capitalise" style="font-weight: 100; color: #202945;">2023 <span style="border-bottom: 1px solid;">GROUP COACHING SCH</span>EDULE</h1>
-          <br /><br /><br />
-
-        </td>
-      </tr>
-
-
-      <tr bgcolor="#6E8498">
-        <td class="innerpadding" style="padding-top: 0;">
-          <table width="90%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td class="bodycopy">
-
-                <a href="https://theboardroomafrica.com/wp-content/uploads/2023/02/TBR-Africa-2023-Group-Coaching-Catalogue.pdf"><img src="https://res.cloudinary.com/tbra/image/upload/v1691061783/gcCalendar_ih3yio.jpg"></a>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <tr bgcolor="#DADEDA">
-        <td class="innerpadding" style="padding-top: 0;">
-          <table width="90%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td class="bodycopy">
-
-                <br /><br />
-
-                <p class="text-center"><b>Join the August group coaching session</b></p>
-
-                <div class="text-center"><a href="https://membersforum.theboardroomafrica.com/networks/events/106198" class="premium-btn bg-mustard btn-round text-black">Register</a></div>
-
-
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <tr bgcolor="#fff">
-        <td class="innerpadding" style="padding-top: 0;">
-          <table width="90%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td class="bodycopy">
-                <br /><br />
-                <div class="box-outline-2 bg-dawn" style="border: none;">
-                  <!-- <p><b>Upgrade to Premium Membership</b></p>-->
-
-                  <p>Register for upcoming group coaching sessions at a discounted fee as a TBrA Prime member. For more information, email <a href="mailto:community@theboardroomafrica.com">community@theboardroomafrica.com</a></p>
-                </div>
-                <br />
-
-
-                <p class="text-center" style="padding: 0 20%;">"My mission in life is not merely to survive but to thrive and to do so with some passion, some compassion, some humour, and some style."<br/>— Maya Angelou</p>
-
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-
-
-
-      <!-- <tr class="bg-tbra-blue">
-        <td class="innerpadding">
-          <table width="90%" class="responsive-full" border="0" cellspacing="0" cellpadding="0" style="margin-left:auto;margin-right:auto;">
-            <tr>
-              <td style="color: #F3ECE2;">
-                <p>With these, we want to share once again, our commitment remains to empowering growth for you and the spaces you represent. 2023 gives us the opportunity to do this and more,  we can't wait to explore, expand and empower  along with you.</p>
-                <br />
-                <p>From TBRA</p>
-                <br />
-                <img src="https://res.cloudinary.com/tbra/image/upload/v1673525492/logos/logo-primary_rozzav.png" style="width: 100px;">
-              </td>
-            </tr>
-          </table> 
+      <!-- <tr>
+        <td class="newpadding" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1686560998/ProgrammesBG_ogeyrl.jpg') no-repeat center center / cover;">
+          <h3 class="libreb fs-40 text-white" style="margin-top: 205px;"><span class="text-mustard">Lead</span> in the New <br />Global Context</h3>
         </td>
       </tr> -->
 
+
+      <tr>
+        <td>
+          <img src="https://res.cloudinary.com/tbra/image/upload/v1698928440/GC2024Banner_jf7fzi.jpg" alt>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="newpadding text-center">
+          <img src="https://res.cloudinary.com/tbra/image/upload/v1698928519/quoteIcon_tyuhoi.jpg" width="50px" alt="">
+          <br><br>
+          <p style="padding: 0 70px;">The session reminded me of the reasons why TBrA is one of the best decisions I ever made.</p>
+
+          <div class="hr"></div>
+
+          <div class="spaced">
+            <p><b>Start preparing for 2024 with the new group coaching schedule</b></p>
+
+            <p>As we enter a new era of leadership, our group coaching sessions will focus on harnessing the power of collaboration, resilience, and adaptability. The 2024 sessions are thoughtfully curated to address the unique challenges and opportunities faced by women in leadership roles, providing a supportive and inclusive environment where participants can thrive and achieve their full potential.</p>
+            <p>Check out the group coaching catalogue and see what’s in store for you in 2024.</p>
+          </div>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="text-center">
+          <p class="text-center"><b>In 2024, we also have new sessions exploring topics such as:</b></p>
+          <br>
+          <img src="https://res.cloudinary.com/tbra/image/upload/v1698926989/GC2024_jk7eae.jpg" alt="">
+          <br>
+          <a href="#" class="premium-btn bg-mustard">BROWSE CATALOGUE</a>
+          <br><br><br><br>
+        </td>
+      </tr>
+
+
+      <tr class="bg-dawn text-center">
+        <td class="newpadding spaced">
+          <h2>Session Highlights</h2>
+          <br>
+          <p>It was my first time of joining the group coaching sessions and it was enlightening listening to the participants share their experience. It prepares you on how to handle some situations you are likely to encounter as a leader.</p>
+          <p>This session was very insightful, it provided a lot of clarity for me around finding my purpose. It also gave me practical examples to follow so that I can make committed, positive impacts towards the legacy I live behind. This session is one that I will continue to use as reference and hold myself accountable to. Thank you very much for this session.</p>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="newpadding">
+          <h2 class="text-center">Meet your coaches</h2>
+          <br>
+          <p>We are excited to reintroduce our exceptional coaches who have consistently showcased their expertise and unwavering dedication to your personal and professional growth. Our coaching team boasts a rich diversity of backgrounds, with deep experience in areas such as strategic innovation and mindful leadership. They are deeply committed to igniting and nurturing your leadership potential, ensuring your journey towards excellence is both transformative and empowering.</p>
+
+          <br>
+
+          <table width="100%" bgcolor="#F3F4F3" cellpadding="0" cellspacing="0">
+            <tr valign="top">
+              <td width="38%" style="padding-top: 10px;">
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1698927926/rachel_x7v1ch.jpg" alt="">
+              </td>
+              <td class="spaced" style="padding: 10px 20px;">
+                <p>Rachel Nyaradzo Adams is driven by her commitment to empowering leaders towards courageous and authentic leadership. Rachel has received numerous awards for leadership and academic excellence, including the Desmond Tutu Leadership Fellowship; the Mandela Rhodes Scholarship; the Mellon Mays Leadership and Service Award; the Mellon Mays Scholarship and the Felix Scholarship.</p>
+                <p>Rachel’s ambition is to develop deep benches of leaders who can accelerate the transformation and inclusive development. She has spoken and trained on various platforms to executives and emerging leaders. These include the UN, World Bank, Obama Leaders, TEDx, L’Oreal Women in Science and EVE, amongst others. Rachel sits on the boards of MINDS, Jakes Gerwel Fellowship, St. George’s College and Old Mutual Youth Fund.</p>
+              </td>
+            </tr>
+          </table>
+
+          <br><br>
+
+          <table width="100%" bgcolor="#F3F4F3" cellpadding="0" cellspacing="0">
+            <tr valign="top">
+              <td width="38%" style="padding-top: 10px;">
+                <img src="https://res.cloudinary.com/tbra/image/upload/v1698927926/marjorie_qd4at6.jpg" alt="">
+              </td>
+              <td class="spaced" style="padding: 10px 20px;">
+                <p>Marjorie is an experienced coach who works with clients to navigate their personal and professional lives authentically and overcome their barriers to success. She is an external member of the Prudential Regulation Committee of the Bank of England. She is also the chairperson of the Canon Collins Trust and a trustee of the Legal Resources Centre.</p>
+
+                <p>She is a past President of the Institute and Faculty of Actuaries (IFoA) and was the first person of colour to hold office in the organisation’s 160 years and also its youngest. Her prior roles include being a member of the Group Executive Committee of Liberty Group in South Africa as Chief Strategist.</p>
+
+                <p>Prior to that, she was the Chief Risk Officer of Old Mutual’s African Operations. Marjorie trained as an actuary and holds a Sloan Masters in Leadership and Strategy from the London Business School.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="newpadding text-center bg-light spaced">
+          <p>Registrations are now open for the 2024 Leadership Group Coaching sessions. Don't miss this opportunity to invest in your leadership journey. </p>
+          <p>Enjoy the benefits of high-quality coaching at a fraction of the cost. We have group coaching bundles that offer exceptional value, making professional development accessible to everyone. </p>
+          <a href="#" class="premium-btn bg-mustard">EXPLORE THE OPTIONS TODAY</a>
+        </td>
+      </tr>
+      
 
       <tr>
         <td class="footer" bgcolor="#44525f">
@@ -955,13 +766,9 @@
       </tr>
 
     </table>
-    <!--[if (gte mso 9)|(IE)]>
-          </td>
-        </tr>
-    </table>
-    <![endif]-->
-    </td>
-  </tr>
+    
+  </td>
+</tr>
 </table>
 </body>
 </html>

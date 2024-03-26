@@ -1,99 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newsletter</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        .container {
-            width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .banner {
-            margin-bottom: 20px;
-            width: 100%;
-            height: auto;
-        }
-        .section {
-            background-color: #ffffff;
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 5px;
-        }
-        .section2 {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .left-column {
-            flex: 1;
-            padding-right: 20px;
-        }
-        .right-column {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .right-column img {
-            max-width: 100%;
-            height: auto;
-        }
-        h2 {
-            color: #333333;
-        }
-        p {
-            color: #666666;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #ffffff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
+	<!--Including the trackingImage tag will allow your open rates to be tracked for this campaign-->
+
+	[[trackingImage]]
 </head>
 <body>
-    <div class="container">
-        <img class="banner" src="https://via.placeholder.com/800x200.png?text=Banner+Image" alt="Banner Image">
-        <div class="section" style="background-color: #ffcccc;">
-            <h2>Section 1 Title</h2>
-            <p>This is a paragraph describing Section 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla, nunc ut vestibulum rutrum, lectus lectus fermentum dolor, non viverra lorem orci ut dolor. Nulla ut orci eget tortor ultricies convallis. Integer quis turpis et lacus ultricies vestibulum. Vestibulum sodales, ex eget consequat finibus, nisi eros semper nisl, sit amet dapibus tellus risus sed velit. Fusce sed consequat sapien. Curabitur elementum felis ac gravida rutrum. Proin id eros vitae ligula vehicula eleifend. Vestibulum tempus ipsum at nisi vulputate, ac facilisis libero efficitur. Curabitur eget tristique ex. Nulla vehicula ipsum nec ex finibus consequat. Nam auctor euismod diam, a gravida tortor bibendum vel. Vivamus volutpat eget mi at efficitur. Cras et pulvinar nisl. Suspendisse vel eleifend turpis. Sed commodo dolor quis tristique ultrices.</p>
-            <a href="#" class="button">Button 1</a>
-        </div>
-        <div class="section section2" style="background-color: #ccffcc;">
-            <div class="left-column">
-                <h2>Section 2 Title</h2>
-                <p>This is a paragraph describing Section 2. Donec consectetur sapien at metus faucibus, non rhoncus nisi ultrices. Curabitur blandit tortor at luctus eleifend. Quisque vel arcu et libero gravida faucibus. Integer et justo vel turpis consectetur ultricies eu ac nisl. Mauris a nunc sed odio placerat volutpat. In nec justo velit. Praesent id arcu dui. Vestibulum vehicula augue non magna pharetra, nec ultrices quam tincidunt. Duis non nisl vel sapien varius feugiat. Ut eget lorem a mauris ullamcorper faucibus. Sed tempor massa id lectus rhoncus, nec convallis justo ultrices. Duis mattis, dui a euismod volutpat, lorem quam faucibus nulla, at tempus felis leo a orci. Duis feugiat dolor et interdum finibus. Nam sed nisi ac nisl fringilla sollicitudin in a eros.</p>
-                <a href="#" class="button">Button 2</a>
-            </div>
-            <div class="right-column">
-                <img src="https://via.placeholder.com/400x300.png" alt="Image">
-            </div>
-        </div>
-        <div class="section" style="background-color: #ccccff;">
-            <h2>Section 3 Title</h2>
-            <p>This is a paragraph describing Section 3. Integer commodo magna non augue varius suscipit. Cras eget viverra tortor. Suspendisse potenti. Proin bibendum ex ut sem posuere, in aliquam libero tempus. Fusce sollicitudin enim ac convallis gravida. Mauris dignissim ultricies nunc in dictum. Aenean condimentum malesuada metus, ac tincidunt elit bibendum nec. Nulla facilisi. Nulla aliquet dapibus mauris, nec finibus lacus. Proin quis pulvinar est. Mauris vitae efficitur enim. Curabitur in efficitur nisi. Aliquam laoreet sem non leo gravida, in condimentum neque lacinia. Cras ut pulvinar est. Sed pellentesque sem non diam convallis, eu convallis tortor pharetra. Vestibulum sagittis odio nec vehicula viverra.</p>
-            <a href="#" class="button">Button 3</a>
-        </div>
-        <div class="section" style="background-color: #ffffcc;">
-            <h2>Section 4 Title</h2>
-            <p>This is a paragraph describing Section 4.</p>
-            <a href="#" class="button">Button 4</a>
-        </div>
-        <div class="section" style="background-color: #ffccff;">
-            <h2>Section 5 Title</h2>
-            <p>This is a paragraph describing Section 5.</p>
-            <a href="#" class="button">Button 5</a>
-        </div>
-    </div>
+
+	
+	<div style="margin-bottom: 500px; max-width: 800px;">
+		<p>Dear [[FIRSTNAME]],</p>
+		<p>I hope this email finds you well.</p>
+		<p>I would like to invite you to the upcoming Members' Information session on Thursday, 28 March 2023, at 12:00 pm GMT. During this 90-minute session, we will share more about the membership benefits available to you. So join us to:</p>
+		<ul>
+			<li>Gain a deeper understanding of your benefits.</li>
+			<li>Learn about how to access the services and programmes available to you.</li>
+			<li>Find out more about networking with fellow members.</li>
+		</ul>
+		<p>If you are interested in attending this event, please register using the link below:</p>
+		<p>
+			<a href="https://us02web.zoom.us/meeting/register/tZYsc-upqzkjEtAHcrBCjyiWLD-0tWUuBGWR">Members' Information Session</a>
+		</p>
+		<p>If this date doesn't align with your schedule, feel free to register for a later session
+			<a href="https://membersforum.theboardroomafrica.com/events">here</a>.
+		</p>
+		<p>We look forward to seeing you there.</p>
+		<p>Best regards, <br>Benedicta Amoateng Memberships Lead</p>
+	</div>
+
+
+
 </body>
 </html>

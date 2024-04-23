@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -8,10 +9,18 @@
   <title>Community</title>
   <style type="text/css">
 
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;200;700&family=Libre+Baskerville:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200,400;700&family=Libre+Baskerville:wght@400;700&display=swap');
 
-    body {margin: 0; padding: 0; font-size: 16.5px; min-width: 100%!important;height:auto;}
+    body {
+      margin: 0;
+      padding: 0;
+      min-width: 100%!important;
+      eight:auto;
+      color: #4A4F54;
+      font-size: 17px;
+      font-weight: 300;
+    }
+
     img {height: auto; max-width: 100%;}
 
     a {
@@ -39,13 +48,12 @@
       width: max-content;
       position: relative;
       text-decoration: none;
-      font-size: 12px;
+      font-size: 12px !important;
       padding: 10px 15px;
       letter-spacing: 1px;
       background-color: #a67c00;
       color: white;
       margin-top: 22px;
-      cursor: auto;
     }
 
     .premium-btn img {
@@ -64,6 +72,27 @@
       display: inline-block;
     }
 
+    .text-primary { color: #0275d8; }
+    .text-light { color: #f8f8f8; }
+    .text-white { color: white !important; }
+    .text-success { color: #5cb85c; }
+    .text-info { color: #5bc0de; }
+    .text-warning { color: #f0ad4e; }
+    .text-danger { color: #EA5A4F; }
+
+
+    .bg-primary { background-color: #0275d8; }
+    .bg-success { background-color: #5cb85c; }
+    .bg-info { background-color: #17a2b8; }
+    .bg-warning { background-color: #f0ad4e; }
+    .bg-danger { background-color: #EA5A4F; }
+    .bg-gold, .bg-premium { background-color: #a67c00; }
+    .bg-tbra-gold { background-color: #b6a999 !important; }
+    .bg-tbra-blue { background-color: #202945 !important; }
+    .bg-dark { background-color: #202945 !important; }
+    .bg-black { background-color: #3e3e3e; }
+    .bg-light { background-color: #f8f8f8; }
+
     .table-responsive {
       table-layout: fixed;
     }
@@ -76,27 +105,6 @@
 
     .card-table td {
       background: #f3fafb;
-    }
-
-    @media only screen and (max-width: 500px) {
-      .card-table, .table-responsive {
-        width: 100%;
-        margin: 0 auto;
-      }
-
-      .card-table tr, .table-responsive tr {
-        display:block;
-      }
-
-      .card-table tr td, .table-responsive tr td {
-        display:block;
-        width:100% !important;
-        margin-bottom: 5px;
-      }
-
-      .card-table tr td:last-child, .table-responsive tr td:last-child {
-        margin-bottom: 0;
-      }
     }
 
     a.small-btn {
@@ -114,42 +122,28 @@
     }
 
     .mb-20 { margin-bottom: 20px; }
+    .mr-20 { margin-right: 20px; }
+    .mr-10 { margin-right: 10px; }
+    .mt-20 { margin-top: 20px; }
     .mb-10 { margin-bottom: 10px; }
     .mt-10 { margin-top: 10px !important; }
-    .mt-5 { margin-top: 10px !important; }
-    .thin { font-weight: 200; }
-
-    .fs-12 { font-size: 12px; }
-    .fs-14 { font-size: 14px; }
-    .fs-16 { font-size: 16px; }
-    .fs-18 { font-size: 18px; }
-    .fs-22 { font-size: 22px; }
-    .fs-24 { font-size: 24px; }
-    .fs-26 { font-size: 26px; }
 
     .header {padding: 40px 30px 40px 30px;}
 
-    .innerpadding { padding: 40px 65px 40px 65px; }
+    .innerpadding {padding: 40px 30px 40px 30px;}
 
     .borderbottom {border-bottom: 1px solid #f2eeed;}
 
     .subhead {font-size: 15px; color: #ffffff; letter-spacing: 10px;}
 
     h1 {
-      font-size: 45px;
+      font-size: 55px;
       font-weight: 800;
       line-height: 1;
     }
 
     .dtable {
       display:  table;
-    }
-
-    @media only screen and (min-width: 449px) {
-      .list-col {
-        float:left;
-        width:45%;
-      }
     }
 
     .ul-row {
@@ -167,7 +161,6 @@
       width: 16px;
       margin-top:3px;
       margin-right: 3px;
-      /*filter: invert(90%) sepia(0%) saturate(90%) hue-rotate(3500deg) brightness(0%) contrast(100%);*/
     }
 
     .ul-row p {
@@ -186,23 +179,20 @@
       color: white;
     }
 
-    p, a, ul, li, * {
+    h1, h2, p, a, ul, li, * {
       margin: 0;
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       text-decoration: none;
     }
 
-    h1, h2 {
-      font-family: "Libre Baskerville", serif;
-    }
-
-    p, ul {
-      font-size: 16.5px;
+    .libreb, .libreb * {
+      font-family: "Libre Baskerville", serif, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+      text-decoration: none;
     }
 
     .bodycopy {font-size: 15px;
       line-height: 1.5;
-      color: #4A4F56;}
+      color: #202945;}
 
       .bodycopy-white {font-size: 15px;
         line-height: 1.5;
@@ -217,7 +207,7 @@
         .header-fix {
           margin: 2em 0 2em 2em;
         }
-        
+
         .header-img img {
           max-width: 270px;
           margin-bottom: 10px;
@@ -235,17 +225,6 @@
           line-height: 1.3;
           margin-top: 14px;
           color: white;
-          /*width: 60%;*/
-        }
-
-        .big-button {
-          padding: 10px 100px;
-          margin: 0 10px;
-          border-radius: 20px;
-          color: #4A4F54;
-          font-weight: bold;
-          font-size: 18px;
-          background: #CDAD7D;
         }
 
         .primary-btn {
@@ -253,433 +232,286 @@
           width: max-content;
           position: relative;
           text-decoration: none;
-          text-transform: uppercase;
           font-size: 12px;
-          padding: 10px 15px;
+          padding: 10px 25px;
           letter-spacing: 1px;
           background-color: #EA5A4F;
-          color: white;
-          margin-top: 22px;
-        }
+          color: #fff;
+/*        font-weight: 600;*/
+margin-top: 22px;
+}
 
-        .primary-btn-inverse {
-          background: #fff;
-          color: #EA5A4F;
-        }
+.primary-btn-inverse {
+  background: #fff;
+/*      color: #EA5A4F;*/
+}
 
-        .link-btn {
-          display: block;
-          font-weight: bold;
-          color: #EA5A4F;
-          font-size: 15px;
-          padding-top: 12px;
-        }
+.outlined-btn {
+  border: 1px solid #202945;
+  color: #202945;
+  border-radius: 40px;
+  padding: 8px 30px;
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: underline;
+}
 
-        .text-center { text-align: center; }
-        .text-right { text-align: right; }
+.link-btn {
+  display: block;
+  font-weight: bold;
+  color: #EA5A4F;
+  font-size: 15px;
+  padding-top: 12px;
+}
 
-        .body-btn-blue {
-          display: inline-block;
-          width: max-content;
-          height: auto;
-          position: relative;
-          text-transform: uppercase;
-          font-size: 12px;
-          padding: 10px 15px;
-          letter-spacing: 1px;
-          background-color: transparent;
-          color: #2D3752;
-          border: 1px solid #2D3752;
-          margin-top: 22px;
-        }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
 
-        .body-btn-white {
-          display: block;
-          width: max-content;
-          height: auto;
-          position: relative;
-          text-transform: uppercase;
-          font-size: 12px;
-          padding: 10px 15px;
-          letter-spacing: 1px;
-          background-color: transparent;
-          color: #ffffff;
-          border: 1px solid #ffffff;
-          margin-top: 22px;
-        }
+.body-btn-blue {
+  display: inline-block;
+  width: max-content;
+  height: auto;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px 15px;
+  letter-spacing: 1px;
+  background-color: transparent;
+  color: #2D3752;
+  border: 1px solid #2D3752;
+  margin-top: 22px;
+}
 
-        .list-case {
-          display: flex;
-        }
+.body-btn-white {
+  display: block;
+  width: max-content;
+  height: auto;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px 15px;
+  letter-spacing: 1px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  margin-top: 22px;
+}
 
-        .tick {
-          margin-right: 8px;
-        }
+.list-case {
+  display: flex;
+}
 
-        .tick img {
-          width: 20px;
-        }
+.tick {
+  margin-right: 8px;
+}
 
-   /* ul li {
-        /*list-style-type: none;
-    }*/
-
-    /*ul li::before {
-      content: "2";
-      color: red;
-      font-weight: bold;
-      display: inline-block; 
-      width: 1em;
-      margin-left: -1em;
-    }*/
-
-    .useful-links ul {
-      padding: 10px 10px 0;
-    }
-    .useful-links li, .useful-links li a {
-      color: #EA5A4F;
-    }
-
-    .comm-card {
-      display: inline-block;
-      width: 30.5%;
-      height: auto;
-      background-color: white;
-      padding: 7px;
-    }
-
-    .card-contain {
-      width: 85%;
-      margin: 0 auto;
-      padding: 0 0 0 0;
-    }
-
-    .card-contain-bc {
-      width: 85%;
-      margin: 0 auto;
-      padding: 3.2em 0 0 0;
-    }
-
-    .card-contain img {
-      display: table;
-      margin: 0 auto 18px auto;
-      max-width: 100%;
-    }
-
-    .card-contain-bc img {
-      display: table;
-      width: 60px;
-      margin: 0 auto 18px auto;
-    }
-
-    .freshIcon {
-      width: 65px !important;
-      margin: -5px 18px 0 0;
-      float: left;
-    }
+.tick img {
+  width: 20px;
+}
 
 
-    @media only screen and (max-width: 550px), screen and (max-device-width: 550px) {
-      .freshIcon {
-        margin-top: 0;
-      }
-      body[yahoo] .hide {display: none!important;}
-      body[yahoo] .buttonwrapper {background-color: transparent!important;}
-      body[yahoo] .button {padding: 0px!important;}
-      body[yahoo] .button a {background-color: #e05443; padding: 15px 15px 13px!important;}
-      body[yahoo] .unsubscribe {display: block; margin-top: 20px; padding: 10px 50px; background: #2f3942; border-radius: 5px; text-decoration: none!important; font-weight: bold;}
-    }
+.useful-links ul {
+  padding: 10px 10px 0;
+}
+.useful-links li, .useful-links li a {
+  color: #EA5A4F;
+}
 
-    .nodisplay {
-      display: none;
-    }
+.comm-card {
+  display: inline-block;
+  width: 30.5%;
+  height: auto;
+  background-color: white;
+  padding: 7px;
+}
 
-    @media only screen and (max-width: 773px) {
+.card-contain {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0 0 0 0;
+}
 
-      .comm-card {
-        display: block !important;
-        width: 65% !important;
-        margin: 0 auto 2em auto !important;
-      }
-    }
+.card-contain-bc {
+  width: 85%;
+  margin: 0 auto;
+  padding: 3.2em 0 0 0;
+}
 
-    @media only screen and (max-width: 700px) {
-      h1 {
-        font-size: 30px !important;
-      }
+.card-contain img {
+  display: table;
+  margin: 0 auto 18px auto;
+  max-width: 100%;
+}
 
-      .responsive-h1 {
-        width: 100% !important;
-        font-size: 30px !important;
-        text-align: left !important;
-      }
+.card-contain-bc img {
+  display: table;
+  width: 60px;
+  margin: 0 auto 18px auto;
+}
 
-      .responsive-p-align {
-        width: 100% !important;
-        text-align: left !important;
-      }
-
-      .header-img-side {
-        display: none;
-      }
-
-      .header-sm-img {
-        width: 80%;
-        height: 200px;
-      }
-
-      .nodisplay {
-        display: block !important;
-      }
-
-      .hidden {
-        display: none;
-      }
-
-      .header-fix {
-        width: 100% !important;
-        max-width: 100% !important;
-      }
-    }
-
-    @media only screen and (max-width: 650px) {
-      .responsive-full {
-        width: 100% !important;
-      }
-
-      .responsive-fix {
-        display: block;
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 auto;
-        float: none;
-      }
-
-      .responsive-mrg-bottom {
-        margin-bottom: 2em;
-      }
-    }
-    
-    .table-col {
-     width: 50%;
-   }
-   .col-left {
-     padding-right: 10px;
-   }
-   .col-right {
-    padding-left: 10px;
-  }
-  @media only screen and (max-width: 550px), screen and (max-device-width: 550px) {
-    .table-col {
-      width: 100% !important;
-      padding: 0 !important;
-      display: block;
-      margin-bottom: 30px;
-    }
-  }
-
-  .blockquote {
-    color: #989FB6;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 1.4;
-    padding: 1.5em;
-    border-left: 4px solid #EA5A4F;
-    background: #F9F9F9;
-  }
-
-  .blockquote img {
-    width: 70px;
-    float: left;
-    margin-right: 12px;
-  }
-
-  .blockquote p {
-    font-size: 20px;
-  }
-
-  .quote-author {
-    margin-top: 10px;
-  }
-
-  .quote-author td{
-    vertical-align: top;
-  }
-
-  .quote-author img {
-    width: 32px;
-    float: left;
-    margin-right: 12px;
-    /*margin-top: 15px;*/
-  }
-
-  .blockquote span {
-    font-weight: 600;
-  }
-
-    /*.icon-card {
-      color: #202945;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 1.4;
-      padding: 1.5em;
-      border: 1px solid #dddddd;
-      margin-bottom: 10px;
-      position: relative;
-      margin-top: 20px;
-      margin-left: 20px;
-      border-radius: 0 20px;
-    }*/
-
-    .icon-card {
-      font-size: 16px;
-      font-weight: bold;
-      font-weight: 400;
-      line-height: 1.4;
-      padding: 1.5em;
-      border: 1px solid #dddddd;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      min-height: 42px;
-    }
+.freshIcon {
+  width: 65px !important;
+  margin: -5px 18px 0 0;
+  float: left;
+}
 
 
-    .icon-card img {
-      height: 17px;
-    }
 
-    /*.icon-card-img-wrap {
-      position: absolute;
-      top: -20px;
-      left: -20px;
-      border: 1px solid #ddd;
-      padding: 10px;
-      border-radius: 50%;
-      background: #fff;
-    }*/
+.nodisplay {
+  display: none;
+}
 
-    .icon-card-img-wrap {
-      /*border: 1px solid #ddd;*/
-      padding: 15px;
-      border-radius: 50%;
-      width: 17px;
-      background: #f4f4f6;
-      float: left;
-      margin-right: 10px;
-      margin-left: -6px;
-      height: 17px;
-      width: 17px;
-    }
+.table-col {
+ width: 50%;
+}
+.col-left {
+ padding-right: 10px;
+}
+.col-right {
+  padding-left: 10px;
+}
 
-    .blockquote-right {
-      color: #4d5468;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 1.4;
-      padding: 1.5em;
-      /*border-right: 4px solid #a67c00;*/
-      /*background: #F9F9F9;*/
-    }
+.blockquote {
+  color: #989FB6;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+  padding: 1.5em;
+  border-left: 4px solid #EA5A4F;
+  background: #F9F9F9;
+}
 
-    /*.blockquote-right a {
-      color: #a67c00;
-      font-weight: bold;
-    }*/
+.blockquote img {
+  width: 70px;
+  float: left;
+  margin-right: 12px;
+}
 
-    .blockquote strong {
-      display:  block;
-      font-size: 18px;
-      margin-bottom: 10px;
-      font-weight:  bold;
-    }
-    .left-calendar img {
-      float: left; width: 50px; margin-right: 10px;
-    }
-    .img-icon {
-      height: auto; width: 18px; position: relative; top: 3px; margin-top: 5px; margin-right: 5px;
-    }
+.blockquote p {
+  font-size: 20px;
+}
 
-    .blockquote-right {
-      color: #4d5468;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 1.4;
-      padding: 1.4em;
-      border: 1px solid #dbdbdb;
-    }
+.quote-author {
+  margin-top: 10px;
+}
 
-    .calendar {
-      background-color: #eee;
-    }
+.quote-author td{
+  vertical-align: top;
+}
 
-    .calendar + .calendar {
-      margin-top: 20px;
-    }
+.quote-author img {
+  width: 32px;
+  float: left;
+  margin-right: 12px;
+}
 
-    .calendar img {
-      height: 13px;
-      margin-right: 6px;
-    }
+.blockquote span {
+  font-weight: 600;
+}
 
-    .calendar p.title {
-      font-weight: bold;
-      font-size: 18px;
-      color:#515b7b;
-    }
 
-    .calendar p span {
-      font-weight: 600;
-    }
 
-    .calendar .primary-btn {
-      display: inline-block;
-      border: unset !important;
-      margin-top: 7px;
-    }
+.icon-card {
+  font-size: 16px;
+  font-weight: bold;
+  font-weight: 400;
+  line-height: 1.4;
+  padding: 1.5em;
+  border: 1px solid #dddddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  min-height: 42px;
+}
 
-    .calendar p {
-      margin-bottom: 5px;
-    }
 
-    .calendar p.time, .calendar p.date {
-      display: inline-block;
-      margin-right: 15px;
-    }
-    .calendar p.time {
-      padding-left: 15px;
-      border-left: 1px solid;
-    }
+.icon-card img {
+  height: 17px;
+}
 
-    .hr {
-     border-top: 1.5px solid #d7d7d7;
-   }
 
-   .sec-title, .subtitle {
-    color: #000;
-    font-weight: bold;
-  }
+.icon-card-img-wrap {
+  padding: 15px;
+  border-radius: 50%;
+  width: 17px;
+  background: #f4f4f6;
+  float: left;
+  margin-right: 10px;
+  margin-left: -6px;
+  height: 17px;
+  width: 17px;
+}
 
-  h3.sec-title, .sec-title span {
-/*    color: #fff;*/
-font-weight: normal;
-font-family: "Libre Baskerville", serif;
+.blockquote-right {
+  color: #4d5468;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+  padding: 1.5em;
+}
+
+.blockquote-right a {
+  color: #a67c00;
+  font-weight: bold;
+}
+
+.blockquote strong {
+  display:  block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight:  bold;
+}
+.left-calendar img {
+  float: left; width: 50px; margin-right: 10px;
+}
+.img-icon {
+  height: auto; width: 18px; position: relative; top: 3px; margin-top: 5px; margin-right: 5px;
+}
+
+.calendar img {
+  height: 13px;
+  margin-right: 6px;
+}
+
+.calendar p.title {
+  font-weight: bold;
+  font-size: 18px;
+  color:#515b7b;
+}
+
+.calendar p span {
+  font-weight: 600;
+}
+
+.calendar p {
+  margin-bottom: 5px;
+}
+
+.hr {
+  border-top: 1px solid #4A4F54;
+  width: 40%;
+  margin: 15px 0 10px;
+}
+
+.sec-title, .subtitle {
+  font-weight: bold;
+}
+
+.new-title {
+  color: #d7d6d7;
+  font-weight: 200;
+}
+
+.rounded { border-radius: 50px; padding-left: 30px; padding-right:30px; }
+
+h3.sec-title {
+  font-weight: normal;
 }
 
 .sec-title span {
-  background-color: #6E8498;
-  padding: 8px 120px 8px 20px;
-  font-size: 24px;
-/*    border-right: 10px solid #000;*/
-display: inline-block;
-color: #FAF9F8;
-padding-left: 33px;
-padding-right: 50px;
-}
-
-.sec-title span img {
-  height: 30px;
-  margin-bottom: -5px;
-  margin-right: 10px;
+  background-color: #EBE5DC;
+  padding: 12px 80px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .subtitle {
@@ -697,104 +529,109 @@ padding-right: 50px;
   height: 230px; 
 }
 
-@media only screen and (min-width: 774px) {
-  .header-full {
-    height: 400px !important;
-  }
-}
+
 
 .logo-stack img {
   width: 80px;
 }
 
-@media only screen and (min-width: 500px) {
-  .logo-stack img {
-    width: 100px !important;
-  }
-}
-
-@media only screen and (min-width: 774px) {
-  .logo-stack img {
-    width: 114px !important;
-  }
-}
 
 .tour-img {
   width: 400px;
   max-width: 100%;
-    /*margin-right: 15px;
-    margin-bottom: 10px;*/
-    /*display: block;*/
-    /*margin: 0 auto;*/
+}
+
+.col-4 { width: 25%; float: left; }
+
+.collapse { border-collapse: collapse; }
+.banner-menu a { color: #fff; margin-right: 15px; }
+.banner-menu a:last-child { margin: 0; }
+.capitalise { text-transform: uppercase;}
+.learnmore { text-decoration: underline; color: black; font-size: 16px; }
+.moves { border-collapse: separate; border-spacing: 10px; margin-left: -10px;}
+.moves td {
+  background: #353A4C;
+  color: #fff;
+  border-right: 5px solid #CDAD7D;
+  width: 50%;
+  padding: 10px;
+  vertical-align: top;
+}
+.moves td a { text-decoration: underline; color: #fff;}
+.spaced p { margin-bottom: 7px; }
+.spaced p.text-danger { margin-bottom: 0; }
+
+
+.bg-dawn { background-color: #DADEDA; }
+.bg-tender { background-color: #6E8498; }
+.bg-dusk { background-color: #4A4F54; }
+.bg-mustard { background-color: #CDAD7D !important; }
+.bg-blue { background-color: #202945; }
+.text-dawn { color: #CDDAE6; }
+.text-tender { color: #6E8498; }
+.text-dusk { color: #4A4F54; }
+.text-mustard { color: #CDAD7D; }
+.text-blue { color: #202945; }
+.text-brown { color: #96522D; }
+.text-green { color: #0D3928; }
+.text-black { color: black }
+
+.mb-20 { margin-bottom: 20px; }
+.mb-10 { margin-bottom: 10px; }
+.mt-10 { margin-top: 10px !important; }
+.mt-5 { margin-top: 10px !important; }
+.thin { font-weight: 200; }
+.bold { font-weight: bold; }
+
+.fs-12 { font-size: 12px; }
+.fs-14 { font-size: 14px; }
+.fs-16 { font-size: 16px; }
+.fs-18 { font-size: 18px; }
+.fs-22 { font-size: 22px; }
+.fs-24 { font-size: 24px; }
+.fs-26 { font-size: 26px; }
+.fs-30 { font-size: 30px; }
+.fs-34 { font-size: 34px; }
+.fs-40 { font-size: 40px; }
+.uppercase { text-transform: uppercase; }
+.newpadding { padding: 40px 50px; }
+.smallpadding { padding: 20px 25px; }
+
+.inline-block { display: inline-block; }
+
+hr {
+ border: 1px solid #CDAD7D;
+ margin: 30px auto;
+ width: 50%;
+}
+
+.midsection {
+  margin-top: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+  .midsection {
+    margin-top: 52px;
   }
+}
 
-  .col-4 { width: 25%; float: left; }
+.border-collapse { border-collapse: collapse; }
+.underline { text-decoration: underline; }
 
-  .collapse { border-collapse: collapse; }
-  .banner-menu a { color: #fff; margin-right: 15px; }
-  .banner-menu a:last-child { margin: 0; }
-  .capitalise { text-transform: uppercase;}
-  .learnmore { text-decoration: underline; color: black; }
+.spaced p + p { margin-top: 20px; }
+.spaced.lh p { line-height: 1.5 }
 
-  .deadline {
-    background: #96522D;
-    padding: 5px 30px;
-    color: #fff;
-    display: inline-block;
-    margin-bottom: 30px;
-  }
-  .company-block { padding: 15px; }
-  .company-block .premium-btn { padding: 8px 50px; }
-  .company-name { font-size: 25px; }
-  .industry { color: #96522D; }
-  .opportunity-wrap .innerpadding { padding: 0 30px 30px; }
-  .opportunity tr { vertical-align: top; }
-  .company-content { margin-top: 20px; }
-  .company-content p:not(:last-child) { margin-bottom: 15px; }
-  .break { height: 30px; }
+.center-link {
+  text-align: center;
+}
 
-  .login-btn {
-    background: #E1DEDC;
-    padding: 10px 50px;
-    color: #96522D;
-  }
-
-  .bg-primary { background-color: #0275d8; }
-  .bg-success { background-color: #5cb85c; }
-  .bg-info { background-color: #17a2b8; }
-  .bg-warning { background-color: #f0ad4e; }
-  .bg-danger { background-color: #EA5A4F; }
-  .bg-dawn { background-color: #DADEDA; }
-  .bg-gold, .bg-premium { background-color: #a67c00; }
-  .bg-tbra-gold { background-color: #b6a999 !important; }
-  .bg-tbra-blue { background-color: #202945 !important; }
-  .bg-dark { background-color: #4A4F54 !important; }
-  .bg-black { background-color: #3e3e3e; }
-  .bg-light-blue { background-color: #EAECF6; }
-  .bg-blue { background-color: #1A1981; }
-
-  .text-primary { color: #0275d8; }
-  .text-success { color: #5cb85c; }
-  .text-info { color: #5bc0de; }
-  .text-warning { color: #f0ad4e; }
-  .text-danger { color: #EA5A4F; }
-  .text-white { color: #fff; }
-  .text-dusk { color: #4A4F54; }
-
-  .bullet-table { border-spacing: 0 15px; }
-  .bullet-table tr { vertical-align: top; }
-  .bullet-table img { margin-top: 7px; }
-  .bullet-table td:first-child { padding-right: 15px; }
-
-  .spaced p + p { margin-top: 20px; }
-  .spaced p.text-danger { margin-bottom: 0; }
-  .spaced p + ul { margin-top: 20px; }
+.unset-case { text-transform: unset; }
 
 </style>
 </head>
 
-<body bgcolor="#f7f7f7">
-  <table width="100%" bgcolor="#f7f7f7" border="0" cellpadding="0" cellspacing="0">
+<body bgcolor="#f9f9f9">
+  <table width="100%" bgcolor="#f9f9f9" border="0" cellpadding="0" cellspacing="0">
 
 
 
@@ -805,128 +642,126 @@ padding-right: 50px;
 
     <tr>
       <td>
-        <table bgcolor="#F8F8F8" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
+        <table bgcolor="#fff" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
+
+      <!-- <tr>
+        <td class="newpadding" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1686560998/ProgrammesBG_ogeyrl.jpg') no-repeat center center / cover;">
+          <h3 class="libreb fs-34 text-white" style="margin-top: 205px;"><span class="text-mustard">Lead</span> in the New <br />Global Context</h3>
+        </td>
+      </tr> -->
 
 
-          <tr bgcolor="#DADEDA">
-            <td>
-              <img src="https://res.cloudinary.com/tbra/image/upload/v1682077368/upcomingWebinarBanner_gqi2vs.jpg">
-            </td>
-          </tr>
-
-          <tr bgcolor="#fff">
-            <td>
-              <br><br>
-              <h3 class="sec-title">
-                <span class="text-center"><img src="https://res.cloudinary.com/tbra/image/upload/v1678446750/tbraxkey_x0rees.png" height="30px"> About the webinar</span>
-              </h3>
-
-              <div class="innerpadding spaced bodycopy"><p>In a world where mere adherence to the law falls short in addressing ethical dilemmas, this session aims to offer valuable perspectives on the drivers of ethical conduct and how you can nurture an ethical culture through your leadership.</p>
-              </div>
-            </td>
-          </tr>
-
-          <tr bgcolor="#fff">
-            <td class="text-center">
-
-              <img src="https://res.cloudinary.com/tbra/image/upload/v1699361417/WebinarBanner_xm2eew.jpg">
-            </td>
-          </tr>
-
-
-          <tr bgcolor="#fff">
-            <td class="innerpadding">
-              <div class="spaced bodycopy">
-                <br>
-                <h2><strong>Join the session to explore:</strong></h2>
-                <br>
-                <ul>
-                  <li>The critical relationship between establishing an ethical culture and your organisation's corporate &quot;purpose.&quot;</li>
-                  <li>How to distinguish ethics from compliance or legality and understand how businesses are facing increasing ethical pressures in today's world.</li>
-                  <li>A wide range of factors, such as diversity and inclusion, environmental and social responsibility, incentives, leadership style, and more. These factors go beyond compliance teams and play a pivotal role in determining whether an organisation is truly ethical.</li>
-                  <li>The vital role of leaders in organisations when it comes to setting norms for behaviour and addressing the factors that drive both ethical and unethical conduct.</li>
-                  <li>The concept that ethical responsibility should not be confined to specific segments of your organisation but should be embedded throughout the entire firm.</li>
-                </ul>
-
+      <tr>
+        <td>
+          <table style="background: url('https://res.cloudinary.com/dhhw72iwq/image/upload/v1713864603/WebinarBanner_kxmj0m.jpg') no-repeat right center / cover;">
+            <tr>
+              <td>
                 <br><br>
-
-                <div class="text-center"><a href="https://us02web.zoom.us/webinar/register/WN_JN5OKTrpT8ahEnr_Y8-wtg" class="big-button capitalise text-white">Register</a></div>
-
-              </div>
-            </td>
-          </tr>
-
-
-          <tr bgcolor="#fff">
-            <td>
-              <br />
-              <h3 class="sec-title">
-                <span class="text-center"><img src="https://res.cloudinary.com/tbra/image/upload/v1678446750/tbraxkey_x0rees.png" height="30px">About Alison Taylor</span>
-              </h3>
-              <br />
-            </td>
-          </tr>
-
-          <tr bgcolor="#fff">
-            <td class="innerpadding bodycopy spaced">
-
-              <p>Alison Taylor works on challenges at the intersection of corporate integrity, risk and responsibility. She is a Clinical Professor at NYU Stern School of Business, where she teaches professional responsibility, sustainability, and leadership classes to undergraduates, MBA and Executive MBA students. She's also the Executive Director of Ethical Systems, which is part of NYU Stern School of Business and is a collaboration between leading academics working on behavioural science, systems thinking and organisational psychology. She's also the author of "Higher Ground," a book on how the landscape for business ethics is transforming, to be published by Harvard Business Press in February 2024.</p>
-              <p>Alison holds Senior Advisor roles at BSR, Zai Lab, and Wallbrook.</p>
-              <p>She's a board director at Preventable Surprises and on the advisory board of Venture ESG. She's a 2022 LinkedIn Top Voice on sustainability, a member of the WEF Global Future Council on Good Governance 2023-24, and a BCG Brighthouse Luminary Fellow.</p>
-              <p>Alison has advised hundreds of large multinational companies on strategy, sustainability, political and social risk, culture and behaviour, human rights, ethics and compliance, stakeholder engagement, ESG, and anti-corruption. </p>
-              <p>She regularly speaks and writes on all aspects of business responsibility and ethics, has written articles in Harvard Business Review, WSJ, Quartz, Reuters, Barron's, MIT Sloan, and Forbes, and is quoted in New York Times, Financial Times, Time, Axios, Bloomberg, NBC News, Strategy + Business, Foreign Policy, Fortune, The Guardian, and Politico. She frequently gives keynote talks, speaks on panels and podcasts, and does executive training at companies, conferences and events.</p>
-              <br>
-              <div class="text-center">
-                <h2>Join us on 06 December </h2>
-                <br />
-                <a href="https://us02web.zoom.us/webinar/register/WN_JN5OKTrpT8ahEnr_Y8-wtg" class="big-button capitalise text-white">Register</a>
-
+                <p class="bg-mustard libreb text-white fs-24" style="padding: 10px 30px 10px 50px">Upcoming: May 16</p>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td width="35%" style="padding-left: 50px;">
+                <br>
+                <p class="libreb fs-40 text-tender">Labels: The power of narratives and how they influence our workplace culture and policies</p>
+                <br>
+                <p class="fs-24">A fireside chat with Rachel Adams</p>
                 <br><br>
-              </div>
+              </td >
+              <td></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
 
-            </td>
-          </tr>
 
-          <tr>
-            <td>
-              <div class="bg-dawn"><br></div>
-            </td>
-          </tr>
+      <tr>
+        <td class="bg-dark">
+          <br>
+          <table>
+            <tr>
+              <td width="70%" style="padding-left: 50px;">
+                <br>
+                <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/co_rgb:4C536A,e_colorize:100/v1713867919/tbra-key_jpvqsb.png" width="30px" alt="">
+                <span class="libreb text-white fs-40">About the session</span>
+                <br>
+              </td>
+              <td></td>
+            </tr>
+          </table>
+          <br>
+          <div class="newpadding text-white spaced" style="padding-top: 0">
+            <p>Inspired by Ava Duvarney’s movie Origin (based on the book Caste: The Origins of Our Discontent by Isabel Wilkerson), this fireside chat explores the subtle yet potent danger that comes with the labels that we put on people and experiences in the workplace. What happens for example when we mistake bias for prejudice, or when we assume a personality trait is a racist trait? What does that mean for our policies, ways of working and culture?</p>
+            <p>Drawing from research and stories told by professionals in various contexts, this conversation will invite participants to explore how concepts like racism and sexism can both liberate and imprison us in our quest to create equitable working environments. Participants will walk away with provocative insights on workplace bias and new ways to think about how we tackle the identity-based challenges that we all encounter in our varied work environments. </p>
 
-          <tr>
-            <td class="footer" bgcolor="#44525f">
-              <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td align="center" class="footercopy">
-                    &reg; TheBoardroom Africa
-                  </td>
-                </tr>
-                <tr>
-                  <td align="center" style="padding: 20px 0 0 0;">
-                    <table border="0" cellspacing="0" cellpadding="0">
-                      <tr>
-                        <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
-                          <a href="https://twitter.com/TBRAfrica">
-                            <img src="https://files.constantcontact.com/bdaf4e1c701/f1a51b50-31dc-434f-8655-154ddc047e73.png?ver=1595159408000" width="37" height="37" alt="Facebook" border="0" />
-                          </a>
-                        </td>
-                        <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
-                          <a href="https://www.linkedin.com/company/theboardroom-africa">
-                            <img src="https://files.constantcontact.com/bdaf4e1c701/5fa121da-baca-4710-a35e-e56567018383.png?ver=1595159408000" width="37" height="37" alt="LinkedIn" border="0" />
-                          </a>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
+            <div class="text-center" style="margin-top: 30px;">
+              <a href="https://us02web.zoom.us/webinar/register/WN_Jco4T0YaTLmaslrKmT7pKQ" class="fs-16" style="color: #F8F8F8; border: 2px solid #f8f8f8; padding: 8px 50px; margin: 0 10px;">Register Now</a>
+              <a href="https://theboardroomafrica.com/speaker-profiles/rachel-adams" class="text-dusk fs-16" style="background: #F8F8F8; border: 2px solid #f8f8f8; padding: 8px 50px; margin: 0 10px;">About Rachel Adams</a>
+            </div>
+            <br>
+          </div>
+        </td>
+      </tr>
 
-        </table>
 
-      </td>
-    </tr>
-  </table>
+      <tr bgcolor="#EFF0F2">
+        <td>
+          <p style="padding: 20px 50px;" class="fs-24">Coming up in July</p>
+          <table>
+            <tr>
+              <td width="50%">
+                <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/v1713868310/Steve_gv0qv5.jpg" alt="">
+              </td>
+              <td class="newpadding spaced">
+                <p class="text-tender fs-40 libreb">Building a better future of work</p>
+                <p class="fs-24">A session with LinkedIn’s first Chief Human Resource Officer</p>
+                <br><br>
+                <!-- <a href="#" class="fs-16" style="background: white; color: #4A4F54; border: 2px solid #4A4F54; padding: 8px 50px;">Coming soon</a> -->
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+
+
+
+
+      <tr>
+        <td class="footer" bgcolor="#44525f">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="center" class="footercopy">
+                &reg; TheBoardroom Africa
+              </td>
+            </tr>
+            <tr>
+              <td align="center" style="padding: 20px 0 0 0;">
+                <table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
+                      <a href="https://twitter.com/TBRAfrica">
+                        <img src="https://files.constantcontact.com/bdaf4e1c701/f1a51b50-31dc-434f-8655-154ddc047e73.png?ver=1595159408000" width="37" height="37" alt="Facebook" border="0" />
+                      </a>
+                    </td>
+                    <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
+                      <a href="https://www.linkedin.com/company/theboardroom-africa">
+                        <img src="https://files.constantcontact.com/bdaf4e1c701/5fa121da-baca-4710-a35e-e56567018383.png?ver=1595159408000" width="37" height="37" alt="LinkedIn" border="0" />
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+    </table>
+    
+  </td>
+</tr>
+</table>
 </body>
 </html>

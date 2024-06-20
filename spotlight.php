@@ -1,3 +1,35 @@
+<?php
+$spotlights = [
+  [
+    "name" => "AURÉLIE PUJO",
+    "title" => "Partner & General Counsel, Amethis",
+    "text" => "Aurélie Pujo was formerly a Senior Partner and member of the Executive Committee at Amethis, an Edmond de Rothschild private equity platform dedicated to Africa, with $1bn in assets across various sectors. In addition to her managerial role, she used to be part of investment deal teams providing commercial and legal support through the whole investment cycle. As a Senior Advisor to Amethis, she continues to be a board member for portfolio companies in addition to other for-profit and non-profit organizations. A lawyer by training, Aurélie holds an Executive MBA from HEC Paris and an Advanced Management Program at Harvard Business School. She is fluent in English and French.",
+    "img" => "https://res.cloudinary.com/dhhw72iwq/image/upload/v1718889816/spotlightProfilePic2_rygyeg.png",
+    "logos" => "https://res.cloudinary.com/dhhw72iwq/image/upload/v1718890046/spotlightLogos2_jwysi5.png"
+  ],
+  [
+    "name" => "BRENDA MBATHI",
+    "title" => "Partner & General Counsel, Amethis",
+    "text" => "Brenda Mbathi is a dynamic executive with extensive experience across diverse sectors in Africa. Currently serving as the CEO of Two Rivers International Finance and Innovation Centre SEZ (TRIFIC SEZ), Brenda leads the establishment of Kenya's first privately owned bespoke-to- business services Special Economic Zone (SEZ). In some of her previous roles including as CEO of GE East Africa, Brenda's collaborative approach and strategic vision have been instrumental in driving growth and fostering dynamic teams. Brenda is the Vice Chairperson of the Kenya Private Sector Alliance (KEPSA), where she plays a pivotal role in driving initiatives to strengthen Kenya's private sector.",
+    "img" => "https://res.cloudinary.com/dhhw72iwq/image/upload/v1718889816/spotlightProfilePic4_liiptv.png",
+    "logos" => "https://res.cloudinary.com/dhhw72iwq/image/upload/v1718890047/spotlightLogos3_ytuhpv.png"
+  ],
+  [
+    "name" => "MINNIE ADOLF KIBUTA",
+    "title" => "Founder and Group CEO, Bondeni Resourcing",
+    "text" => "Minnie Adolf Kibuta is a seasoned banker and management consultant with over 24 years of experience. As Managing Director of Bondeni Resourcing, she develops strategies for client growth, business mitigation, and CRM enhancements. Previously, Minnie was an Associate Partner at Letsema Consulting, establishing its East Africa practice, and a Director at Afriwise Consult, focusing on market entry strategies. Her banking career includes key roles at Absa Africa, enhancing customer segments.  Known for her strategic expertise and ability to deliver profitable results, Minnie is a trusted leader in business transformation.",
+    "img" => "https://res.cloudinary.com/dhhw72iwq/image/upload/v1718889816/spotlightProfilePic5_q7q2mz.png",
+    "logos" => "https://res.cloudinary.com/dhhw72iwq/image/upload/v1718890046/spotlightLogos4_xwjqug.png"
+  ],
+  [
+    "name" => "VANESSA ADANDE",
+    "title" => "Managing Partner, Ellipsis",
+    "text" => "Vanessa Adande is the Founder and Managing Partner of ELLIPSIS, a financial management advisory firm that enhances private sector financial practices. For 10 years, her firm has provided CFO services to improve management oversight and developed specialised services for SMEs to facilitate their access to finance. Vanessa’s prior experience spans roles at Deloitte and Ecobank across the US, France, and West Africa. A committed gender champion, she advocates for increased representation of African women in top corporate roles. She is a Certified Public Accountant in the USA and CEMAC. Vanessa is currently an Independent Member and Chairperson on three notable boards on the continent.",
+    "img" => "https://res.cloudinary.com/dhhw72iwq/image/upload/v1718889816/spotlightProfilePic3_cmxjh3.png",
+    "logos" => "https://res.cloudinary.com/dhhw72iwq/image/upload/v1718890046/spotlightLogos5_gpmetl.png"
+  ],
+];
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -684,49 +716,50 @@
             </table>
           </div>
 
-
-          <br/>
-          <div style="background: white;">
-            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background: url('https://res.cloudinary.com/dhhw72iwq/image/upload/v1718884285/SpotlightImgBg_rmgvlx.jpg') no-repeat center left / contain;">
-              <tr>
-                <td width="30px">
-                  <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/w_71,h_71,a_270/v1718882894/spotlightCorner2_jqglvc.png" alt="">
-                </td>
-                <td></td>
-                <td></td>
-                <td width="30px">
-                  <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/w_71,h_71/v1718882894/spotlightCorner2_jqglvc.png" alt="">
-                </td>
-              </tr>
-              <tr>
-                <td></td>
-                <td width="180px" style="padding-right: 15px;">
-                  <img width="180px" src="https://res.cloudinary.com/dhhw72iwq/image/upload/v1718884543/Juliette_b08hyw.png" alt="">
-                  <br><br>
-                  <a href="https://spolightconnect.paperform.co/" class="bg-blue text-mustard p-5 block text-center">CONNECT</a>
-                </td>
-                <td style="border-left: 1px solid black; padding-left: 15px;">
-                  <h3 class="fs-24">DR. JULIETTE TUAKLI</h3>
-                  <p style="color: #BCBCBC;">Diplomatic Ambassador (Africa), Mercy Ships</p>
-                  <br>
-                  <p>Dr Juliette Tuakli, a distinguished Physician Leader, has significantly impacted public health, paediatrics and ethics in Africa, the USA and Europe. She chaired the Board of Trustees at United Way Worldwide, enhancing global governance and leadership. Dr Tuakli facilitated the Africa-wide Safe Surgery partnership between Mercy Ships and WHO and serves on several boards, including Zenith Bank and Carepoint, an international medical technology company. A former Harvard professor, her research led to a new Community Medicine Department. She co-founded the MOREMI-UN Women, Girls Leadership Programme and has received numerous global awards.</p>
-                  <br>
-                  <img style="height: 50px;" src="https://res.cloudinary.com/dhhw72iwq/image/upload/v1718884904/logosJuliette_r16kpg.png" alt="">
-                </td>
-                <td></td>
-              </tr>
-              <tr>
-                <td width="30px">
-                  <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/w_71,h_71,a_180/v1718882894/spotlightCorner2_jqglvc.png" alt="">
-                </td>
-                <td></td>
-                <td></td>
-                <td width="30px">
-                  <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/w_71,h_71,a_90/v1718882894/spotlightCorner2_jqglvc.png" alt="">
-                </td>
-              </tr>
-            </table>
-          </div>
+          <?php foreach($spotlights as $spotlight): ?>
+            <br/>
+            <div style="background: white;">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background: url('https://res.cloudinary.com/dhhw72iwq/image/upload/v1718884285/SpotlightImgBg_rmgvlx.jpg') no-repeat center left / contain;">
+                <tr>
+                  <td width="30px">
+                    <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/w_71,h_71,a_270/v1718882894/spotlightCorner2_jqglvc.png" alt="">
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td width="30px">
+                    <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/w_71,h_71/v1718882894/spotlightCorner2_jqglvc.png" alt="">
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td width="180px" style="padding-right: 15px;">
+                    <img width="180px" src="<?= $spotlight['img']; ?>" alt="">
+                    <br><br>
+                    <a href="https://spolightconnect.paperform.co/" class="bg-blue text-mustard p-5 block text-center">CONNECT</a>
+                  </td>
+                  <td style="border-left: 1px solid black; padding-left: 15px;">
+                    <h3 class="fs-24"><?= $spotlight["name"]; ?></h3>
+                    <p style="color: #BCBCBC;"><?= $spotlight["title"]; ?></p>
+                    <br>
+                    <p><?= $spotlight["text"]; ?></p>
+                    <br>
+                    <img style="height: 40px;" src="<?= $spotlight['logos']; ?>" alt="">
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td width="30px">
+                    <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/w_71,h_71,a_180/v1718882894/spotlightCorner2_jqglvc.png" alt="">
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td width="30px">
+                    <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/w_71,h_71,a_90/v1718882894/spotlightCorner2_jqglvc.png" alt="">
+                  </td>
+                </tr>
+              </table>
+            </div>
+          <?php endforeach; ?>
 
 
 

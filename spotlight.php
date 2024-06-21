@@ -765,7 +765,9 @@ $spotlights = [
 
           <br/><br/>
           <div class="newpadding text-white text-center">
-            Spotlight is a periodic newsletter showcasing exceptional board-ready talent in TheBoardroom Africa's community. As the continent's leading private membership network of women executives, we are dedicated to promoting and supporting exceptional female talent to boards across the globe, breaking down barriers and helping organisations realise the benefits of increased diversity.
+            <h2>About TBrA Spotlight</h2>
+            <br>
+            Spotlight periodically showcases exceptional board-ready members of TheBoardroom Africa. As the continent's leading private membership network of executives, we are dedicated to promoting and supporting exceptional talent to boards and other leadership spaces across the globe, breaking down barriers and helping organisations realise the benefits of increased diversity.
           </div>
         </td>
       </tr>

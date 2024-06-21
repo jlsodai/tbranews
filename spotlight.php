@@ -691,7 +691,7 @@ $spotlights = [
                 <td width="180px" style="padding-right: 15px;">
                   <img width="180px" src="https://res.cloudinary.com/dhhw72iwq/image/upload/v1718884543/Juliette_b08hyw.png" alt="">
                   <br><br>
-                  <a href="https://spolightconnect.paperform.co/" class="bg-blue text-mustard p-5 block text-center">CONNECT</a>
+                  <a href="https://spotlightconnect.paperform.co/" class="bg-blue text-mustard p-5 block text-center">CONNECT</a>
                 </td>
                 <td style="border-left: 1px solid black; padding-left: 15px;">
                   <h3 class="fs-24">DR. JULIETTE TUAKLI</h3>
@@ -735,7 +735,7 @@ $spotlights = [
                   <td width="180px" style="padding-right: 15px;">
                     <img width="180px" src="<?= $spotlight['img']; ?>" alt="">
                     <br><br>
-                    <a href="https://spolightconnect.paperform.co/" class="bg-blue text-mustard p-5 block text-center">CONNECT</a>
+                    <a href="https://spotlightconnect.paperform.co/" class="bg-blue text-mustard p-5 block text-center">CONNECT</a>
                   </td>
                   <td style="border-left: 1px solid black; padding-left: 15px;">
                     <h3 class="fs-24"><?= $spotlight["name"]; ?></h3>

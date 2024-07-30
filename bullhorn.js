@@ -1,3 +1,8 @@
+
+
+// // initiate new add form
+document.querySelector('#fastadd > ul > li:nth-child(3) a').click();
+
 var script = document.createElement('script');
 script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
 script.onload = function() {
@@ -11,9 +16,6 @@ function clickXPath(xpath) {
         element.click();
     }
 }
-
-// // initiate new add form
-document.querySelector('#fastadd > ul > li:nth-child(3) a').click();
 
 const data = [{
 	"selector" : "firstName",
@@ -38,10 +40,10 @@ const data = [{
 
 // inputs
 data.forEach(item => {
-	if (item.type === "text") {
-		document.querySelector(`#${item.selector}`).value = item.value;
-	}
+	document.querySelector(`#${item.selector}`).value = item.value;
 });
+	if (item.type === "text") {
+	}
 
 
 
@@ -88,3 +90,48 @@ document.querySelector('#novo-body > novo-root > content-app > fast-add-app > ma
 	"selector" : "nickName",
 	"value" : "Alidu",
 }]
+
+
+
+
+
+
+
+
+var jsonArray = [{
+	"key":"9mflo",
+	"type":"text",
+	"title":"First Name",
+	"value":"Martin",
+	"custom_key":null,"description":""
+},
+{
+	"key":"cjcbb",
+	"type":"text",
+	"title":"Last Name",
+	"value":"Warioba",
+	"custom_key":null,"description":null
+},
+{
+	"key":"66a6p",
+	"type":"date",
+	"title":"Date of Birth",
+	"value":"1978-07-19",
+	"custom_key":null,"description":null
+},
+{
+	"key":"e1ns",
+	"type":"dropdown",
+	"title":"Gender",
+	"value":"Male",
+	"custom_key":null,"description":null
+}]
+
+
+
+
+const jsonResult = jsonArray.reduce((acc, item) => {
+    acc[item.title] = item.value;
+    return acc;
+}, {});
+

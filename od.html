@@ -1,835 +1,97 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  [[trackingImage]]
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Community</title>
-  <style type="text/css">
-
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200,400;700&family=Libre+Baskerville:wght@400;700&display=swap');
-
-    body {
-      margin: 0;
-      padding: 0;
-      min-width: 100%!important;
-      eight:auto;
-      color: #4A4F54;
-      font-size: 17px;
-      font-weight: 300;
-    }
-
-    img {height: auto; max-width: 100%;}
-
-    a {
-      color: #1565c0;
-    }
-
-    .content {
-      min-width: 800px !important;
-      width: 800px !important;
-      margin: 0 auto;
-      overflow: hidden;
-    }
-
-    .box-outline, .box-outline-2 {
-      border: 3px solid #fff;
-      padding: 36px;
-      margin: 21px 0;
-    }
-    div.box-outline-2 {
-      border-color: #202944;
-    }
-
-    .premium-btn {
-      display:  inline-block;
-      width: max-content;
-      position: relative;
-      text-decoration: none;
-      font-size: 12px !important;
-      padding: 10px 15px;
-      letter-spacing: 1px;
-      background-color: #a67c00;
-      color: white;
-      margin-top: 22px;
-    }
-
-    .premium-btn img {
-      width: 17px;
-      margin-bottom: -4px;
-      margin-right: 5px;
-    }
-
-    .label {
-      background-color: #17a2b8;
-      padding: 3px 5px;
-      border-radius: 5px;
-      color: #fff;
-      font-size: 12px;
-      margin-bottom: 4px;
-      display: inline-block;
-    }
-
-    .text-primary { color: #0275d8; }
-    .text-light { color: #f8f8f8; }
-    .text-white { color: white !important; }
-    .text-success { color: #5cb85c; }
-    .text-info { color: #5bc0de; }
-    .text-warning { color: #f0ad4e; }
-    .text-danger { color: #EA5A4F; }
-
-
-    .bg-primary { background-color: #0275d8; }
-    .bg-success { background-color: #5cb85c; }
-    .bg-info { background-color: #17a2b8; }
-    .bg-warning { background-color: #f0ad4e; }
-    .bg-danger { background-color: #EA5A4F; }
-    .bg-gold, .bg-premium { background-color: #a67c00; }
-    .bg-tbra-gold { background-color: #b6a999 !important; }
-    .bg-tbra-blue { background-color: #202945 !important; }
-    .bg-dark { background-color: #202945 !important; }
-    .bg-black { background-color: #3e3e3e; }
-    .bg-light { background-color: #f8f8f8; }
-
-    .table-responsive {
-      table-layout: fixed;
-    }
-
-    .card-table {
-      border-spacing: 15px;
-      border-collapse: separate;
-      margin: -15px;
-    }
-
-    .card-table td {
-      background: #f3fafb;
-    }
-
-    a.small-btn {
-      padding: 3px 5px;
-      border-radius: 5px;
-      letter-spacing: unset;
-    }
-
-    a.small-btn img {
-      margin-right: 0px;
-    }
-
-    .img-shadow {
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    }
-
-    .mb-20 { margin-bottom: 20px; }
-    .mr-20 { margin-right: 20px; }
-    .mr-10 { margin-right: 10px; }
-    .mt-20 { margin-top: 20px; }
-    .mb-10 { margin-bottom: 10px; }
-    .mt-10 { margin-top: 10px !important; }
-
-    .header {padding: 40px 30px 40px 30px;}
-
-    .innerpadding {padding: 40px 30px 40px 30px;}
-
-    .borderbottom {border-bottom: 1px solid #f2eeed;}
-
-    .subhead {font-size: 15px; color: #ffffff; letter-spacing: 10px;}
-
-    h1 {
-      font-size: 55px;
-      font-weight: 800;
-      line-height: 1;
-    }
-
-    .dtable {
-      display:  table;
-    }
-
-    .ul-row {
-      width: 100%;
-      padding: 0;
-    }
-
-    .ul-row div {
-      width: max-content;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-
-    .ul-row div img {
-      width: 16px;
-      margin-top:3px;
-      margin-right: 3px;
-    }
-
-    .ul-row p {
-      font-size: 14px;
-      vertical-align: top;
-      display: inline-block;
-      width: 85%;
-      color: #212843;
-    }
-
-    .darkBlue {
-      color: #202944;
-    }
-
-    .strongWhite {
-      color: white;
-    }
-
-    h1, h2, p, a, ul, li, * {
-      margin: 0;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      text-decoration: none;
-    }
-
-    .libreb, .libreb * {
-      font-family: "Libre Baskerville", serif, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-      text-decoration: none;
-    }
-
-    .bodycopy {font-size: 15px;
-      line-height: 1.5;
-      color: #202945;}
-
-      .bodycopy-white {font-size: 15px;
-        line-height: 1.5;
-        color: white;}
-
-        .button a {color: #ffffff; text-decoration: none;}
-
-        .footer {padding: 20px 30px 15px 30px;}
-        .footercopy {font-size: 14px; color: #ffffff;}
-        .footercopy a {color: #ffffff; text-decoration: underline;}
-
-        .header-fix {
-          margin: 2em 0 2em 2em;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy to Clipboard Example</title>
+    <style>
+        /* Add some basic styling */
+        .tooltip {
+            position: absolute;
+            z-index: 10;
+            padding: 8px;
+            font-size: 14px;
+            color: #fff;
+            background: #333;
+            border-radius: 4px;
+            white-space: nowrap;
         }
-
-        .header-img img {
-          max-width: 270px;
-          margin-bottom: 10px;
+        .tooltip.hidden {
+            display: none;
         }
-
-        .header-img-side img {
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
+        .tooltip {
+            display: none;
         }
+    </style>
+      <script src="https://cdn.tailwindcss.com"></script>
 
-        .main-header {
-          font-size: 35px;
-          font-weight: 800;
-          line-height: 1.3;
-          margin-top: 14px;
-          color: white;
-        }
-
-        .primary-btn {
-          display: inline-block;
-          width: max-content;
-          position: relative;
-          text-decoration: none;
-          font-size: 12px;
-          padding: 10px 25px;
-          letter-spacing: 1px;
-          background-color: #EA5A4F;
-          color: #fff;
-/*        font-weight: 600;*/
-margin-top: 22px;
-}
-
-.primary-btn-inverse {
-  background: #fff;
-/*      color: #EA5A4F;*/
-}
-
-.outlined-btn {
-  border: 1px solid #202945;
-  color: #202945;
-  border-radius: 40px;
-  padding: 8px 30px;
-  display: inline-block;
-  margin-top: 10px;
-  text-decoration: underline;
-}
-
-.link-btn {
-  display: block;
-  font-weight: bold;
-  color: #EA5A4F;
-  font-size: 15px;
-  padding-top: 12px;
-}
-
-.text-center { text-align: center; }
-.text-right { text-align: right; }
-
-.body-btn-blue {
-  display: inline-block;
-  width: max-content;
-  height: auto;
-  position: relative;
-  text-transform: uppercase;
-  font-size: 12px;
-  padding: 10px 15px;
-  letter-spacing: 1px;
-  background-color: transparent;
-  color: #2D3752;
-  border: 1px solid #2D3752;
-  margin-top: 22px;
-}
-
-.body-btn-white {
-  display: block;
-  width: max-content;
-  height: auto;
-  position: relative;
-  text-transform: uppercase;
-  font-size: 12px;
-  padding: 10px 15px;
-  letter-spacing: 1px;
-  background-color: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  margin-top: 22px;
-}
-
-.list-case {
-  display: flex;
-}
-
-.tick {
-  margin-right: 8px;
-}
-
-.tick img {
-  width: 20px;
-}
-
-
-.useful-links ul {
-  padding: 10px 10px 0;
-}
-.useful-links li, .useful-links li a {
-  color: #EA5A4F;
-}
-
-.comm-card {
-  display: inline-block;
-  width: 30.5%;
-  height: auto;
-  background-color: white;
-  padding: 7px;
-}
-
-.card-contain {
-  width: 85%;
-  margin: 0 auto;
-  padding: 0 0 0 0;
-}
-
-.card-contain-bc {
-  width: 85%;
-  margin: 0 auto;
-  padding: 3.2em 0 0 0;
-}
-
-.card-contain img {
-  display: table;
-  margin: 0 auto 18px auto;
-  max-width: 100%;
-}
-
-.card-contain-bc img {
-  display: table;
-  width: 60px;
-  margin: 0 auto 18px auto;
-}
-
-.freshIcon {
-  width: 65px !important;
-  margin: -5px 18px 0 0;
-  float: left;
-}
-
-
-
-.nodisplay {
-  display: none;
-}
-
-.table-col {
- width: 50%;
-}
-.col-left {
- padding-right: 10px;
-}
-.col-right {
-  padding-left: 10px;
-}
-
-.blockquote {
-  color: #989FB6;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.4;
-  padding: 1.5em;
-  border-left: 4px solid #EA5A4F;
-  background: #F9F9F9;
-}
-
-.blockquote img {
-  width: 70px;
-  float: left;
-  margin-right: 12px;
-}
-
-.blockquote p {
-  font-size: 20px;
-}
-
-.quote-author {
-  margin-top: 10px;
-}
-
-.quote-author td{
-  vertical-align: top;
-}
-
-.quote-author img {
-  width: 32px;
-  float: left;
-  margin-right: 12px;
-}
-
-.blockquote span {
-  font-weight: 600;
-}
-
-
-
-.icon-card {
-  font-size: 16px;
-  font-weight: bold;
-  font-weight: 400;
-  line-height: 1.4;
-  padding: 1.5em;
-  border: 1px solid #dddddd;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  min-height: 42px;
-}
-
-
-.icon-card img {
-  height: 17px;
-}
-
-
-.icon-card-img-wrap {
-  padding: 15px;
-  border-radius: 50%;
-  width: 17px;
-  background: #f4f4f6;
-  float: left;
-  margin-right: 10px;
-  margin-left: -6px;
-  height: 17px;
-  width: 17px;
-}
-
-.blockquote-right {
-  color: #4d5468;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.4;
-  padding: 1.5em;
-}
-
-.blockquote-right a {
-  color: #a67c00;
-  font-weight: bold;
-}
-
-.blockquote strong {
-  display:  block;
-  font-size: 18px;
-  margin-bottom: 10px;
-  font-weight:  bold;
-}
-.left-calendar img {
-  float: left; width: 50px; margin-right: 10px;
-}
-.img-icon {
-  height: auto; width: 18px; position: relative; top: 3px; margin-top: 5px; margin-right: 5px;
-}
-
-.calendar img {
-  height: 13px;
-  margin-right: 6px;
-}
-
-.calendar p.title {
-  font-weight: bold;
-  font-size: 18px;
-  color:#515b7b;
-}
-
-.calendar p span {
-  font-weight: 600;
-}
-
-.calendar p {
-  margin-bottom: 5px;
-}
-
-.hr {
-  border-top: 1px solid #4A4F54;
-  width: 40%;
-  margin: 15px 0 10px;
-}
-
-.sec-title, .subtitle {
-  font-weight: bold;
-}
-
-.new-title {
-  color: #d7d6d7;
-  font-weight: 200;
-}
-
-.rounded { border-radius: 50px; padding-left: 30px; padding-right:30px; }
-
-h3.sec-title {
-  font-weight: normal;
-}
-
-.sec-title span {
-  background-color: #EBE5DC;
-  padding: 12px 80px;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.subtitle {
-  font-weight: 500;
-  font-size: 17px;
-}
-
-.header-full {
-  background-size: cover;
-  background-color: #202944;
-  background-repeat: no-repeat;
-  background-image: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1671074179/capetownOD_kdeywx.jpg');
-  background-position: top center;
-  padding: 10px 10px 0px 30px;
-  height: 230px; 
-}
-
-
-
-.logo-stack img {
-  width: 80px;
-}
-
-
-.tour-img {
-  width: 400px;
-  max-width: 100%;
-}
-
-.col-4 { width: 25%; float: left; }
-
-.collapse { border-collapse: collapse; }
-.banner-menu a { color: #fff; margin-right: 15px; }
-.banner-menu a:last-child { margin: 0; }
-.capitalise { text-transform: uppercase;}
-.learnmore { text-decoration: underline; color: black; font-size: 16px; }
-.moves { border-collapse: separate; border-spacing: 10px; margin-left: -10px;}
-.moves td {
-  background: #353A4C;
-  color: #fff;
-  border-right: 5px solid #CDAD7D;
-  width: 50%;
-  padding: 10px;
-  vertical-align: top;
-}
-.moves td a { text-decoration: underline; color: #fff;}
-.spaced p, .spaced p + ul, .spaced li { margin-bottom: 15px; }
-.spaced p.text-danger { margin-bottom: 0; }
-
-
-.bg-dawn { background-color: #DADEDA; }
-.bg-tender { background-color: #6E8498; }
-.bg-dusk { background-color: #4A4F54; }
-.bg-mustard { background-color: #CDAD7D !important; }
-.bg-blue { background-color: #202945; }
-.text-dawn { color: #CDDAE6; }
-.text-tender { color: #6E8498; }
-.text-dusk { color: #4A4F54; }
-.text-mustard { color: #CDAD7D; }
-.text-blue { color: #202945; }
-.text-brown { color: #96522D; }
-.text-green { color: #0D3928; }
-.text-black { color: black }
-
-.mb-20 { margin-bottom: 20px; }
-.mb-10 { margin-bottom: 10px; }
-.mt-10 { margin-top: 10px !important; }
-.mt-5 { margin-top: 10px !important; }
-.thin { font-weight: 200; }
-.bold { font-weight: bold; }
-
-.fs-12 { font-size: 12px; }
-.fs-14 { font-size: 14px; }
-.fs-16 { font-size: 16px; }
-.fs-18 { font-size: 18px; }
-.fs-22 { font-size: 22px; }
-.fs-24 { font-size: 24px; }
-.fs-26 { font-size: 26px; }
-.fs-30 { font-size: 30px; }
-.fs-34 { font-size: 34px; }
-.fs-40 { font-size: 40px; }
-.fs-50 { font-size: 50px; }
-.uppercase { text-transform: uppercase; }
-.newpadding { padding: 40px 50px; }
-.smallpadding { padding: 20px 25px; }
-
-.inline-block { display: inline-block; }
-
-hr {
- border: 1px solid #CDAD7D;
- margin: 30px auto;
- width: 50%;
-}
-
-.midsection {
-  margin-top: 80px;
-}
-
-@media only screen and (max-width: 600px) {
-  .midsection {
-    margin-top: 52px;
-  }
-}
-
-.border-collapse { border-collapse: collapse; }
-.underline { text-decoration: underline; }
-
-.spaced p + p { margin-top: 20px; }
-.spaced.lh p { line-height: 1.5 }
-
-.center-link {
-  text-align: center;
-}
-
-.unset-case { text-transform: unset; }
-
-</style>
 </head>
+<body>
+    <div class="relative mb-4 w-full">
+        <input id="api-key" type="text"
+               class="col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+               value="https://google.com" disabled readonly />
+        <button id="copy-button"
+                class="absolute end-2 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-2 inline-flex items-center justify-center">
+            <span id="default-icon-api-key">
+                <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                    <path d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z"/>
+                </svg>
+            </span>
+            <span id="success-icon-api-key" class="hidden inline-flex items-center">
+                <svg class="w-3.5 h-3.5 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                </svg>
+            </span>
+        </button>
+        <div id="tooltip" class="tooltip">
+            <span id="default-tooltip-message">Copy to clipboard</span>
+            <span id="success-tooltip-message" class="hidden">Copied!</span>
+        </div>
+    </div>
 
-<body bgcolor="#eee">
-  <table width="100%" bgcolor="#eee" border="0" cellpadding="0" cellspacing="0">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const copyButton = document.getElementById('copy-button');
+            const inputField = document.getElementById('api-key');
+            const tooltip = document.getElementById('tooltip');
+            const defaultTooltipMessage = document.getElementById('default-tooltip-message');
+            const successTooltipMessage = document.getElementById('success-tooltip-message');
+            const successIcon = document.getElementById('success-icon-api-key');
+            const defaultIcon = document.getElementById('default-icon-api-key');
 
+            function copyToClipboard(text) {
+                navigator.clipboard.writeText(text).then(() => {
+                    // Show success tooltip and icon
+                    defaultTooltipMessage.classList.add('hidden');
+                    successTooltipMessage.classList.remove('hidden');
+                    successIcon.classList.remove('hidden');
+                    defaultIcon.classList.add('hidden');
 
+                    // Hide the tooltip message after a delay
+                    setTimeout(() => {
+                        successTooltipMessage.classList.add('hidden');
+                        defaultTooltipMessage.classList.remove('hidden');
+                        successIcon.classList.add('hidden');
+                        defaultIcon.classList.remove('hidden');
+                    }, 2000); // Adjust the delay as needed
+                }).catch(err => {
+                    console.error('Failed to copy text: ', err);
+                });
+            }
 
+            copyButton.addEventListener('click', function () {
+                copyToClipboard(inputField.value);
+            });
 
+            copyButton.addEventListener('mouseover', function () {
+                tooltip.style.display = 'block';
+            });
 
-
-
-
-    <tr>
-      <td>
-        <table bgcolor="#fff" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
-
-      <!-- <tr>
-        <td class="newpadding" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1686560998/ProgrammesBG_ogeyrl.jpg') no-repeat center center / cover;">
-          <h3 class="libreb fs-34 text-white" style="margin-top: 205px;"><span class="text-mustard">Lead</span> in the New <br />Global Context</h3>
-        </td>
-      </tr> -->
-
-
-      <tr>
-        <td>
-          <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/v1720090475/OD15Banner_weawf1.jpg" style="border-bottom: 10px solid #BABCC4" alt>
-        </td>
-      </tr>
-
-
-      <tr>
-        <td class="newpadding spaced">
-          <h2>Equip yourself with the tools to be effective in any boardroom</h2>
-          <br>
-          <p>Are you ready to elevate your career and redefine excellence in corporate governance? Our premier accredited board certificate programme, Open Doors, developed in collaboration with the Institute of Directors (IoD) in the UK, is designed for both aspiring and existing board directors who want to excel in today’s dynamic business environment.</p>
-          <p>With less than a week to go, secure your spot in Open Doors Cohort 15, starting 11 July 2024. Don’t miss this opportunity to enhance your board career with our transformative programme.</p>
-          <br>
-          <div class="text-center">
-            <a href="https://web.theboardroomafrica.com/wp-content/uploads/2023/10/Open-Doors-2024-Virtual-Sessions.pdf" class="primary-btn bg-dusk fs-18" style="margin: 0 10px;">LEARN MORE</a>
-            <a href="https://theboardroomafrica.com/open-doors-application" class="primary-btn bg-mustard fs-18" style="margin: 0 10px;">REGISTER NOW</a>
-          </div>
-        </td>
-      </tr>
-
-
-      <tr>
-        <td>
-          <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/v1720091327/ODIdeal_pkiybx.jpg" alt="">
-        </td>
-      </tr>
-
-
-
-      <tr>
-        <td>
-          <br><br>
-          <h2 style="display: inline-block;padding: 15px 30px 15px 50px" class="fs-34 thin bg-dawn">What to Expect</h2>
-
-
-          <div class="newpadding">
-            <div class="spaced newpadding" style="background: #F2F3F0;">
-              <p>The Certificate is made up of four modules:</p>
-              <ul>
-                <li><b>Role of the Director and the Board:</b> Covers the responsibilities and duties of directors and the board, governance structures, and the role of the chairperson.</li>
-                <li><b>Finance for Non-Finance Directors:</b> Provides a comprehensive understanding of financial terms and concepts, how to interpret financial statements, and the financial duties of directors.</li>
-                <li><b>Strategy for Directors:</b> Focuses on strategic thinking, the development and implementation of strategic plans, and the director's role in shaping and guiding strategy.</li>
-                <li><b>Leadership for Directors:</b> Explores leadership styles and their impact, leading through change, and the director’s role in building effective teams and fostering a positive corporate culture.</li>
-              </ul>
-              <p>The sessions include interactive workshops, a board simulation, case studies, and practical exercises, which are integral parts of the learning process.</p>
-            </div>
-          </div>
-
-          <br>
-
-          <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1717422338/ChartODD_vjgzjk.jpg" alt="">
-          
-        </td>
-      </tr>
-
-
-      <tr>
-        <td class="newpadding" style="padding-top: 0">
-          <div style=" padding: 10px 0; background: linear-gradient(to top, #E6E6E6 0%, #E6E6E6 38%, #fff 38%, #fff 100%);">
-            <br><br>
-            <table width="100%">
-              <tr style="font-weight: bold;" class="text-center uppercase fs-12" valign="top">
-                <td width="24%"><p class="fs-50">14</p> Cohorts</td>
-                <td width="24%"><p class="fs-50">65+</p>  Countries</td>
-                <td width="24%"><p class="fs-50">150+</p>  Companies</td>
-                <td width="28%"><p class="fs-50">280+</p>  Executive delegates</td>
-              </tr>
-            </table>
-          </div>
-        </td>
-      </tr>
-
-
-      <tr>
-        <td>
-          <br><br>
-          <h2 style="display: inline-block; padding: 15px 30px 15px 50px" class="thin fs-34 bg-dawn">Secure your seat</h2>
-        </td>
-      </tr>
-
-
-      <tr>
-        <td class="newpadding">
-          <p class="text-center" style="padding: 0 70px;">Join the July cohort and take the first step in your journey to becoming a Certified Director.</p>
-          <br>
-
-          <table width="100%" cellspacing="0" cellpadding="0">
-            <tr>
-              <td width="15%"></td>
-              <td width="70%" class="text-center" bgcolor="#DCE1E4" style="padding: 30px">
-                <p><b>OPEN DOORS - VIRTUAL</b></p>
-
-                <p><b>Cohort 15:</b> 11 July - 15 October 2024</p>
-                <br>
-                <a href="https://web.theboardroomafrica.com/wp-content/uploads/2023/10/Open-Doors-2024-Virtual-Sessions.pdf" class="underline text-dusk">SEE BROCHURE</a>
-                <!-- <a href="https://opendoors-certificate-registration.paperform.co" class="underline text-dusk" style="margin-left: 20px;">REGISTER</a> -->
-              </td>
-              <td width="15%"></td>
-            </tr>
-          </table>
-
-          <div class="text-center">
-            <a href="https://theboardroomafrica.com/open-doors-application?hideBanner=true&utm_source=programmes_newsletter" class="primary-btn bg-mustard fs-18">REGISTER NOW </a>
-          </div>
-        </td>
-      </tr>
-
-
-      <tr>
-        <td class="newpadding text-center">
-          <p><b>Wondering if this programme is right for you?</b></p>
-          <br>
-          <p>Connect with a programme advisor to discuss programme suitability, request additional information, and receive support with registration.</p>
-
-          <br><br>
-
-          <table class="text-dusk" style="background: #EFE5D5; display: inline-block; padding: 4px;">
-            <tr>
-              <td>
-                <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/v1705675818/profile_icon_bhein0.png" width="50px" alt="">
-              </td>
-              <td>
-                <a href="https://calendly.com/cnekatambetheboardroomafricaprogrammes" class="text-dusk underline" style="padding: 0 15px; font-weight: 400;">Request a call with a Programme Advisor</a>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <tr class="bg-blue">
-        <td class="newpadding text-center" style="color: #DADEDA;">
-          <br />
-          <h2 class="fs-30">Great <span class="text-mustard">executives</span> make great <span class="text-mustard">companies</span>.</h2>
-          <br />
-          <div class="thin fs-18">
-            <p>Learn more</p>
-            <a href="mailto:opendoors@theboardroomafrica.com" style="color: #DADEDA;">opendoors@theboardroomafrica.com</a>
-          </div>
-          <br />
-        </td>
-      </tr>
-
-
-      <tr>
-        <td class="footer" bgcolor="#44525f">
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td align="center" class="footercopy">
-                &reg; TheBoardroom Africa
-              </td>
-            </tr>
-            <tr>
-              <td align="center" style="padding: 20px 0 0 0;">
-                <table border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
-                      <a href="https://twitter.com/TBRAfrica">
-                        <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/co_rgb:FFFFFF,e_colorize:100/v1722324879/twitter_gt5ycd.png" width="37" height="37" alt="Twitter" border="0" />
-                      </a>
-                    </td>
-                    <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
-                      <a href="https://www.linkedin.com/company/theboardroom-africa">
-                        <img src="https://files.constantcontact.com/bdaf4e1c701/5fa121da-baca-4710-a35e-e56567018383.png?ver=1595159408000" width="37" height="37" alt="LinkedIn" border="0" />
-                      </a>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-    </table>
-    
-  </td>
-</tr>
-</table>
+            copyButton.addEventListener('mouseleave', function () {
+                tooltip.style.display = 'none';
+            });
+        });
+    </script>
 </body>
 </html>

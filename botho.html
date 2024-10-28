@@ -9,7 +9,7 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-    * { margin: 0 }
+    *, p, h3, h2, h1 { margin: 0 }
 
     .content {
       min-width: 650px !important;
@@ -144,7 +144,7 @@
             <td width="80%">
               <h1>Monthly Insights</h1>
             </td>
-            <td width="20%" class="text-right">
+            <td width="20%" class="text-right" mc:edit="dateSection">
               <h3 class="text-dark">July</h3>
               <h3>2024</h3>
             </td>
@@ -154,14 +154,14 @@
     </tr>
 
 
-    <tr>
-      <td>
+    <tr mc:hideable>
+      <td mc:edit="spacer">
         <br>
       </td>
     </tr>
 
 
-    <tr>
+    <tr mc:hideable>
       <td class="newpadding bg-dark text-white" mc:edit="textAreaOne">
         <p class="text-center text-yellow">SPECIAL COVERAGE:</p>
         <p class="text-center text-yellow underline">THE POTENTIAL OF RENEWABLE ENERGY</p>
@@ -174,7 +174,7 @@
 
         <br>
 
-        <img src="https://placehold.co/600x400">
+        <img src="https://placehold.co/1200x800">
 
         <br>
 
@@ -187,7 +187,7 @@
     </tr>
 
 
-    <tr>
+    <tr mc:hideable>
       <td class="newpadding" mc:edit="textAreaTwo">
         <h3>Going local: The lifesaver for businesses in Nigeria?</h3>
         <br>
@@ -202,13 +202,13 @@
     </tr>
 
 
-    <tr bgcolor="#fff">
+    <tr bgcolor="#fff" mc:hideable>
       <td class="newpadding" mc:edit="textAreaThree">
         <p class="text-center underline mb-20">DISCUSSION STARTER</p>
 
         <h2 class="mb-20">From raw to riches</h2>
 
-        <img src="https://placehold.co/600x400" class="mb-20">
+        <img src="https://placehold.co/1200x800" class="mb-20">
 
         <p>🌍 <b>Africa's critical minerals</b> could spur global sustainability efforts as the world pushes towards a low-carbon future with robust, diversified, and sustainable supply networks, but how?</p>
 
@@ -229,13 +229,13 @@
     </tr>
 
 
-    <tr>
+    <tr mc:hideable>
       <td class="newpadding" mc:edit="textAreaFour">
         <h2>Failing the tests</h2>
 
         <br>
 
-        <img src="https://placehold.co/600x400" class="mb-20">
+        <img src="https://placehold.co/1200x800" class="mb-20">
 
         <p>🇰🇪 The need to bridge the gap between Kenya's education system and the market is making the reforms in the country more urgent.</p>
 
@@ -252,7 +252,7 @@
     </tr>
 
 
-    <tr>
+    <tr mc:hideable>
       <td class="bg-dark" style="padding: 50px; background: url('https://res.cloudinary.com/dhhw72iwq/image/upload/v1729704088/quotebig_jvowrh.png') #01374c 20px 20px no-repeat;" mc:edit="quoteArea">
         <p class="text-yellow underline text-center">THE BOTHO TAKE</p>
         <br>
@@ -267,14 +267,14 @@
 
   <br><br>
 
-  <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/v1729744168/bothoPattern_hi7v27.png" alt="" width="100%" style="min-width: 650px;">
+  <img mc:hideable src="https://res.cloudinary.com/dhhw72iwq/image/upload/v1729744168/bothoPattern_hi7v27.png" alt="" width="100%" style="min-width: 650px;">
 
   <table width="100%" style="background: #d6e1e7; padding: 30px 0;">
     <tr>
       <td>
         <table class="content" align="center" cellpadding="0" cellspacing="0" border="0">
           <tr>
-            <td style="font-size: 13px; padding: 0 30px;">
+            <td style="font-size: 13px; padding: 0 30px;" mc:edit="footerAbout">
               <p>Botho Emerging Markets Group is a leading advisor and consultant to investors, companies, governments and nonprofits navigating the world’s fastest-growing markets.</p>
             </td>
           </tr>
@@ -284,7 +284,7 @@
 
         <table class="content" align="center" cellpadding="0" cellspacing="0" border="0">
           <tr>
-            <td width="30%" style="padding-left: 30px;">
+            <td width="30%" style="padding-left: 30px;" mc:edit="footerLinks">
               <p class="fs-14">
                 <b>
                   <a href="https://www.bothogroup.com" style="text-decoration: none; color: unset;">www.bothogroup.com</a>
@@ -292,7 +292,7 @@
               </p>
               <p class="fs-10">Follow us on <a href="https://x.com/BothoGroup">X</a> • <a href="https://www.linkedin.com/company/botho-emerging-markets-group/">LinkedIn</a></p>
             </td>
-            <td width="70%" class="fs-10 text-right" style="padding-right: 30px;">
+            <td width="70%" class="fs-10 text-right" style="padding-right: 30px;" mc:edit="footerAddress">
               <p>2401, 5 JBC, ‘Ud Al Bayda’, Dubai, United Arab Emirates</p>
               <p>Copyright (C) 2024 • Botho Emerging Markets Group • All rights reserved</p>
             </td>
@@ -307,7 +307,7 @@
       <td>
         <table class="content" align="center" cellpadding="0" cellspacing="0" border="0">
           <tr>
-            <td class="newpadding">
+            <td class="newpadding" mc:edit="footerThanks">
               <p class="fs-10 text-center">Thank you. If you’re enjoying our newsletter, <span class="text-yellow">please forward this email to a friend</span> and do reach out to us: <a href="mailto:info@botholtd.com">info@botholtd.com</a></p>
             </td>
           </tr>

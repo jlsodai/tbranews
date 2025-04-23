@@ -1,310 +1,286 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
   [[trackingImage]]
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Community</title>
   <style type="text/css">
 
-  @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Inter:wght@100;400;700&family=Libre+Baskerville:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&family=Rancho&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200,400;700&family=Libre+Baskerville:wght@400;700&display=swap');
 
-  body {
-    margin: 0;
-    padding: 0;
-    min-width: 100%!important;
-    eight:auto;
-    color: #4A4F54;
-    font-size: 16px;
-    line-height: 1.3;
-  }
+    body {margin: 0; padding: 0; min-width: 100%!important;height:auto; color: #4A4F54}
+    body {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #4A4F54;
+    }
+    img {height: auto; max-width: 100%; display: block;}
 
-  img {height: auto; max-width: 100%;}
+    a {
+      color: #1565c0;
+    }
 
-  a {
-    color: #1565c0;
-  }
+    .content {
+      min-width: 800px !important;
+      width: 800px !important;
+      margin: 0 auto;
+      overflow: hidden;
+    }
 
-  .content {
-    min-width: 800px !important;
-    width: 800px !important;
-    margin: 0 auto;
-    overflow: hidden;
-  }
+    .box-outline, .box-outline-2 {
+      border: 3px solid #fff;
+      padding: 36px;
+      margin: 21px 0;
+    }
+    div.box-outline-2 {
+      border-color: #202944;
+    }
 
-  .box-outline, .box-outline-2 {
-    border: 3px solid #fff;
-    padding: 36px;
-    margin: 21px 0;
-  }
-  div.box-outline-2 {
-    border-color: #202944;
-  }
+    .premium-btn {
+      display:  inline-block;
+      width: max-content;
+      position: relative;
+      text-decoration: none;
+      font-size: 12px;
+      padding: 10px 15px;
+      letter-spacing: 1px;
+      background-color: #a67c00;
+      color: white;
+      margin-top: 22px;
+    }
 
-  .premium-btn {
-    display:  inline-block;
-    width: max-content;
-    position: relative;
-    text-decoration: none;
-    font-size: 12px !important;
-    padding: 10px 15px;
-    letter-spacing: 1px;
-    background-color: #a67c00;
-    color: white;
-    margin-top: 22px;
-  }
+    .premium-btn img {
+      width: 17px;
+      margin-bottom: -4px;
+      margin-right: 5px;
+    }
 
-  .premium-btn img {
-    width: 17px;
-    margin-bottom: -4px;
-    margin-right: 5px;
-  }
+    .label {
+      background-color: #17a2b8;
+      padding: 3px 5px;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 12px;
+      margin-bottom: 4px;
+      display: inline-block;
+    }
 
-  .label {
-    background-color: #17a2b8;
-    padding: 3px 5px;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 12px;
-    margin-bottom: 4px;
-    display: inline-block;
-  }
+    .text-primary { color: #0275d8; }
+    .text-white { color: white !important; }
+    .text-light { color: #F8F8F8; }
+    .text-success { color: #5cb85c; }
+    .text-info { color: #5bc0de; }
+    .text-warning { color: #f0ad4e; }
+    .text-danger { color: #EA5A4F; }
 
-  .text-primary { color: #0275d8; }
-  .text-white { color: white !important; }
-  .text-success { color: #5cb85c; }
-  .text-info { color: #5bc0de; }
-  .text-warning { color: #f0ad4e; }
-  .text-danger { color: #EA5A4F; }
-  
+    .bg-primary { background-color: #0275d8; }
+    .bg-success { background-color: #5cb85c; }
+    .bg-info { background-color: #17a2b8; }
+    .bg-warning { background-color: #f0ad4e; }
+    .bg-danger { background-color: #EA5A4F; }
+    .bg-gold, .bg-premium { background-color: #a67c00; }
+    .bg-tbra-gold { background-color: #b6a999 !important; }
+    .bg-tbra-blue { background-color: #202945 !important; }
+    .bg-dark { background-color: #1c2630 !important; }
+    .bg-black { background-color: #3e3e3e; }
 
-  .bg-primary { background-color: #0275d8; }
-  .bg-success { background-color: #5cb85c; }
-  .bg-info { background-color: #17a2b8; }
-  .bg-warning { background-color: #f0ad4e; }
-  .bg-danger { background-color: #EA5A4F; }
-  .bg-gold, .bg-premium { background-color: #a67c00; }
-  .bg-tbra-gold { background-color: #b6a999 !important; }
-  .bg-tbra-blue { background-color: #202945 !important; }
-  .bg-dark { background-color: #202945 !important; }
-  .bg-black { background-color: #3e3e3e; }
+    .table-responsive {
+      table-layout: fixed;
+    }
 
-  .table-responsive {
-    table-layout: fixed;
-  }
+    .card-table {
+      border-spacing: 15px;
+      border-collapse: separate;
+      margin: -15px;
+    }
 
-  .card-table {
-    border-spacing: 15px;
-    border-collapse: separate;
-    margin: -15px;
-  }
+    .card-table td {
+      background: #f3fafb;
+    }
 
-  .card-table td {
-    background: #f3fafb;
-  }
+    a.small-btn {
+      padding: 3px 5px;
+      border-radius: 5px;
+      letter-spacing: unset;
+    }
 
-  a.small-btn {
-    padding: 3px 5px;
-    border-radius: 5px;
-    letter-spacing: unset;
-  }
+    a.small-btn img {
+      margin-right: 0px;
+    }
 
-  a.small-btn img {
-    margin-right: 0px;
-  }
+    .img-shadow {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
 
-  .img-shadow {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
+    .header {padding: 40px 30px 40px 30px;}
 
-  .mb-20 { margin-bottom: 20px; }
-  .mr-20 { margin-right: 20px; }
-  .mt-20 { margin-top: 20px; }
-  .mb-10 { margin-bottom: 10px; }
-  .mt-10 { margin-top: 10px !important; }
-  .pt-0 { padding-top: 0 !important; }
-  .p-5 { padding: 5px; }
-  .p-10 { padding: 10px; }
-  .p-20 { padding: 20px; }
-  .p-30 { padding: 30px; }
+    .innerpadding {padding: 40px 30px 40px 30px;}
 
-  .header {padding: 40px 30px 40px 30px;}
+    .borderbottom {border-bottom: 1px solid #f2eeed;}
 
-  .innerpadding {padding: 40px 30px 40px 30px;}
+    .subhead {font-size: 15px; color: #ffffff; letter-spacing: 10px;}
 
-  .borderbottom {border-bottom: 1px solid #f2eeed;}
+    h1 {
+      font-size: 55px;
+      font-weight: 800;
+      line-height: 1;
+    }
 
-  .subhead {font-size: 15px; color: #ffffff; letter-spacing: 10px;}
+    .dtable {
+      display:  table;
+    }
 
-  h1 {
-    font-size: 55px;
-    font-weight: 800;
-    line-height: 1;
-  }
-
-  .dtable {
-    display:  table;
-  }
-
-  .ul-row {
+    .ul-row {
       width: 100%;
-        padding: 0;
+      padding: 0;
     }
 
     .ul-row div {
-        width: max-content;
-        display: inline-block;
-        margin-bottom: 20px;
+      width: max-content;
+      display: inline-block;
+      margin-bottom: 20px;
     }
 
     .ul-row div img {
-        width: 16px;
-        margin-top:3px;
-        margin-right: 3px;
+      width: 16px;
+      margin-top:3px;
+      margin-right: 3px;
     }
 
     .ul-row p {
       font-size: 14px;
-        vertical-align: top;
-        display: inline-block;
-        width: 85%;
-        color: #212843;
+      vertical-align: top;
+      display: inline-block;
+      width: 85%;
+      color: #212843;
     }
 
-  .darkBlue {
-        color: #202944;
+    .darkBlue {
+      color: #202944;
     }
 
     .strongWhite {
-        color: white;
+      color: white;
     }
 
     h1, h2, p, a, ul, li, * {
-        margin: 0;
-        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        text-decoration: none;
+      margin: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      text-decoration: none;
     }
 
     .libreb, .libreb * {
       font-family: "Libre Baskerville", serif, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-        text-decoration: none;
-    }
-    .lora, .lora * {
-      font-family: "Lora", 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-        text-decoration: none;
+      text-decoration: none;
     }
 
-  .bodycopy {font-size: 15px;
-            line-height: 1.5;
-            color: #202945;}
 
-   .bodycopy-white {font-size: 15px;
-            line-height: 1.5;
-            color: white;}
+    .bodycopy-white {
+      line-height: 1.5;
+      color: white;
+    }
 
-  .button a {color: #ffffff; text-decoration: none;}
+    .button a {color: #ffffff; text-decoration: none;}
 
-  .footer {padding: 20px 30px 15px 30px;}
-  .footercopy {font-size: 14px; color: #ffffff;}
-  .footercopy a {color: #ffffff; text-decoration: underline;}
+    .footer {padding: 20px 30px 15px 30px;}
+    .footercopy {font-size: 14px; color: #ffffff;}
+    .footercopy a {color: #ffffff; text-decoration: underline;}
 
-  .header-fix {
-    margin: 2em 0 2em 2em;
-  }
+    .header-fix {
+      margin: 2em 0 2em 2em;
+    }
     
-  .header-img img {
+    .header-img img {
       max-width: 270px;
       margin-bottom: 10px;
-  }
+    }
 
-  .header-img-side img {
+    .header-img-side img {
       width: 100%;
       height: 100%;
       overflow: hidden;
-  }
+    }
 
-  .main-header {
-    font-size: 35px;
-    font-weight: 800;
-    line-height: 1.3;
-    margin-top: 14px;
-    color: white;
-  }
+    .main-header {
+      font-size: 35px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-top: 14px;
+      color: white;
+    }
 
-  .primary-btn {
-        display: inline-block;
-        width: max-content;
-        position: relative;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 12px;
-        padding: 10px 15px;
-        letter-spacing: 1px;
-        background-color: #EA5A4F;
-        color: white;
-        margin-top: 22px;
+    .primary-btn {
+      display: inline-block;
+      width: max-content;
+      position: relative;
+      text-decoration: none;
+      padding: 10px 30px;
+      background-color: #EA5A4F;
+      color: black;
+      margin: 10px;
+      border-radius: 5px;
     }
 
     .primary-btn-inverse {
       background: #fff;
-      color: #EA5A4F;
     }
 
     .link-btn {
-            display: block;
-            font-weight: bold;
-            color: #EA5A4F;
-            font-size: 15px;
-            padding-top: 12px;
-        }
+      display: block;
+      font-weight: bold;
+      color: #EA5A4F;
+      font-size: 15px;
+      padding-top: 12px;
+    }
 
     .text-center { text-align: center; }
     .text-right { text-align: right; }
 
     .body-btn-blue {
-            display: inline-block;
-            width: max-content;
-            height: auto;
-            position: relative;
-            text-transform: uppercase;
-            font-size: 12px;
-            padding: 10px 15px;
-            letter-spacing: 1px;
-            background-color: transparent;
-            color: #2D3752;
-            border: 1px solid #2D3752;
-            margin-top: 22px;
+      display: inline-block;
+      width: max-content;
+      height: auto;
+      position: relative;
+      text-transform: uppercase;
+      font-size: 12px;
+      padding: 10px 15px;
+      letter-spacing: 1px;
+      background-color: transparent;
+      color: #2D3752;
+      border: 1px solid #2D3752;
+      margin-top: 22px;
     }
 
     .body-btn-white {
-            display: block;
-            width: max-content;
-            height: auto;
-            position: relative;
-            text-transform: uppercase;
-            font-size: 12px;
-            padding: 10px 15px;
-            letter-spacing: 1px;
-            background-color: transparent;
-            color: #ffffff;
-            border: 1px solid #ffffff;
-            margin-top: 22px;
+      display: block;
+      width: max-content;
+      height: auto;
+      position: relative;
+      text-transform: uppercase;
+      font-size: 12px;
+      padding: 10px 15px;
+      letter-spacing: 1px;
+      background-color: transparent;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      margin-top: 22px;
     }
 
     .list-case {
-        display: flex;
+      display: flex;
     }
 
     .tick {
-        margin-right: 8px;
+      margin-right: 8px;
     }
 
     .tick img {
-        width: 20px;
+      width: 20px;
     }
 
-   
+
     .useful-links ul {
       padding: 10px 10px 0;
     }
@@ -313,154 +289,154 @@
     }
 
     .comm-card {
-        display: inline-block;
-        width: 30.5%;
-        height: auto;
-        background-color: white;
-        padding: 7px;
+      display: inline-block;
+      width: 30.5%;
+      height: auto;
+      background-color: white;
+      padding: 7px;
     }
 
     .card-contain {
-        width: 85%;
-        margin: 0 auto;
-        padding: 0 0 0 0;
+      width: 85%;
+      margin: 0 auto;
+      padding: 0 0 0 0;
     }
 
     .card-contain-bc {
-        width: 85%;
-        margin: 0 auto;
-        padding: 3.2em 0 0 0;
+      width: 85%;
+      margin: 0 auto;
+      padding: 3.2em 0 0 0;
     }
 
     .card-contain img {
-        display: table;
-        margin: 0 auto 18px auto;
-        max-width: 100%;
+      display: table;
+      margin: 0 auto 18px auto;
+      max-width: 100%;
     }
 
     .card-contain-bc img {
-        display: table;
-        width: 60px;
-        margin: 0 auto 18px auto;
+      display: table;
+      width: 60px;
+      margin: 0 auto 18px auto;
     }
 
-  .freshIcon {
-    width: 65px !important;
-    margin: -5px 18px 0 0;
-    float: left;
-  }
+    .freshIcon {
+      width: 65px !important;
+      margin: -5px 18px 0 0;
+      float: left;
+    }
 
 
-  
-  .nodisplay {
-    display: none;
-  }
+
+    .nodisplay {
+      display: none;
+    }
 
     .table-col {
-       width: 50%;
-    }
-    .col-left {
-       padding-right: 10px;
-    }
-    .col-right {
-      padding-left: 10px;
-    }
+     width: 50%;
+   }
+   .col-left {
+     padding-right: 10px;
+   }
+   .col-right {
+    padding-left: 10px;
+  }
 
-    .blockquote {
-      color: #989FB6;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 1.4;
-      padding: 1.5em;
-      border-left: 4px solid #EA5A4F;
-      background: #F9F9F9;
-    }
+  .blockquote {
+    color: #989FB6;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+    padding: 1.5em;
+    border-left: 4px solid #EA5A4F;
+    background: #F9F9F9;
+  }
 
-    .blockquote img {
-      width: 70px;
-      float: left;
-      margin-right: 12px;
-    }
+  .blockquote img {
+    width: 70px;
+    float: left;
+    margin-right: 12px;
+  }
 
-    .blockquote p {
-      font-size: 20px;
-    }
+  .blockquote p {
+    font-size: 20px;
+  }
 
-    .quote-author {
-      margin-top: 10px;
-    }
+  .quote-author {
+    margin-top: 10px;
+  }
 
-    .quote-author td{
-      vertical-align: top;
-    }
+  .quote-author td{
+    vertical-align: top;
+  }
 
-    .quote-author img {
-      width: 32px;
-      float: left;
-      margin-right: 12px;
-    }
+  .quote-author img {
+    width: 32px;
+    float: left;
+    margin-right: 12px;
+  }
 
-    .blockquote span {
-      font-weight: 600;
-    }
-
-    
-
-    .icon-card {
-      font-size: 16px;
-      font-weight: bold;
-      font-weight: 400;
-      line-height: 1.4;
-      padding: 1.5em;
-      border: 1px solid #dddddd;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      min-height: 42px;
-    }
+  .blockquote span {
+    font-weight: 600;
+  }
 
 
-    .icon-card img {
-      height: 17px;
-    }
 
-    
-    .icon-card-img-wrap {
-      padding: 15px;
-      border-radius: 50%;
-      width: 17px;
-      background: #f4f4f6;
-      float: left;
-      margin-right: 10px;
-      margin-left: -6px;
-      height: 17px;
-      width: 17px;
-    }
+  .icon-card {
+    font-size: 16px;
+    font-weight: bold;
+    font-weight: 400;
+    line-height: 1.4;
+    padding: 1.5em;
+    border: 1px solid #dddddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    min-height: 42px;
+  }
 
-    .blockquote-right {
-      color: #4d5468;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 1.4;
-      padding: 1.5em;
-    }
 
-    .blockquote-right a {
-      color: #a67c00;
-      font-weight: bold;
-    }
+  .icon-card img {
+    height: 17px;
+  }
 
-    .blockquote strong {
-      display:  block;
-      font-size: 18px;
-      margin-bottom: 10px;
-      font-weight:  bold;
-    }
-    .left-calendar img {
+
+  .icon-card-img-wrap {
+    padding: 15px;
+    border-radius: 50%;
+    width: 17px;
+    background: #f4f4f6;
+    float: left;
+    margin-right: 10px;
+    margin-left: -6px;
+    height: 17px;
+    width: 17px;
+  }
+
+  .blockquote-right {
+    color: #4d5468;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+    padding: 1.5em;
+  }
+
+  .blockquote-right a {
+    color: #a67c00;
+    font-weight: bold;
+  }
+
+  .blockquote strong {
+    display:  block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight:  bold;
+  }
+  .left-calendar img {
     float: left; width: 50px; margin-right: 10px;
-    }
-    .img-icon {
+  }
+  .img-icon {
     height: auto; width: 18px; position: relative; top: 3px; margin-top: 5px; margin-right: 5px;
-     }
+  }
 
   .calendar img {
     height: 13px;
@@ -482,250 +458,352 @@
   }
 
   .hr {
-     border-top: 1.5px solid #d7d7d7;
+    border-top: 1px solid #4A4F54;
+    width: 40%;
+    margin: 20px auto 40px;
   }
-
-  .sec-title, .subtitle {
-    font-weight: bold;
-  }
-
-  .new-title {
-    color: #d7d6d7;
-    font-weight: 200;
-  }
-
-  .rounded { border-radius: 50px; padding-left: 30px; padding-right:30px; }
-
-  h3.sec-title {
-    font-weight: normal;
-  }
-
-  .sec-title span {
-    background-color: #EBE5DC;
-    padding: 12px 80px;
-    font-size: 16px;
-    font-weight: bold;
-  }
-
-  .subtitle {
-    font-weight: 500;
-    font-size: 17px;
-  }
-
-  .header-full {
-    background-size: cover;
-    background-color: #202944;
-    background-repeat: no-repeat;
-    background-image: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1671074179/capetownOD_kdeywx.jpg');
-    background-position: top center;
-    padding: 10px 10px 0px 30px;
-    height: 230px; 
-  }
-
-  
-
-  .logo-stack img {
-    width: 80px;
-  }
-
-
-  .tour-img {
-    width: 400px;
-    max-width: 100%;
-  }
-
-  .col-4 { width: 25%; float: left; }
-
-  .collapse { border-collapse: collapse; }
-  .banner-menu a { color: #fff; margin-right: 15px; }
-  .banner-menu a:last-child { margin: 0; }
-  .capitalise { text-transform: uppercase;}
-  .learnmore { border-bottom: 1px solid #4a4f54; color: #4A4F54; font-size: 16px; }
-  .moves { border-collapse: separate; border-spacing: 10px; margin-left: -10px;}
-  .moves td {
-    background: #353A4C;
-    color: #fff;
-    border-right: 5px solid #CDAD7D;
-    width: 50%;
-    padding: 10px;
-    vertical-align: top;
-  }
-  .moves td a { text-decoration: underline; color: #fff;}
-  .spaced p { margin-bottom: 7px; }
-  .spaced p.text-danger { margin-bottom: 0; }
-
-
-  .bg-dawn { background-color: #DADEDA; }
-  .bg-tender { background-color: #6E8498; }
-  .bg-dusk { background-color: #4A4F54; }
-  .bg-mustard { background-color: #CDAD7D !important; }
-  .bg-blue { background-color: #202945; }
-  .text-dawn { color: #CDDAE6; }
-  .text-tender { color: #6E8498; }
-  .text-dusk { color: #4A4F54; }
-  .text-mustard { color: #CDAD7D; }
-  .text-blue { color: #202945; }
-  .text-brown { color: #96522D; }
-  .text-green { color: #0D3928; }
-  .text-black { color: black }
-
-  .mb-20 { margin-bottom: 20px; }
-  .mb-10 { margin-bottom: 10px; }
-  .mt-10 { margin-top: 10px !important; }
-  .mt-5 { margin-top: 10px !important; }
-  .thin { font-weight: 200; }
-  .bold { font-weight: bold; }
-
-  .fs-12 { font-size: 12px; }
-  .fs-14 { font-size: 14px; }
-  .fs-16 { font-size: 16px; }
-  .fs-18 { font-size: 18px; }
-  .fs-20 { font-size: 20px; }
-  .fs-22 { font-size: 22px; }
-  .fs-24 { font-size: 24px; }
-  .fs-26 { font-size: 26px; }
-  .fs-30 { font-size: 30px; }
-  .fs-32 { font-size: 32px; }
-  .fs-34 { font-size: 34px; }
-  .fs-40 { font-size: 40px; }
-  .uppercase { text-transform: uppercase; }
-  .newpadding { padding: 40px 50px; }
-
-  .inline-block { display: inline-block; }
 
   hr {
-   background: #202945;
-   color: #202945;
-   margin: 30px auto;
    border: none;
    height: 1px;
-  }
+   background: #000;
+   color: #000;
+   margin: 0px auto;
+   width: 30%;
+ }
 
-  .midsection {
-    margin-top: 80px;
-  }
+ .sec-title, .subtitle {
+  font-weight: bold;
+}
 
-  @media only screen and (max-width: 600px) {
-    .midsection {
-      margin-top: 52px;
-    }
-  }
+.new-title {
+  color: #d7d6d7;
+  font-weight: 200;
+}
 
-  .border-collapse { border-collapse: collapse; }
-  .connect ul { margin-bottom: 10px; }
+.rounded { border-radius: 50px; padding: 5px 30px; margin: 0 20px; font-weight: 600; }
 
-  </style>
+h3.sec-title {
+  font-weight: normal;
+  background-color: #4A4F54;
+  padding: 12px 50px;
+  font-size: 16px;
+  color: #fff;
+  display: inline-block;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.header-full {
+  background-size: cover;
+  background-color: #202944;
+  background-repeat: no-repeat;
+  background-image: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1671074179/capetownOD_kdeywx.jpg');
+  background-position: top center;
+  padding: 10px 10px 0px 30px;
+  height: 230px; 
+}
+
+
+
+.logo-stack img {
+  width: 80px;
+}
+
+
+.tour-img {
+  width: 400px;
+  max-width: 100%;
+}
+
+.col-4 { width: 25%; float: left; }
+
+.collapse { border-collapse: collapse; }
+.banner-menu a { color: #fff; margin-right: 15px; }
+.banner-menu a:last-child { margin: 0; }
+.capitalise { text-transform: uppercase;}
+.learnmore { text-decoration: underline; color: black; }
+.moves { border-collapse: separate; border-spacing: 10px; margin-left: -10px;}
+.moves td {
+  background: #353A4C;
+  color: #fff;
+  border-right: 5px solid #CDAD7D;
+  width: 50%;
+  padding: 10px;
+  vertical-align: top;
+}
+.moves td a { text-decoration: underline; color: #fff;}
+.spaced p + p { margin-top: 20px; }
+
+
+.bg-dawn { background-color: #DADEDA; }
+.bg-tender { background-color: #556d70; }
+.bg-dusk { background-color: #4A4F54; }
+.bg-mustard { background-color: #a28231 !important; }
+.bg-blue { background-color: #202945; }
+.text-dawn { color: #DADEDA; }
+.text-tender { color: #556d70; }
+.text-dusk { color: #4A4F54; }
+.text-mustard { color: #CDAD7D; }
+.text-blue { color: #202945; }
+.text-brown { color: #96522D; }
+
+.mb-20 { margin-bottom: 20px; }
+.mb-10 { margin-bottom: 10px; }
+.mt-10 { margin-top: 10px !important; }
+.mt-5 { margin-top: 10px !important; }
+.thin { font-weight: 200; }
+
+.fs-12 { font-size: 12px; }
+.fs-14 { font-size: 14px; }
+.fs-16 { font-size: 16px; }
+.fs-18 { font-size: 18px; }
+.fs-20 { font-size: 20px; }
+.fs-22 { font-size: 22px; }
+.fs-24 { font-size: 24px; }
+.fs-26 { font-size: 26px; }
+.fs-32 { font-size: 32px; }
+.fs-40 { font-size: 40px; }
+.fs-50 { font-size: 50px; }
+.fs-60 { font-size: 60px; }
+.fs-70 { font-size: 70px; }
+.fs-80 { font-size: 80px; }
+.fs-100 { font-size: 100px; }
+.uppercase { text-transform: uppercase; }
+
+.newpadding { padding: 40px 70px; }
+.narrowpadding { padding: 20px 50px; }
+
+.curriculum {
+  margin-top: 15px;
+}
+
+.curriculum img { display:block; }
+
+.curriculum p {
+  font-size: 18px;
+  color: #556d70;
+}
+
+.curriculum:nth-child(odd) p {
+  color: #F8F8F8;
+}
+
+.block { display: block; }
+.inline-block { display: inline-block; }
+
+.mb-20 { margin-bottom: 20px; }
+.mb-10 { margin-bottom: 10px; }
+.mt-10 { margin-top: 10px !important; }
+.p-10 { padding: 10px; }
+.p-20 { padding: 20px; }
+.pt-10 { padding-top: 10px;}
+.pt-20 { padding-top: 20px;}
+.pt-30 { padding-top: 30px;}
+.pt-40 { padding-top: 40px;}
+.pb-10 { padding-bottom: 10px;}
+.pb-20 { padding-bottom: 20px;}
+.pb-30 { padding-bottom: 30px;}
+.pb-40 { padding-bottom: 40px;}
+.py-0 { padding-top: 0px; padding-bottom: 0px; }
+.pt-0 { padding-top: 0px; }
+.pb-0 { padding-bottom: 0px; }
+.py-0 { padding-top: 0px; padding-bottom: 0px; }
+.py-10 { padding-top: 10px; padding-bottom: 10px; }
+.px-10 { padding-left: 10px; padding-right: 10px; }
+.py-20 { padding-top: 20px; padding-bottom: 20px; }
+.py-20 { padding-top: 20px; padding-bottom: 20px; }
+.px-30 { padding-left: 30px; padding-right: 30px; }
+.px-30 { padding-left: 30px; padding-right: 30px; }
+.px-40 { padding-left: 40px; padding-right: 40px; }
+.px-40 { padding-left: 40px; padding-right: 40px; }
+
+/*h3, h2 { line-height: 1; font-weight: 200; }*/
+h3 { font-size: 35px; }
+
+.lecturer-section p { font-size: 12px; color: #556d70; }
+.lecturer-section p b { font-size: 13px; color: #4A4F54; }
+.lecturer-section img { margin-bottom: 10px }
+
+.features p {
+  font-size: 14px;
+}
+.features img { height: 60px; margin: 0 auto; }
+
+.list-cols { column-count: 2; column-gap: 40px; padding-left: 0; }
+.list-cols li { margin-bottom: 20px; list-style: none; }
+
+.footer {padding: 20px 30px 15px 30px;}
+.footercopy {font-size: 14px; color: #ffffff;}
+.footercopy a {color: #ffffff; text-decoration: underline;}
+.footer img { width: 35px; }
+.footer a { display: inline-block; margin: 0 5px; }
+
+</style>
 </head>
 
-<body bgcolor="#eee">
-<table width="100%" bgcolor="#eee" border="0" cellpadding="0" cellspacing="0">
-
-  
-  
+<body bgcolor="#EBECF0">
+  <table width="100%" bgcolor="#EBECF0" border="0" cellpadding="0" cellspacing="0">
 
 
 
 
 
-<tr>
-  <td>
-    <table bgcolor="#fff" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
 
-      <tr>
-        <td>
-          <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/v1712237031/PrimeBg_tbnap9.jpg">
-        </td>
-      </tr>
 
-      <tr>
-        <td class="newpadding">
-          <br>
-          <h3 class="lora thin fs-20 text-blue"><i>[[FIRSTNAME]], Discover a new membership experience</i></h3>
-          <br />
-          <p style="margin: 0 auto; line-height: 1.8;">As a Prime Member, you will enjoy priority access to exclusive features and complimentary offerings curated specifically to meet the ambitions of our members. We are devoted to ensuring that your journey with us is not only rewarding but also transformative, fostering connections and growth at every turn. </p>
-        </td>
-      </tr>
 
-      <tr>
-        <td>
-          <table width="100%" cellpadding="0" cellspacing="0">
-            <tr class="text-center">
-              <td width="30%"><hr /></td>
-              <td width="40%"><p class="capitalise thin fs-24">your PRIME benefits</p></td>
-              <td width="30%"><hr /></td>
-            </tr>
-          </table>
+    <tr>
+      <td>
+        <table bgcolor="#fff" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
 
-          <table width="100%" class="newpadding">
-            <tr valign="top">
-              <td width="47%">
-                <p class="text-center"><b>Elevate your leadership</b></p>
-                <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/v1712237324/Prime1_qldelj.jpg" class="mt-10">
-                <p class="mt-10">Participate in 6 monthly group coaching sessions on us</p>
-              </td>
-              <td width="6%"></td>
-              <td width="47%">
-                <p class="text-center"><b>Priority feature</b></p>
-                <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/v1712237324/Prime2_if9oau.jpg" class="mt-10">
-                <p class="mt-10">Priority feature in TBrA Spotlight </p>
-                <br /><br />
-              </td>
-            </tr>
-            <tr valign="top">
-              <td width="47%">
-                <p class="text-center"><b>Enhanced Executive Presence</b></p>
-                <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/v1712237323/Prime3_g6efwv.jpg" class="mt-10">
-                <p class="mt-10">Show up stronger on LinkedIn with a complimentary profile audit</p>
-              </td>
-              <td width="6%"></td>
-              <td width="47%">
-                <p class="text-center"><b>Exclusive discounts</b></p>
-                <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/v1712237323/Prime4_jtyd55.jpg" class="mt-10">
-                <p class="mt-10">Save more on programmes and events with exclusive discounts</p>
-                <br /><br />
-              </td>
-            </tr>
-            <tr>
-              <td colspan="3" class="text-center"><a href="https://theboardroomafrica.com/tbraprime" class="learnmore text-center thin fs-26">Discover more</a></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
+          <tr>
+            <td style="padding: 20px 70px;">
+              <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1742472707/LogoTBrA_cz3cfe.png" width="100px" alt="">
+            </td>
+          </tr>
 
-      <tr>
-        <td class="footer" bgcolor="#44525f">
-          <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td align="center" class="footercopy">
-                &reg; TheBoardroom Africa
-              </td>
-            </tr>
-            <tr>
-              <td align="center" style="padding: 20px 0 0 0;">
-                <table border="0" cellspacing="0" cellpadding="0">
+          <tr bgcolor="#DADEDA">
+            <td>
+              <a href="https://tbraprime.paperform.co/?utm_source=Prime%20newsletter%20April&utm_medium=email&utm_campaign=promo"><img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1745411744/prime_1_p9asvx.jpg"></a>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td class="newpadding spaced">
+
+              <p>As your leadership journey evolves, so should the support that powers it. Whether you’re deepening your boardroom expertise, expanding your global influence, or positioning yourself for high-impact roles, success isn't just about staying relevant — it's about staying ahead.</p>
+              <p><a href="https://tbraprime.paperform.co">Prime</a> is designed to meet you at that next level. This enhanced membership unlocks curated insights, strategic resources, and bespoke services tailored for senior leaders navigating complex, high-stakes environments. From exclusive events and leadership tools to one-on-one support aligned with your goals, Prime empowers you to lead with greater clarity, confidence, and influence.</p>
+              <p>Ready to take the next step? Upgrade to Prime and gain access to the tools, networks, and perspectives that keep you at the forefront of leadership.</p>
+
+              <br>
+
+              <div class="text-center">
+                <a href="https://tbraprime.paperform.co/?utm_source=Prime%20newsletter%20April&utm_medium=email&utm_campaign=promo" class="primary-btn bg-tender text-white">Learn more</a>
+              </div>
+
+              <br><br>
+
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="background: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1745411744/prime_2_r8brrb.jpg') no-repeat center center / cover;;"></td>
+                  <td class="bg-tender text-light" width="50%" style="padding: 30px;">
+                    <h2 style="line-height: 1;">Complimentary Talent consultation</h2>
+                    <br>
+                    <p>Let us help you tell your story.</p>
+                    <p>Enjoy a thirty-minute consultation session with our recruitment team to discuss market trends, opportunities, and strategies to better position yourself for executive and board opotunities.</p>
+                  </td>
+                </tr>
+              </table>
+
+              <br><br>
+
+              <div class="p-20" style="background: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1745411744/prime_3_y6cirn.jpg') no-repeat center center / cover;">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
                   <tr>
-                    <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
-                      <a href="https://twitter.com/TBRAfrica">
-                        <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/co_rgb:FFFFFF,e_colorize:100/v1722324879/twitter_gt5ycd.png" width="37" height="37" alt="Twitter" border="0" />
-                      </a>
+                    <td width="50%" style="padding: 30px; background: rgba(248, 248, 248, 0.9);">
+                      <h2 style="line-height: 1;">Exclusive Member Discounts</h2>
+                      <br>
+                      <p>Prime membership unlocks exclusive discounts on our top executive education programmes and professional development services. From career coaching and CV reviews to flagship leadership courses, you'll enjoy reduced rates, making it easier to access the tools you need to thrive.</p>
                     </td>
-                    <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
-                      <a href="https://www.linkedin.com/company/theboardroom-africa">
-                        <img src="https://files.constantcontact.com/bdaf4e1c701/5fa121da-baca-4710-a35e-e56567018383.png?ver=1595159408000" width="37" height="37" alt="LinkedIn" border="0" />
-                      </a>
-                    </td>
+                    <td></td>
                   </tr>
                 </table>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
+              </div>
 
-    </table>
-    
-    </td>
-  </tr>
-</table>
+              <br><br>
+
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="background: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1745411744/prime_4_jkra8j.jpg') no-repeat center center / cover;;"></td>
+                  <td class="bg-dusk text-light" width="50%" style="padding: 30px;">
+                    <h2 style="line-height: 1;">Complimentary Executive Group Coaching Sessions</h2>
+                    <br>
+                    <p>Our monthly group coaching sessions are designed for you you to stay ahead of the curve and align your leadership style with your personality, values and development goals. Join a small group of senior executives to discuss experiences, perspectives, insights and receive targeted guidance to facilitate your journey to success.</p>
+                  </td>
+                </tr>
+              </table>
+
+              <br><br>
+
+              <div class="p-20" style="background: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1745415428/prime_5_llkrla.jpg') no-repeat center center / cover;">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="50%" style="padding: 30px; background: rgba(248, 248, 248, 0.9);">
+                      <h2 style="line-height: 1;">Executive CV Consultation</h2>
+                      <br>
+                      <p>Let your CV speak for you. Work with our expert coaches and receive personalised feedback on effectively showcasing your achievements.</p>
+                    </td>
+                    <td></td>
+                  </tr>
+                </table>
+              </div>
+
+              <br><br>
+
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="background: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1745411744/prime_6_lckn4x.jpg') no-repeat center center / cover;"></td>
+                  <td class="bg-dawn" width="50%" style="padding: 30px;">
+                    <h2 style="line-height: 1;">Priority Spotlight Feature</h2>
+                    <br>
+                    <p>As a Prime member, you’ll receive priority consideration for our TBrA Spotlight, a community newsletter feature that highlights your professional journey, achievements, and aspirations. </p>
+                    <p>It's a powerful way to share your story, build your visibility, and inspire others in the network.</p>
+                  </td>
+                </tr>
+              </table>
+
+              <br>
+
+              <div class="text-center">
+                <a href="https://tbraprime.paperform.co/?utm_source=Prime%20newsletter%20April&utm_medium=email&utm_campaign=promo" class="primary-btn bg-tender text-white">Learn more</a>
+              </div>
+
+            </td>
+          </tr>
+
+
+
+          <tr>
+            <td class="text-center" style="padding: 0px 160px 40px;">
+              <div class="hr"></div>
+              <h2 class="libreb">What members are saying</h2>
+              <br>
+              <p>My boardroom journey truly started with TheBoardroom Africa. I not only gained skills and strategies but also the courage to pursue my board goals. More specifically, I met phenomenal women in my cohort that now serve as industry contacts, cheerleaders, and accountability partners. TheBoardroom Africa demystified the boardroom journey and established the perfect enabling environment for me.</p>
+              <br>
+              <p class="text-center"><b>- Yvonne Ofosu Appiah</b></p>
+
+              <div class="hr"></div>
+            </td>
+          </tr>
+
+
+
+          <tr class="footer" bgcolor="#556d70">
+            <td class="newpadding">
+
+              <table width="100%" cellspacing="0" cellpadding="0">
+                <tr class="text-white">
+                  <td>
+                    <h2 class="uppercase">connect with us</h2>
+                  </td>
+                  <td class="text-right">
+                    <a href="https://www.linkedin.com/company/theboardroom-africa"><img src="https://files.constantcontact.com/bdaf4e1c701/5fa121da-baca-4710-a35e-e56567018383.png?ver=1595159408000" /></a>
+                    <a href="https://theboardroomafrica.com"><img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1741347289/web_gs7vmz.png" /></a>
+                    <a href="mailto:execed@theboardroomafrica.com"><img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1741347288/email_iotvjq.png" /></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
 </body>
 </html>

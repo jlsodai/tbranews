@@ -215,81 +215,89 @@
 
     .inline-block { display: inline-block; }
 
+
+    .border-collapse { border-collapse: collapse; }
+
+    .tbra-members { color: #F8F8F8; }
+    .tbra-members a { color: #fff; text-decoration: underline; }
+    .tbra-members p { margin-top: 10px; font-size: 13px; }
+
+    .tbra-members img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      margin-top: 20px;
+    }
+
+    .whos-coming { color: #DADEDA; border-spacing: 3px 0 !important;}
+    .whos-coming tr { vertical-align: top; }
+    .whos-coming p {
+      font-size: 13px;
+    }
+
+    .whos-coming td {
+      padding: 14px;
+    }
+    .whos-coming h2 {
+      font-size: 17px;
+      margin-bottom: 14px;
+    }
+
+    table { width: 100%; }
+    .underline { color: unset; text-decoration: underline !important; }
+
+    .itinerary td {
+      background-color: #f8f8f8;
+      width: 33.333%;
+    }
+
+    .itinerary h2 {
+      line-height: 1;
+      color: #6E8498;
+      margin-bottom: 10px;
+    }
+
+    td.va-bottom { vertical-align: bottom; }
+    td.va-top { vertical-align: top; }
+    td.va-center { vertical-align: center; }
+
+    .spaced p + p { margin-top: 20px; }
+    .spaced p + ul { margin-top: 20px; }
+    .spaced ul + p { margin-top: 30px; }
+    .nospaced p + p { margin-top: 0px; }
+
+    .unset-case { text-transform: unset; }
+
+    .titleUnderline { text-decoration: underline; text-decoration-color: #CDAD7D; text-decoration-thickness: 8px; }
+
+    .list-cols { column-count: 2; column-gap: 40px; padding-left: 16px; }
+    .list-cols li { margin-bottom: 20px; }
+
+    h2 {
+      font-size: 26px;
+    }
+
+    ol li, ul li {
+      margin-bottom: 10px;
+    }
+
+    b, strong { font-weight: bold; }
+
+    .footer {padding: 20px 30px 15px 30px;}
+    .footercopy {font-size: 14px; color: #ffffff;}
+    .footercopy a {color: #ffffff; text-decoration: underline;}
+    .footer img { width: 35px; }
+    .footer a { display: inline-block; margin: 0 5px; }
+
     hr {
-/*    border: 1px solid #000;*/
-margin: 30px auto;
-}
+     border: none;
+     height: 1px;
+     background: #000;
+     color: #000;
+     margin: 40px auto 30px;
+   }
 
-.border-collapse { border-collapse: collapse; }
-
-.tbra-members { color: #F8F8F8; }
-.tbra-members a { color: #fff; text-decoration: underline; }
-.tbra-members p { margin-top: 10px; font-size: 13px; }
-
-.tbra-members img {
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-  margin-top: 20px;
-}
-
-.whos-coming { color: #DADEDA; border-spacing: 3px 0 !important;}
-.whos-coming tr { vertical-align: top; }
-.whos-coming p {
-  font-size: 13px;
-}
-
-.whos-coming td {
-  padding: 14px;
-}
-.whos-coming h2 {
-  font-size: 17px;
-  margin-bottom: 14px;
-}
-
-table { width: 100%; }
-.underline { color: unset; text-decoration: underline !important; }
-
-.itinerary td {
-  background-color: #f8f8f8;
-  width: 33.333%;
-}
-
-.itinerary h2 {
-  line-height: 1;
-  color: #6E8498;
-  margin-bottom: 10px;
-}
-
-td.va-bottom { vertical-align: bottom; }
-td.va-top { vertical-align: top; }
-td.va-center { vertical-align: center; }
-
-.spaced p + p { margin-top: 20px; }
-
-.unset-case { text-transform: unset; }
-
-.titleUnderline { text-decoration: underline; text-decoration-color: #CDAD7D; text-decoration-thickness: 8px; }
-
-.list-cols { column-count: 2; column-gap: 40px; padding-left: 16px; }
-.list-cols li { margin-bottom: 20px; }
-
-h2 {
-  font-size: 26px;
-}
-
-ol li, ul li {
-  margin-bottom: 10px;
-}
-
-b { font-weight: bold; }
-
-.footer {padding: 20px 30px 15px 30px;}
-.footercopy {font-size: 14px; color: #ffffff;}
-.footercopy a {color: #ffffff; text-decoration: underline;}
-.footer img { width: 35px; }
-.footer a { display: inline-block; margin: 0 5px; }
-</style>
+ </style>
 </head>
 
 <body bgcolor="#f8f8f8">
@@ -306,7 +314,7 @@ b { font-weight: bold; }
       <td>
         <table bgcolor="#fff" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
 
-          <tr bgcolor="#fff">
+          <tr bgcolor="#fff" class="spaced">
             <td class="newpadding">
               <table width="100%">
                 <tr valign="middle">
@@ -321,8 +329,9 @@ b { font-weight: bold; }
 
               <br><br>
 
-              <h3 class="libreb fs-40" style="font-weight: bold;">Session Reminder: <br>The Business Implications of <br>ESG Issues<br></h3>
-              <table width="100%">
+              <h3 class="libreb fs-40" style="font-weight: bold; line-height: 1;"><p>Session Recap: Leadership, Value Creation, Strategy &amp; The Board</p></h3>
+
+              <table width="100%" style="margin-top: 10px;">
                 <tr>
                   <td>
                     <p>2025 - Session 1</p>
@@ -333,127 +342,84 @@ b { font-weight: bold; }
                 </tr>
               </table>
 
-              <hr style="margin-bottom: 10px;">
+              <hr><div class=''><h2 class=''> Session Takeaways </h2><br/>
+                <table width='100%'>
+                  <tr>
+                    <td width='50%' style='padding:0;'>
+                      <p>Thank you for your active participation during our during the sessions with Rosalind Kainyah.</p>
+                      <p>In Leadership, Culture &amp; Value creation sessions, we discussed leadership in sustainability and how to create a sustainability culture. We then delved into what factors contribute to value creation and value protection. </p>
+                      <p>In ESG Strategy and the Role of the Board, we examined the four foundations of a sustainability plan and the key elements of implementing an Environment and Social Management System (ESMS) then discussed the board responsibilities in driving ESG.</p>
+                      <p>Finally, we examined the ESG challenges in the Asempa case study and explored the key questions leaders need to ask themselves when determining their ESG Governance Model.</p>
+                      <p><strong><em>Key Takeaways:</em></strong></p>
+                      <ul>
+                        <li>Leadership Beyond the Balance Sheet</li>
+                        <li>The Both/And Mindset (Marya Besharov)</li>
+                        <li>Stakeholder Mapping &amp; Prioritisation</li>
+                        <li>Double Materiality</li>
+                        <li>Sustainability Maturity Ladder</li>
+                      </ul>
+                    </td>
+                    <td width='10%'></td>
+                    <td width='40%' style='background: url(https://res.cloudinary.com/dzbmmcq0n/image/upload/v1726236738/Untitled_30_x_20_cm_phui0w.png) no-repeat center top / contain;'>
+                    </td>
+                  </tr>
+                </table>
+              </div>              <hr><div class=''><h2 class=''> Session Materials </h2><br/><p>The session slides for the Leadership, Culture and Value Creation modules can be accessed in the “<strong>Session Slides - ESG Leadership, Culture and Value Creation</strong>” module on <strong>TExEd.</strong></p>
 
-              <br>
-              <h2>Live Session Details</h2>
+                <div class='text-center'><a href='https://texed.theboardroomafrica.com/courses/take/copy-of-esg-certificate/multimedia/64692914-session-slides-esg-leadership-culture-and-value-creation' class='primary-btn'><b><b> SESSION SLIDES </b></b></a></div>
 
+                <br>
 
+                <p>The session slides for the ESG Stategy, the Role of the Board and Governance Model modules can be acces in the <b>“Session Slides - ESG Stategy, the Role of the Board and Governance Model”</b> module on <b>TExEd</b>.</p>
 
-              <br>
+                <div class='text-center'><a href='https://texed.theboardroomafrica.com/courses/take/copy-of-esg-certificate/multimedia/64693111-session-slides-esg-strategy-the-role-of-the-board-and-governance-model' class='primary-btn'><b><b> SESSION SLIDES </b></b></a></div>
 
-              <table width="100%">
-                <tr>
-                  <td width="50%" style="padding:0;">
-                    <p>The live session of the ESG certificate programme on <b>The Business Implications of ESG Issues</b>, with Janhavi Dadarkar, will be on <b>Tuesday, 29 April</b>. The sessions will run from <b>9 AM - 12:30 PM GMT</b>.</p>
-                    <br>
-                    <p>The session will explore real-life experience of leaders and companies who have successfully integrated ESG strategies into their corporate framework.</p>
-                    <br>
-                    <p>By the end of the session, you will understand the dynamics, norms and values of the sustainability ecosystem and gain insight into how businesses can navigate the complexities associated with them.</p>
-                  </td>
-                  <td width="10%"></td>
-                  <td width="40%" style="background: url('https://res.cloudinary.com/dooy9anqd/image/upload/v1724921505/Janhavi-Dardarkar-1024x1024_gtvxhz.jpg') no-repeat center center / contain;">
-                    <!-- <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/v1718960565/ESGWindow_xesonx.jpg" alt> -->
-                  </td>
-                </tr>
-              </table>
+                <br><br>
 
-              <br>
+                <p>Here are the addtional resources referenced during the sessions:</p>
 
+                <div class='text-center'><a href='https://drive.google.com/file/d/1aakK8ooAoTnho04DwDlnr5gR7zSGw1xS/view?usp=sharing' class='primary-btn'><b><b> SESSION RESOURCES </b></b></a></div>
+                
+              </div>              <hr><div class=''><h2 class=''> Faculty Evaluation </h2><br/><p>We greatly value your feedback and would appreciate it if you could take a few minutes to complete a brief feedback form regarding Rosalind’s sessions and her delivery.</p>
+                <p>Your reflections on the facilitation of the sessions are incredibly important to us. They not only help us understand what worked well, but also highlight areas where we can improve to ensure an even more engaging and impactful learning experience in future programmes.</p>
+                <div class='text-center'><a href='https://esg25s1rosalindkainyah.paperform.co' class='primary-btn'><b><b> Faculty Evaluation </b></b></a></div>
+              </div>              <hr><div class='text-center'><h2 class='fs-34'> Networking <img width='50px' style='display: inline-block; margin-left: 10px' src='https://res.cloudinary.com/dhhw72iwq/image/upload/v1721125791/SpeechBubble_ikrc3k.png' alt=''></h2><br/><p>We encourage you to keep the conversation going through the <strong>Community Forum</strong> and Whatsapp Group, which are the perfect mediums for sharing information, fostering connections, and offering and receiving support.</p>
+                <div class='text-center'><a href='https://texed.theboardroomafrica.com/communities/Q29tbXVuaXR5LTIzNDExNQ==' class='primary-btn'><b><b> Community forum </b></b></a></div>
+              </div>                                          
+              <hr>
 
-              <hr style="margin-top: 10px;">
-
-              <h2>Session Preparation</h2>
-              <br>
-
-              <p>Please ensure that you have read the two case studies in preparation for the session. Any additional resources discussed as well as the module slides will be released and shared with you after the sessions.</p>
-
-              <!-- <div class="text-center"><a href="https://texed.theboardroomafrica.com/courses/take/copy-of-esg-certificate/multimedia/62841018-esg-leadership-culture-value-creation" class="primary-btn"><b><b>Login to TExEd</b></b></a></div> -->
-
-              <!-- <br> -->
-
-              <hr style="margin: 30px 0 20px;">
-
-              <h2>Live Session</h2>
-
-              <br>
-
-              <p>The links to join the sessions are as follows:</p>
-
-              <br>
-              <ul>
-                <li><a href="https://us02web.zoom.us/j/84090271078?pwd=k2d6aF40Enyj1CxhpVORH0GzsFUIgJ.1">The Business Implications of ESG Issues</a></li>
-              </ul>
-
-
-              <br>
-
-              <p>The <b>Business Implications of ESG Issues</b> will kick off promptly at <b>9 PM GMT</b> on <b>Tuesday, 29 April</b>. To avoid delay, please join the session <b>10 minutes</b> before the scheduled start.</p>
-
-              <br>
-
-
-              <hr style="margin: 30px 0 20px;">
-
-              <h2 class="fs-34 text-center">
-                Networking
-                <img width="50px" style="display: inline-block;" src="https://res.cloudinary.com/dhhw72iwq/image/upload/v1721125791/SpeechBubble_ikrc3k.png" alt>
-              </h2>
-
-              <br>
-
-              <p class="text-center" style="margin: 0 60px;">We encourage you to keep the conversation going on the Community Forum on TExEd and on the Whatsapp Group, which are the perfect mediums for sharing information, fostering connections, and offering and receiving support.</p>
-
-              <div class="text-center"><a href="https://texed.theboardroomafrica.com/communities/Q29tbXVuaXR5LTIzNDExNQ==/spaces/Q29tbXVuaXR5U3BhY2UtMjg4NTcz/" class="primary-btn"><b><b>Community Forum</b></b></a></div>
-
-
-
-
-
-              <div class="spaced">
-
-              </div>
-
-              <br>
-
-
-              <hr style="margin: 30px 0 20px;">
               <p>Thank you, and as always, please do not hesitate to contact me if you have any questions.</p>
+              <p>Kind regards,</p>                <br>
+              <div class="nospaced"><p><strong>Elle Khupe</strong></p>
+                <p><strong>Manager: Executive Education</strong></p>
+                <p><strong>+263 71 995 2614</strong></p>
+                <p><strong><a href="https://theboardroomafrica.com/">TheBoardroom Africa</a></strong></p></div>
+              </td>
+            </tr>
 
-              <br>
-              <p><b><b>
-                Kind regards, <br />
-                Elle Khupe <br />
-                Manager: Executive Education <br />
-                +263 71 995 2614 <br />
-                <a href="https://theboardroomafrica.com/" class="text-dusk underline">TheBoardroom Africa</a>   <br />
-              </b></b></p>
-            </td>
-          </tr>
+            <tr class="footer" bgcolor="#556d70">
+              <td class="newpadding">
 
-          <tr class="footer" bgcolor="#556d70">
-            <td class="newpadding">
-
-              <table width="100%" cellspacing="0" cellpadding="0">
-                <tr class="text-white">
-                  <td>
-                    <h2 class="uppercase">connect with us</h2>
-                  </td>
-                  <td class="text-right">
-                    <a href="https://www.linkedin.com/company/theboardroom-africa"><img src="https://files.constantcontact.com/bdaf4e1c701/5fa121da-baca-4710-a35e-e56567018383.png?ver=1595159408000" /></a>
-                    <a href="https://theboardroomafrica.com"><img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1741347289/web_gs7vmz.png" /></a>
-                    <a href="mailto:execed@theboardroomafrica.com"><img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1741347288/email_iotvjq.png" /></a>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
+                <table width="100%" cellspacing="0" cellpadding="0">
+                  <tr class="text-white">
+                    <td>
+                      <h2 class="uppercase">connect with us</h2>
+                    </td>
+                    <td class="text-right">
+                      <a href="https://www.linkedin.com/company/theboardroom-africa"><img src="https://files.constantcontact.com/bdaf4e1c701/5fa121da-baca-4710-a35e-e56567018383.png?ver=1595159408000" /></a>
+                      <a href="https://theboardroomafrica.com"><img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1741347289/web_gs7vmz.png" /></a>
+                      <a href="mailto:execed@theboardroomafrica.com"><img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1741347288/email_iotvjq.png" /></a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
 
 
-        </table>
+          </table>
 
-      </td>
-    </tr>
-  </table>
-</body>
-</html>
+        </td>
+      </tr>
+    </table>
+  </body>
+  </html>

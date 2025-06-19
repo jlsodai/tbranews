@@ -1,0 +1,660 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style type="text/css">.html-block--top {
+        padding: 0 !important; }
+    .html-block--top .homepage-container {
+        padding: 0 !important;
+        max-width: none; }
+
+    .wlsn-hivebrite * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        font-family: "Halyard-Display", Arial, sans-serif;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased; }
+
+    .wlsn-hivebrite figure {
+        display: block;
+        padding: 0;
+        margin: 0; }
+
+    .wlsn-hivebrite img {
+        display: block; }
+
+    .wlsn-hivebrite p {
+        margin: 0; }
+
+    .wlsn-hivebrite .slick-slider {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+        -ms-touch-action: pan-y;
+        touch-action: pan-y;
+        -webkit-tap-highlight-color: transparent; }
+
+    .wlsn-hivebrite .slick-list {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        padding: 0; }
+
+    .wlsn-hivebrite .slick-list:focus {
+        outline: 0; }
+
+    .wlsn-hivebrite .slick-list.dragging {
+        cursor: pointer;
+        cursor: hand; }
+
+    .wlsn-hivebrite .slick-slider .slick-list, .wlsn-hivebrite .slick-slider .slick-track {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0); }
+
+    .wlsn-hivebrite .slick-track {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+
+    .wlsn-hivebrite .slick-track:after, .wlsn-hivebrite .slick-track:before {
+        display: table;
+        content: ''; }
+
+    .wlsn-hivebrite .slick-track:after {
+        clear: both; }
+
+    .wlsn-hivebrite .slick-loading .slick-track {
+        visibility: hidden; }
+
+    .wlsn-hivebrite .slick-slide {
+        display: none;
+        float: left;
+        height: 100%;
+        min-height: 1px; }
+
+    .wlsn-hivebrite [dir=rtl] .slick-slide {
+        float: right; }
+
+    .wlsn-hivebrite .slick-slide img {
+        display: block; }
+
+    .wlsn-hivebrite .slick-slide.slick-loading img {
+        display: none; }
+
+    .wlsn-hivebrite .slick-slide.dragging img {
+        pointer-events: none; }
+
+    .wlsn-hivebrite .slick-initialized .slick-slide {
+        display: block; }
+
+    .wlsn-hivebrite .slick-loading .slick-slide {
+        visibility: hidden; }
+
+    .wlsn-hivebrite .slick-vertical .slick-slide {
+        display: block;
+        height: auto;
+        border: 1px solid transparent; }
+
+    .wlsn-hivebrite .slick-arrow.slick-hidden {
+        display: none; }
+
+    .wlsn-hivebrite .wlsn-wrapper {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1495px;
+        padding-right: 27.5px;
+        padding-left: 27.5px; }
+
+    .wlsn-hivebrite .wlsn-become {
+        padding: 50px 0; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-become {
+            padding: 80px 0; } }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-become__body {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            max-width: 800px; } }
+    .wlsn-hivebrite .wlsn-become__title {
+        font-size: 42px;
+        line-height: 50px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #202945; }
+    .wlsn-hivebrite .wlsn-become__description {
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+        color: #202945; }
+
+    .wlsn-hivebrite .wlsn-criteria {
+        padding-bottom: 65px; }
+    .wlsn-hivebrite .wlsn-criteria__body {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px; }
+    @media (max-width: 1023px) {
+        .wlsn-hivebrite .wlsn-criteria__body {
+            padding: 0 27.5px; } }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-criteria__body {
+            display: flex; } }
+    .wlsn-hivebrite .wlsn-criteria__figure {
+        margin-bottom: 35px; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-criteria__figure {
+            width: 50%;
+            margin-right: 5%;
+            margin-bottom: 0; } }
+    .wlsn-hivebrite .wlsn-criteria__figure img {
+        width: 100%; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-criteria__content {
+            width: 45%;
+            padding-right: 15%;
+            padding-top: 40px; } }
+    .wlsn-hivebrite .wlsn-criteria__title {
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 700;
+        color: #202945;
+        margin-bottom: 35px; }
+    .wlsn-hivebrite .wlsn-criteria__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 35px; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-criteria__list {
+            margin-bottom: 50px; } }
+    .wlsn-hivebrite .wlsn-criteria__item {
+        position: relative;
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+        color: #4A4F56;
+        padding-left: 30px;
+        margin-bottom: 25px; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-criteria__item {
+            line-height: 24px; } }
+    .wlsn-hivebrite .wlsn-criteria__item:last-of-type {
+        margin-bottom: 0; }
+    .wlsn-hivebrite .wlsn-criteria__item img {
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 15px; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-criteria__item img {
+            width: 18px; } }
+    .wlsn-hivebrite .wlsn-criteria__btn {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1px;
+        outline: none;
+        min-width: 235px;
+        padding: 14.5px 10px;
+        cursor: pointer;
+        color: #fff !important;
+        background-color: #EA5A50;
+        border: 2px solid #EA5A50; }
+
+    .wlsn-hivebrite .wlsn-app {
+        overflow: hidden;
+        background-color: #F0F0F0;
+        padding-top: 50px;
+        margin-bottom: -45px; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-app {
+            padding-top: 25px;
+            margin-bottom: 0; } }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-app__body {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center; } }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-app__phone {
+            width: 50%;
+            margin-right: 5%; } }
+    .wlsn-hivebrite .wlsn-app__phone img {
+        width: 300px;
+        margin: 0 auto; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-app__phone img {
+            width: 396px; } }
+    .wlsn-hivebrite .wlsn-app__download {
+        padding: 0;
+        margin: 0; }
+    @media (max-width: 767px) {
+        .wlsn-hivebrite .wlsn-app__download {
+            width: 100%; } }
+    @media (max-width: 1023px) {
+        .wlsn-hivebrite .wlsn-app__download {
+            margin-bottom: 15px; } }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-app__download {
+            width: 45%; } }
+    .wlsn-hivebrite .wlsn-app__download-images {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-app__download-images {
+            justify-content: flex-start; } }
+    .wlsn-hivebrite .wlsn-app__download-images a {
+        margin-right: 25px; }
+    .wlsn-hivebrite .wlsn-app__download-images a:last-of-type {
+        margin-right: 0; }
+    .wlsn-hivebrite .wlsn-app__download-images img {
+        width: 127px; }
+    .wlsn-hivebrite .wlsn-app__title {
+        padding: 0;
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 700;
+        color: #202945;
+        margin-bottom: 30px;
+        text-align: center; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-app__title {
+            text-align: left; } }
+
+    .wlsn-hivebrite .wlsn-expect {
+        position: relative;
+        background-color: #fff;
+        padding-top: 60px; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-expect {
+            padding-top: 90px; } }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-expect__body {
+            padding: 0 12%; } }
+    .wlsn-hivebrite .wlsn-expect__title {
+        font-size: 42px;
+        line-height: 50px;
+        font-weight: 700;
+        text-align: center;
+        color: #202945;
+        margin-bottom: 50px; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-expect__title {
+            margin-bottom: 90px; } }
+    .wlsn-hivebrite .wlsn-expect__list {
+        overflow: hidden; }
+    .wlsn-hivebrite .wlsn-expect-item {
+        text-align: center;
+        margin-bottom: 60px; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-expect-item {
+            float: left;
+            width: 42.5%;
+            margin-right: 15%;
+            margin-bottom: 15%;
+            margin-bottom: 80px; }
+        .wlsn-hivebrite .wlsn-expect-item:nth-child(2n) {
+            margin-right: 0; }
+        .wlsn-hivebrite .wlsn-expect-item:nth-child(2n + 1) {
+            clear: both; } }
+    .wlsn-hivebrite .wlsn-expect-item__media {
+        margin-bottom: 20px; }
+    .wlsn-hivebrite .wlsn-expect-item__media img {
+        margin: 0 auto;
+        max-width: 90px;
+        max-height: 90px; }
+    .wlsn-hivebrite .wlsn-expect-item__title {
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 700;
+        color: #202945;
+        margin-bottom: 20px; }
+    .wlsn-hivebrite .wlsn-expect-item__description {
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+        color: #4A4F56; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-expect-item__description {
+            line-height: 24px; } }
+
+    .wlsn-hivebrite .wlsn-testemonials {
+        padding: 50px 0;
+        background-color: #515B7B; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-testemonials {
+            padding: 80px 0; } }
+    .wlsn-hivebrite .wlsn-testemonials__title {
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 700;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 50px; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-testemonials__title {
+            font-size: 42px;
+            line-height: 64px; } }
+    .wlsn-hivebrite .wlsn-testemonials__list {
+        padding: 0 2%; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-testemonials__list {
+            display: flex; } }
+    .wlsn-hivebrite .wlsn-testemonials__list .slick-track {
+        display: flex !important; }
+    .wlsn-hivebrite .wlsn-testemonials__list .slick-slide {
+        height: inherit !important; }
+    .wlsn-hivebrite .wlsn-testemonials__list .slick-slide > div {
+        height: 100%; }
+    .wlsn-hivebrite .wlsn-testemonials__list .slider-arrow {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        position: absolute !important; }
+    .wlsn-hivebrite .wlsn-testemonials__list .slider-arrow.prev {
+        display: inline-block;
+        position: relative;
+        height: 19.5px;
+        width: 19.5px;
+        cursor: pointer;
+        left: -1.1rem; }
+    .wlsn-hivebrite .wlsn-testemonials__list .slider-arrow.prev:after {
+        content: '';
+        direction: ltr;
+        width: 13px;
+        height: 13px;
+        border-right: 3px solid #C7CFE5;
+        border-bottom: 3px solid #C7CFE5;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+        left: 35%; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-testemonials__list .slider-arrow.prev {
+            left: 0; } }
+    .wlsn-hivebrite .wlsn-testemonials__list .slider-arrow.next {
+        display: inline-block;
+        position: relative;
+        height: 19.5px;
+        width: 19.5px;
+        cursor: pointer;
+        right: -1.1rem; }
+    .wlsn-hivebrite .wlsn-testemonials__list .slider-arrow.next:after {
+        content: '';
+        direction: ltr;
+        width: 13px;
+        height: 13px;
+        border-right: 3px solid #C7CFE5;
+        border-bottom: 3px solid #C7CFE5;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        right: 35%; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-testemonials__list .slider-arrow.next {
+            right: 0; } }
+
+    .wlsn-hivebrite .wlsn-testemonial {
+        display: flex !important;
+        flex-direction: column;
+        margin: 0 auto;
+        min-height: 195px;
+        height: 100%; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-testemonial {
+            padding: 0 3.5%;
+            max-width: 400px; } }
+    .wlsn-hivebrite .wlsn-testemonial__description {
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 400;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 30px; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-testemonial__description {
+            line-height: 24px;
+            text-align: left; } }
+    .wlsn-hivebrite .wlsn-testemonial__media {
+        width: 45px;
+        margin-right: 10px; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-testemonial__media {
+            margin-right: 30px; } }
+    .wlsn-hivebrite .wlsn-testemonial__media img {
+        display: block;
+        width: 100%;
+        border-radius: 50%; }
+    .wlsn-hivebrite .wlsn-testemonial__footer {
+        display: flex;
+        align-items: center;
+        /*margin-top: auto;*/ }
+    .wlsn-hivebrite .wlsn-testemonial__author {
+        flex: 1;
+        font-size: 13px;
+        line-height: 21px;
+        color: #C7CFE6; }
+    @media (min-width: 1024px) {
+        .wlsn-hivebrite .wlsn-testemonial__author {
+            font-size: 14px; } }
+    .wlsn-hivebrite .wlsn-testemonial__author span {
+        font-weight: 700; }
+</style>
+<div class="wlsn-hivebrite">
+<section class="wlsn-become">
+<div class="wlsn-wrapper">
+<div class="wlsn-become__body">
+<h2 class="wlsn-become__title">Your Membership Experience</h2>
+
+<p class="wlsn-become__description">As the business environment rapidly evolves, the expectations placed on senior leaders are intensifying.</p>
+
+<p class="wlsn-become__description">&nbsp;</p>
+
+<p class="wlsn-become__description">TheBoardroom Africa delivers tailored executive development, engaging thought leadership events, and a strong network of influential connections, all designed to elevate your leadership impact and position you as a regional and global leader.</p>
+</div>
+</div>
+</section>
+
+<!-- <section class="wlsn-criteria">
+<div class="wlsn-criteria__body">
+<figure class="wlsn-criteria__figure"><img alt="TBRA Membership Criteria" height="561" src="https://d1c2gz5q23tkk0.cloudfront.net/assets/uploads/2960603/asset/membership-criteria.png?1594996665" width="720" /></figure>
+
+<div class="wlsn-criteria__content">
+<h3 class="wlsn-criteria__title">Membership Criteria:</h3>
+
+<ul class="wlsn-criteria__list">
+	<li class="wlsn-criteria__item"><img alt="TBRA Membership Criteria" height="15" src="https://d1c2gz5q23tkk0.cloudfront.net/assets/uploads/2953511/asset/icon-check.png?1593463824" width="22" /> CEOs, VPs, Partners, or Founders (or equivalent) of companies with significant revenue/traction, or</li>
+	<li class="wlsn-criteria__item"><img alt="TBRA Membership Criteria" height="15" src="https://d1c2gz5q23tkk0.cloudfront.net/assets/uploads/2953511/asset/icon-check.png?1593463824" width="22" /> Directors at blue-chip (or higher) companies</li>
+	<li class="wlsn-criteria__item"><img alt="TBRA Membership Criteria" src="https://d1c2gz5q23tkk0.cloudfront.net/assets/uploads/2953511/asset/icon-check.png?1593463824" /> Influencers, thought leaders, or domain experts in specific industries</li>
+	<li class="wlsn-criteria__item"><img alt="TBRA Membership Criteria" src="https://d1c2gz5q23tkk0.cloudfront.net/assets/uploads/2953511/asset/icon-check.png?1593463824" /> Minimum 15 years working experience</li>
+	<li class="wlsn-criteria__item"><img alt="TBRA Membership Criteria" src="https://d1c2gz5q23tkk0.cloudfront.net/assets/uploads/2953511/asset/icon-check.png?1593463824" /> Prior board experience is great, but not a requirement</li>
+</ul>
+<a class="wlsn-criteria__btn" href="https://theboardroomafrica.com/registration-form/" target="_blank">Register now</a></div>
+</div>
+</section> -->
+
+<!-- <section class="wlsn-app">
+<div class="wlsn-wrapper">
+<div class="wlsn-app__body">
+<figure class="wlsn-app__download">
+<figcaption class="wlsn-app__title">Download the App</figcaption>
+
+<div class="wlsn-app__download-images"><a href="https://apps.apple.com/us/app/id1520014847" target="_blank"><img alt="Tbra Download the ios app" src="https://d1c2gz5q23tkk0.cloudfront.net/assets/uploads/2953526/asset/tbra-app-ios.png?1593464752" /> </a> <a href="https://play.google.com/store/apps/details?id=hivebrite.theboardroom_africa.app&amp;hl=en_ZA" target="_blank"> <img alt="Tbra Download the android app" src="https://d1c2gz5q23tkk0.cloudfront.net/assets/uploads/2960618/asset/tbra-app-android.png?1594998422" /> </a></div>
+</figure>
+
+<figure class="wlsn-app__phone"><img alt="Tbra download the app" height="294" src="https://d1c2gz5q23tkk0.cloudfront.net/assets/uploads/2953525/asset/tbra-app.png?1593464741" width="396" /></figure>
+</div>
+</div>
+</section> -->
+
+<section class="wlsn-expect" style="background: #f8f8f8;">
+<div class="wlsn-wrapper">
+<div class="wlsn-expect__body">
+<h2 class="wlsn-expect__title">What can you expect</h2>
+
+<section class="wlsn-expect__list">
+<article class="wlsn-expect-item">
+<figure class="wlsn-expect-item__media"><img alt="TBRA community" src="https://d1c2gz5q23tkk0.cloudfront.net/assets/uploads/2960606/asset/theboardroomafrica-lp-wollson-icon-outline-02_1.png?1594996813" /></figure>
+
+<h3 class="wlsn-expect-item__title">Community</h3>
+
+<p class="wlsn-expect-item__description">Join a vibrant pan-African network of senior leaders and decision-makers committed to transformational leadership and collective advancement.</p>
+</article>
+
+<article class="wlsn-expect-item">
+<figure class="wlsn-expect-item__media"><img alt="TBRA access" src="https://d1c2gz5q23tkk0.cloudfront.net/assets/uploads/2960605/asset/theboardroomafrica-lp-wollson-icon-outline-01_1.png?1594996698" /></figure>
+
+<h3 class="wlsn-expect-item__title">Opportunity</h3>
+
+<p class="wlsn-expect-item__description">Gain access to exclusive executive and board-level opportunities, including CEO, C-suite, Investment Committee, Advisory, and Non-Executive roles across sectors and geographies.</p>
+</article>
+
+<article class="wlsn-expect-item">
+<figure class="wlsn-expect-item__media"><img alt="TBRA development" src="https://d1c2gz5q23tkk0.cloudfront.net/assets/uploads/2960607/asset/theboardroomafrica-lp-wollson-icon-outline-03_1.png?1594996841" /></figure>
+
+<h3 class="wlsn-expect-item__title">Executive Education</h3>
+
+<p class="wlsn-expect-item__description">Access world-class executive learning—from strategic board governance to future-focused leadership programmes—designed to elevate your impact at every level.</p>
+</article>
+
+<article class="wlsn-expect-item">
+<figure class="wlsn-expect-item__media"><img alt="TBRA events" src="https://d1c2gz5q23tkk0.cloudfront.net/assets/uploads/2960609/asset/theboardroomafrica-lp-wollson-icon-outline-04_1.png?1594996865" /></figure>
+
+<h3 class="wlsn-expect-item__title">Professional Support</h3>
+
+<p class="wlsn-expect-item__description">Leverage personalised services, including personal branding, thought leadership, and executive group coaching, to amplify your leadership journey.</p>
+</article>
+</section>
+</div>
+</div>
+</section>
+
+<section class="wlsn-testemonials">
+<div class="wlsn-wrapper">
+<h2 class="wlsn-testemonials__title">What members say about us</h2>
+
+<section class="wlsn-testemonials__list">
+<article class="wlsn-testemonial">
+<p class="wlsn-testemonial__description">&ldquo;TBR Africa is doing a great job of ensuring women are fully equipped to step in board positions with confidence..<br />
+<br />
+Keep up the good work TBR Africa!&rdquo;</p>
+
+<div class="wlsn-testemonial__footer">
+<figure class="wlsn-testemonial__media"><img alt="Moji Animashaun Executive Director, St Cyril Cancer Treatment Foundation" src="https://d1c2gz5q23tkk0.cloudfront.net/assets/uploads/2955005/asset/TBRA-Testimonials-images-Mrs-Moji-Animashaun.png?1593717674" /></figure>
+
+<p class="wlsn-testemonial__author"><span>Moji Animashaun, </span> Executive Director, St Cyril Cancer Treatment Foundation</p>
+</div>
+</article>
+
+<article class="wlsn-testemonial">
+<p class="wlsn-testemonial__description">&ldquo;TBR Africa offerings are incredibly useful from both a professional and personal development perspective. Their webinars are first class with experts guiding valuable discussions on topics relevant to women leaders. Keep up the great work and thank you!&rdquo;</p>
+
+<div class="wlsn-testemonial__footer">
+<figure class="wlsn-testemonial__media"><img alt="Leila Akahloun, Advisor to Graça Machel" height="45" src="https://d1c2gz5q23tkk0.cloudfront.net/assets/uploads/2955007/asset/Leila-Akahloun.png?1593718060" width="45" /></figure>
+
+<p class="wlsn-testemonial__author"><span>Leila Akahloun, </span> Advisor to Gra&ccedil;a Machel</p>
+</div>
+</article>
+
+<article class="wlsn-testemonial">
+<p class="wlsn-testemonial__description">&ldquo;TBR - Great platform for women leaders who make a difference&rdquo;</p>
+
+<div class="wlsn-testemonial__footer">
+<figure class="wlsn-testemonial__media"><img alt="Nokwanda Madondo, Certified Director" height="45" src="https://d1c2gz5q23tkk0.cloudfront.net/assets/uploads/2955009/asset/Nokwanda-Madondo.png?1593718108" width="45" /></figure>
+
+<p class="wlsn-testemonial__author"><span>Nokwanda Madondo, </span> Certified Director</p>
+</div>
+</article>
+
+<article class="wlsn-testemonial">
+<p class="wlsn-testemonial__description">&ldquo;The Boardroom Africa provides a unique marketplace for professional engagement and opportunity. On this platform, I am able to connect with amazing African women as well as friends of Africa, showcasing the greatness of the Continent and transforming its businesses.&rdquo;</p>
+
+<div class="wlsn-testemonial__footer">
+<figure class="wlsn-testemonial__media"><img alt="Dolika Banda, CEO of African Risk Capacity Insurance Ltd" height="45" src="https://d1c2gz5q23tkk0.cloudfront.net/assets/uploads/2960614/asset/Dolika_Banda.png?1594997147" width="45" /></figure>
+
+<p class="wlsn-testemonial__author"><span>Dolika Banda, </span> CEO of African Risk Capacity Insurance Ltd</p>
+</div>
+</article>
+
+<article class="wlsn-testemonial">
+<p class="wlsn-testemonial__description">&ldquo;The TBR Africa network has been invaluable in helping me connect with other professional women in Africa facing and overcoming similar experiences and challenges. TBR Africa not only promotes our work and achievements but also introduces the community to new board opportunities. By advocating for gender balance in Africa&#39;s boardrooms, TBR Africa is improving effective decision making, driving enhanced corporate innovation and improving the odds of success for Africa to reach its full potential by leveraging all its people &ndash; male and female.&rdquo;</p>
+
+<div class="wlsn-testemonial__footer">
+<figure class="wlsn-testemonial__media"><img alt="Tokunboh Ishmael, Co-Founder and Managing Director of Alitheia Capital" height="45" src="https://d1c2gz5q23tkk0.cloudfront.net/assets/uploads/2960615/asset/Tokunboh_Ishmael.png?1594997165" width="45" /></figure>
+
+<p class="wlsn-testemonial__author"><span>Tokunboh Ishmael, </span> Co-Founder and Managing Director of Alitheia Capital</p>
+</div>
+</article>
+</section>
+</div>
+</section>
+</div>
+<script>
+
+  $( '.wlsn-testemonials__list' ).slick( {
+    dots: false,
+    arrows: true,
+    infinite: true,
+    slidesToShow: 3,
+    prevArrow: "<div class='slider-arrow prev'></div>",
+    nextArrow: "<div class='slider-arrow next'></div>",
+    responsive: [
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
+  } );
+
+</script>

@@ -1,46 +1,60 @@
 <?php
 
 $users = [];
+$company_id = 1102;
+$company_code = sprintf("%02d", $company_id % 100);
 
-foreach(User::where('company_id', 1097)->get() as $user) {
-	Serial::where('user_id', $user->id)->first()->update(['plan' => $user->plan->code]);
+foreach(User::where('company_id', $company_id)->withTrashed()->get() as $user) {
+
+	$serial = Serial::firstOrCreate([
+		'user_id' => $user->id,
+		'company_id' => $company_id
+	], [
+		'plan_id' => $user->plan_id,
+		'plan' => $user->plan->code,
+	]);
+
+	// Serial::where('user_id', $user->id)->first()->update(['plan' => $user->plan->code]);
 }
 
-foreach(User::where('company_id', 1097)->withTrashed()->get() as $user) {
+foreach(User::where('company_id', $company_id)->withTrashed()->get() as $user) {
 	$serial = Serial::where('user_id', $user->id)->first();
 
 	$user->update(['prim_num' => $serial->id, 'member_num' => '', 'pnum' => '']);
 
 	if ($user->isApproved) {
-		$num = '97' . $user->plan->code . sprintf("%04d", $user->prim_num) . "0" . $user->plan->code . "25";
+		$num = $company_code . $user->plan->code . sprintf("%04d", $user->prim_num) . "0" . $user->plan->code . "25";
 		$user->update(['member_num' => $num, 'pnum' => $num]);
 	}
 }
-	// $serial = Serial::firstOrCreate([
-	// 	'user_id' => $user->id,
-	// 	'company_id' => 1097
-	// ], [
-	// 	'plan_id' => $user->plan_id,
-	// 	'plan' => $user->plan->code,
-	// ]);
 
-foreach(Dependent::where('company_id', 1097)->get() as $d)
+// $serial = Serial::firstOrCreate([
+// 	'user_id' => $user->id,
+// 	'company_id' => $company_id
+// ], [
+// 	'plan_id' => $user->plan_id,
+// 	'plan' => $user->plan->code,
+// ]);
 
-foreach(User::where('company_id', 1097)->where('isApproved', 1)->get() as $user) {
-	foreach ($user->dependents as $dependent) {
-		if ($dependent->isApproved) {
-			$num = '97' . $dependent->plan->code . sprintf("%04d", $user->prim_num) . $dependent->dep_num . $dependent->plan->code . "25";
-			$dependent->update(['member_num' => $num, 'pnum' => $num]);
-		}
-	}
-}
+// foreach(Dependent::where('company_id', $company_id)->get() as $d)
+
+// foreach(User::where('company_id', $company_id)->where('isApproved', 1)->get() as $user) {
+// 	foreach ($user->dependents as $dependent) {
+// 		$dependent->update(['member_num' => '']);
+// 		if ($dependent->isApproved) {
+// 			$num = $company_code . $dependent->plan->code . sprintf("%04d", $user->prim_num) . $dependent->dep_num . $dependent->plan->code . "25";
+// 			$dependent->update(['member_num' => $num, 'pnum' => $num]);
+// 		}
+// 	}
+// }
 
 
 
-foreach(Dependent::where('company_id', 1097)->where('isApproved', 1)->get() as $dependent) {
+foreach(Dependent::where('company_id', $company_id)->where('isApproved', 1)->get() as $dependent) {
 	$user = $dependent->user;
+	$dependent->update(['member_num' => '']);
 	if ($user->isApproved) {
-		$num = '97' . $dependent->plan->code . sprintf("%04d", $user->prim_num) . $dependent->dep_num . $dependent->plan->code . "25";
+		$num = $company_code . $dependent->plan->code . sprintf("%04d", $user->prim_num) . $dependent->dep_num . $dependent->plan->code . "25";
 		$dependent->update(['member_num' => $num, 'pnum' => $num]);
 	}
 }
@@ -62,7 +76,7 @@ foreach ($phones as $phone) {
         $user->update(['prim_num' => ($user->serial->id ?? 0), 'member_num' => '', 'pnum' => '']);
     }
     if ($user->isApproved) {
-        $num = '97' . $user->plan->code . sprintf("%04d", $user->prim_num) . "0" . $user->plan->code . "25";
+        $num = $company_code . $user->plan->code . sprintf("%04d", $user->prim_num) . "0" . $user->plan->code . "25";
         $user->update(['member_num' => $num, 'pnum' => $num]);
     }
 }
@@ -73,7 +87,7 @@ foreach ($phones as $phone) {
 
     foreach (($user?->dependents ?? [])as $dependent) {
         if ($dependent->isApproved) {
-            $num = '97' . $dependent->plan->code . sprintf("%04d", $user->prim_num) . $dependent->dep_num . $dependent->plan->code . "25";
+            $num = $company_code . $dependent->plan->code . sprintf("%04d", $user->prim_num) . $dependent->dep_num . $dependent->plan->code . "25";
             $dependent->update(['member_num' => $num, 'pnum' => $num]);
         }
     }

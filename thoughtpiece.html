@@ -640,6 +640,39 @@ h3 { font-size: 35px; }
 h2 { color: #1c2630; }
 .thin-h2 h2 { font-weight: 400; font-size: 18px; }
 .lh12 { line-height: 1.2; }
+
+.stack-wrap {
+  padding-left: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .stack-column,
+  .stack-column td {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center !important;
+  }
+
+  .image-cell {
+    background-size: cover !important;
+    background-position: center center !important;
+    padding-top: 30px !important;
+  }
+
+  .newpadding, .stack-wrap {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .stack-wrap { padding-top: 20px; }
+
+  .stack-column img {
+    margin: 0 auto !important;
+    display: block !important;
+    width: 200px;
+  }
+}
 </style>
 </head>
 
@@ -658,45 +691,110 @@ h2 { color: #1c2630; }
         <table bgcolor="#f8f8f8" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
 
 
-          <tr class="bg-dark">
+          <!-- <tr class="bg-dark">
             <td class="text-white">
               <div style="background: url('https://res.cloudinary.com/dwdhm3rrc/image/upload/v1750757137/MarciaBg_r0rvnt.jpg') no-repeat center right / contain;">
                 <div style="padding-right: 30px; max-width: 500px;" class="newpadding">
-                    <br>
-                    <p class="fs-18 text-mustard thin">Featured, Insights</p>
-                    <p class="fs-24 lh12 mt-10">No! Being a Great Executive Does not Make You a Great Board Director.</p>
-                    <p class="thin mt-10">Why Formal Director Training Is Imperative for Every Board Member</p>
-                    <br>
+                  <br>
+                  <p class="fs-18 text-mustard thin">Featured, Insights</p>
+                  <p class="fs-24 lh12 mt-10">The Dangerous Myth of the ‘Independent Director’: Why Labels Aren't Enough</p>
+                  <br>
                 </div>
               </div>
             </td>
+          </tr> -->
+
+
+          <tr class="bg-dark">
+            <td class="text-white stack-wrap">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="stack-column">
+                    <br>
+                    <p class="fs-18 text-mustard thin">Featured, Insights</p>
+                    <p class="fs-24 lh12 mt-10">The Dangerous Myth of the ‘Independent Director’: Why Labels Aren't Enough</p>
+                    <br>
+                  </td>
+                  <td width="240px" class="stack-column">
+                    <img src="https://res.cloudinary.com/dwdhm3rrc/image/upload/v1751285615/thoughtImg_yzmbhb.jpg" width="240px" alt="">
+                  </td>
+                </tr>
+              </table>
+            </td>
           </tr>
 
 
           <tr bgcolor="#fff">
             <td class="newpadding spaced">
-              <p>In the boardroom, excellence is non-negotiable. Yet many directors arrive at the table armed only with the assumption that prior executive experience is enough. This belief is not only flawed—it is a liability.</p>
-              <p>The truth is that <b>the competencies required to lead as an executive are not the same as those needed to govern effectively as a non-executive director</b>. While seasoned executives may bring strategic vision and operational acumen, governance demands a fundamentally different toolkit—one that is best developed through formal director training.</p>
+              <p>Imagine a corporate boardroom.</p>
+              <p>The CEO gives an update. Heads nod. Minutes are noted. Everyone goes home. It’s civil, efficient… and potentially catastrophic.</p>
+              <p>Welcome to the myth of the independent director, a role meant to ensure accountability and good governance, but too often reduced to a decorative checkbox. When independence is treated as a formality rather than a function, it opens the door to groupthink, complacency, and preventable crises.</p>
+              <p>Let’s explore why true independence isn’t about who you are not, but about how you think, act, and lead.</p>
+
             </td>
           </tr>
 
-          <tr>
+
+          <tr bgcolor="#ebeded">
+            <td class="newpadding" style="padding: 30px 80px;">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr width="120px" valign="top">
+                  <td class="stack-column"><img src="https://res.cloudinary.com/dwdhm3rrc/image/upload/v1751282896/thoughQuote_l3ksmb.png" style="max-width: 60px; padding: 0 5px;" alt=""></td>
+                  <td class="stack-column text-center">
+                    <p class="fs-24 thin" style="padding: 0 5px;">Real independence is a mindset—it’s about the courage to challenge, the clarity to question, and the freedom to think for yourself.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- <tr>
             <td>
-              <img src="https://res.cloudinary.com/dwdhm3rrc/image/upload/v1750757724/quote_hvttzs.png" alt="">
+              <img src="https://res.cloudinary.com/dwdhm3rrc/image/upload/v1751281625/mythTest_yzvyqa.png" alt="">
             </td>
-          </tr>
+          </tr> -->
 
           <tr bgcolor="#fff">
             <td class="newpadding spaced">
-              <h2>Executive Experience ≠ Boardroom Readiness</h2>
+              <h2>Beyond Labels: Why Independence Is a Mindset, Not a Checkbox</h2>
               <br>
-              <p>It is a common and costly mistake to equate executive prowess with boardroom aptitude. In fact, <b>this assumption is one of the most prevalent pitfalls among board members</b>. Executives are trained to lead from the front, drive performance, and make fast decisions. Directors, however, must operate with restraint, ask the right questions, and think several steps ahead while upholding fiduciary duties and collective accountability.</p>
-              <p>Unlike executives who control outcomes, directors must govern through influence, insight, and oversight, not execution. <b>This shift from “doing” to “guiding” requires a different posture and mindset</b>. Without proper training, even the most accomplished executive can struggle to adapt, inadvertently overstepping boundaries, neglecting key responsibilities, or stifling effective board dynamics.</p>
+              <p>Most governance frameworks define an “independent” director by what they’re not—not an executive, not related to the CEO, not a major shareholder. These criteria aim to avoid conflicts of interest, but they don’t guarantee independent judgment.</p>
+              <p>Numerous studies show that formally “independent” directors still fail to challenge management. They might maintain social ties, owe past favours, or simply be unwilling to rock the boat. As one governance expert put it: “Real independence is a mindset—it’s about the courage to challenge, the clarity to question, and the freedom to think for yourself.”</p>
+              <p>Without this, even a fully “independent” board becomes a rubber stamp.</p>
 
               <br>
 
 
-              <div class="text-center"><a href="https://theboardroomafrica.com/why-executives-need-board-governance-training/" class="primary-btn bg-tender text-white">Read the full article</a></div>
+              <div class="text-center"><a href="https://theboardroomafrica.com/the-dangerous-myth-of-the-independent-director/" class="primary-btn bg-tender text-white">Read the full article</a></div>
+            </td>
+          </tr>
+
+
+
+          <tr bgcolor="#fff">
+            <td class="newpadding" style="padding-bottom: 10px;">
+              <h2>Related Post:</h2>
+            </td>
+          </tr>
+
+
+          <tr class="bg-dark">
+            <td class="text-white stack-wrap">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="stack-column">
+                    <br>
+                    <p class="fs-18 text-mustard thin">Featured, Insights</p>
+                    <p class="fs-24 lh12 mt-10">No! Being a Great Executive Does not Make You a Great Board Director.</p>
+                    <p class="thin">Why Formal Director Training Is Imperative for Every Board Member</p>
+                    <a style="margin: 10px 0" href="https://theboardroomafrica.com/why-executives-need-board-governance-training/" class="primary-btn bg-tender text-white">Read the full article</a>
+                    <br>
+                  </td>
+                  <td width="240px" class="stack-column">
+                    <img src="https://res.cloudinary.com/dwdhm3rrc/image/upload/v1750757137/MarciaBg_r0rvnt.jpg" width="240px" alt="">
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
 

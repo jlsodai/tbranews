@@ -4,7 +4,6 @@
 <head>
   [[trackingImage]]
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Community</title>
   <style type="text/css">
 
@@ -22,11 +21,22 @@
       color: #1565c0;
     }
 
+
+
     .content {
-      min-width: 800px !important;
-      width: 800px !important;
+      /*min-width: 800px !important;*/
+      width: 800px;
       margin: 0 auto;
       overflow: hidden;
+    }
+
+
+    @media screen and (max-width: 799px) {
+      .content {
+        width: 100% !important;
+        min-width: auto !important;
+        padding: 0 16px; /* Optional: for breathing space on mobile */
+      }
     }
 
     .box-outline, .box-outline-2 {
@@ -581,6 +591,11 @@ h3.sec-title {
 .uppercase { text-transform: uppercase; }
 
 .newpadding { padding: 40px 50px; }
+
+@media screen and (max-width: 799px) {
+  .newpadding { padding: 30px 10px !important; }
+}
+
 .xpadding { padding: 0px 50px; }
 .narrowpadding { padding: 20px 50px; }
 
@@ -671,7 +686,7 @@ h2 { color: #1c2630; }
 
           <tr>
             <td>
-              <a href="https://www.emergeleaders.com"><img src="https://res.cloudinary.com/dwdhm3rrc/image/upload/v1751016139/emrge_mkf3on.jpg"></a>
+              <a href="https://www.emergeleaders.com"><img src="https://theboardroomafrica.com/wp-content/uploads/2025/06/EMERGE-Launch-Newsletter.jpg"></a>
               <!-- <img src="https://res.cloudinary.com/dqngxqaha/image/upload/f_auto,q_auto/v1747746170/esgspotlightIcons_t1lqeu.jpg" alt=""> -->
             </td>
           </tr>

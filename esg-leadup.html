@@ -87,8 +87,13 @@
     .footercopy {font-size: 14px; color: #ffffff;}
     .footercopy a {color: #ffffff; text-decoration: underline;}
 
+    del {
+      text-decoration: none;
+      text-align: center;
+      display: block;
+    }
 
-    .primary-btn {
+    .primary-btn, del a {
       display: inline-block;
       width: max-content;
       position: relative;
@@ -215,74 +220,89 @@
 
     .inline-block { display: inline-block; }
 
+
+    .border-collapse { border-collapse: collapse; }
+
+    .tbra-members { color: #F8F8F8; }
+    .tbra-members a { color: #fff; text-decoration: underline; }
+    .tbra-members p { margin-top: 10px; font-size: 13px; }
+
+    .tbra-members img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      margin-top: 20px;
+    }
+
+    .whos-coming { color: #DADEDA; border-spacing: 3px 0 !important;}
+    .whos-coming tr { vertical-align: top; }
+    .whos-coming p {
+      font-size: 13px;
+    }
+
+    .whos-coming td {
+      padding: 14px;
+    }
+    .whos-coming h2 {
+      font-size: 17px;
+      margin-bottom: 14px;
+    }
+
+    table { width: 100%; }
+    .underline { color: unset; text-decoration: underline !important; }
+
+    .itinerary td {
+      background-color: #f8f8f8;
+      width: 33.333%;
+    }
+
+    .itinerary h2 {
+      line-height: 1;
+      color: #6E8498;
+      margin-bottom: 10px;
+    }
+
+    td.va-bottom { vertical-align: bottom; }
+    td.va-top { vertical-align: top; }
+    td.va-center { vertical-align: center; }
+
+    .spaced p + p { margin-top: 20px; }
+    .spaced p + ul { margin-top: 20px; }
+    .spaced ul + p { margin-top: 15px; }
+    .nospaced p + p { margin-top: 0px; }
+
+    .unset-case { text-transform: unset; }
+
+    .titleUnderline { text-decoration: underline; text-decoration-color: #CDAD7D; text-decoration-thickness: 8px; }
+
+    .list-cols { column-count: 2; column-gap: 40px; padding-left: 16px; }
+    .list-cols li { margin-bottom: 20px; }
+
+    h2 {
+      font-size: 26px;
+    }
+
+    ol li, ul li {
+      margin-bottom: 0px;
+    }
+
+    b, strong { font-weight: bold; }
+
+    .footer {padding: 20px 30px 15px 30px;}
+    .footercopy {font-size: 14px; color: #ffffff;}
+    .footercopy a {color: #ffffff; text-decoration: underline;}
+    .footer img { width: 35px; }
+    .footer a { display: inline-block; margin: 0 5px; }
+
     hr {
-/*    border: 1px solid #000;*/
-margin: 30px auto;
-}
+     border: none;
+     height: 1px;
+     background: #000;
+     color: #000;
+     margin: 40px auto 30px;
+   }
 
-.border-collapse { border-collapse: collapse; }
-
-.tbra-members { color: #F8F8F8; }
-.tbra-members a { color: #fff; text-decoration: underline; }
-.tbra-members p { margin-top: 10px; font-size: 13px; }
-
-.tbra-members img {
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-  margin-top: 20px;
-}
-
-.whos-coming { color: #DADEDA; border-spacing: 3px 0 !important;}
-.whos-coming tr { vertical-align: top; }
-.whos-coming p {
-  font-size: 13px;
-}
-
-.whos-coming td {
-  padding: 14px;
-}
-.whos-coming h2 {
-  font-size: 17px;
-  margin-bottom: 14px;
-}
-
-table { width: 100%; }
-.underline { color: unset; text-decoration: underline !important; }
-
-.itinerary td {
-  background-color: #f8f8f8;
-  width: 33.333%;
-}
-
-.itinerary h2 {
-  line-height: 1;
-  color: #6E8498;
-  margin-bottom: 10px;
-}
-
-td.va-bottom { vertical-align: bottom; }
-td.va-top { vertical-align: top; }
-td.va-center { vertical-align: center; }
-
-.spaced p + p { margin-top: 20px; }
-
-.unset-case { text-transform: unset; }
-
-.titleUnderline { text-decoration: underline; text-decoration-color: #CDAD7D; text-decoration-thickness: 8px; }
-
-.list-cols { column-count: 2; column-gap: 40px; padding-left: 16px; }
-.list-cols li { margin-bottom: 20px; }
-
-h2 {
-  font-size: 26px;
-}
-
-ol li, ul li {
-  margin-bottom: 10px;
-}
-
-</style>
+ </style>
 </head>
 
 <body bgcolor="#f8f8f8">
@@ -299,7 +319,7 @@ ol li, ul li {
       <td>
         <table bgcolor="#fff" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
 
-          <tr bgcolor="#fff">
+          <tr bgcolor="#fff" class="spaced">
             <td class="newpadding">
               <table width="100%">
                 <tr valign="middle">
@@ -314,138 +334,114 @@ ol li, ul li {
 
               <br><br>
 
-              <h3 class="libreb fs-40" style="font-weight: bold;">ESG Certificate Programme</h3>
-              <table width="100%">
-                <tr>
-                  <td>
-                    <p>2025 - Session 1</p>
-                  </td>
-                  <td style="text-align: right;">
+              <h3 class="libreb fs-40" style="font-weight: bold; line-height: 1;"><p>ESG Certificate Programme</p></h3>
 
-                  </td>
-                </tr>
-              </table>
+              <p><b>Ethical Leadership. Sustainable Business Success.</b></p>
 
-              <hr style="margin: 5px 0;">
+              <hr class="mt-10">
 
-              <table width="100%">
-                <tr>
-                  <td width="60%" class="spaced">
-                    <br>
-                    <h2>Meet & Greet</h2>
-                    <br>
-                    <p>The Meet & Greet session will be taking place tomorrow, <b>Friday, 28 March 2025 from 12:00 PM - 1:30 PM GMT</b>.</p><br>
+              <div class=''>
+                <table width='100%'>
+                  <tr valign='top'>
+                    <td width='50%' style='padding:0;'>
+                      <p>We’re pleased to invite you to two complimentary workshops designed to deepen knowledge and enhance your capabilities.</p>
 
-                    <p>Attending this session is essential, as it will provide you with the key information needed to effectively prepare for the course and ensure a smooth experience throughout the programme.</p>
-
-                    <p>This is also an excellent opportunity to connect with fellow delegates, engage with the faculty, and gain valuable insights into your upcoming modules.</p> <br>
-
-                    <p><b>Join the live session here: <a href="https://us02web.zoom.us/j/81856245334?pwd=hSZszoFPCEbDaUb1Th0NUQpb2bcYkL.1">Meet & Greet</a></b></p>
-                    
-
-                  </td>
-                  <td width="10%"></td>
-                  <td width="30%" style="background: url('https://res.cloudinary.com/dhhw72iwq/image/upload/v1718960565/ESGWindow_xesonx.jpg') no-repeat center center / contain;">
-                    <!-- <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/v1718960565/ESGWindow_xesonx.jpg" alt> -->
-                  </td>
-                </tr>
-              </table>
-              <br>
-              <hr style="margin-top: 1px;">
-
-              <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td width="68%">
-                    <h2>TExEd Mobile App Now Launched!</h2>
-                    <br>
-
-                    <p>We’re pleased to announce the Launch of the <b>TExEd Mobile App</b>. This app was designed to enhance your learning experience as busy executives.</p>
-                    <br>
-                    <p>The TExEd mobile app allows you to learn anywhere at anytime, track your course progress, move through the course seemlessly and pick up from where you left off.</p>
-                    <br>
-
-                    <p><b>This is the only option that’s optimized to work with your mobile device or tablet.</b></p>
-                    <br>
-
-                    <p>Download the App now on your Apple or Android device and start learning:</p>
-
-                    <br>
-                    <div>
-                      <a href="https://apps.apple.com/us/app/texed/id6736479582"><img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1743079410/AppStore_ksa1xw.jpg" style="display: inline-block;" width="180px" alt=""></a>
-                      <a href="https://play.google.com/store/apps/details?id=com.texedthnc.app"><img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1743079410/GetonPlayStore_dc3wtr.jpg" style="display: inline-block; margin-left: 20px" width="180px" alt=""></a>
-                    </div>
-
-                    <!-- <br><p> Contact us on <a href="mailto:esg@theboardroomafrica.com">esg@theboardroomafrica.com</a> or via the WhatsApp number listed below if you encounter any issues during the actication process.</p> -->
-
-                  </td>
-                  <td style="background: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1743079411/PhoneTexEd_k5ag9q.jpg') no-repeat center right / contain;">
-                    <!-- <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1743079411/PhoneTexEd_k5ag9q.jpg" alt=""> -->
-                  </td>
-                </tr>
-              </table>
-
-
-              <hr style="margin: 30px 0 20px;">
-
-              <h2 class="fs-34 text-center"> Networking <img width="50px" style="display: inline-block;" src="https://res.cloudinary.com/dhhw72iwq/image/upload/v1721125791/SpeechBubble_ikrc3k.png" alt> </h2>
-              <br>
-
-              <p class="text-center" style="margin: 0 60px;">Please remember to introduce yourself in the Community Forum. Please tell us who you are and what your motivation is for joining the ESG Certificate Programme.
-              </p>
-
-              <div class="text-center"><a href="https://texed.theboardroomafrica.com/communities/Q29tbXVuaXR5LTIzNDExNQ==/spaces/Q29tbXVuaXR5U3BhY2UtMjg4NTcz/" class="primary-btn"><b>COMMUNITY FORUM</b></a></div>
-
-              <div class="spaced">
-
+                      <p>ESG in Practice brings together experienced leaders to explore what ESG looks like beyond theory. Through candid insight and practical case examples, we will explore how ESG is operationalised at board and executive levels, and what it takes to lead with impact in today’s complex landscape.</p>
+                      <p>Save the date and don’t miss this opportunity to learn from ESG leaders driving meaningful impact.</p>
+                      <br><br>
+                    </td>
+                    <td width='10%'></td>
+                    <td width='40%' style='background: url(https://res.cloudinary.com/dqngxqaha/image/upload/v1754989915/workshopInvite1_fjsjea.jpg) no-repeat center right / contain;'>
+                    </td>
+                  </tr>
+                </table>
               </div>
 
+              <br><br>
 
-              <hr style="margin: 30px 0 20px;">
+              <h2>ESG in Practice: A Workshop Series</h2>
 
-              <p>Thank you, and as always, please do not hesitate to contact me if you have any questions.</p>
+              <hr class="mt-10" style="width: 220px; margin-left: 0;">
 
-              <br>
+              <table class="collapse trends spaced" width="100%">
+                <tbody><tr valign="bottom">
+                  <td width="300px" style="background: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1754989915/workshopInvite3_wkrj6e.jpg') no-repeat center center / cover;">
+                  </td>
+                  <td style="padding: 0 25px;" height="250px">
+                    <h2>The Investor Perspective</h2>
+                    <p><b>with Mokgadi Maunatlala</b></p>
 
-              <p><b>
-                Kind regards, <br />
-                Elle Khupe <br />
-                Manager: Executive Education <br />
-                +263 71 995 2614 <br />
-                <a href="https://theboardroomafrica.com/" class="text-dusk underline">TheBoardroom Africa</a>   <br />
-              </b></p>
+                    <p class="fs-14">This interactive session offers a practical investor’s lens on ESG leadership. Drawing on deep experience in African private equity, Mokgadi explores the ESG factors shaping investment decisions, what matters to investors, how expectations are evolving, and the level of reporting required. Delegates will gain insight into key trends across portfolio companies and understand how ESG is being operationalised. The session also unpacks what effective ESG leadership means for boards navigating risk, opportunity, and strategic impact.</p>
+                    <p>
+                      <b>Date:</b> Friday, 15 August 2025 <br>
+                      <b>Time:</b> 10:00 AM - 12:00 PM GMT <br>
+                      <b>Facilitator:</b> Mokgadi Maunatlala
+                    </p>
+                    <a href="https://web.theboardroomafrica.com/wp-content/uploads/2025/08/Mokgadi-Maunatlala-Profile.pdf" class="primary-btn"><b><b>About Mokgadi</b></b></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br><br>
+            <table class="collapse trends spaced" width="100%">
+              <tbody><tr valign="bottom">
+                <td width="300px" style="background: url('https://res.cloudinary.com/dqngxqaha/image/upload/v1754989915/workshopInvite2_pig5xp.jpg') no-repeat center center / cover;">
+                </td>
+                <td style="padding: 0 25px;" height="250px">
+                  <h2>The Corporate Leadership Perspective</h2>
+                  <p><b> with Dr Karan Thakur</b></p>
+
+                  <p class="fs-14">This session offers a practical lens on ESG leadership. Karan will share lessons from his career, highlighting real-world successes, challenges, and critical factors influencing ESG outcomes. He’ll explore best practices in today’s complex political and economic climate, with a focus on developing markets. Delegates will gain actionable insights and practical solutions for advancing ESG strategy at the executive and board levels, bridging the gap between theory and practice with guidance from an experienced ESG leader.</p>
+                  <p>
+                    <b>Date:</b> Thursday, 21 August 2025<br>
+                    <b>Time:</b> 8:30 AM - 10:30 AM GMT<br>
+                    <b>Facilitator:</b> Dr Karan Thakur
+                  </p>
+                  <a href="https://web.theboardroomafrica.com/wp-content/uploads/2025/08/Karan-Thakur-Profile.pdf" class="primary-btn"><b><b>About Karan</b></b></a>
+                </td>
+              </tr>
+            </tbody></table>
 
 
-              <br>
+            <hr>
 
 
-              <table>
-                <tr>
-                  <td class="footer" bgcolor="#44525f">
-                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                      <tr>
-                        <td align="center" class="footercopy">
-                          &reg; TheBoardroom Africa
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center" style="padding: 20px 0 0 0;">
-                          <table border="0" cellspacing="0" cellpadding="0">
-                            <tr>
-                              <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
-                                <a href="https://twitter.com/TBRAfrica" style="float: right;">
-                                  <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/co_rgb:FFFFFF,e_colorize:100/v1722324879/twitter_gt5ycd.png" width="37" height="37" alt="Facebook" border="0" />
-                                </a>
-                              </td>
-                              <td width="37" style="text-align: center; padding: 0 10px 0 10px;">
-                                <a href="https://www.linkedin.com/company/theboardroom-africa">
-                                  <img src="https://files.constantcontact.com/bdaf4e1c701/5fa121da-baca-4710-a35e-e56567018383.png?ver=1595159408000" width="37" height="37" alt="LinkedIn" border="0" />
-                                </a>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
+            <div class="">
+              <h2>Join the Sessions</h2><br>
+              <p>The links to join the session are follows:</p>
+
+              <ul>
+                <li><a href="https://us02web.zoom.us/j/85979466852">ESG in Practice: The Investor Perspective</a></li>
+                <li><a href="https://us02web.zoom.us/j/87620690961">ESG in Practice: The Corporate Leadership Perspective</a></li>
+              </ul>
+
+              <p>The sessions will kick off promptly. To avoid delay, please join the session 10 minutes before the scheduled start.</p>
+            </div>
+
+            <hr>
+
+            <p>Thank you, and as always, please do not hesitate to contact me if you have any questions.</p>
+            <p>Kind regards,</p>                <br>
+            <div class="nospaced"><p><strong>Elle Khupe</strong></p>
+              <p><strong>Manager: Executive Education</strong></p>
+              <p><strong>+263 71 995 2614</strong></p>
+              <p><strong><a href="https://theboardroomafrica.com/">TheBoardroom Africa</a></strong></p></div>
+            </td>
+          </tr>
+
+          <tr class="footer" bgcolor="#556d70">
+            <td class="newpadding">
+
+              <table width="100%" cellspacing="0" cellpadding="0">
+                <tr class="text-white">
+                  <td>
+                    <h2 class="uppercase">connect with us</h2>
+                  </td>
+                  <td class="text-right">
+                    <a href="https://www.linkedin.com/company/theboardroom-africa"><img src="https://files.constantcontact.com/bdaf4e1c701/5fa121da-baca-4710-a35e-e56567018383.png?ver=1595159408000" /></a>
+                    <a href="https://theboardroomafrica.com"><img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1741347289/web_gs7vmz.png" /></a>
+                    <a href="mailto:execed@theboardroomafrica.com"><img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1741347288/email_iotvjq.png" /></a>
                   </td>
                 </tr>
               </table>

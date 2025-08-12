@@ -1,7 +1,7 @@
 <?php
 
 $users = [];
-$company_id = 1102;
+$company_id = 1099;
 $company_code = sprintf("%02d", $company_id % 100);
 
 foreach(User::where('company_id', $company_id)->withTrashed()->get() as $user) {

@@ -1,0 +1,35 @@
+LaPhaKq#!$a@PV8
+
+
+
+uasBR@Ks%Z9xUb4
+postgresql://postgres.zqoirlldyatmbyvflxlt:uasBR@Ks%Z9xUb4@aws-0-eu-central-1.pooler.supabase.com:6543/postgres
+postgresql://postgres:uasBR@Ks%Z9xUb4@db.zqoirlldyatmbyvflxlt.supabase.co:5432/postgres
+v0
+claude
+bolt.new
+figma
+ideogram 
+bentogrids.com
+
+Acceptance Criteria
+Given that a candidate profile is open, when a recruiter adds a comment, then the comment is saved and visible to all authorized team members.
+Given that a team member is mentioned in a comment, when the comment is submitted, then the mentioned user receives a notification.
+Given that a recruiter views a candidate profile, when comments exist, then they are displayed in a chronological thread with timestamps and user identifiers.
+Given that permissions are correctly configured, when a non-authorized user views the profile, then the comments section is hidden or inaccessible.
+Given that collaboration is ongoing, when a team member refreshes the page or logs back in, then all previous comments persist and remain linked to the profile.
+
+
+
+Now that we are done with the search creation process, clients can now start the recruitment process.
+
+Help me generate user stories to include the following features:
+
+After the job/role is published, the platform using AI makes Candidate Recommendations
+Intuitive search interface with real-time filtering of candidates.
+Access to detailed candidate profiles
+Tools for team collaboration and feedback on potential hires.
+Seamless management of the entire candidate pipeline, with direct outreach capabilities.
+
+
+5212b736-7cd1-4bdf-93ad-0c64cb57ec32

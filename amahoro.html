@@ -20,12 +20,15 @@
     .fs-22 { font-size: 22px; }
     .fs-24 { font-size: 24px; }
     .fs-26 { font-size: 26px; }
+    .fs-30 { font-size: 30px; }
     .fs-32 { font-size: 32px; }
     .fs-40 { font-size: 40px; }
     .fs-60 { font-size: 60px; }
     .fs-70 { font-size: 70px; }
     .fs-80 { font-size: 80px; }
     .fs-100 { font-size: 100px; }
+
+    .thin { font-weight: 200; }
 
     .text-right { text-align:right; }
     .text-left { text-align:left; }
@@ -65,37 +68,64 @@
     h3 { color: #722358; }
     a { font-weight: bold; }
 
-    .text-purple { color: #722358; }
-    .text-teal, a { color: #03a49c; }
-    .text-cyan { color: #189cc2; }
-    .text-darkslate { color: #163c4c; }
-    .text-white { color: #ffffff; }
-    .text-dusk { color: #3e3e3e; }
-    .bg-white { background-color: #ffffff; }
-    .bg-darkslate { background-color: #163c4c; }
-    .bg-cyan { background-color: #189cc2; }
-    .bg-teal { background-color: #03a49c; }
-    .bg-purple { background-color: #722358; }
-    .bg-alt { background-color: #faf8fa; }
+    .section {
+     background: #f8f8f8;
+     padding: 30px;
+   }
+   
+   .text-purple { color: #722358; }
+   .text-teal, a { color: #03a49c; }
+   .text-cyan { color: #189cc2; }
+   .text-darkslate { color: #163c4c; }
+   .text-white { color: #ffffff; }
+   .text-dusk { color: #3e3e3e; }
+   .bg-white { background-color: #ffffff; }
+   .bg-darkslate { background-color: #163c4c; }
+   .bg-cyan { background-color: #189cc2; }
+   .bg-teal { background-color: #03a49c; }
+   .bg-purple { background-color: #722358; }
+   .bg-alt { background-color: #faf8fa; }
 
-    .social-icons img { width: 22px; margin-left: 5px; }
-    .social-icons a:first-child img { margin-left: 0px; }
+   .social-icons img { width: 22px; margin-left: 5px; }
+   .social-icons a:first-child img { margin-left: 0px; }
 
-    .footer a { color: unset; font-weight: unset; }
+   .footer a { color: unset; font-weight: unset; }
 
-    .mw-600 { max-width: 600px; }
-    .mw-650 { max-width: 650px; }
+   .mw-600 { max-width: 600px; }
+   .mw-650 { max-width: 650px; }
 
-    .reversed h3 { color: #fff; }
-    .reversed p { color: #f8f8f8; }
-    .reversed { background-color: #722358; }
-    .imgfloat {
+   .reversed h3 { color: #fff; }
+   .reversed p { color: #f8f8f8; }
+   .reversed { background-color: #722358; }
+   .imgfloat {
      width: 300px;
      float: left;
      margin: 0 20px 0px 0;
    }
    .fl { float: left; }
- </style>
+
+   ul li {
+    margin-left: 10px;
+  }
+
+  h3 + ul { margin-top: 15px; }
+
+  ul.no-bullet {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  ul.no-bullet li {
+    margin-left: 30px;
+  }
+
+  li + li {
+    margin-top: 15px;
+  }
+
+  .section li { margin-left: 5px; }
+
+</style>
 </head>
 <body style="background: #f4f4f4">
   <table class="content" width="100%" bgcolor="#fff" border="0" cellpadding="0" cellspacing="0">
@@ -107,7 +137,7 @@
             <td width="50%" class="">
               <img src="https://res.cloudinary.com/dmaestro/image/upload/v1739435694/amahoro_yoywm7.jpg" width="150px" alt="">
             </td>
-            <td width="50%" class="text-right"><h3 class="text-teal">July 2025</h3></td>
+            <td width="50%" class="text-right"><h3 class="text-teal">August 2025</h3></td>
           </tr>
         </table>
         <br>
@@ -118,61 +148,115 @@
     <tr>
       <td>
         <!-- Banner here -->
-        <img src="https://res.cloudinary.com/dg8yueznc/image/upload/v1753957740/amahoroBanner_hk4kon.jpg" alt="">
+        <img src="https://res.cloudinary.com/dg8yueznc/image/upload/v1756398215/amahoro_aug1_bqwvww.jpg" alt="">
       </td>
     </tr>
 
 
     <tr>
       <td class="px py spaced">
-        <p>Across Africa, millions of refugees and displaced people, many of them young and ready to contribute, face significant barriers to employment. Although national policies often allow refugees to work, complex procedures, unclear regulations, and limited support make access to jobs extremely difficult. Employers who want to hire refugees also face legal uncertainties and bureaucratic challenges.</p>
-        <br>
-        <img src="https://res.cloudinary.com/dg8yueznc/image/upload/v1753873319/Toolkit-for-Employers_zz96sp.jpg" style="max-width: 500px; margin: 0 auto;" alt="">
-        <br>
-        <p>To address the gap between policy and practice, Amahoro Coalition, in partnership with the Mastercard Foundation, has launched the Pathways to Employment series. This initiative examines refugee employment across 15 African countries, exploring legal frameworks, administrative processes, employer challenges, and ways to strengthen collaboration.</p>
-        <p>The series is part of a broader effort to connect Africa’s growing youth population, including those from displaced communities, with inclusive and dignified work opportunities. With a strong focus on women and young people, the reports aim to guide better policies and inspire new partnerships between the private sector and refugee talent. We will be releasing the full set of reports in the coming days, but you can already explore the initial batch covering Angola, Egypt, Malawi, South Sudan, Tanzania, and Tunisia here:</p>
-        <a href="https://amahorocoalition.com/pathways-to-employment" class="btn">Explore</a>
+        <p>This month we spotlight Uganda, Africa’s largest refugee hosting country, to explore how progressive and inclusive policies can unlock the economic potential of refugees and forcibly displaced persons (FDPs). Our focus spans from the insights of the Pathways to Employment: Uganda report to inspiring stories from the hospitality sector. The evidence is clear: when supportive legal frameworks are matched with private sector initiative, refugees do more than participate. They thrive, contribute, and drive industry growth.</p>
       </td>
     </tr>
 
+    <tr class="bg-alt">
+      <td class="px py spaced">
+        <h3>Pathways to Employment: Uganda Report</h3>
+        <br>
+        <img src="https://res.cloudinary.com/dg8yueznc/image/upload/v1756398215/amahoro_aug5_qbq4pw.jpg" class="imgfloat" alt="">
+        <p>Uganda is recognized globally for its progressive refugee policies, offering displaced communities access to land, education, and work opportunities. This report takes a closer look at how these policies and the wider legal framework shape employment prospects for refugees, while also equipping businesses with the practical tools they need to engage. Through the Employers’ Toolkit, it provides guidance on how companies can confidently and compliantly hire refugee talent. By exploring the report, you’ll also find clear answers to practical questions: Which policies and legal frameworks guide refugees’ access to employment in Uganda? What challenges might employers encounter in the hiring process? And how can integrating refugee talent strengthen your business and the wider economy?</p>
+        <a href="https://amahorocoalition.com/pathways-to-employment" class="btn">Read the full report</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="px py spaced">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="43%" style="background: url('https://res.cloudinary.com/dg8yueznc/image/upload/v1756398732/amahoro_x_stiawz.jpg') no-repeat top center / cover;"></td>
+            <td style="padding-left: 20px;">
+              <h3>Op-Ed: Why Uganda works for refugee employment </h3>
+              <p>In her latest piece, our colleague Daisy Bartlett reflects on how Uganda’s progressive policies foster investment, employment and innovation which could serve as a blueprint for Africa. The article also features insights from Mrs. Jean Byamugisha, CEO of the Uganda Hotel Owners’ Association, who highlights how refugee employees are enriching the hospitality sector with diverse skills and perspectives.</p>
+              <a href="https://amahorocoalition.com/pathways-to-employmenthttps://www.monitor.co.ug/uganda/oped/commentary/why-uganda-works-for-refugee-employment-5157376" class="btn">Read more</a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
 
     <tr class="bg-alt">
       <td class="px py spaced">
-        <h3>Amahoro Coalition joins high-level roundtable in Bangui to advance private sector solutions for displacement in Central Africa</h3>
+        <img src="https://res.cloudinary.com/dg8yueznc/image/upload/v1756398215/amahoro_aug3_zjdbfk.jpg" alt="">
         <br>
-        <img src="https://res.cloudinary.com/dg8yueznc/image/upload/v1753873093/Bangui_qx6hvm.jpg" alt="">
+
+        <h3>Partner Highlights</h3>
         <br>
-        <p>As core members of the Central African Republic Solutions Support Platform (CAR-SSP), Amahoro Coalition joined international delegations in Bangui for the High-Level Private Sector Roundtable on 1 and 2 July. Hosted by President Faustin-Archange Touadéra and UNHCR, the event brought together ministries, business leaders, and development partners from CAR, Cameroon, Chad, DRC, and the Republic of Congo to explore how the private sector can support solutions for returnees and displaced people.</p>
-        <p>We shared insights from our Fellowship program, which highlights refugee talent and entrepreneurship. We also shared our work in displaced communities around improving business conditions, expanding access to finance, addressing skills gaps and investing in sectors like agriculture and infrastructure. We also engaged with partners including the World Bank, African Development Bank, and several companies interested in future collaboration. The forum ended with a clear call to develop a roadmap, establish a monitoring committee, and sustain public-private dialogue to deliver lasting impact.</p>
+        <ul>
+          <li><b>Fairway Hotel</b> – A pioneer in hiring refugees across roles from front desk to senior management: <a href="https://fairwayhotel.co.ug/about">https://fairwayhotel.co.ug/about</a></li>
+          <li><b>Uganda Hotel Owners' Association (UHOA)</b> – Championing inclusive hiring within hospitality: <a href="https://www.ugandahotels.org/">https://www.ugandahotels.org/</a></li>
+        </ul>
+
+        <br>
+
+        <h3>In their own words:</h3>
+        <br>
+        <ul class="no-bullet">
+          <li><span style="margin-right: 6px;">▶️</span> Amos Kwizera: From Displacement to Creating 101 Dignified Jobs: <a href="https://youtu.be/Fe7NpySRL3I?si=voEkQacaRjCrUBN9">https://youtu.be/Fe7NpySRL3I?si=voEkQacaRjCrUBN9</a></li>
+          <li><span style="margin-right: 6px;">▶️</span> Azhar Bandali Jaffer, Managing Director of Fairway Hotel highlights the benefits of working with FDPs: <a href="https://youtu.be/umTrjjlFuzU?si=IAlGypOq_Bnt4ypC">https://youtu.be/umTrjjlFuzU?si=IAlGypOq_Bnt4ypC</a> </li>
+        </ul>
       </td>
     </tr>
 
 
     <tr>
       <td class="px py spaced">
-        <h3>Amahoro Coalition and Zeleman Academy join forces to unlock refugee talent in Africa’s creative economy</h3>
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="45%" style="background: url('https://res.cloudinary.com/dg8yueznc/image/upload/v1756397395/amahoroSkills_xmbqxz.jpg') no-repeat top left / cover;"></td>
+            <td width="55%" style="padding: 30px; background: #f8f8f8">
+              <h3 class="fs-30">Introducing the Amahoro Skills Hub</h3>
+
+              <p class="fs-24 thin">The <b>Skills Hub</b> is Amahoro Coalition’s digital platform designed to connect refugees and forcibly displaced persons (FDPs) to meaningful economic opportunities across Africa.</p>
+            </td>
+          </tr>
+        </table>
+
         <br>
-        <img src="https://res.cloudinary.com/dg8yueznc/image/upload/v1753873093/Zeleman_X_Amahoro_Coalition_bdcogg.jpg" alt="">
+
+        <div class="section bg-alt">
+          <h3>Who is it for?</h3>
+          <ul>
+            <li>Job seekers (refugees, displaced persons, and students) looking for internships or employment opportunities.</li>
+            <li>Partners (NGOs, training institutions, and support organizations) who want to showcase and refer to the talent they support, while also tracking their transition into jobs or internships.</li>
+          </ul>
+        </div>
+
         <br>
-        <p>Amahoro Coalition and Zeleman Communications are exploring a new partnership aimed at expanding access to meaningful creative opportunities for refugee and displaced youth across Africa. At the heart of this collaboration is the upcoming launch of the Zeleman Academy, whose inaugural cohort will include refugee candidates eager to contribute their skills and perspectives to the continent’s growing creative industry.</p>
-        <p>The partnership builds on conversations that began during the last Africa Forum on Displacement, where leaders, creatives, and private sector actors came together to reimagine how displaced communities can be more fully included in Africa’s development story. Among the Forum’s participants was Zelalem Woldemariam, Founder and CEO of Zeleman Communications, who sees this next step as a natural continuation of that vision.</p>
-        <p><i>“At the Forum, we saw the creativity, talent, and potential of displaced youth. This partnership is about moving from ideas to action, giving that talent the space to grow, create, and shape the future of African storytelling,”</i> said Zelalem.</p>
-        <p>As the Academy prepares to open its doors, this collaboration reflects a shared belief: that refugee youth have not only a right to work, but a vital role to play in shaping Africa’s cultural and economic future. By investing in their creative potential, we take one step closer to building a continent where inclusion fuels innovation and where every story has the power to inspire change.</p>
+
+        <div class="section">
+          <h3>What does it do?</h3>
+          <ul>
+            <li>Posts available jobs and internships from across Africa, specifically targeting refugees and displaced persons.</li>
+            <li>Enables partners to open an account, upload their talent pool, and generate analytics reports to measure impact.</li>
+            <li>Allows partners to directly refer candidates to available jobs and monitor their transition into employment.</li>
+            <li>Helps Amahoro Coalition identify companies and sectors ready to absorb refugee and displaced talent.</li>
+          </ul>
+        </div>
+
+        <br>
+
+        <div class="section bg-alt">
+          <h3>How to Access It</h3>
+          <ul>
+            <li><b>Partners</b> can sign up here: <a href="https://mis.amahorocoalition.com/register/partner-sign-up">Partner Registration</a>.</li>
+            <li><b>Job seekers</b> can create their own accounts here: <a href="https://mis.amahorocoalition.com/register/talent-sign-up">Talent Registration</a>.</li>
+            <li><b>Mobile users</b> can also register easily through this link: <a href="https://mis.amahorocoalition.com/skills-hub-setup">Mobile Setup</a>.</li>
+          </ul>
+        </div>
       </td>
     </tr>
 
-
-    <tr class="bg-alt">
-      <td class="px py spaced">
-        <h3>Amahoro Fellows meet in Abuja</h3>
-        <br>
-        <img src="https://res.cloudinary.com/dg8yueznc/image/upload/v1753873094/meetAbuja_lrphne.jpg" class="imgfloat" alt="">
-        <!-- <br> -->
-        <p>Amahoro West Africa Fellows recently came together in Abuja for an intensive three-day program focused on leadership, branding, and network building. The Fellows, representing diverse ventures across the region, engaged in masterclasses, strategic collaboration, and even a hands-on cooking challenge designed to test leadership under pressure. With expert guidance from award-winning presenter Zahirah Marty, Fellows refined their brand stories, clarified their visions, and crafted strategies to amplify their impact. From personal storytelling to kitchen teamwork, the intensive offered powerful lessons in resilience, clarity, and collaboration.</p>
-        <p>Read more about the insights and experiences that shaped this transformative gathering:</p>
-        <a href="https://amahorocoalition.com/amahoro-west-africa-fellows-deepen-leadership-branding-and-network-building-during-abuja-intensive/" class="btn">Read more</a>
-      </td>
-    </tr>
 
     <tr class="bg-purple">
       <td class="px py">

@@ -1,0 +1,203 @@
+.soft--sides,
+.soft-double--ends {
+  padding: 0 !important;
+}
+
+.container--centered {
+  max-width: none;
+  margin: 0;
+}
+
+.wlsn-hivebrite {
+  padding-top: 40px;
+}
+@media (min-width: 768px) {
+  .wlsn-hivebrite {
+    padding-top: 70px;
+  }
+}
+.wlsn-hivebrite * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: Helvetica, serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+.wlsn-hivebrite figure {
+  padding: 0;
+  margin: 0;
+}
+.wlsn-hivebrite img {
+  display: block;
+}
+.wlsn-hivebrite p {
+  margin: 0;
+}
+.wlsn-hivebrite a {
+  text-decoration: none;
+}
+.wlsn-hivebrite .wlsn-color-action {
+  color: #EA5A50 !important;
+}
+.wlsn-hivebrite .wlsn-wrapper, .wlsn-hivebrite .wlsn-wrapper--secondary {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1495px;
+  padding-right: 27.5px;
+  padding-left: 27.5px;
+}
+.wlsn-hivebrite .wlsn-wrapper--secondary {
+  max-width: 1255px;
+}
+.wlsn-hivebrite .wlsn-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.wlsn-hivebrite .wlsn-title {
+  font-size: 42px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #202945;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .wlsn-hivebrite .wlsn-title {
+    line-height: 54px;
+    margin-bottom: 34px;
+  }
+}
+.wlsn-hivebrite .wlsn-subtitle {
+  font-size: 16px;
+  line-height: 25px;
+  color: #202945;
+  margin-bottom: 55px;
+}
+@media (min-width: 768px) {
+  .wlsn-hivebrite .wlsn-subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 75px;
+  }
+}
+.wlsn-hivebrite .wlsn-news-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.wlsn-hivebrite .wlsn-news-list-item {
+  margin-bottom: 47px !important;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .wlsn-hivebrite .wlsn-news-list-item {
+    float: left;
+    width: 45%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+  }
+  .wlsn-hivebrite .wlsn-news-list-item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .wlsn-hivebrite .wlsn-news-list-item:nth-child(2n + 1) {
+    clear: both;
+  }
+}
+@media (min-width: 1024px) {
+  .wlsn-hivebrite .wlsn-news-list-item {
+    float: left;
+    width: 23.125%;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+  }
+  .wlsn-hivebrite .wlsn-news-list-item:nth-child(4n) {
+    margin-right: 0;
+  }
+  .wlsn-hivebrite .wlsn-news-list-item:nth-child(4n + 1) {
+    clear: both;
+  }
+}
+.wlsn-hivebrite .wlsn-news-list-item__media {
+  position: relative;
+  overflow: hidden;
+  padding: 0 15px 15px 0;
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .wlsn-hivebrite .wlsn-news-list-item__media {
+    margin-bottom: 25px;
+  }
+}
+.wlsn-hivebrite .wlsn-news-list-item__media:before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 100%;
+  height: 100%;
+  background-color: #B6A99A;
+}
+.wlsn-hivebrite .wlsn-news-list-item__media img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.wlsn-hivebrite .wlsn-news-list-item__content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #B6A99A;
+  flex: 1;
+}
+.wlsn-hivebrite .wlsn-news-list-item__title {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #202945;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .wlsn-hivebrite .wlsn-news-list-item__title {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+}
+.wlsn-hivebrite .wlsn-news-list-item__p {
+  font-size: 16px;
+  line-height: 25px;
+  color: #4A4F56;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .wlsn-hivebrite .wlsn-news-list-item__p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 24px;
+  }
+}
+.wlsn-hivebrite .wlsn-news-list-item_cta {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 700;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  margin-top: auto;
+}
+.wlsn-hivebrite .wlsn-news-list-item_cta img {
+  width: 27px;
+  margin-left: 10px;
+}

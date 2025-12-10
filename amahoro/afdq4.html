@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amahoro newsletter</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+  <style>
+    body { margin: 0; padding: 0; min-width: 100%!important; font-size: 16px; line-height: 1.3; font-weight: normal; color: #4A4F54; }
+    img {height: auto; max-width: 100%; display: block;}
+    * { margin: 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 200 }
+    b, h2 { font-weight: 600 }
+    /*.serif { font-family: 'Times New Roman', Times, serif;}*/
+    .fb { font-weight: 600; }
+
+    .fs-12 { font-size: 12px; }
+    .fs-14 { font-size: 14px; }
+    .fs-16 { font-size: 16px; }
+    .fs-18 { font-size: 18px; }
+    .fs-22 { font-size: 22px; }
+    .fs-24 { font-size: 24px; }
+    .fs-26 { font-size: 26px; }
+    .fs-30 { font-size: 30px; }
+    .fs-32 { font-size: 32px; }
+    .fs-40 { font-size: 40px; }
+    .fs-60 { font-size: 60px; }
+    .fs-70 { font-size: 70px; }
+    .fs-80 { font-size: 80px; }
+    .fs-100 { font-size: 100px; }
+
+    .thin { font-weight: 200; }
+
+    .text-right { text-align:right; }
+    .text-left { text-align:left; }
+    .text-center { text-align:center; }
+
+    .content { min-width: 800px !important; width: 800px !important; margin: 0 auto; overflow: hidden; }
+
+    .px { padding-left: 50px; padding-right: 50px;}
+    .py { padding-top: 40px; padding-bottom: 40px; }
+    .py-10 { padding-top: 10px; padding-bottom: 10px; }
+    .py-15 { padding-top: 15px; padding-bottom: 15px; }
+    .py-20 { padding-top: 20px; padding-bottom: 20px; }
+    .px-20 { padding-left: 20px; padding-right: 20px; }
+    .p-20 { padding: 20px; }
+    .p-30 { padding: 30px; }
+
+    .spaced p + p, .spaced h3 + p { margin-top: 20px; }
+    .spaced p + ul, .spaced ul + p { margin-top: 20px; }
+
+    .btn {
+      display: inline-block;
+      width: max-content;
+      text-decoration: none;
+      padding: 10px 35px;
+      color: #000;
+      font-weight: bold;
+      margin-top: 22px;
+      background: #ffcc01;
+      border-radius: 5px;
+    }
+
+    .mt-5 { margin-top: 5px; }
+    .mt-10 { margin-top: 10px; }
+    .mt-15 { margin-top: 15px; }
+    .mt-20 { margin-top: 20px; }
+
+    .mr-15 { margin-right: 15px; }
+
+    .btn + .btn { margin-left: 20px; }
+
+    h3 { color: #722358; }
+    a { font-weight: bold; }
+
+    .section {
+     background: #f8f8f8;
+     padding: 30px;
+   }
+
+   .text-purple { color: #722358; }
+   .text-teal, a { color: #03a49c; }
+   .text-cyan { color: #0880a7; }
+   .text-darkslate { color: #163c4c; }
+   .text-white { color: #ffffff; }
+   .text-dusk { color: #3e3e3e; }
+   .bg-white { background-color: #ffffff; }
+   .bg-darkslate { background-color: #163c4c; }
+   .bg-cyan { background-color: #0880a7; }
+   .bg-teal { background-color: #03a49c; }
+   .bg-purple { background-color: #722358; }
+   .bg-alt { background-color: #faf8fa; }
+   .bg-light { background-color: #f8f8f8; }
+   .text-blue { color: #003459; }
+   .text-lightblue { color: #D5F3F4; }
+   .bg-lightblue { background-color: #D5F3F4; }
+   .bg-blue { background-color: #003459; }
+
+   .social-icons img { width: 22px; margin-left: 5px; }
+   .social-icons a:first-child img { margin-left: 0px; }
+
+   .footer a { color: unset; font-weight: unset; }
+
+   .mw-600 { max-width: 600px; }
+   .mw-650 { max-width: 650px; }
+
+   .reversed h3 { color: #fff; }
+   .reversed p { color: #f8f8f8; }
+   .reversed { background-color: #722358; }
+   .imgfloat {
+     width: 300px;
+     float: left;
+     margin: 0 20px 0px 0;
+   }
+   .fl { float: left; }
+
+   h3 + ul { margin-top: 15px; }
+
+   ul.no-bullet {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  ul.no-bullet li {
+    margin-left: 30px;
+  }
+
+  li + li {
+    margin-top: 15px;
+  }
+
+  .section li { margin-left: 5px; }
+
+  hr {
+    border: none;
+    height: 1px;
+    margin: 20px 0;
+    color: #d6e1e7;  /* old IE */
+    background-color: #d6e1e7;  /* Modern Browsers */
+  }
+
+  hr.big { margin: 40px 0 } 
+
+  h2 { color: #0880a7 }
+
+  table.setting td { height: 165px; }
+
+</style>
+</head>
+<body style="background: #f4f4f4">
+  <table class="content" width="100%" bgcolor="#fff" border="0" cellpadding="0" cellspacing="0" style="background: url('https://res.cloudinary.com/dg8yueznc/image/upload/v1764069324/bg-blue_bddf6z.png') no-repeat center -120px; background-color: #fff;">
+    <!-- <tr>
+      <td class="px">
+        <br>
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td width="50%" class="">
+              <img src="https://res.cloudinary.com/dmaestro/image/upload/v1739435694/amahoro_yoywm7.jpg" width="150px" alt="">
+            </td>
+            <td width="50%" class="text-right"><h3 class="text-teal">September 2025</h3></td>
+          </tr>
+        </table>
+        <br>
+      </td>
+    </tr> -->
+
+
+    <tr >
+      <td class="px spaced">
+        <br><br>
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="50%">
+              <h2 class="serif fs-30 text-lightblue" style="color: #F3FFFD">The Road to AFD 2026:</h2>
+              <p class="text-lightblue">Quarterly Insights &nbsp; &nbsp; | &nbsp; &nbsp; Q4 2025 Edition</p>
+            </td>
+            <td width="50%" style="text-align: right;">
+              <img src="https://res.cloudinary.com/dg8yueznc/image/upload/v1764070137/logo_rydvef.png" width="250" alt="" style="margin: 0 0 0 auto;">
+            </td>
+          </tr>
+        </table>
+
+        <img src="https://res.cloudinary.com/dg8yueznc/image/upload/v1764070366/grptre_qeet3w.jpg" style="border-radius: 15px; margin-top: 30px;" alt="">
+        <br>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td class="px">
+        <!-- <h2>Driving Collective Action on Displacement Across Africa</h2> -->
+        <br>
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="text-white setting spaced">
+          <tr>
+            <td style="height: 1px" width="50%"></td>
+            <td style="height: 1px" width="50%"></td>
+          </tr>
+          <tr>
+            <td style="background: url('https://res.cloudinary.com/dg8yueznc/image/upload/v1765290394/overview_jyomab.jpg') no-repeat center center / cover;">
+            </td>
+
+            <td style="background: linear-gradient(to bottom, #0a80a6 0%, #003459 95%)" colspan="2" class="p-30">
+              <p class="fs-24"><b class="text-white">Overview of the Forum</b></p>
+              <p class="text-white">The Africa Forum on Displacement 2025 was more than a convening; it was a statement of intent. </p>
+              <p>Held across Kakuma and Nairobi, it brought together more than 400 delegates in person and over 1,100 virtual participants from 30 countries, uniting governments, the private sector, humanitarian agencies, and refugee-led organizations.</p>
+
+              <a href="https://amahorocoalition.com/africa-forum-on-displacement-2025-nairobi/" class="btn" style="background: transparent; border: 1px solid white; color: #fff;">Read the report</a>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td colspan="3" style="height: 30px !important">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+
+    <tr style="background: linear-gradient(to bottom, #fff 0%, #fff 5%, #0a80a6 5%, #003459 95%, #fff 95%)">
+      <td class="px">
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="50%" class="text-white spaced" style="padding: 50px 30px 50px 0;">
+              <p class="fs-24"><b>Central Theme: #ALLIn</b></p>
+              <p>The #ALLIn theme that guided the Forum reaffirmed a fundamental truth:</p>
+              <p class="fs-18" style="border-left: 6px solid #fff; padding: 10px 0 10px 10px;">
+                <!-- <img src="https://res.cloudinary.com/dhhw72iwq/image/upload/a_hflip,co_rgb:fff,e_colorize:100/v1718114500/QuoteMark_xyjb2g.png" width="25px" style="float: left; margin-right: 10px;" alt=""> -->
+                Displaced people are not a humanitarian burden, they are an untapped source of innovation, resilience, and economic potential.
+              </p>
+            </td>
+            <td colspan="2" style="background: url('https://res.cloudinary.com/dg8yueznc/image/upload/v1765290394/centraltheme_aqxbnv.jpg') no-repeat center center / cover;">
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td class="px">
+        <br><br>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+          <tr bgcolor="#ff7f02" style="background: url('https://res.cloudinary.com/dg8yueznc/image/upload/v1765347052/uptonow_1_adnffn.jpg') no-repeat center center / cover;">
+            <td style="padding: 20px; background: rgba(0,0,0,0.4);" class="spaced">
+              <div class="p-20" style="max-width: 60%; color: white;">
+                <p class="fs-24"><b>What are they up to now</b></p>
+                <p>When we met Kiza in Kakuma on the margins of AFD2025, he was proudly showcasing the work that began in 2022 with just a laptop and a bold vision. Today, his initiative, Action for Refugee Learning (AReL), has grown into a dynamic digital skills hub after receiving support from Amahoro Coalition and WUSC, enabling access to laptops, solar power, and reliable internet. </p>
+                <p>AReL has now trained hundreds of refugees in digital marketing, e-commerce, data analysis, cybersecurity and full-stack development, with graduates already securing paid projects and jobs across several countries.</p>
+                <a href="https://amahorocoalition.com/the-unlikely-coder-of-kakuma-kiza-mauridis-mission-to-turn-a-refugee-camp-into-a-tech-hub/" class="btn" style="border: 1px solid white; border-radius: none; background: transparent; color: #fff;">Read more</a>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <br><br>
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="spaced text-white">
+          <tr style="background: linear-gradient(to bottom, #0a80a6 0%, #003459 95%)">
+            <td style="background: url('https://res.cloudinary.com/dg8yueznc/image/upload/v1765290394/updates_yn9r8s.jpg') no-repeat center center / cover;">
+            </td>
+            <td width="50%" colspan="2" style="padding: 30px;">
+              <p class="fs-24"><b>Purpose of the Quarterly Updates</b></p>
+              <p>As we move forward, this update marks the beginning of a quarterly series designed to keep the conversation active and focused.</p>
+              <p>Each edition will look back at the commitments made in April, track progress across the displacement and inclusion landscape in Africa, and highlight the emerging issues that should shape dialogue at the next Africa Forum on Displacement in Q3 of 2026.</p>
+            </td>
+          </tr>
+        </table>
+        <br>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td class="px spaced">
+        <hr class="big">
+        <h2 class="serif">What was the most consequential conversation at AFD 2025?</h2>
+        <br>
+        <img src="https://res.cloudinary.com/dg8yueznc/image/upload/v1764070516/img_bpoz0v.jpg" class="imgfloat" alt="">
+        <p>
+          For some, it was the moment a refugee entrepreneur in Kakuma connected with investors in the Marketplace of Solutions, where ventures in renewable energy, fashion, agriculture, and digital innovation proved the depth of talent across displaced communities. For others, it was hearing how financing models from IFC and Equity Bank can make financial inclusion a viable growth strategy for banks across Africa. Policy leaders found clarity in roundtables on how national frameworks like Kenya’s Shirika Plan can embed refugee inclusion in long-term development. Private-sector managers discovered new ways to build inclusive supply chains and create jobs at scale, while refugee-led organizations reaffirmed that displaced people are not beneficiaries but partners in progress.
+        </p>
+        <p>Across every venue, one message tied these conversations together: AFD 2025 marked a shift from aid to agency. As we move toward AFD 2026, we look forward to hearing what actions, partnerships, and solutions you are driving forward.</p>
+        <a href="https://vimeo.com/1081509465?fl=pl&fe=sh" class="btn">Watch highlight</a>
+        <br><br><br>
+      </td>
+    </tr>
+
+
+    <tr bgcolor="#003459">
+      <td class="px py">
+        <img src="https://res.cloudinary.com/dg8yueznc/image/upload/v1750405220/afdnumbers_llujjn.png" alt="">
+      </td>
+    </tr>
+
+    <tr>
+      <td class="px spaced">
+        <br><br>
+        <h2 class="serif">Where do we go from here?</h2>
+        <br>
+        <p>The journey continues, and planning for the next Africa Forum on Displacement is already underway. The 2026 edition, with dates and venue to be announced soon, will build on the momentum of AFD 2025, deepen this year’s themes, and spotlight the progress taking shape across the continent. It will also push the conversation forward by exploring how finance, technology, and continental frameworks such as the AfCFTA can accelerate inclusion at scale.</p>
+        <br>
+        <img src="https://res.cloudinary.com/dg8yueznc/image/upload/v1764071444/share-image_wwem1i.jpg" class="imgfloat" style="margin: 0 25px 10px 0; border: 1px solid #eee; border-radius: 5px; " alt="">
+        <p>This next phase is especially critical because the work advanced at AFD will be reviewed alongside global commitments. As stakeholders of the Global Compact on Refugees (GCR), the co-conveners will participate in the Global Refugee Forum Progress Review from 15 to 17 December 2025, a key milestone that assesses how countries and partners are fulfilling pledges under the GCR. Aligning AFD conversations with this global process ensures that Africa’s priorities remain visible, coordinated, and influential as progress is evaluated and future commitments are shaped.</p>
+        <p>Read the outcomes of the last Global Refugee Forum including the AFD Co-Conveners pledges:</p>
+        <a href="https://www.unhcr.org/media/outcomes-global-refugee-forum-2023" class="btn">Read more</a>
+
+      </td>
+    </tr>
+
+
+    <tr>
+      <td class="px text-center">
+        <hr class="big">
+        <div class="py" style="background: #003459;">
+          <h2 style="color: #b0d2df;">Continue the online conversation</h2>
+          <p class="fs-18" style="color: #b0d2df;">Follow, share, and stay engaged!</p>
+          <div class="mt-15 social-icons">
+            <a href="https://x.com/AfricaForum2025" style="display: inline-block;"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:0880a7,e_colorize:100/v1739434494/x_feg7p1.png" alt=""></a>
+            <a href="https://www.instagram.com/africaforumondisplacement/" style="display: inline-block;"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:0880a7,e_colorize:100/v1739434494/instagram_exmcsn.png" alt=""></a>
+            <!-- <a href="https://www.facebook.com/TheAmahoroCoalition/" style="display: inline-block;"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:0880a7,e_colorize:100/v1739434494/facebook_pksm1l.png" alt=""></a> -->
+            <a href="https://www.youtube.com/@AfricaForumOnDisplacement2025" style="display: inline-block;"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:0880a7,e_colorize:100/v1739434494/youtube_i7x2vd.png" alt=""></a>
+            <a href="https://www.linkedin.com/company/africa-forum-on-displacement/" style="display: inline-block;"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:0880a7,e_colorize:100/v1739435347/linkedin_qnypuu.png" alt=""></a>
+          </div>
+        </div>
+
+        <br>
+        <div>
+          <img width="155px" src="https://res.cloudinary.com/dg8yueznc/image/upload/w_375,h_117,c_fill,g_west/v1764139040/partners_hd3vvm.png" style="display: inline-block; margin-right: 15px;">
+          <img src="https://res.cloudinary.com/dg8yueznc/image/upload/v1765286613/partnersAmahoro_oiaxha.png" style="max-width: 400px; margin: 0 auto 4px; display: inline-block" alt="">
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <br><br>
+      </td>
+    </tr>
+
+    <tr bgcolor="#f4f4f4" class="footer">
+      <td class="text-center fs-12" style="padding: 15px 0;">
+        <p>
+          <a href="*|UNSUB|*" class="utilityLink">unsubscribe from this list</a>
+          <span class="mobileHide">&nbsp;&nbsp; | &nbsp;&nbsp;</span>
+          <a href="*|UPDATE_PROFILE|*" class="utilityLink">update subscription preferences</a>
+          <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+          <span class="mobileHide">&nbsp;&nbsp; | &nbsp;&nbsp;</span>
+          <a href="*|ARCHIVE|*" class="utilityLink">view email in browser</a>
+          <!-- *|END:IF|* -->
+        </p>
+      </td>
+    </tr>
+
+
+  </table>
+</body>
+</html>

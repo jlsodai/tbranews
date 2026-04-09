@@ -1,0 +1,144 @@
+<html><head><style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #f4f4f0; font-family: 'Gilroy', 'Inter', sans-serif; }
+  .wrapper { max-width: 620px; margin: 32px auto; background: #ffffff; border-radius: 16px; overflow: hidden; }
+
+  /* Hero */
+  .hero { background: #256542; padding: 48px 40px 40px; position: relative; overflow: hidden; }
+  .hero-shapes { position: absolute; top: 0; right: 0; width: 200px; height: 100%; }
+  .shape { position: absolute; border-radius: 50%; }
+  .s1 { width: 80px; height: 80px; background: #CC9712; top: 20px; right: 20px; border-radius: 50%; }
+  .s2 { width: 60px; height: 60px; background: #ADA4FF; opacity: 0.7; top: 80px; right: 80px; border-radius: 50%; }
+  .s3 { width: 100px; height: 100px; background: #BCD2EB; opacity: 0.4; bottom: 20px; right: 10px; border-radius: 50%; }
+  .s4 { width: 50px; height: 50px; background: #CC9712; opacity: 0.5; bottom: 60px; right: 90px; clip-path: polygon(100% 0, 0 100%, 100% 100%); border-radius: 0; }
+
+  .logo-area { display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+  .logo-circle { width: 36px; height: 36px; border: 1.5px solid rgba(255,255,255,0.6); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+  .logo-e { font-size: 18px; color: #fff; font-style: italic; font-weight: 300; }
+  .logo-text { color: #fff; font-size: 14px; letter-spacing: 3px; font-weight: 500; }
+
+  .hero-eyebrow { color: #CC9712; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; margin-bottom: 16px; }
+  .hero-headline { color: #ffffff; font-size: 32px; font-weight: 700; line-height: 1.2; margin-bottom: 16px; max-width: 320px; }
+  .hero-date { display: inline-block; background: #CC9712; color: #ffffff; font-size: 12px; font-weight: 600; letter-spacing: 1px; padding: 6px 16px; border-radius: 20px; text-transform: uppercase; }
+
+  /* Body */
+  .body { padding: 40px; }
+  .greeting { font-size: 16px; color: #256542; font-weight: 600; margin-bottom: 16px; }
+  .intro { font-size: 15px; color: #3d3d3a; line-height: 1.7; margin-bottom: 32px; }
+
+  /* Feature cards */
+  .features { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
+  .feature-card { background: #f8f8f5; border-radius: 12px; padding: 20px; border-left: 3px solid #256542; }
+  .feature-card.gold { border-left-color: #CC9712; }
+  .feature-card.blue { border-left-color: #BCD2EB; }
+  .feature-card.purple { border-left-color: #ADA4FF; }
+  .feature-icon { font-size: 20px; margin-bottom: 8px; }
+  .feature-title { font-size: 13px; font-weight: 700; color: #256542; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .feature-card.gold .feature-title { color: #CC9712; }
+  .feature-card.blue .feature-title { color: #5a8aaa; }
+  .feature-card.purple .feature-title { color: #7a6acc; }
+  .feature-desc { font-size: 13px; color: #555; line-height: 1.5; }
+
+  /* Divider */
+  .divider { height: 1px; background: #DADEDA; margin: 32px 0; }
+
+  /* CTA */
+  .cta-section { text-align: center; margin-bottom: 32px; }
+  .cta-label { font-size: 13px; color: #888; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+  .cta-text { font-size: 18px; font-weight: 700; color: #1a1a1a; margin-bottom: 20px; line-height: 1.4; }
+  .cta-btn { display: inline-block; background: #256542; color: #ffffff; font-size: 14px; font-weight: 600; padding: 14px 36px; border-radius: 30px; text-decoration: none; letter-spacing: 0.5px; }
+
+  /* Closing */
+  .closing { font-size: 15px; color: #3d3d3a; line-height: 1.7; margin-bottom: 24px; }
+  .sign-off { font-size: 14px; color: #256542; font-weight: 600; }
+
+  /* Footer */
+  .footer { background: #1a1a1a; padding: 28px 40px; text-align: center; }
+  .footer-logo { color: #fff; font-size: 12px; letter-spacing: 3px; font-weight: 500; margin-bottom: 12px; }
+  .footer-links { margin-bottom: 12px; }
+  .footer-links a { color: #ADA4FF; font-size: 12px; text-decoration: none; margin: 0 10px; }
+  .footer-url { color: #888; font-size: 11px; }
+
+  /* Geometric accent bar */
+  .accent-bar { height: 6px; background: linear-gradient(to right, #256542 33%, #CC9712 33%, #CC9712 66%, #ADA4FF 66%); }
+</style>
+
+<!--UIPATH_EXTENSION_ID: conkfbpnllelocpogdmbilgmnkabjfmf--></head><body><div class="wrapper">
+  <div class="accent-bar"></div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-shapes">
+      <div class="s1"></div>
+      <div class="s2"></div>
+      <div class="s3"></div>
+      <div class="s4"></div>
+    </div>
+    <div class="logo-area">
+      <div class="logo-circle"><span class="logo-e">E</span></div>
+      <span class="logo-text">EMERGE</span>
+    </div>
+    <div class="hero-eyebrow">Something big is coming</div>
+    <div class="hero-headline">Your membership just got a whole lot bigger.</div>
+    <div class="hero-date">Launching week of 13 April</div>
+  </div>
+
+  <!-- Body -->
+  <div class="body">
+    <div class="greeting">Dear &lt;<first name="">&gt;,</first></div>
+    <div class="intro">
+      You've been part of EMERGE from the start — and we want you to be the first to know what's coming next.<br><br>
+      On <strong>13 April</strong>, we're launching the EMERGE platform and a brand new website. Everything you've experienced as a member so far is about to become faster, clearer, and more powerful — all in one place, built around you.
+    </div>
+
+    <div class="features">
+      <div class="feature-card">
+        <div class="feature-title">Your profile = your CV</div>
+        <div class="feature-desc">Build it once. Download it or share a link — anytime, with anyone.</div>
+      </div>
+      <div class="feature-card gold">
+        <div class="feature-title">Live opportunities</div>
+        <div class="feature-desc">Browse real roles from vetted employer partners — and let them find you too.</div>
+      </div>
+      <div class="feature-card blue">
+        <div class="feature-title">Learning in one place</div>
+        <div class="feature-desc">Self-paced courses, live sessions, and events — all on the platform.</div>
+      </div>
+      <div class="feature-card purple">
+        <div class="feature-title">Community &amp; connections</div>
+        <div class="feature-desc">Peer matching, senior executive conversations, and a network that grows with you.</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="cta-section">
+      <div class="cta-label">Get ready</div>
+      <div class="cta-text">The new EMERGE website is launching too.<br>Take a first look when it goes live.</div>
+      <a href="https://emergeleaders.com" class="cta-btn">Visit emergeleaders.com on 13 April</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="closing">
+      Your existing membership carries across automatically — there's nothing you need to do before launch. When the platform goes live, you'll receive a separate email with everything you need to get started.<br><br>
+      We've built this with you in mind. We can't wait to show you what's inside.
+    </div>
+    <div class="sign-off">
+      The EMERGE Team<br>
+      <span style="font-weight:400; color:#888; font-size:13px;">www.emergeleaders.com</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-logo">EMERGE</div>
+    <div class="footer-links">
+      <a href="#">LinkedIn</a>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+    </div>
+    <div class="footer-url" style="color:#555; font-size:11px;">You're receiving this because you're an EMERGE member. Questions? <a href="mailto:info@emergeleaders.com" style="color:#ADA4FF;">info@emergeleaders.com</a></div>
+  </div>
+</div>
+</body></html>

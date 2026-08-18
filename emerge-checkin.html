@@ -1,0 +1,761 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Community</title>
+  <style type="text/css">
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200,400;700&family=Libre+Baskerville:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      min-width: 100%!important;
+      eight:auto;
+      color: #000;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    img {height: auto; max-width: 100%;}
+
+    a {
+      color: #cc9712;
+    }
+
+    .content {
+      min-width: 700px !important;
+      width: 700px !important;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .box-outline, .box-outline-2 {
+      border: 3px solid #fff;
+      padding: 36px;
+      margin: 21px 0;
+    }
+    div.box-outline-2 {
+      border-color: #202944;
+    }
+
+    .premium-btn {
+      display:  inline-block;
+      width: max-content;
+      position: relative;
+      text-decoration: none;
+      font-size: 12px !important;
+      padding: 10px 15px;
+      letter-spacing: 1px;
+      background-color: #a67c00;
+      color: white;
+      margin-top: 22px;
+    }
+
+    .premium-btn img {
+      width: 17px;
+      margin-bottom: -4px;
+      margin-right: 5px;
+    }
+
+    .label {
+      background-color: #17a2b8;
+      padding: 3px 5px;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 12px;
+      margin-bottom: 4px;
+      display: inline-block;
+    }
+
+    .text-primary { color: #0275d8; }
+    .text-light { color: #f8f8f8; }
+    .text-white { color: white !important; }
+    .text-success { color: #5cb85c; }
+    .text-info { color: #5bc0de; }
+    .text-warning { color: #f0ad4e; }
+    .text-danger { color: #EA5A4F; }
+
+
+    .bg-primary { background-color: #0275d8; }
+    .bg-success { background-color: #5cb85c; }
+    .bg-info { background-color: #17a2b8; }
+    .bg-warning { background-color: #f0ad4e; }
+    .bg-danger { background-color: #EA5A4F; }
+    .bg-gold, .bg-premium { background-color: #a67c00; }
+    .bg-tbra-gold { background-color: #b6a999 !important; }
+    .bg-tbra-blue { background-color: #202945 !important; }
+    .bg-dark { background-color: #202945 !important; }
+    .bg-black { background-color: #3e3e3e; }
+    .bg-light { background-color: #f8f8f8; }
+
+    .table-responsive {
+      table-layout: fixed;
+    }
+
+    .card-table {
+      border-spacing: 15px;
+      border-collapse: separate;
+      margin: -15px;
+    }
+
+    .card-table td {
+      background: #f3fafb;
+    }
+
+    a.small-btn {
+      padding: 3px 5px;
+      border-radius: 5px;
+      letter-spacing: unset;
+    }
+
+    a.small-btn img {
+      margin-right: 0px;
+    }
+
+    .img-shadow {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .mb-20 { margin-bottom: 20px; }
+    .mx-5 { margin-left: 5px; margin-right: 5px;}
+    .mr-20 { margin-right: 20px; }
+    .mr-10 { margin-right: 10px; }
+    .mt-20 { margin-top: 20px; }
+    .mb-10 { margin-bottom: 10px; }
+    .mt-10 { margin-top: 10px !important; }
+
+    .header {padding: 40px 30px 40px 30px;}
+
+    .innerpadding {padding: 40px 30px 40px 30px;}
+
+    .borderbottom {border-bottom: 1px solid #f2eeed;}
+
+    .subhead {font-size: 15px; color: #ffffff; letter-spacing: 10px;}
+
+    h1 {
+      font-size: 55px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .dtable {
+      display:  table;
+    }
+
+    .ul-row {
+      width: 100%;
+      padding: 0;
+    }
+
+    .ul-row div {
+      width: max-content;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .ul-row div img {
+      width: 16px;
+      margin-top:3px;
+      margin-right: 3px;
+    }
+
+    .ul-row p {
+      font-size: 14px;
+      vertical-align: top;
+      display: inline-block;
+      width: 85%;
+      color: #212843;
+    }
+
+    .darkBlue {
+      color: #202944;
+    }
+
+    .strongWhite {
+      color: white;
+    }
+
+    h1, h2, p, a, ul, li, * {
+      margin: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      text-decoration: none;
+    }
+
+    .libreb, .libreb * {
+      font-family: "Libre Baskerville", serif, 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+      text-decoration: none;
+    }
+
+    .bodycopy {font-size: 15px;
+      line-height: 1.5;
+      color: #202945;}
+
+      .bodycopy-white {font-size: 15px;
+        line-height: 1.5;
+        color: white;}
+
+        .button a {color: #ffffff; text-decoration: none;}
+
+        .footer {padding: 20px 30px 15px 30px;}
+        .footercopy {font-size: 14px; color: #ffffff;}
+        .footercopy a {color: #ffffff; text-decoration: underline;}
+
+        .header-fix {
+          margin: 2em 0 2em 2em;
+        }
+
+        .header-img img {
+          max-width: 270px;
+          margin-bottom: 10px;
+        }
+
+        .header-img-side img {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+        }
+
+        .main-header {
+          font-size: 35px;
+          font-weight: 800;
+          line-height: 1.3;
+          margin-top: 14px;
+          color: white;
+        }
+
+        .primary-btn {
+          display: inline-block;
+          width: max-content;
+          position: relative;
+          text-decoration: none;
+          padding: 10px 25px;
+          border: 1px solid #cc9712;
+          border-radius: 5px;
+          color: #fff;
+          margin-top: 22px;
+        }
+
+        .primary-btn-inverse {
+          background: #fff;
+/*      color: #EA5A4F;*/
+}
+
+.outlined-btn {
+  border: 1px solid #202945;
+  color: #202945;
+  border-radius: 40px;
+  padding: 8px 30px;
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+.link-btn {
+  display: block;
+  font-weight: bold;
+  color: #EA5A4F;
+  font-size: 15px;
+  padding-top: 12px;
+}
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+.body-btn-blue {
+  display: inline-block;
+  width: max-content;
+  height: auto;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px 15px;
+  letter-spacing: 1px;
+  background-color: transparent;
+  color: #2D3752;
+  border: 1px solid #2D3752;
+  margin-top: 22px;
+}
+
+.body-btn-white {
+  display: block;
+  width: max-content;
+  height: auto;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px 15px;
+  letter-spacing: 1px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  margin-top: 22px;
+}
+
+.list-case {
+  display: flex;
+}
+
+.tick {
+  margin-right: 8px;
+}
+
+.tick img {
+  width: 20px;
+}
+
+
+.useful-links ul {
+  padding: 10px 10px 0;
+}
+.useful-links li, .useful-links li a {
+  color: #EA5A4F;
+}
+
+.comm-card {
+  display: inline-block;
+  width: 30.5%;
+  height: auto;
+  background-color: white;
+  padding: 7px;
+}
+
+.card-contain {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0 0 0 0;
+}
+
+.card-contain-bc {
+  width: 85%;
+  margin: 0 auto;
+  padding: 3.2em 0 0 0;
+}
+
+.card-contain img {
+  display: table;
+  margin: 0 auto 18px auto;
+  max-width: 100%;
+}
+
+.card-contain-bc img {
+  display: table;
+  width: 60px;
+  margin: 0 auto 18px auto;
+}
+
+.freshIcon {
+  width: 65px !important;
+  margin: -5px 18px 0 0;
+  float: left;
+}
+
+
+
+.nodisplay {
+  display: none;
+}
+
+.table-col {
+ width: 50%;
+}
+.col-left {
+ padding-right: 10px;
+}
+.col-right {
+  padding-left: 10px;
+}
+
+.blockquote {
+  color: #989FB6;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+  padding: 1.5em;
+  border-left: 4px solid #EA5A4F;
+  background: #F9F9F9;
+}
+
+.blockquote img {
+  width: 70px;
+  float: left;
+  margin-right: 12px;
+}
+
+.blockquote p {
+  font-size: 20px;
+}
+
+.quote-author {
+  margin-top: 10px;
+}
+
+.quote-author td{
+  vertical-align: top;
+}
+
+.quote-author img {
+  width: 32px;
+  float: left;
+  margin-right: 12px;
+}
+
+.blockquote span {
+  font-weight: 600;
+}
+
+
+
+.icon-card {
+  font-size: 16px;
+  font-weight: bold;
+  font-weight: 400;
+  line-height: 1.4;
+  padding: 1.5em;
+  border: 1px solid #dddddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  min-height: 42px;
+}
+
+
+.icon-card img {
+  height: 17px;
+}
+
+
+.icon-card-img-wrap {
+  padding: 15px;
+  border-radius: 50%;
+  width: 17px;
+  background: #f4f4f6;
+  float: left;
+  margin-right: 10px;
+  margin-left: -6px;
+  height: 17px;
+  width: 17px;
+}
+
+.blockquote-right {
+  color: #4d5468;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+  padding: 1.5em;
+}
+
+.blockquote-right a {
+  color: #a67c00;
+  font-weight: bold;
+}
+
+.blockquote strong {
+  display:  block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight:  bold;
+}
+.left-calendar img {
+  float: left; width: 50px; margin-right: 10px;
+}
+.img-icon {
+  height: auto; width: 18px; position: relative; top: 3px; margin-top: 5px; margin-right: 5px;
+}
+
+.calendar img {
+  height: 13px;
+  margin-right: 6px;
+}
+
+.calendar p.title {
+  font-weight: bold;
+  font-size: 18px;
+  color:#515b7b;
+}
+
+.calendar p span {
+  font-weight: 600;
+}
+
+.calendar p {
+  margin-bottom: 5px;
+}
+
+.hr {
+  border-top: 1px solid #bfc3c8;
+  margin: 50px 0;
+}
+
+.sectitle {
+  font-weight: 200;
+  font-size: 40px;
+}
+
+
+
+.logo-stack img {
+  width: 80px;
+}
+
+
+.tour-img {
+  width: 400px;
+  max-width: 100%;
+}
+
+.col-4 { width: 25%; float: left; }
+
+.collapse { border-collapse: collapse; }
+.banner-menu a { color: #fff; margin-right: 15px; }
+.banner-menu a:last-child { margin: 0; }
+.capitalise { text-transform: uppercase;}
+.learnmore { text-decoration: underline; color: black; font-size: 16px; }
+.moves { border-collapse: separate; border-spacing: 10px; margin-left: -10px;}
+.moves td {
+  background: #353A4C;
+  color: #fff;
+  border-right: 5px solid #a28231;
+  width: 50%;
+  padding: 10px;
+  vertical-align: top;
+}
+.moves td a { text-decoration: underline; color: #fff;}
+.spaced p { margin-bottom: 7px; }
+.spaced p.text-danger { margin-bottom: 0; }
+
+
+.bg-dawn { background-color: #DADEDA; }
+.bg-tender { background-color: #6E8498; }
+.bg-dusk { background-color: #4A4F54; }
+.bg-mustard { background-color: #a28231 !important; }
+.bg-blue { background-color: #202945; }
+.text-dawn { color: #CDDAE6; }
+.text-tender { color: #6E8498; }
+.text-dusk { color: #000; }
+.text-mustard { color: #a28231; }
+.text-blue { color: #202945; }
+.text-brown { color: #96522D; }
+.text-green { color: #0D3928; }
+.text-black { color: black }
+
+.mb-20 { margin-bottom: 20px; }
+.mb-10 { margin-bottom: 10px; }
+.mt-10 { margin-top: 10px !important; }
+.mt-5 { margin-top: 10px !important; }
+.thin { font-weight: 300; }
+.bold { font-weight: bold; }
+
+.fs-12 { font-size: 12px; }
+.fs-14 { font-size: 14px; }
+.fs-16 { font-size: 16px; }
+.fs-18 { font-size: 18px; }
+.fs-22 { font-size: 22px; }
+.fs-24 { font-size: 24px; }
+.fs-26 { font-size: 26px; }
+.fs-30 { font-size: 30px; }
+.fs-34 { font-size: 34px; }
+.fs-40 { font-size: 40px; }
+.uppercase { text-transform: uppercase; }
+.newpadding { padding: 40px 50px; }
+.smallpadding { padding: 20px 25px; }
+
+.inline-block { display: inline-block; }
+
+hr {
+ border: 1px solid #a28231;
+ margin: 30px auto;
+ width: 50%;
+}
+
+.midsection {
+  margin-top: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+  .midsection {
+    margin-top: 52px;
+  }
+}
+
+.border-collapse { border-collapse: collapse; }
+.underline { text-decoration: underline; }
+
+.spaced p + p { margin-top: 20px; }
+.spaced.lh p { line-height: 1.5 }
+
+.center-link {
+  text-align: center;
+}
+
+.unset-case { text-transform: unset; }
+
+.pl-40 { padding-left: 40px; }
+.narrow { padding-left: 40px; padding-right: 40px }
+.pr-40 { padding-right: 40px; }
+
+h2 { font-size: 20px; color: #256542; margin-bottom: 20px; }
+u { text-decoration: underline; }
+
+</style>
+</head>
+
+<body bgcolor="#eee">
+  <table width="100%" bgcolor="#eee" border="0" cellpadding="0" cellspacing="0">
+
+    <tr>
+      <td>
+        <table bgcolor="#fff" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
+
+      <!-- <tr>
+        <td class="newpadding" style="background: url('https://res.cloudinary.com/tbra/image/upload/v1686560998/ProgrammesBG_ogeyrl.jpg') no-repeat center center / cover;">
+          <h3 class="libreb fs-34 text-white" style="margin-top: 205px;"><span class="text-mustard">Lead</span> in the New <br />Global Context</h3>
+        </td>
+      </tr> -->
+
+
+      <tr>
+        <td>
+          <a href="https://submit.theboardroomafrica.com/progresssurvey"><img src="https://a0yklml-oe8nolwfihhajzhtiek8u5mnr1mgakzrtbq.canva-cdn.email/071a3542255edf35b5c5b0a26de1ea22.jpg" alt></a>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="newpadding spaced">
+
+          <div class="narrow">
+            <p>Dear [[First Name]],</p>
+            <p>A few months can change a lot.</p>
+            <p>A new responsibility. A difficult conversation handled differently. A new opportunity. A stronger network. More clarity about where you are going, or perhaps a challenge that is still getting in the way.</p>
+            
+            <p><b>We want to understand what has changed for you since your last EMERGE check-in.</b></p>
+            <p>EMERGE is designed to take the career journey with you, not simply deliver a set of activities and hope they make a difference. That means regularly understanding where you are, what is changing, what is helping, and where you may still need support.</p>
+            
+            <br>
+            
+            <h2 class="text-center fs-18 text-dusk">This check-in is required for all EMERGE members.</h2>
+            
+            <br>
+            
+            <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1787042765/mcf_wysrbg.png" alt="">
+            
+            <br><br>
+            
+            <p class="text-center">Please complete your check-in by <b>Friday, 21st August</b>.</p>
+            
+            <div class="text-center"><a href="https://submit.theboardroomafrica.com/progresssurvey" style="margin-right: 10px;" class="primary-btn text-dusk">Complete the Check-In now</a></div>
+          </div>
+
+          <div class="hr"></div>
+
+          <h2 class="narrow">Why Your Check-in Matters</h2>
+
+          <img src="https://res.cloudinary.com/dqngxqaha/image/upload/v1787042766/quote_kczj58.jpg" alt="">
+
+          <br><br>
+
+          <div class="narrow">
+            <p><b>We want to understand things such as:</b></p>
+            <p>
+              <b>What has changed?</b>
+              <br>
+              Have you taken on greater responsibility, changed roles, increased your income, started consulting, grown a business, or accessed a new opportunity?
+            </p>
+            <p>
+              <b>What are you doing differently?</b>
+              <br>
+              Are you communicating with more confidence, taking greater ownership, navigating workplace challenges differently, or becoming more intentional about your career?
+            </p>
+
+            <p>
+              <b>What is opening up?</b>
+              <br>
+              Have you built new relationships, accessed people or networks you could not reach before, or become more visible to opportunities?
+            </p>
+
+            <p>
+              <b>Where are you still getting stuck?</b>
+              <br>
+              What barriers remain, and what could EMERGE do differently or better to help you continue progressing?
+            </p>
+
+            <div class="text-center"><a href="https://submit.theboardroomafrica.com/progresssurvey" style="margin-right: 10px;" class="primary-btn text-dusk">Complete the Check-In now</a></div>
+          </div>
+
+          <div class="hr"></div>
+
+
+          <div class="narrow">
+            <h2 class="fs-30">Why This Matters for the Future of EMERGE</h2>
+
+            <p>EMERGE is an investment in your potential, and understanding whether that investment is making a meaningful difference matters. Your responses help us demonstrate not simply how many people participate in EMERGE, but <b>whether young professionals are actually progressing</b>. That evidence is important. It helps us understand what works. It helps us improve what does not. And it helps us make the case for continued investment in the programmes, networks, opportunities and infrastructure that EMERGE provides. <b>When members complete these check-ins, we get a much stronger picture of what is changing across the community, and a stronger foundation from which to keep building EMERGE.</b></p>
+          </div>
+
+          <div class="hr"></div>
+
+          <div class="narrow">
+            <h2>It should take less than 10 minutes.</h2>
+
+            <p>Please take a few moments to reflect honestly on where you are today and what has changed since your previous check-in.</p>
+
+            <div class="text-center"><a href="https://submit.theboardroomafrica.com/progresssurvey" style="margin-right: 10px;" class="primary-btn text-dusk">Complete the Check-In now</a></div>
+          </div>
+
+          <div class="hr"></div>
+
+          <div class="narrow">
+            <h2>We are building EMERGE with you.</h2>
+
+            <p>Every check-in helps us understand your journey more clearly and build a stronger progression experience around the realities young professionals are actually navigating. Thank you for taking the time to tell us what is changing, what is working, and what you need next.</p>
+
+            <br>
+
+            <h2>Your progress matters. And your voice helps shape where EMERGE goes next.</h2>
+            <p>Warm regards,</p>
+            <p><b>The EMERGE Team</b></p>
+
+          </div>
+
+          <div class="hr"></div>
+
+          <h2>Confidentiality</h2>
+
+          <p>Your responses will be treated confidentially and used for platform improvement, impact measurement, and member engagement. Where findings are reported externally, they will be presented in aggregate unless you have separately given permission for your individual story or information to be shared.</p>
+
+          <div class="hr"></div>
+
+          <h2>Safeguarding Commitment</h2>
+
+          <p>EMERGE is committed to a safe and respectful environment for all members and partners. We have zero tolerance for abuse, exploitation, harassment, discrimination, or misuse of power. Refer to our <a href="https://emergeleaders.com/safeguarding-policy/"><u>Safeguarding Policy</u></a> for more details. Concerns related to EMERGE activities can be reported confidentially to <a href="mailto:compliance@theboardroomafrica.com"><u>compliance@theboardroomafrica.com</u></a>. All reports are handled discreetly and responsibly.</p>
+
+          <div class="hr"></div>
+
+          <div class="text-center">
+            <img width="150px" src="https://res.cloudinary.com/dqngxqaha/image/upload/v1787043549/logo-emerge_on1s2o.png" alt="">
+            
+            <p class="narrow">Stay connected with us on our socials to keep up with news, opportunities, and all things EMERGE!</p>
+          </div>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td class="text-center">
+          <div style="background: #256542; border-radius: 0 0 15px 15px; padding: 15px 0 5px;">
+            <a href="#" class="mx-5"><img width="40px" src="https://res.cloudinary.com/dqngxqaha/image/upload/v1787043923/linkedin_rfsvrn.png" alt=""></a>
+            <a href="#" class="mx-5"><img width="40px" src="https://res.cloudinary.com/dqngxqaha/image/upload/v1787043923/instagram_qji62a.png" alt=""></a>
+            <a href="#" class="mx-5"><img width="40px" src="https://res.cloudinary.com/dqngxqaha/image/upload/v1787043923/facebook_es8c3j.png" alt=""></a>
+          </div>
+        </td>
+      </tr>
+
+    </table>
+    
+  </td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,489 +1,379 @@
-
-
-Menzies newsletter · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Menzies Aviation &times; Amahoro Coalition</title>
-  <!--[if mso]>
-  <noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscell>
-  </noscript></xml><![endif]-->
-  <style type="text/css">
- 
-    /* ─── Reset ─────────────────────────────────────── */
-    body, table, td, a  { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-    table, td           { mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; }
-    img                 { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; display: block; }
-    body                { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
- 
-    /* ─── Page shell ─────────────────────────────────── */
-    .page-bg            { background-color: #f0ece8; }
-    .page-pad           { padding: 28px 12px; }
-    .email-container    { width: 600px; min-width: 600px; background-color: #ffffff; }
- 
-    /* ─── Backgrounds ────────────────────────────────── */
-    .bg-white           { background-color: #ffffff; }
-    .bg-darkslate       { background-color: #163c4c; }
-    .bg-teal            { background-color: #03a49c; }
-    .bg-purple          { background-color: #722358; }
-    .bg-light-teal      { background-color: #eef7f6; }
-    .bg-page            { background-color: #f0ece8; }
- 
-    /* ─── Text colours ───────────────────────────────── */
-    .text-white         { color: #ffffff; }
-    .text-offwhite      { color: #d0e8e6; }
-    .text-body          { color: #4a4f54; }
-    .text-darkslate     { color: #163c4c; }
-    .text-teal          { color: #03a49c; }
-    .text-purple        { color: #722358; }
- 
-    /* ─── Typography ─────────────────────────────────── */
-    .h-newsletter       { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #b0e6e8; margin: 0; }
- 
-    .h-section          { font-family: Georgia, 'Times New Roman', serif; font-size: 24px; font-weight: bold; line-height: 1.3; color: #163c4c; margin: 0 0 10px 0; }
-    .h-section-white    { font-family: Georgia, 'Times New Roman', serif; font-size: 24px; font-weight: bold; line-height: 1.3; color: #ffffff; margin: 0 0 10px 0; }
-    .h-section-teal     { font-family: Georgia, 'Times New Roman', serif; font-size: 24px; font-weight: bold; line-height: 1.3; color: #03a49c; margin: 0 0 10px 0; }
-    .h-sub              { font-family: Georgia, 'Times New Roman', serif; font-size: 18px; font-weight: bold; line-height: 1.3; color: #ffffff; margin: 0 0 10px 0; }
- 
-    .body-copy          { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #4a4f54; line-height: 1.75; margin: 0 0 16px 0; }
-    .body-copy-last     { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #4a4f54; line-height: 1.75; margin: 0; }
-    .body-copy-white    { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #d0e8e6; line-height: 1.75; margin: 0; }
-    .body-copy-purple   { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #722358; line-height: 1.65; margin: 0; }
- 
-    .diploma-label      { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 700; color: #163c4c; line-height: 1.35; margin: 0; }
-    .card-title         { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700; color: #722358; text-align: center; line-height: 1.4; margin: 0 0 8px 0; }
-    .partner-intro      { font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #d0e8e6; line-height: 1.75; margin: 0; }
- 
-    /* ─── Links ──────────────────────────────────────── */
-    a.link-teal         { color: #03a49c; font-weight: bold; text-decoration: none; }
-    a.link-legal        { color: #999999; text-decoration: underline; font-weight: normal; }
- 
-    /* ─── Spacing ────────────────────────────────────── */
-    .section-pad        { padding: 40px 40px 40px 40px; }
-    .footer-pad         { padding: 28px 40px; }
-    .legal-pad          { padding: 18px 40px; text-align: center; }
-    .mb-rule            { margin-bottom: 20px; }
- 
-    /* ─── Accent stripes ─────────────────────────────── */
-    .stripe-footer-teal   { background-color: #03a49c; width: 200px; height: 4px; font-size: 0; line-height: 0; }
-    .stripe-footer-purple { background-color: #722358; width: 200px; height: 4px; font-size: 0; line-height: 0; }
-    .stripe-footer-cyan   { background-color: #189cc2; height: 4px; font-size: 0; line-height: 0; }
- 
-    /* ─── Images ─────────────────────────────────────── */
-    .hero-img           { width: 600px; height: auto; display: block; }
-    .story-img          { width: 520px; height: auto; display: block; margin-bottom: 26px; }
-    .logo-footer-img    { width: 140px; height: auto; display: block; margin-bottom: 10px; }
-    .social-icon        { width: 22px; height: auto; display: block; }
- 
-    /* ─── CTA button ─────────────────────────────────── */
-    .btn                { display: inline-block; padding: 13px 32px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #ffffff; text-decoration: none; letter-spacing: 0.5px; border-radius: 50px; }
- 
-    /* ─── Social icon cells ──────────────────────────── */
-    .social-cell        { padding-left: 8px; }
- 
-    /* ─── Footer ─────────────────────────────────────── */
-    .footer-copy        { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #5a7a88; line-height: 1.6; margin: 0; }
-    .legal-text         { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #999999; line-height: 1.8; margin: 0; }
- 
-    /* ─── Responsive ─────────────────────────────────── */
-    @media screen and (max-width: 620px) {
-      .email-container  { width: 100% !important; min-width: auto !important; }
-      .hero-img,
-      .story-img        { width: 100% !important; }
-      .section-pad,
-      .footer-pad,
-      .legal-pad        { padding-left: 24px !important; padding-right: 24px !important; }
-      .stack-col        { display: block !important; width: 100% !important; padding: 0 0 16px 0 !important; }
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <title>Amahoro newsletter</title>
+
+
+  <style>
+    body { margin: 0; padding: 0; min-width: 100%!important; font-size: 15px; line-height: 1.3; font-weight: normal; }
+    img {height: auto; max-width: 100%; display: block;}
+    * { margin: 0; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: #4A4F54; }
+
+    .fb { font-weight: 600; }
+
+    .fs-12 { font-size: 12px; }
+    .fs-14 { font-size: 14px; }
+    .fs-15 { font-size: 15px; }
+    .fs-16 { font-size: 16px; }
+    .fs-18 { font-size: 18px; }
+    .fs-22 { font-size: 22px; }
+    .fs-24 { font-size: 24px; }
+    .fs-26 { font-size: 26px; }
+    .fs-30 { font-size: 30px; }
+    .fs-32 { font-size: 32px; }
+    .fs-40 { font-size: 40px; }
+    .fs-60 { font-size: 60px; }
+    .fs-70 { font-size: 70px; }
+    .fs-80 { font-size: 80px; }
+    .fs-100 { font-size: 100px; }
+
+    .thin { font-weight: 200; }
+
+    .text-right { text-align:right; }
+    .text-left { text-align:left; }
+    .text-center { text-align:center; }
+
+    .content { min-width: 700px !important; width: 700px !important; margin: 0 auto; overflow: hidden; }
+
+    .px { padding-left: 50px; padding-right: 50px;}
+    .py { padding-top: 40px; padding-bottom: 40px; }
+    .py-10 { padding-top: 10px; padding-bottom: 10px; }
+    .py-15 { padding-top: 15px; padding-bottom: 15px; }
+    .py-20 { padding-top: 20px; padding-bottom: 20px; }
+
+    .spaced p + p, .spaced h3 + p { margin-top: 20px; }
+    .spaced p + ul, .spaced ul + p { margin-top: 20px; }
+
+    .btn {
+      display: inline-block;
+      width: max-content;
+      text-decoration: none;
+      padding: 10px 35px;
+      color: #fff;
+      font-weight: bold;
+      margin-top: 22px;
+      background: #03a49c;
     }
- 
-  </style>
+
+    .mt-5 { margin-top: 5px; }
+    .mt-10 { margin-top: 10px; }
+    .mt-15 { margin-top: 15px; }
+    .mt-20 { margin-top: 20px; }
+
+    .px-20 { padding-left: 20px; padding-right: 20px; }
+    .pl-20 { padding-left: 20px; }
+    .pr-20 { padding-right: 20px; }
+
+    .mr-15 { margin-right: 15px; }
+
+    .btn + .btn { margin-left: 20px; background: #722358; }
+
+    h3 { color: #722358; font-size: 25px; font-family: Georgia, 'Times New Roman', serif; }
+    a { font-weight: bold; }
+
+    .section {
+     background: #f8f8f8;
+     padding: 30px;
+   }
+
+   .text-purple { color: #722358; }
+   .text-teal, a { color: #03a49c; }
+   .text-cyan { color: #189cc2; }
+   .text-darkslate { color: #163c4c; }
+   .text-white { color: #ffffff; }
+   .text-dusk { color: #3e3e3e; }
+   .bg-white { background-color: #ffffff; }
+   .bg-darkslate { background-color: #163c4c; }
+   .bg-cyan { background-color: #189cc2; }
+   .bg-teal { background-color: #03a49c; }
+   .bg-purple { background-color: #722358; }
+   .bg-alt { background-color: #faf8fa; }
+   .bg-light { background-color: #f8f8f8 }
+
+   .social-icons img { width: 22px; margin-left: 5px; }
+   .social-icons a:first-child img { margin-left: 0px; }
+
+   .footer a { color: unset; font-weight: unset; }
+
+   .mw-600 { max-width: 600px; }
+   .mw-650 { max-width: 650px; }
+
+   .reversed h3 { color: #fff; }
+   .reversed p { color: #f8f8f8; }
+   .reversed { background-color: #722358; }
+   .imgfloat {
+     width: 270px;
+     float: left;
+     margin: 0 20px 0px 0;
+   }
+   .fl { float: left; }
+
+   h3 + ul { margin-top: 15px; }
+
+   ul.no-bullet {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  ul.no-bullet li {
+    margin-left: 30px;
+  }
+
+  li + li {
+    margin-top: 15px;
+  }
+
+  .section li { margin-left: 5px; }
+
+  .in-news img { max-height: 80px; margin: 0 auto; display:block; }
+
+  .quoteIcon { width: 30px; float: left; margin: -10px 10px 0px 0; }
+
+  .mini-hr { width: 35px; background: #6aada1; height: 4px; border-radius: 5px; margin-top: 3px; }
+
+</style>
 </head>
-<body class="page-bg">
- 
-<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="page-bg">
-  <tr>
-    <td align="center" class="page-pad">
- 
-      <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600">
- 
- 
-        <!-- ╔══════════════════════════════════╗ -->
-        <!--  HERO BANNER                        -->
-        <!-- ╚══════════════════════════════════╝ -->
-        <tr>
-          <td style="padding:0;font-size:0;line-height:0;">
-            <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791379574/banner_vxr28r.jpg"
-                 alt="Menzies Aviation × Amahoro Coalition" width="600" class="hero-img">
-          </td>
-        </tr>
- 
- 
-        <!-- ╔══════════════════════════════════╗ -->
-        <!--  PROGRAMME OVERVIEW                 -->
-        <!-- ╚══════════════════════════════════╝ -->
-        <tr>
-          <td class="bg-white section-pad">
- 
-            <h2 class="h-section">Programme overview</h2>
-            <!-- Accent rule -->
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-radius:4px;overflow:hidden;margin:10px 0 22px 0;">
-              <tr><td bgcolor="#6aada1" width="35" height="4" style="height:4px;width:35px;font-size:0;line-height:0;">&nbsp;</td></tr>
-            </table>
- 
-            <p class="body-copy">The first cohort of 12 students has begun a three-month course at the Menzies Aviation Training School in Uganda. Participants are working toward internationally recognised IATA qualifications in one of two tracks:</p>
- 
-            <!-- Diploma tracks -->
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:22px 0;">
-              <tr>
-                <!-- Track 1 -->
-                <td class="stack-col" valign="top" width="48%" style="padding-right:12px;">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="border-radius:8px;overflow:hidden;">
-                    <tr>
-                      <td bgcolor="#eef7f6" style="background-color:#eef7f6;padding:20px 20px;">
-                        <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791383565/newplane_jzzawo.png"
-                             width="48" style="width:48px;height:auto;margin-bottom:14px;">
-                        <p class="diploma-label">Airline Customer Service Diploma</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-                <!-- Track 2 -->
-                <td class="stack-col" valign="top" width="48%" style="padding-left:12px;">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="border-radius:8px;overflow:hidden;">
-                    <tr>
-                      <td bgcolor="#eef7f6" style="background-color:#eef7f6;padding:20px 20px;">
-                        <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791383565/newpackage_cz7ekv.png"
-                             width="48" style="width:48px;height:auto;margin-bottom:14px;">
-                        <p class="diploma-label">Cargo Introductory Diploma</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
- 
-            <!-- Internship pathway -->
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-top:8px;">
-              <tr>
-                <td valign="middle" width="56" style="padding-right:0;">
-                  <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791382815/graduate_fhbtvi.png"
-                       width="44" style="width:44px;height:auto;display:block;margin:0 auto;">
-                </td>
-                <!-- Vertical divider -->
-                <td width="2" bgcolor="#722358" style="background-color:#722358;width:2px;font-size:0;line-height:0;">&nbsp;</td>
-                <td style="padding-left:20px;">
-                  <p class="body-copy-last">Graduates will move into internships in operational areas at Entebbe International Airport. Where roles are available, graduates may progress into employment, subject to standard recruitment requirements, qualifications and performance.</p>
-                </td>
-              </tr>
-            </table>
- 
-          </td>
-        </tr>
- 
- 
-        <!-- ╔══════════════════════════════════╗ -->
-        <!--  BUSINESS CASE                      -->
-        <!--  bgcolor fallback + bg-image        -->
-        <!-- ╚══════════════════════════════════╝ -->
-        <tr>
-          <td class="section-pad" style="background-color:#163c4c;background-image:url('https://res.cloudinary.com/dmaestro/image/upload/v1791383725/Group_20_xhqc81.jpg');background-size:cover;background-position:center center;">
- 
-            <h2 class="h-section-white">The Business Case for Inclusive Workplaces</h2>
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-radius:4px;overflow:hidden;margin:10px 0 28px 0;">
-              <tr><td bgcolor="#6aada1" width="35" height="4" style="height:4px;width:35px;font-size:0;line-height:0;">&nbsp;</td></tr>
-            </table>
- 
-            <!-- Two-column stats -->
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-              <tr valign="top">
-                <td class="stack-col" width="47%">
-                  <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791384124/C1_q4ge5c.png"
-                       width="64" style="width:64px;height:auto;margin-bottom:14px;">
-                  <p class="body-copy-white">Inclusion is a performance driver as well as a values commitment. McKinsey research covering more than 1,000 companies found that those in the top quartile for ethnic diversity on executive teams were 36% more likely to outperform financially than those in the bottom quartile. The same research links diversity to better access to talent, stronger decision-making and higher employee engagement.</p>
-                </td>
-                <!-- Vertical divider -->
-                <td width="2" style="padding:0 18px;">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" height="100%">
-                    <tr><td bgcolor="#ffffff" width="1" style="background-color:#ffffff;width:1px;font-size:0;line-height:0;">&nbsp;</td></tr>
-                  </table>
-                </td>
-                <td class="stack-col" width="47%">
-                  <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791384125/C7_ly5nod.png"
-                       width="64" style="width:64px;height:auto;margin-bottom:14px;">
-                  <p class="body-copy-white">For employers, this means inclusion goes beyond representation. It widens the talent pool, surfaces skills that might otherwise be overlooked, and builds workplaces where people from different backgrounds can contribute fully. Refugee employment is one way to put this into practice, creating social and economic value while strengthening workforce resilience.</p>
-                </td>
-              </tr>
-            </table>
- 
-            <!-- Full-width white rule -->
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:28px 0;">
-              <tr><td bgcolor="#ffffff" height="1" style="height:1px;font-size:0;line-height:0;opacity:0.3;">&nbsp;</td></tr>
-            </table>
- 
-            <!-- Building on a Proven Model -->
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-              <tr valign="top">
-                <td width="64" style="padding-right:0;">
-                  <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791384124/C12_z3tepl.png"
-                       width="56" style="width:56px;height:auto;display:block;margin:4px auto 0 auto;">
-                </td>
-                <!-- Vertical divider -->
-                <td width="2" style="padding:0 18px;">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" height="100%">
-                    <tr><td bgcolor="#ffffff" width="1" style="background-color:#ffffff;width:1px;font-size:0;line-height:0;">&nbsp;</td></tr>
-                  </table>
-                </td>
-                <td valign="top">
-                  <h3 class="h-sub">Building on a Proven Model</h3>
-                  <p class="body-copy-white">The Uganda programme extends Menzies Aviation's broader commitment to refugee employment. The company has already employed 120 refugees across its non-African markets. Bringing this experience to Africa builds on a proven model for creating sustainable pathways into aviation careers.</p>
-                </td>
-              </tr>
-            </table>
- 
-          </td>
-        </tr>
- 
- 
-        <!-- ╔══════════════════════════════════╗ -->
-        <!--  DESIGNED TO SCALE                  -->
-        <!-- ╚══════════════════════════════════╝ -->
-        <tr>
-          <td class="bg-white section-pad">
- 
-            <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791405202/Main_header_image_copy_wgqubs.jpg"
-                 alt="" width="520" class="story-img">
- 
-            <h2 class="h-section">Designed to Scale</h2>
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-radius:4px;overflow:hidden;margin:10px 0 22px 0;">
-              <tr><td bgcolor="#6aada1" width="35" height="4" style="height:4px;width:35px;font-size:0;line-height:0;">&nbsp;</td></tr>
-            </table>
- 
-            <p class="body-copy-last">The Uganda programme is not a one-off initiative. Menzies Aviation and Amahoro Coalition will evaluate the first cohort, apply the lessons learned and expand the model to other African markets, including Kenya and C&ocirc;te d&rsquo;Ivoire.</p>
- 
-          </td>
-        </tr>
- 
- 
-        <!-- ╔══════════════════════════════════╗ -->
-        <!--  PARTNER WITH AMAHORO              -->
-        <!--  gradient bg — solid fallback      -->
-        <!-- ╚══════════════════════════════════╝ -->
-        <tr>
-          <td class="section-pad" style="background-color:#163c4c;background-image:linear-gradient(135deg,#722358 0%,#03a49c 100%);">
- 
-            <h2 class="h-section-white">Partner with Amahoro Coalition</h2>
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-radius:4px;overflow:hidden;margin:10px 0 20px 0;">
-              <tr><td bgcolor="#6aada1" width="35" height="4" style="height:4px;width:35px;font-size:0;line-height:0;">&nbsp;</td></tr>
-            </table>
- 
-            <p class="partner-intro" style="max-width:380px;">Amahoro Coalition works with private sector organizations to integrate frontier market segments into their business models and growth strategies:</p>
- 
-            <!-- Cards row 1 -->
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-top:24px;margin-bottom:12px;">
-              <tr valign="top">
- 
-                <td class="stack-col" width="32%">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="border-radius:12px;overflow:hidden;">
-                    <tr>
-                      <td bgcolor="#ffffff" style="background-color:#ffffff;padding:18px 14px;text-align:center;">
-                        <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791385286/institute_ouaxbj.png"
-                             width="52" style="width:52px;height:auto;margin:0 auto 14px auto;">
-                        <p class="card-title">Institutional Capacity and Advisory</p>
-                        <p class="body-copy-purple">We embed technical expertise and growth strategy to help organisations integrate forcibly displaced persons (FDPs) into their products, services and operations.</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
- 
-                <td width="2%" style="font-size:0;line-height:0;">&nbsp;</td>
- 
-                <td class="stack-col" width="32%">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="border-radius:12px;overflow:hidden;">
-                    <tr>
-                      <td bgcolor="#ffffff" style="background-color:#ffffff;padding:18px 14px;text-align:center;">
-                        <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791386444/clip_iqbq0s.png"
-                             width="52" style="width:52px;height:auto;margin:0 auto 14px auto;">
-                        <p class="card-title">Programme and Product Design</p>
-                        <p class="body-copy-purple">We co-create tailored programmes and financial solutions that unlock opportunity in displacement-affected markets.</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
- 
-                <td width="2%" style="font-size:0;line-height:0;">&nbsp;</td>
- 
-                <td class="stack-col" width="32%">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="border-radius:12px;overflow:hidden;">
-                    <tr>
-                      <td bgcolor="#ffffff" style="background-color:#ffffff;padding:18px 14px;text-align:center;">
-                        <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791386445/people_prchum.png"
-                             width="52" style="width:52px;height:auto;margin:0 auto 14px auto;">
-                        <p class="card-title">Inclusive Hiring</p>
-                        <p class="body-copy-purple">We connect employers with verified displaced talent ready to meet their workforce needs.</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
- 
-              </tr>
-            </table>
- 
-            <!-- Cards row 2 -->
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom:28px;">
-              <tr valign="top">
- 
-                <td class="stack-col" width="32%">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="border-radius:12px;overflow:hidden;">
-                    <tr>
-                      <td bgcolor="#ffffff" style="background-color:#ffffff;padding:18px 14px;text-align:center;">
-                        <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791386445/stats_goints.png"
-                             width="52" style="width:52px;height:auto;margin:0 auto 14px auto;">
-                        <p class="card-title">Market Access</p>
-                        <p class="body-copy-purple">We extend partners' reach into high-potential markets, linking their services with FDP communities and creating new opportunities for sustainable income and economic participation.</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
- 
-                <td width="2%" style="font-size:0;line-height:0;">&nbsp;</td>
- 
-                <td class="stack-col" width="32%">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="border-radius:12px;overflow:hidden;">
-                    <tr>
-                      <td bgcolor="#ffffff" style="background-color:#ffffff;padding:18px 14px;text-align:center;">
-                        <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791386446/growth_itkozq.png"
-                             width="52" style="width:52px;height:auto;margin:0 auto 14px auto;">
-                        <p class="card-title">Venture Funding</p>
-                        <p class="body-copy-purple">We invest directly in displaced-led businesses and connect high-potential ventures to development finance to fuel growth, jobs and economic opportunity.</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
- 
-                <td width="2%" style="font-size:0;line-height:0;">&nbsp;</td>
- 
-                <td class="stack-col" width="32%">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="border-radius:12px;overflow:hidden;">
-                    <tr>
-                      <td bgcolor="#ffffff" style="background-color:#ffffff;padding:18px 14px;text-align:center;">
-                        <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791386445/ecosystem_bjiffi.png"
-                             width="52" style="width:52px;height:auto;margin:0 auto 14px auto;">
-                        <p class="card-title">Connections and Ecosystem Building</p>
-                        <p class="body-copy-purple">As market enablers, we connect partners with complementary capabilities, creating new opportunities for growth, market access and economic impact.</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
- 
-              </tr>
-            </table>
- 
-            <!-- CTA -->
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0">
-              <tr>
-                <td bgcolor="#722358" style="border-radius:50px;">
-                  <a href="https://amahorocoalition.com/get-involved/" target="_blank" class="btn">Partner with us</a>
-                </td>
-              </tr>
-            </table>
- 
-          </td>
-        </tr>
- 
- 
-        <!-- ╔══════════════════════════════════╗ -->
-        <!--  OUR PARTNERS                       -->
-        <!-- ╚══════════════════════════════════╝ -->
-        <tr>
-          <td bgcolor="#722358" class="section-pad" style="background-color:#722358;">
- 
-            <h2 class="h-section-teal">Our Partners</h2>
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-radius:4px;overflow:hidden;margin:10px 0 22px 0;">
-              <tr><td bgcolor="#6aada1" width="35" height="4" style="height:4px;width:35px;font-size:0;line-height:0;">&nbsp;</td></tr>
-            </table>
- 
-            <!-- Partner logos -->
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom:40px;">
-              <tr>
-                <td bgcolor="#ffffff" style="background-color:#ffffff;padding:16px;">
-                  <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791401076/logos_qshdsy.jpg"
-                       alt="Our Partners" width="488" style="width:488px;height:auto;display:block;">
-                </td>
-              </tr>
-            </table>
- 
-            <!-- Footer: logo + copyright + social -->
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-              <tr>
-                <td width="55%" valign="middle">
-                  <img src="https://amahorocoalition.com/wp-content/uploads/2024/05/Logoweb.png"
-                       alt="Amahoro Coalition" width="140" class="logo-footer-img">
-                  <p class="footer-copy" style="color:#c8a8be;">Copyright &copy; *|CURRENT_YEAR|* Amahoro Coalition Limited,<br>All rights reserved.</p>
-                </td>
-                <td width="45%" valign="middle" align="right">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="right">
-                    <tr>
-                      <td class="social-cell"><a href="https://x.com/AfricaAmahoro" target="_blank"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:03a49c,e_colorize:100/v1739434494/x_feg7p1.png" alt="X" width="22" class="social-icon"></a></td>
-                      <td class="social-cell"><a href="https://www.instagram.com/amahoro.coalition?igsh=eHBwOG9tN2hpcnc0&utm_source=qr" target="_blank"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:03a49c,e_colorize:100/v1739434494/instagram_exmcsn.png" alt="Instagram" width="22" class="social-icon"></a></td>
-                      <td class="social-cell"><a href="https://www.facebook.com/TheAmahoroCoalition/" target="_blank"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:03a49c,e_colorize:100/v1739434494/facebook_pksm1l.png" alt="Facebook" width="22" class="social-icon"></a></td>
-                      <td class="social-cell"><a href="http://www.youtube.com/@AmahoroCoalition-videos" target="_blank"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:03a49c,e_colorize:100/v1739434494/youtube_i7x2vd.png" alt="YouTube" width="22" class="social-icon"></a></td>
-                      <td class="social-cell"><a href="https://www.linkedin.com/company/amahoro-coalition/" target="_blank"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:03a49c,e_colorize:100/v1739435347/linkedin_qnypuu.png" alt="LinkedIn" width="22" class="social-icon"></a></td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
- 
-          </td>
-        </tr>
- 
- 
-        <!-- ╔══════════════════════════════════╗ -->
-        <!--  LEGAL / UNSUBSCRIBE               -->
-        <!-- ╚══════════════════════════════════╝ -->
-        <tr>
-          <td class="bg-page legal-pad">
-            <p class="legal-text">
-              <a href="*|UNSUB|*" class="link-legal">unsubscribe from this list</a>
-              &nbsp;&nbsp;|&nbsp;&nbsp;
-              <a href="*|UPDATE_PROFILE|*" class="link-legal">update subscription preferences</a>
-              &nbsp;&nbsp;|&nbsp;&nbsp;
-              <a href="*|ARCHIVE|*" class="link-legal">view email in browser</a>
-            </p>
-          </td>
-        </tr>
- 
- 
-      </table>
-    </td>
-  </tr>
-</table>
- 
+<body style="background: #f4f4f4">
+  <table class="content" width="100%" bgcolor="#fff" border="0" cellpadding="0" cellspacing="0">
+    <!-- <tr>
+      <td class="px">
+        <br>
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td width="50%" class="">
+              <img src="https://res.cloudinary.com/dmaestro/image/upload/v1739435694/amahoro_yoywm7.jpg" width="150px" alt="">
+            </td>
+            <td width="50%" class="text-right">
+              <h3 class="text-teal">Oct 2026</h3>
+              <p>Oct 2026 Newsletter</p>
+            </td>
+          </tr>
+        </table>
+        <br>
+      </td>
+    </tr> -->
+
+
+    <tr>
+      <td>
+        <!-- Banner here -->
+        <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791460884/ABanner_xty6k9.jpg" alt="">
+      </td>
+    </tr>
+
+
+    <tr>
+      <td class="px py spaced">
+        <h3>Programme overview</h3>
+        <div class="mini-hr">&nbsp;</div>
+        <br>
+        <p>The first cohort of 12 students has begun a three-month course at the Menzies Aviation Training School in Uganda. Participants are working toward internationally recognised IATA qualifications in one of two tracks:</p>
+        
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-top: 30px;">
+          <tr>
+            <td width="15%">
+              <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791383565/newplane_jzzawo.png" alt="">
+            </td>
+            <td width="35%" style="padding: 0 10px;">
+              <p style="line-height: 1.2; margin-left: 15px; font-weight: 600;">Airline Customer <br>Service Diploma</p>
+            </td>
+            <td width="15%">
+              <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791383565/newpackage_cz7ekv.png" alt="">
+            </td>
+            <td width="35%" style="padding: 0 10px;">
+              <p style="line-height: 1.2; margin-left: 15px; font-weight: 600;">Cargo Introductory Diploma</p>
+            </td>
+          </tr>
+        </table>
+
+        <br><br>
+
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="15%">
+              <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791382815/graduate_fhbtvi.png" style="margin-top: 10px;" alt="">
+            </td>
+            <td width="4%"></td>
+            <td style="border-right: 2px solid #722358"></td>
+            <td width="4%"></td>
+            <td width="85%">
+              <p>Graduates will move into internships in operational areas at Entebbe International Airport. Where roles are available, graduates may progress into employment, subject to standard recruitment requirements, qualifications and performance.</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td class="px py" bgcolor="#0b5e5b" background="https://res.cloudinary.com/dmaestro/image/upload/v1791461261/ImgBg_wdhaj3.jpg" style="background-color: #0b5e5b; background-image: url('https://res.cloudinary.com/dmaestro/image/upload/v1791461261/ImgBg_wdhaj3.jpg'); background-repeat: no-repeat; background-position: center center; background-size: cover;">
+        <h3 class="text-white" style="color:#ffffff;">The Business Case for Inclusive Workplaces</h3>
+        <div class="mini-hr">&nbsp;</div>
+        <br><br><br>
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+          <tr valign="top" class="text-white">
+            <td width="48%">
+              <img width="70px" style="margin-bottom: 15px;" src="https://res.cloudinary.com/dmaestro/image/upload/v1791384124/C1_q4ge5c.png" alt="">
+              <p class="text-white" style="color:#ffffff;">Inclusion is a performance driver as well as a values commitment. McKinsey research covering more than 1,000 companies found that those in the top quartile for ethnic diversity on executive teams were 36% more likely to outperform financially than those in the bottom quartile. The same research links diversity to better access to talent, stronger decision-making and higher employee engagement.</p>
+            </td>
+            <td width="2%">
+            </td>
+            <td style="border-right: 2px solid #fff"></td>
+            <td width="2%"></td>
+            <td width="48%">
+              <img width="70px" style="margin-bottom: 15px;" src="https://res.cloudinary.com/dmaestro/image/upload/v1791384125/C7_ly5nod.png" alt="">
+              <p class="text-white" style="color:#ffffff;">For employers, this means inclusion goes beyond representation. It widens the talent pool, surfaces skills that might otherwise be overlooked, and builds workplaces where people from different backgrounds can contribute fully. Refugee employment is one way to put this into practice, creating social and economic value while strengthening workforce resilience.</p>
+            </td>
+          </tr>
+        </table>
+
+        <div style="width: 100%; background: #fff; height: 2px; margin: 25px 0;">&nbsp;</div>
+
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="15%">
+              <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791384124/C12_z3tepl.png" style="margin-top: 10px;" alt="">
+            </td>
+            <td width="4%"></td>
+            <td style="border-right: 2px solid #fff"></td>
+            <td width="4%"></td>
+            <td width="85%" style="padding: 15px 0;">
+              <h3 class="text-white" style="color:#ffffff;">Building on a Proven Model</h3>
+              <p class="text-white mt-10" style="color:#ffffff;">The Uganda programme extends Menzies Aviation's broader commitment to refugee employment. The company has already employed 120 refugees across its non-African markets. Bringing this experience to Africa builds on a proven model for creating sustainable pathways into aviation careers.</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td class="px py">
+        <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791405202/Main_header_image_copy_wgqubs.jpg" alt="">
+        <br>
+        <h3>Designed to Scale</h3>
+        <div class="mini-hr">&nbsp;</div>
+        <br>
+        <p>The Uganda programme is not a one-off initiative. Menzies Aviation and Amahoro Coalition will evaluate the first cohort, apply the lessons learned and expand the model to other African markets, including Kenya and Côte d'Ivoire.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="px py" bgcolor="#146f6c" style="background-color: #146f6c; background-image: linear-gradient(135deg, #005654 0%, #26b7b2 100%);">
+        <h3 class="text-white" style="color:#ffffff;">Partner with Amahoro Coalition</h3>
+        <div class="mini-hr">&nbsp;</div>
+        <br>
+        <p class="text-white" style="max-width: 70%; color:#ffffff;">Amahoro Coalition works with private sector organizations to integrate frontier market segments into their business models and growth strategies:</p>
+
+        <br>
+
+        <table class="text-center" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr valign="top" style="font-size: 14px;">
+            <td width="32%" bgcolor="#ffffff" style="background-color: #ffffff; background-image: linear-gradient(#ffffff, #ffffff); border-radius: 15px; padding: 15px;">
+              <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791385286/institute_ouaxbj.png" width="60px" style="margin: 10px auto 20px;" alt="">
+              <p class="text-purple text-center" style="font-weight: 600; margin-bottom: 10px;">Institutional Capacity and Advisory:</p>
+              <p class="text-purple">We embed technical expertise and growth strategy to help organisations integrate forcibly displaced persons (FDPs) into their products, services and operations.</p>
+            </td>
+            <td width="2%"></td>
+            <td width="32%" bgcolor="#ffffff" style="background-color: #ffffff; background-image: linear-gradient(#ffffff, #ffffff); border-radius: 15px; padding: 15px;">
+              <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791386444/clip_iqbq0s.png" width="60px" style="margin: 10px auto 20px;" alt="">
+              <p class="text-purple text-center" style="font-weight: 600; margin-bottom: 10px;">Programme and Product Design:</p>
+              <p class="text-purple">We co-create tailored programmes and financial solutions that unlock opportunity in displacement-affected markets.</p>
+            </td>
+            <td width="2%"></td>
+            <td width="32%" bgcolor="#ffffff" style="background-color: #ffffff; background-image: linear-gradient(#ffffff, #ffffff); border-radius: 15px; padding: 15px;">
+              <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791386445/people_prchum.png" width="60px" style="margin: 10px auto 20px;" alt="">
+              <p class="text-purple text-center" style="font-weight: 600; margin-bottom: 10px;">Inclusive Hiring:</p>
+              <p class="text-purple">We connect employers with verified displaced talent ready to meet their workforce needs.</p>
+            </td>
+          </tr>
+        </table>
+
+        <br>
+
+        <table class="text-center" width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr valign="top" style="font-size: 14px;">
+            <td width="32%" bgcolor="#ffffff" style="background-color: #ffffff; background-image: linear-gradient(#ffffff, #ffffff); border-radius: 15px; padding: 15px;">
+              <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791386445/stats_goints.png" width="60px" style="margin: 10px auto 20px;" alt="">
+              <p class="text-purple text-center" style="font-weight: 600; margin-bottom: 10px;">Market Access:</p>
+              <p class="text-purple">We extend partners' reach into high-potential markets, linking their services with FDP communities and creating new opportunities for sustainable income and economic participation.</p>
+            </td>
+            <td width="2%"></td>
+            <td width="32%" bgcolor="#ffffff" style="background-color: #ffffff; background-image: linear-gradient(#ffffff, #ffffff); border-radius: 15px; padding: 15px;">
+              <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791386446/growth_itkozq.png" width="60px" style="margin: 10px auto 20px;" alt="">
+              <p class="text-purple text-center" style="font-weight: 600; margin-bottom: 10px;">Venture Funding:</p>
+              <p class="text-purple">We invest directly in displaced-led businesses and connect high-potential ventures to development finance to fuel growth, jobs and economic opportunity.</p>
+            </td>
+            <td width="2%"></td>
+            <td width="32%" bgcolor="#ffffff" style="background-color: #ffffff; background-image: linear-gradient(#ffffff, #ffffff); border-radius: 15px; padding: 15px;">
+              <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791386445/ecosystem_bjiffi.png" width="60px" style="margin: 10px auto 20px;" alt="">
+              <p class="text-purple text-center" style="font-weight: 600; margin-bottom: 10px;">Connections and Ecosystem Building:</p>
+              <p class="text-purple">As market enablers, we connect partners with complementary capabilities, creating new opportunities for growth, market access and economic impact.</p>
+            </td>
+          </tr>
+        </table>
+
+        <a href="https://amahorocoalition.com/get-involved/" class="btn bg-purple" style="border-radius: 50px;">Click here to partner with us</a>
+
+      </td>
+    </tr>
+
+
+    <tr>
+      <td class="px py" bgcolor="#236463" style="background-color: #236463; background-image: linear-gradient(135deg, #3f8281 0%, #236463 100%);">
+        <!-- <h3>Our Partners</h3>
+        <div class="mini-hr">&nbsp;</div>
+        <br>
+        <div class="bg-white" style="padding: 15px">
+          <img src="https://res.cloudinary.com/dmaestro/image/upload/v1791401076/logos_qshdsy.jpg" alt="">
+        </div>
+
+        <br><br><br> -->
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr class="text-white">
+            <td>
+              <img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:ffffff,e_colorize:100/v1791462445/Amahoro_dweuqe.png" style="width: 150px;" alt="">
+            </td>
+            <td class="text-right">
+              <p class="text-white fs-12" style="color:#ffffff;">Copyright © *|CURRENT_YEAR|* Amahoro Coalition Limited,<br> All rights reserved.</p>
+              <div class="mt-10 social-icons">
+                <a href="https://x.com/AfricaAmahoro" style="display: inline-block;"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:03a49c,e_colorize:100/v1739434494/x_feg7p1.png" alt=""></a>
+                <a href="https://www.instagram.com/amahoro.coalition?igsh=eHBwOG9tN2hpcnc0&utm_source=qr" style="display: inline-block;"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:03a49c,e_colorize:100/v1739434494/instagram_exmcsn.png" alt=""></a>
+                <a href="https://www.facebook.com/TheAmahoroCoalition/" style="display: inline-block;"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:03a49c,e_colorize:100/v1739434494/facebook_pksm1l.png" alt=""></a>
+                <a href="http://www.youtube.com/@AmahoroCoalition-videos" style="display: inline-block;"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:03a49c,e_colorize:100/v1739434494/youtube_i7x2vd.png" alt=""></a>
+                <a href="https://www.linkedin.com/company/amahoro-coalition/" style="display: inline-block;"><img src="https://res.cloudinary.com/dmaestro/image/upload/co_rgb:03a49c,e_colorize:100/v1739435347/linkedin_qnypuu.png" alt=""></a>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr bgcolor="#f4f4f4" class="footer">
+      <td class="text-center fs-12" style="padding: 15px 0;">
+        <p>
+          <a href="*|UNSUB|*" class="utilityLink">unsubscribe from this list</a>
+          <span class="mobileHide">&nbsp;&nbsp; | &nbsp;&nbsp;</span>
+          <a href="*|UPDATE_PROFILE|*" class="utilityLink">update subscription preferences</a>
+          <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+          <span class="mobileHide">&nbsp;&nbsp; | &nbsp;&nbsp;</span>
+          <a href="*|ARCHIVE|*" class="utilityLink">view email in browser</a>
+          <!-- *|END:IF|* -->
+        </p>
+      </td>
+    </tr>
+
+
+  </table>
 </body>
 </html>
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Claude finished the response
